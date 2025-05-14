@@ -1,0 +1,31 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# PyTorch Course 
+
+The best online and free PyTorch tutorial for understanding main building blocks of moder Transformer and Diffusion based archtectures. 
+Course Url: https://pytorchcourse.com 
+Github repository url: https://github.com/ksopyla/pytorch-course
+
+
+## Description and lessons scope
+
+The project will give deep and essential knowledge of how particular PyTorch building blocks work and how to use them while designing your own transformers and diffusion architectures. It contains lessons grouped by topic.
+
+
+Each lesson is devoted to one of the main building blocks of modern Neural Networks, it starts with explaining the concept, then a simple pytorch example, and at the end, explains advanced concept usage. 
+Example structure of a lesson explaining the loss functions: 
+1. What the  loss function is, and what purpose it serves, 
+2. The extensive list of lost functions with their usage: CrossEntropy, Mean Square Error, Kullback-Leibler
+3. How to compute each of the "most popular" loss functions in pytorch, a simple example that is easy to follow and understand, calculation should be easy verifiable by hand, data is fixed and tiny, 
+4. More advanced examples, data is still tiny but has dimensions that are usually met while training the neural networks, like Transformers
+
+## Technology used
+
+
+- uses mkdocs mkdocs-material mkdocs-jupyter for lesson rendering and display
+- github actions with mkdocs plugin for building the docs
+
+- each lesson is Jupyter Notebook - rendered directly in MkDocs

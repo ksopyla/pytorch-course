@@ -1,0 +1,8 @@
+site_name: PyTorch Course
+nav:
+  - Home: index.md
+  - 'Lesson 1: Hello PyTorch': lessons/01_hello_pytorch.ipynb
+theme: material
+plugins:
+  - search
+  - mkdocs-jupyter 
