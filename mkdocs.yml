@@ -1,5 +1,6 @@
 site_name: PyTorch Course
 site_description: The best online and free PyTorch tutorial
+site_url: https://ksopyla.github.io/pytorch-course/
 
 theme:
   name: material
