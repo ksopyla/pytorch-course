@@ -24,8 +24,13 @@ theme:
 
 nav:
   - Home: index.md
-  - Lessons:
-    - 'Hello PyTorch': lessons/01_hello_pytorch.ipynb
+  - Getting Started:
+    - 'Windows Environment Installation': 00-getting-started/windows-pytorch-installation.md
+    - 'Linux Environment Installation': 00-getting-started/linux-pytorch-installation.md
+    - 'MacOS Environment Installation': 00-getting-started/macos-pytorch-installation.md
+    - 'Hello PyTorch': 00-getting-started/01_hello_pytorch.ipynb
+  - Tensors:
+    - 'Tensors': 01-tensors/01_tensors_intro.ipynb
 
 plugins:
   - search
