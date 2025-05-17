@@ -25,6 +25,7 @@ theme:
 nav:
   - Home: index.md
   - Getting Started:
+    - 'PyTorch Course Structure': pytorch-course-sturcture.md
     - 'Windows Environment Installation': 00-getting-started/windows-pytorch-installation.md
     - 'Linux Environment Installation': 00-getting-started/linux-pytorch-installation.md
     - 'MacOS Environment Installation': 00-getting-started/macos-pytorch-installation.md
