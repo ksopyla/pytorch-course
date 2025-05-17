@@ -1,4 +1,3 @@
-
 # PyTorch Course: Deconstructing Modern Architectures
 
 Course Goal: To provide a deep and essential understanding of PyTorch building blocks and their practical application in designing, understanding, and implementing modern Transformer and Diffusion-based neural network architectures.
@@ -17,7 +16,7 @@ What you will learn:
 
 ### Lessons:
 
-1. [PyTorch Course Structure](pytorch-course-sturcture.md) - this page, course aim and structure, guide through 
+1. [PyTorch Course Structure](pytorch-course-structure.md) - this page, course aim and structure, guide through 
 2. Setting Up Your PyTorch Environments:
     1.[Setting Up windows dev environment](00-getting-started/windows-pytorch-installation.md) - create a windows dev environment with windows pyenv and poetry, install main dependencies with and without GPU support
     2.[Setting Up linux dev environment](00-getting-started/linux-pytorch-installation.md) - create a Ubuntu dev environment with linux pyenv and poetry, install main dependencies with and without GPU support
@@ -46,9 +45,9 @@ What you will learn:
 
 #### 1.1 Lessons:
 
-1. [Introduction to Tensors](01-tensors/01_tensors_intro.ipynb) - Introduction to tensors, their properties, and their importance in machine learning.  Creating tensors (from lists, NumPy, torch.rand, torch.zeros, torch.ones, torch.arange, torch.linspace). How to check their attributes and shapes.
+1. [Introduction to Tensors](01-tensors/01_introduction_to_tensors.ipynb) - Introduction to tensors, their properties, and their importance in machine learning.  Creating tensors (from lists, NumPy, torch.rand, torch.zeros, torch.ones, torch.arange, torch.linspace). How to check their attributes and shapes.
 2. [Tensor manipulation](01-tensors/02_tensor_manipulation.ipynb) - Indexing, Slicing, Joining (torch.cat, torch.stack), Splitting. Manipulating tensor shapes (reshape, view, squeeze, unsqueeze, permute, transpose).
-3. [Data Types and Devices](01-tensors/05_datatypes_devices.ipynb) - Importance of data types (float32, float16, bfloat16, int64 etc.). CPU vs. GPU computations. Checking and changing dtype. Moving tensors between devices (.to(device), .cpu(), .cuda()). Best practices for mixed-precision training (conceptual introduction). Implications of data types on memory and speed.
+3. [Data Types and Devices](01-tensors/03_data_types_and_devices.ipynb) - Importance of data types (float32, float16, bfloat16, int64 etc.). CPU vs. GPU computations. Checking and changing dtype. Moving tensors between devices (.to(device), .cpu(), .cuda()). Best practices for mixed-precision training (conceptual introduction). Implications of data types on memory and speed.
 
 
 ### 1.2 Tensor Operations: Computation at Scale
@@ -58,10 +57,10 @@ What you will learn:
 
 #### 1.2 Lessons:
 
-1. [Tensor Math Operations](01-tensors/02_tensor_basic_computations.ipynb) - Overview of tensor math. Element-wise operations. Reduction operations across dimensions (sum, mean, max, min, std). 
+1. [Tensor Math Operations](01-tensors/04_tensor_math_operations.ipynb) - Overview of tensor math. Element-wise operations. Reduction operations across dimensions (sum, mean, max, min, std). 
 
-2. [Matrix Multiplication](01-tensors/03_matrix_multiplication.ipynb) - 2D matrix multiplication (torch.mm, torch.matmul, @ operator). Batch matrix multiplication (torch.bmm).
-3. [Broadcasting](01-tensors/04_broadcasting.ipynb) - Broadcasting rules with practical examples across different dimensions. Broadcast math operations and vector or matrix multiplications.
+2. [Matrix Multiplication](01-tensors/05_matrix_multiplication.ipynb) - 2D matrix multiplication (torch.mm, torch.matmul, @ operator). Batch matrix multiplication (torch.bmm).
+3. [Broadcasting](01-tensors/06_broadcasting.ipynb) - Broadcasting rules with practical examples across different dimensions. Broadcast math operations and vector or matrix multiplications.
 
 
 ### 1.3 Einstein Summation: The Power of einsum
@@ -71,8 +70,8 @@ What you will learn:
 
 #### 1.3 Lessons:
 
-1. [Einstein Summation](01-tensors/03_einstein_summation.ipynb) - Simple einsum examples (vector dot product, matrix multiplication, transpose).
-2. [Advanced Einstein Summation](01-tensors/04_advanced_einsum.ipynb) - einsum for more complex operations like batch matrix multiplication, tensor contractions relevant to attention mechanisms. Examples with dimensions mirroring those in Transformers.
+1. [Einstein Summation](01-tensors/07_einstein_summation.ipynb) - Simple einsum examples (vector dot product, matrix multiplication, transpose).
+2. [Advanced Einstein Summation](01-tensors/08_advanced_einstein_summation.ipynb) - einsum for more complex operations like batch matrix multiplication, tensor contractions relevant to attention mechanisms. Examples with dimensions mirroring those in Transformers.
    
 
 ### 1.4 Autograd: Automatic Differentiation
@@ -84,8 +83,8 @@ What you will learn:
 
 #### 1.4 Lessons:
 
-1. [Autograd](01-tensors/04_autograd.ipynb) - What are gradients? The computational graph. How PyTorch tracks operations.
-2. [Gradient Accumulation](01-tensors/05_gradient_accumulation.ipynb) - Gradient accumulation. Potential pitfalls. Visualizing computational graphs (conceptually).
+1. [Autograd](01-tensors/09_autograd.ipynb) - What are gradients? The computational graph. How PyTorch tracks operations.
+2. [Gradient Accumulation](01-tensors/10_gradient_accumulation.ipynb) - Gradient accumulation. Potential pitfalls. Visualizing computational graphs (conceptually).
 
 
 
@@ -102,9 +101,9 @@ What you will learn:
 - Saving and restoring weights with `state_dict`.
 
 #### 2.1 Lessons:
-1. [`01_nn_module.ipynb`](02-torch-nn/01_nn_module.ipynb) - The role of `nn.Module` as the base class for layers and models.  `__init__` and `forward` methods.
-2. [`02_compose_modules.ipynb`](02-torch-nn/02_compose_modules.ipynb) - Composing modules with `nn.Sequential`, `nn.ModuleList`, and `nn.ModuleDict`.
-3. [`03_saving_weights.ipynb`](02-torch-nn/03_saving_weights.ipynb) - Saving and restoring weights with `state_dict`.
+1. [nn.Module](02-torch-nn/01_nn_module.ipynb) - The role of \`nn.Module\` as the base class for layers and models.  \`__init__\` and \`forward\` methods.
+2. [Compose Modules](02-torch-nn/02_compose_modules.ipynb) - Composing modules with \`nn.Sequential\`, \`nn.ModuleList\`, and \`nn.ModuleDict\`.
+3. [Saving Weights](02-torch-nn/03_saving_weights.ipynb) - Saving and restoring weights with \`state_dict\`.
 
 ### 2.2 Linear Layer and Activations  
 
@@ -115,9 +114,9 @@ What you will learn:
 - Dropout for regularisation.  
 
 #### 2.2 Lessons:
-1. [`02_linear_layer.ipynb`](02-torch-nn/02_linear_layer.ipynb) - Linear layer and high-dimensional matrix multiplication. How the linear layer transforms the input tensor into an output tensor.
-2. [`03_activations.ipynb`](02-torch-nn/03_activations.ipynb) - Activation functions (ReLU, GELU, SiLU, Tanh, Softmax, etc.). 
-3. [`04_dropout.ipynb`](02-torch-nn/04_dropout.ipynb) - Dropout for regularisation.
+1. [Linear Layer](02-torch-nn/04_linear_layer.ipynb) - Linear layer and high-dimensional matrix multiplication. How the linear layer transforms the input tensor into an output tensor.
+2. [Activations](02-torch-nn/05_activations.ipynb) - Activation functions (ReLU, GELU, SiLU, Tanh, Softmax, etc.). 
+3. [Dropout](02-torch-nn/06_dropout.ipynb) - Dropout for regularisation.
 
 
 ### 2.3 Embedding Layers 
@@ -127,8 +126,8 @@ What you will learn:
 - Positional encoding and how it is used to inject order into the model.
 
 #### 2.3 Lessons:
-1. [`05_embedding_layers.ipynb`](02-torch-nn/05_embedding_layers.ipynb) - Embedding layers and their purpose in neural networks. Input to embedding layer and how to interpret the output.
-2. [`06_positional_encoding.ipynb`](02-torch-nn/06_positional_encoding.ipynb) - Positional encoding and how it is used to inject order into the model.
+1. [Embedding Layers](02-torch-nn/07_embedding_layers.ipynb) - Embedding layers and their purpose in neural networks. Input to embedding layer and how to interpret the output.
+2. [Positional Encoding](02-torch-nn/08_positional_encoding.ipynb) - Positional encoding and how it is used to inject order into the model.
 
 ### 2.4 Normalisation Layers
 
@@ -138,9 +137,9 @@ What you will learn:
 - Training vs. evaluation mode caveats.
 
 #### 2.4 Lessons:
-1. [`03_normalization_layers.ipynb`](02-torch-nn/03_normalization_layers.ipynb) - what the normalisation layer does and what is the purpose of the normalisation layer. BatchNorm vs. LayerNorm and when to use each.
-2. [`04_rms_norm.ipynb`](02-torch-nn/04_rms_norm.ipynb) - RMSNorm and other modern alternatives.
-3. [`05_training_evaluation_mode.ipynb`](02-torch-nn/05_training_evaluation_mode.ipynb) - Training vs. evaluation mode caveats.
+1. [Normalization Layers](02-torch-nn/09_normalization_layers.ipynb) - what the normalisation layer does and what is the purpose of the normalisation layer. BatchNorm vs. LayerNorm and when to use each.
+2. [RMS Norm](02-torch-nn/10_rms_norm.ipynb) - RMSNorm and other modern alternatives.
+3. [Training Evaluation Mode](02-torch-nn/11_training_evaluation_mode.ipynb) - Training vs. evaluation mode caveats.
 
 ### 2.5 Loss Functions — Guiding Optimisation  
 What you will learn:
@@ -149,9 +148,9 @@ What you will learn:
 - Interpreting reduction modes and ignore indices.
 
 #### 2.5 Lessons:
-1. [`04_loss_functions.ipynb`](02-torch-nn/04_loss_functions.ipynb) - Loss functions recap, the main types of loss functions and when to use each. 
-2. [`05_prepare_inputs_targets.ipynb`](02-torch-nn/05_prepare_inputs_targets.ipynb) - Prepare inputs and targets for loss functions and outputs interpretation (logits vs. probabilities). 
-3. [`06_interpreting_reduction_modes.ipynb`](02-torch-nn/06_interpreting_reduction_modes.ipynb) - Interpreting reduction modes and ignore indices.
+1. [Loss Functions](02-torch-nn/12_loss_functions.ipynb) - Loss functions recap, the main types of loss functions and when to use each. 
+2. [Prepare Inputs Targets](02-torch-nn/13_prepare_inputs_targets.ipynb) - Prepare inputs and targets for loss functions and outputs interpretation (logits vs. probabilities). 
+3. [Interpreting Reduction Modes](02-torch-nn/14_interpreting_reduction_modes.ipynb) - Interpreting reduction modes and ignore indices.
 
 
 
@@ -167,7 +166,7 @@ What you will learn:
 - Building a reusable training engine.
 
 Lessons:
-1. [`02_training_loop.ipynb`](03-training-nn/02_training_loop.ipynb)
+1. [Training Loop](03-training-nn/01_training_loop.ipynb)
 
 
 ### 3.2 Optimisers & Schedulers  
@@ -177,7 +176,7 @@ What you will learn:
 - Weight decay and regularisation.
 
 #### 3.2 Lessons:
-1. [`05_optimizers.ipynb`](02-torch-nn/05_optimizers.ipynb) - todo
+1. [Optimizers Schedulers](03-training-nn/02_optimizers_schedulers.ipynb) - todo
 
 
 ### 3.3 Datasets & DataLoaders  
@@ -187,7 +186,7 @@ What you will learn:
 - Data augmentation pipelines.
 
 #### 3.3 Lessons:
-1. [`01_datasets_dataloaders.ipynb`](03-training-nn/01_datasets_dataloaders.ipynb)
+1. [Datasets DataLoaders](03-training-nn/03_datasets_dataloaders.ipynb)
 
 ### 3.4 Accelerating with GPUs  
 What you will learn:
@@ -196,7 +195,7 @@ What you will learn:
 - Mixed-precision training best practices.
 
 #### 3.4 Lessons:
-1. [`03_gpu_acceleration.ipynb`](03-training-nn/03_gpu_acceleration.ipynb)
+1. [GPU Acceleration](03-training-nn/04_gpu_acceleration.ipynb)
 
 
 
@@ -206,7 +205,7 @@ What you will learn:
 - Xavier (Glorot), Kaiming, and custom strategies.  
 
 #### 3.5 Lessons:
-1. [`06_weight_initialization.ipynb`](02-torch-nn/06_weight_initialization.ipynb) - todo
+1. [Weight Initialization](03-training-nn/05_weight_initialization.ipynb) - todo
 
 
 
@@ -221,7 +220,7 @@ What you will learn:
 - Rotary Positional Embeddings (RoPE).
 
 Lessons:
-1. [`02_positional_embeddings.ipynb`](04-transformers/02_positional_embeddings.ipynb)
+1. [Positional Embeddings](04-transformers/01_positional_embeddings.ipynb)
 
 
 
@@ -232,7 +231,7 @@ What you will learn:
 - Masking techniques.
 
 Lessons:
-1. [`03_attention_mechanism.ipynb`](04-transformers/03_attention_mechanism.ipynb)
+1. [Attention Mechanism](04-transformers/02_attention_mechanism.ipynb)
 
 ### 4.4 Multi-Head Attention  
 What you will learn:
@@ -241,7 +240,7 @@ What you will learn:
 - Comparing custom implementation with `nn.MultiheadAttention`.
 
 Lessons:
-1. [`04_multi_head_attention.ipynb`](04-transformers/04_multi_head_attention.ipynb)
+1. [Multi-Head Attention](04-transformers/03_multi_head_attention.ipynb)
 
 
 ### 4.5 Other attention implementations
@@ -251,7 +250,7 @@ What you will learn:
 - Flash Attention 2 - a faster and more memory efficient attention mechanism
 
 #### 4.5 Lessons:
-1. [`05_other_attention_implementations.ipynb`](04-transformers/05_other_attention_implementations.ipynb)
+1. [Other Attention Implementations](04-transformers/04_other_attention_implementations.ipynb)
 
 
 ### 4.6 Transformer Encoder  
@@ -261,7 +260,7 @@ What you will learn:
 - Encoder-decoder attention.
 
 #### 4.6 Lessons:
-1. [`06_transformer_encoder.ipynb`](04-transformers/06_transformer_encoder.ipynb)
+1. [Transformer Encoder](04-transformers/05_transformer_encoder.ipynb)
 
 
 
@@ -273,7 +272,7 @@ What you will learn:
 - How to use PyTorch Hooks to inspect the inner workings of a model.
 
 #### 5.1 Lessons:
-1. [`01_hooks.ipynb`](06-advanced-pytorch/01_hooks.ipynb)
+1. [Hooks](05-advanced-pytorch/01_hooks.ipynb)
 
 ### 5.2 Distributed Training Concepts  
 What you will learn:
@@ -281,7 +280,7 @@ What you will learn:
 - How to use PyTorch Distributed Training to train a model on multiple GPUs.
 
 #### 5.2 Lessons:
-1. [`02_distributed_training_concepts.ipynb`](06-advanced-pytorch/02_distributed_training_concepts.ipynb)
+1. [Distributed Training Concepts](05-advanced-pytorch/02_distributed_training_concepts.ipynb)
 
 ### 5.3 Model Optimisation – Quantisation & Pruning  
 What you will learn:
@@ -289,7 +288,7 @@ What you will learn:
 - How to use PyTorch Model Optimisation to quantise and prune a model.
 
 #### 5.3 Lessons:
-1. [`03_model_optimization_concepts.ipynb`](06-advanced-pytorch/03_model_optimization_concepts.ipynb)
+1. [Model Optimization Concepts](05-advanced-pytorch/03_model_optimization_concepts.ipynb)
 
 ### 5.4 TorchScript & JIT for Deployment  
 What you will learn:
@@ -297,7 +296,7 @@ What you will learn:
 - How to use PyTorch TorchScript & JIT to deploy a model.
 
 #### 5.4 Lessons:
-1. [`04_torchscript_jit.ipynb`](06-advanced-pytorch/04_torchscript_jit.ipynb)
+1. [Torchscript JIT](05-advanced-pytorch/04_torchscript_jit.ipynb)
 
 ### 5.5 Profiling & Performance Tuning  
 What you will learn:
@@ -305,7 +304,7 @@ What you will learn:
 - How to use PyTorch Profiling to tune the performance of a model.
 
 #### 5.5 Lessons:
-1. [`05_profiling.ipynb`](06-advanced-pytorch/05_profiling.ipynb)
+1. [Profiling](05-advanced-pytorch/05_profiling.ipynb)
 
 
 ## Module 6 Hugging Face Transformers in Practice
@@ -318,7 +317,7 @@ What you will learn:
 - Inference with the pre-trained models.
 
 #### 6.1 Lessons:
-1. [`01_huggingface_transformers.ipynb`](05-huggingface-transformers/01_huggingface_transformers.ipynb)
+1. [HuggingFace Transformers](06-huggingface-transformers/01_huggingface_transformers.ipynb)
 
 
 ### 6.2 Fine-tuning the pre-trained models.
@@ -328,4 +327,4 @@ What you will learn:
 - Using `AutoModelForSequenceClassification` and `AutoTokenizer` APIs.
 
 #### 6.2 Lessons:
-1. [`02_fine_tuning_transformers.ipynb`](05-huggingface-transformers/02_fine_tuning_transformers.ipynb)
+1. [Fine Tuning Transformers](06-huggingface-transformers/02_fine_tuning_transformers.ipynb)

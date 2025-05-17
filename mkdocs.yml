@@ -25,13 +25,59 @@ theme:
 nav:
   - Home: index.md
   - Getting Started:
-    - 'PyTorch Course Structure': pytorch-course-sturcture.md
+    - 'PyTorch Course Structure': pytorch-course-structure.md
     - 'Windows Environment Installation': 00-getting-started/windows-pytorch-installation.md
     - 'Linux Environment Installation': 00-getting-started/linux-pytorch-installation.md
     - 'MacOS Environment Installation': 00-getting-started/macos-pytorch-installation.md
+    - 'Google Colab Setup': 00-getting-started/google-colab-setup.md
     - 'Hello PyTorch': 00-getting-started/01_hello_pytorch.ipynb
   - Tensors:
-    - 'Tensors': 01-tensors/01_tensors_intro.ipynb
+    - 'Introduction to Tensors': 01-tensors/01_introduction_to_tensors.ipynb
+    - 'Tensor Manipulation': 01-tensors/02_tensor_manipulation.ipynb
+    - 'Data Types and Devices': 01-tensors/03_data_types_and_devices.ipynb
+    - 'Tensor Math Operations': 01-tensors/04_tensor_math_operations.ipynb
+    - 'Matrix Multiplication': 01-tensors/05_matrix_multiplication.ipynb
+    - 'Broadcasting': 01-tensors/06_broadcasting.ipynb
+    - 'Einstein Summation': 01-tensors/07_einstein_summation.ipynb
+    - 'Advanced Einstein Summation': 01-tensors/08_advanced_einstein_summation.ipynb
+    - 'Autograd': 01-tensors/09_autograd.ipynb
+    - 'Gradient Accumulation': 01-tensors/10_gradient_accumulation.ipynb
+  - torch.nn:
+    - 'nn.Module': 02-torch-nn/01_nn_module.ipynb
+    - 'Compose Modules': 02-torch-nn/02_compose_modules.ipynb
+    - 'Saving Weights': 02-torch-nn/03_saving_weights.ipynb
+    - 'Linear Layer': 02-torch-nn/04_linear_layer.ipynb
+    - 'Activations': 02-torch-nn/05_activations.ipynb
+    - 'Dropout': 02-torch-nn/06_dropout.ipynb
+    - 'Embedding Layers': 02-torch-nn/07_embedding_layers.ipynb
+    - 'Positional Encoding': 02-torch-nn/08_positional_encoding.ipynb
+    - 'Normalization Layers': 02-torch-nn/09_normalization_layers.ipynb
+    - 'RMS Norm': 02-torch-nn/10_rms_norm.ipynb
+    - 'Training Evaluation Mode': 02-torch-nn/11_training_evaluation_mode.ipynb
+    - 'Loss Functions': 02-torch-nn/12_loss_functions.ipynb
+    - 'Prepare Inputs Targets': 02-torch-nn/13_prepare_inputs_targets.ipynb
+    - 'Interpreting Reduction Modes': 02-torch-nn/14_interpreting_reduction_modes.ipynb
+  - Training Workflows:
+    - 'Training Loop': 03-training-nn/01_training_loop.ipynb
+    - 'Optimizers Schedulers': 03-training-nn/02_optimizers_schedulers.ipynb
+    - 'Datasets DataLoaders': 03-training-nn/03_datasets_dataloaders.ipynb
+    - 'GPU Acceleration': 03-training-nn/04_gpu_acceleration.ipynb
+    - 'Weight Initialization': 03-training-nn/05_weight_initialization.ipynb
+  - Transformers:
+    - 'Positional Embeddings': 04-transformers/01_positional_embeddings.ipynb
+    - 'Attention Mechanism': 04-transformers/02_attention_mechanism.ipynb
+    - 'Multi-Head Attention': 04-transformers/03_multi_head_attention.ipynb
+    - 'Other Attention Implementations': 04-transformers/04_other_attention_implementations.ipynb
+    - 'Transformer Encoder': 04-transformers/05_transformer_encoder.ipynb
+  - Advanced PyTorch:
+    - 'Hooks': 05-advanced-pytorch/01_hooks.ipynb
+    - 'Distributed Training Concepts': 05-advanced-pytorch/02_distributed_training_concepts.ipynb
+    - 'Model Optimization Concepts': 05-advanced-pytorch/03_model_optimization_concepts.ipynb
+    - 'Torchscript JIT': 05-advanced-pytorch/04_torchscript_jit.ipynb
+    - 'Profiling': 05-advanced-pytorch/05_profiling.ipynb
+  - HuggingFace Transformers:
+    - 'HuggingFace Transformers': 06-huggingface-transformers/01_huggingface_transformers.ipynb
+    - 'Fine Tuning Transformers': 06-huggingface-transformers/02_fine_tuning_transformers.ipynb
 
 plugins:
   - search
