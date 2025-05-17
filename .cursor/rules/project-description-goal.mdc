@@ -39,5 +39,9 @@ Example structure of a lesson explaining the loss functions:
 - pyproject.toml and poetry.lock- poetry related files for managing the dependencies
 - docs - folder contains the lessons grouped in folders, each subfolder contains lessons as jupyter notebooks or markdown files
 - docs/assets - folder containing the assests, images, audio, additional css and javascript
-
 - docs/index.md - main page file
+
+
+## Links, comments, analytics
+
+- each external link shoud have additional utm tracking params eg. utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=(file name)
