@@ -13,8 +13,6 @@
         <link rel="canonical" href="https://ksopyla.github.io/pytorch-course/01-tensors/01_tensors_intro/">
       
       
-        <link rel="prev" href="../../00-getting-started/01_hello_pytorch/">
-      
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Tensors introduction - PyTorch Course</title>
+        <title>Module 01 lesson 1: Tensors introduction - PyTorch Course</title>
       
     
     
@@ -74,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tensors-introduction" class="md-skip">
+        <a href="#module-01-lesson-1-tensors-introduction" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tensors introduction
+              Module 01 lesson 1: Tensors introduction
             
           </span>
         </div>
@@ -228,7 +226,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../00-getting-started/windows-pytorch-installation/" class="md-tabs__link">
+        <a href="../../pytorch-course-structure/" class="md-tabs__link">
           
   
   
@@ -244,17 +242,115 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../01_introduction_to_tensors/" class="md-tabs__link">
           
   
   
   Tensors
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../02-torch-nn/01_nn_module/" class="md-tabs__link">
+          
+  
+  
+  torch.nn
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../03-training-nn/01_training_loop/" class="md-tabs__link">
+          
+  
+  
+  Training Workflows
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../04-transformers/01_positional_embeddings/" class="md-tabs__link">
+          
+  
+  
+  Transformers
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../05-advanced-pytorch/01_hooks/" class="md-tabs__link">
+          
+  
+  
+  Advanced PyTorch
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../06-huggingface-transformers/01_huggingface_transformers/" class="md-tabs__link">
+          
+  
+  
+  HuggingFace Transformers
 
         </a>
       </li>
@@ -365,6 +461,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../pytorch-course-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PyTorch Course Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../00-getting-started/windows-pytorch-installation/" class="md-nav__link">
         
   
@@ -434,6 +553,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../00-getting-started/google-colab-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Google Colab Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../00-getting-started/01_hello_pytorch/" class="md-nav__link">
         
   
@@ -461,29 +603,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -496,7 +633,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Tensors
@@ -507,30 +644,1180 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../01_introduction_to_tensors/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Tensors introduction
+    Introduction to Tensors
     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_tensor_manipulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tensor Manipulation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_data_types_and_devices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Types and Devices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_tensor_math_operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tensor Math Operations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_matrix_multiplication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Matrix Multiplication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_broadcasting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Broadcasting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_einstein_summation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Einstein Summation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_advanced_einstein_summation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Einstein Summation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_autograd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Autograd
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_gradient_accumulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gradient Accumulation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    torch.nn
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            torch.nn
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-torch-nn/01_nn_module/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    nn.Module
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-torch-nn/02_compose_modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Compose Modules
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-torch-nn/03_saving_weights/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Saving Weights
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-torch-nn/04_linear_layer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linear Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-torch-nn/05_activations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Activations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-torch-nn/06_dropout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dropout
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-torch-nn/07_embedding_layers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Embedding Layers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-torch-nn/08_positional_encoding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Positional Encoding
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-torch-nn/09_normalization_layers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Normalization Layers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-torch-nn/10_rms_norm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RMS Norm
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-torch-nn/11_training_evaluation_mode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Training Evaluation Mode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-torch-nn/12_loss_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Loss Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-torch-nn/13_prepare_inputs_targets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prepare Inputs Targets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-torch-nn/14_interpreting_reduction_modes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interpreting Reduction Modes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Training Workflows
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Training Workflows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-training-nn/01_training_loop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Training Loop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-training-nn/02_optimizers_schedulers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Optimizers Schedulers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-training-nn/03_datasets_dataloaders/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Datasets DataLoaders
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-training-nn/04_gpu_acceleration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GPU Acceleration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-training-nn/05_weight_initialization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Weight Initialization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Transformers
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Transformers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-transformers/01_positional_embeddings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Positional Embeddings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-transformers/02_attention_mechanism/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Attention Mechanism
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-transformers/03_multi_head_attention/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Multi-Head Attention
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-transformers/04_other_attention_implementations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Other Attention Implementations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-transformers/05_transformer_encoder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Transformer Encoder
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Advanced PyTorch
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced PyTorch
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-advanced-pytorch/01_hooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hooks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-advanced-pytorch/02_distributed_training_concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Distributed Training Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-advanced-pytorch/03_model_optimization_concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Model Optimization Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-advanced-pytorch/04_torchscript_jit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Torchscript JIT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-advanced-pytorch/05_profiling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Profiling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    HuggingFace Transformers
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            HuggingFace Transformers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-huggingface-transformers/01_huggingface_transformers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HuggingFace Transformers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-huggingface-transformers/02_fine_tuning_transformers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fine Tuning Transformers
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -562,6 +1849,32 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson goals:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-tensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is a tensor?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1019,34 +2332,34 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="tensors-introduction">Tensors introduction<a class="anchor-link" href="#tensors-introduction">¶</a></h1><p>Module 01 lesson 1: Tensors introduction</p>
+<h1 id="module-01-lesson-1-tensors-introduction">Module 01 lesson 1: Tensors introduction<a class="anchor-link" href="#module-01-lesson-1-tensors-introduction">¶</a></h1><h2 id="lesson-goals">Lesson goals:<a class="anchor-link" href="#lesson-goals">¶</a></h2><ul>
+<li>Understand what tensors are and why they are useful for machine learning</li>
+<li>Get hands-on experience on creating and selecting elements from tensors in PyTorch</li>
+<li>Manipulate and transform tensors to prepare them for machine learning tasks</li>
+</ul>
+<p>Time to complete: 10 minutes
+Level: Beginner - Intermediate</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-1">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-1"></div>
-</div>
-</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="what-is-a-tensor">What is a tensor?<a class="anchor-link" href="#what-is-a-tensor">¶</a></h2><ul>
+<li><p>what is a tensor?</p>
+</li>
+<li><p>how is it different from a matrix?</p>
+</li>
+<li><p>are mathematical interpretations of tensors are different from their PyTorch counterparts?</p>
+</li>
+<li><p>why are tensors useful for machine learning? Why we can't use matrices?</p>
+</li>
+<li></li>
+</ul>
 </div>
 </div>
 </div>
