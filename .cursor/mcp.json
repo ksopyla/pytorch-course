@@ -1,0 +1,7 @@
+{
+    "mcpServers": {
+      "notebook_mcp": {
+        "url": "http://localhost:8080/sse"
+      }
+    }
+  }
