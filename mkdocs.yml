@@ -57,27 +57,31 @@ nav:
     - 'Loss Functions': 02-torch-nn/12_loss_functions.ipynb
     - 'Prepare Inputs Targets': 02-torch-nn/13_prepare_inputs_targets.ipynb
     - 'Interpreting Reduction Modes': 02-torch-nn/14_interpreting_reduction_modes.ipynb
-  - Training Workflows:
-    - 'Training Loop': 03-training-nn/01_training_loop.ipynb
-    - 'Optimizers Schedulers': 03-training-nn/02_optimizers_schedulers.ipynb
-    - 'Datasets DataLoaders': 03-training-nn/03_datasets_dataloaders.ipynb
-    - 'GPU Acceleration': 03-training-nn/04_gpu_acceleration.ipynb
-    - 'Weight Initialization': 03-training-nn/05_weight_initialization.ipynb
-  - Transformers:
-    - 'Positional Embeddings': 04-transformers/01_positional_embeddings.ipynb
-    - 'Attention Mechanism': 04-transformers/02_attention_mechanism.ipynb
-    - 'Multi-Head Attention': 04-transformers/03_multi_head_attention.ipynb
-    - 'Other Attention Implementations': 04-transformers/04_other_attention_implementations.ipynb
-    - 'Transformer Encoder': 04-transformers/05_transformer_encoder.ipynb
-  - Advanced PyTorch:
-    - 'Hooks': 05-advanced-pytorch/01_hooks.ipynb
-    - 'Distributed Training Concepts': 05-advanced-pytorch/02_distributed_training_concepts.ipynb
-    - 'Model Optimization Concepts': 05-advanced-pytorch/03_model_optimization_concepts.ipynb
-    - 'Torchscript JIT': 05-advanced-pytorch/04_torchscript_jit.ipynb
-    - 'Profiling': 05-advanced-pytorch/05_profiling.ipynb
-  - HuggingFace Transformers:
-    - 'HuggingFace Transformers': 06-huggingface-transformers/01_huggingface_transformers.ipynb
-    - 'Fine Tuning Transformers': 06-huggingface-transformers/02_fine_tuning_transformers.ipynb
+  # # Training Workflows section - covers core training concepts and practices
+  # - Training Workflows:
+  #   - 'Training Loop': 03-training-nn/01_training_loop.ipynb
+  #   - 'Optimizers Schedulers': 03-training-nn/02_optimizers_schedulers.ipynb
+  #   - 'Datasets DataLoaders': 03-training-nn/03_datasets_dataloaders.ipynb
+  #   - 'GPU Acceleration': 03-training-nn/04_gpu_acceleration.ipynb
+  #   - 'Weight Initialization': 03-training-nn/05_weight_initialization.ipynb
+  # # Transformers section - covers transformer architecture and components
+  # - Transformers:
+  #   - 'Positional Embeddings': 04-transformers/01_positional_embeddings.ipynb
+  #   - 'Attention Mechanism': 04-transformers/02_attention_mechanism.ipynb
+  #   - 'Multi-Head Attention': 04-transformers/03_multi_head_attention.ipynb
+  #   - 'Other Attention Implementations': 04-transformers/04_other_attention_implementations.ipynb
+  #   - 'Transformer Encoder': 04-transformers/05_transformer_encoder.ipynb
+  # # Advanced PyTorch section - covers advanced concepts and optimization techniques
+  # - Advanced PyTorch:
+  #   - 'Hooks': 05-advanced-pytorch/01_hooks.ipynb
+  #   - 'Distributed Training Concepts': 05-advanced-pytorch/02_distributed_training_concepts.ipynb
+  #   - 'Model Optimization Concepts': 05-advanced-pytorch/03_model_optimization_concepts.ipynb
+  #   - 'Torchscript JIT': 05-advanced-pytorch/04_torchscript_jit.ipynb
+  #   - 'Profiling': 05-advanced-pytorch/05_profiling.ipynb
+  # # HuggingFace Transformers section - covers practical applications using HuggingFace
+  # - HuggingFace Transformers:
+  #   - 'HuggingFace Transformers': 06-huggingface-transformers/01_huggingface_transformers.ipynb
+  #   - 'Fine Tuning Transformers': 06-huggingface-transformers/02_fine_tuning_transformers.ipynb
 
 plugins:
   - search
