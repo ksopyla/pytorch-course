@@ -2,6 +2,23 @@
     "mcpServers": {
       "notebook_mcp": {
         "url": "http://localhost:8080/sse"
+      }, 
+      "github": {
+        "command": "docker",
+        "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "-e",
+        "GITHUB_TOOLSETS",
+        "ghcr.io/github/github-mcp-server"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "REDACTED_TOKEN",
+        "GITHUB_TOOLSETS":"repos,issues,pull_requests"
       }
     }
   }
+}

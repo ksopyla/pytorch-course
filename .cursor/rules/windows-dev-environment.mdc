@@ -21,3 +21,7 @@ Executable:     C:\Users\krzys\AppData\Local\pypoetry\Cache\virtualenvs\pytorch-
 Valid:          True
 
 ```
+
+Poject is hosted with use of github pages and the deployment is done via github actions defined in [mkdocs-build.yml](mdc:.github/workflows/mkdocs-build.yml)
+Course Url: https://pytorchcourse.com 
+Github repository url: https://github.com/ksopyla/pytorch-course
