@@ -23,7 +23,6 @@ theme:
         name: Switch to light mode
 
 nav:
-  - Home: index.md
   - Getting Started:
     - 'PyTorch Course Structure': pytorch-course-structure.md
     - 'Windows Environment Installation': 00-getting-started/windows-pytorch-installation.md
@@ -43,7 +42,7 @@ nav:
     - 'Autograd': 01-tensors/09_autograd.ipynb
     - 'Gradient Accumulation': 01-tensors/10_gradient_accumulation.ipynb
   - NN building blocks:
-    - 'nn.Module': 02-torch-nn/01_nn_module.ipynb
+    - 'PyTorch nn.Module': 02-torch-nn/01_nn_module.ipynb
     - 'Compose Modules': 02-torch-nn/02_compose_modules.ipynb
     - 'Saving Weights': 02-torch-nn/03_saving_weights.ipynb
     - 'Linear Layer': 02-torch-nn/04_linear_layer.ipynb
