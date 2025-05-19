@@ -16,7 +16,7 @@
         "ghcr.io/github/github-mcp-server"
       ],
       "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "REDACTED_TOKEN",
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "github_pat_xxx",
         "GITHUB_TOOLSETS":"repos,issues,pull_requests"
       }
     }
