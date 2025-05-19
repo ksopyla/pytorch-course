@@ -63,7 +63,7 @@ nav:
   #   - 'Optimizers Schedulers': 03-training-nn/02_optimizers_schedulers.ipynb
   #   - 'Datasets DataLoaders': 03-training-nn/03_datasets_dataloaders.ipynb
   #   - 'GPU Acceleration': 03-training-nn/04_gpu_acceleration.ipynb
-  #   - 'Weight Initialization': 03-training-nn/05_weight_initialization.ipynb
+  #   - 'Training Optimization': 03-training-nn/05_training_optimization.ipynb
   # # Transformers section - covers transformer architecture and components
   # - Transformers:
   #   - 'Positional Embeddings': 04-transformers/01_positional_embeddings.ipynb

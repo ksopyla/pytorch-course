@@ -153,7 +153,7 @@ What you will learn:
 3. [Interpreting Reduction Modes](02-torch-nn/14_interpreting_reduction_modes.ipynb) - Interpreting reduction modes and ignore indices.
 
 
-
+<!-- 
 ## Module 3: Training Workflows
 Turn static graphs into learning machines by mastering data pipelines, loops, and monitoring tools.
 
@@ -199,13 +199,14 @@ What you will learn:
 
 
 
-### 3.5 Weight Initialisation  
+### 3.5 Training Optimization  
 What you will learn:
-- Why initial values matter.  
-- Xavier (Glorot), Kaiming, and custom strategies.  
+- Training with mixed precision: float32, float16, bfloat16, int8, etc.
+- Using gradient accumulation to train on larger batch sizes.
+- torch.compile to speed up training. 
 
 #### 3.5 Lessons:
-1. [Weight Initialization](03-training-nn/05_weight_initialization.ipynb) - todo
+1. [Training Optimization](03-training-nn/05_training_optimization.ipynb) - todo
 
 
 
@@ -328,3 +329,5 @@ What you will learn:
 
 #### 6.2 Lessons:
 1. [Fine Tuning Transformers](06-huggingface-transformers/02_fine_tuning_transformers.ipynb)
+ 
+ -->
