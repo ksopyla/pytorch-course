@@ -1,19 +1,19 @@
 # Module 1 – I See Tensors Everywhere 🕶️
 
-> “There **is** no spoon – there are only tensors.” — *Neo, probably*
+> “Behold, fledgling datanauts! The world is naught but tensors awaiting my command — and soon, *yours*! ” — **Professor Victor Py Torchenstein**
 
-Welcome to the tensor dojo! By cracking open this module you've officially taken the red-pill of deep-learning. From here on out you'll recognise that every pixel, every token, every click-through rate is secretly a multidimensional array begging to be `torch.tensor`-ed.
+Salutations, my brilliant (and delightfully reckless) apprentices! By opening this manuscript you have volunteered to join my clandestine legion of PyTorch adepts. Consider this your official red-pill moment: from today every pixel, every token, every measly click-through rate shall reveal its true form—a multidimensional array begging to be `torch.tensor`-ed … and we shall oblige it with maniacal glee! *Mwahaha!* 🔥🧪
 
 ![pytorch tensors everywhere](../assets/meme_tensors_everywhere.jpg)
 
-In the next few notebooks we'll summon tensors from thin air, slice them like sushi, bend their shapes like a data-wizard and let autograd do the calculus heavy-lifting while we sip ☕. By the end you'll be able to:
+Over the next notebooks we will:
 
-- Create tensors out of numbers, NumPy arrays and pure chaotic randomness.
-- Shape-shift them with `view`, `reshape`, `squeeze`, `unsqueeze`, `permute` & friends.
-- Crunch serious maths – from element-wise hijinks to the matrix multiplications that power Transformers.
-- Charm the GPU, dodge gradient explosions 🏃‍♂️💥, and generally look **very** clever in front of your friends.
+- Conjure tensors from thin air, coffee grounds, and suspiciously random seeds.
+- Shape-shift them with `view`, `reshape`, `squeeze`, `unsqueeze`, `permute` & the occasional dramatic flourish of `einops`.
+- Crunch mathematics so ferocious it makes matrix multiplications whimper — and powers mighty Transformers.
+- Charm the GPU, dodge gradient explosions 🏃‍♂️💥, and look **diabolically** clever while doing it.
 
-## Lesson Checklist
+## Minion Mission Checklist 📝
 
 1. [Introduction to Tensors](01_introduction_to_tensors.ipynb)
 2. [Tensor Manipulation](02_tensor_manipulation.ipynb)
@@ -26,4 +26,4 @@ In the next few notebooks we'll summon tensors from thin air, slice them like su
 9. [Autograd](09_autograd.ipynb)
 10. [Gradient Accumulation](10_gradient_accumulation.ipynb)
 
-Feeling brave? The official PyTorch docs are just a click away (<https://pytorch.org/docs/stable/torch.html?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=module-1-intro>). But for now grab your favourite beverage and let's **tensor-ify** the universe! 🚀
+Need auxiliary scrolls? The *official* PyTorch docs lurk here (<https://pytorch.org/docs/stable/torch.html?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=module-1-intro>), but do not tarry too long—our grand tensor-domination awaits. Grab your favoured caffeinated concoction and let us **tensor-ify** the universe! 🚀
