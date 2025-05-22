@@ -10,22 +10,28 @@
       
       
       
+        <link rel="canonical" href="https://pytorchcourse.com/01-tensors/00_module_1_introduction/">
       
       
+        <link rel="prev" href="../../00-getting-started/01_hello_pytorch/">
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      
+        <link rel="next" href="../01_introduction_to_tensors/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>PyTorch Course</title>
+        <title>Module 1 - PyTorch Course</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,7 +50,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#module-1-i-see-tensors-everywhere" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -79,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="PyTorch Course" class="md-header__button md-logo" aria-label="PyTorch Course" data-md-component="logo">
+    <a href="../.." title="PyTorch Course" class="md-header__button md-logo" aria-label="PyTorch Course" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -99,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Module 1
             
           </span>
         </div>
@@ -212,7 +223,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/pytorch-course-structure/" class="md-tabs__link">
+        <a href="../../pytorch-course-structure/" class="md-tabs__link">
           
   
   
@@ -228,11 +239,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/01-tensors/00_module_1_introduction/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -252,7 +265,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/02-torch-nn/00_module_2_introduction/" class="md-tabs__link">
+        <a href="../../02-torch-nn/00_module_2_introduction/" class="md-tabs__link">
           
   
   
@@ -286,7 +299,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="PyTorch Course" class="md-nav__button md-logo" aria-label="PyTorch Course" data-md-component="logo">
+    <a href="../.." title="PyTorch Course" class="md-nav__button md-logo" aria-label="PyTorch Course" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -357,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pytorch-course-structure/" class="md-nav__link">
+      <a href="../../pytorch-course-structure/" class="md-nav__link">
         
   
   
@@ -380,7 +393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/00-getting-started/windows-pytorch-installation/" class="md-nav__link">
+      <a href="../../00-getting-started/windows-pytorch-installation/" class="md-nav__link">
         
   
   
@@ -403,7 +416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/00-getting-started/linux-pytorch-installation/" class="md-nav__link">
+      <a href="../../00-getting-started/linux-pytorch-installation/" class="md-nav__link">
         
   
   
@@ -426,7 +439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/00-getting-started/macos-pytorch-installation/" class="md-nav__link">
+      <a href="../../00-getting-started/macos-pytorch-installation/" class="md-nav__link">
         
   
   
@@ -449,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/00-getting-started/google-colab-setup/" class="md-nav__link">
+      <a href="../../00-getting-started/google-colab-setup/" class="md-nav__link">
         
   
   
@@ -472,7 +485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/00-getting-started/01_hello_pytorch/" class="md-nav__link">
+      <a href="../../00-getting-started/01_hello_pytorch/" class="md-nav__link">
         
   
   
@@ -499,24 +512,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -529,7 +547,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Tensors
@@ -540,10 +558,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/01-tensors/00_module_1_introduction/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Module 1
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -554,6 +594,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#minion-mission-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minion Mission Checklist 📝
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -566,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-tensors/01_introduction_to_tensors/" class="md-nav__link">
+      <a href="../01_introduction_to_tensors/" class="md-nav__link">
         
   
   
@@ -589,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-tensors/02_tensor_manipulation/" class="md-nav__link">
+      <a href="../02_tensor_manipulation/" class="md-nav__link">
         
   
   
@@ -612,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-tensors/03_data_types_and_devices/" class="md-nav__link">
+      <a href="../03_data_types_and_devices/" class="md-nav__link">
         
   
   
@@ -635,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-tensors/04_tensor_math_operations/" class="md-nav__link">
+      <a href="../04_tensor_math_operations/" class="md-nav__link">
         
   
   
@@ -658,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-tensors/05_matrix_multiplication/" class="md-nav__link">
+      <a href="../05_matrix_multiplication/" class="md-nav__link">
         
   
   
@@ -681,7 +750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-tensors/06_broadcasting/" class="md-nav__link">
+      <a href="../06_broadcasting/" class="md-nav__link">
         
   
   
@@ -704,7 +773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-tensors/07_einstein_summation/" class="md-nav__link">
+      <a href="../07_einstein_summation/" class="md-nav__link">
         
   
   
@@ -727,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-tensors/08_advanced_einstein_summation/" class="md-nav__link">
+      <a href="../08_advanced_einstein_summation/" class="md-nav__link">
         
   
   
@@ -750,7 +819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-tensors/09_autograd/" class="md-nav__link">
+      <a href="../09_autograd/" class="md-nav__link">
         
   
   
@@ -773,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-tensors/10_gradient_accumulation/" class="md-nav__link">
+      <a href="../10_gradient_accumulation/" class="md-nav__link">
         
   
   
@@ -844,7 +913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-torch-nn/00_module_2_introduction/" class="md-nav__link">
+      <a href="../../02-torch-nn/00_module_2_introduction/" class="md-nav__link">
         
   
   
@@ -867,7 +936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-torch-nn/01_nn_module/" class="md-nav__link">
+      <a href="../../02-torch-nn/01_nn_module/" class="md-nav__link">
         
   
   
@@ -890,7 +959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-torch-nn/02_compose_modules/" class="md-nav__link">
+      <a href="../../02-torch-nn/02_compose_modules/" class="md-nav__link">
         
   
   
@@ -913,7 +982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-torch-nn/03_saving_weights/" class="md-nav__link">
+      <a href="../../02-torch-nn/03_saving_weights/" class="md-nav__link">
         
   
   
@@ -936,7 +1005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-torch-nn/04_linear_layer/" class="md-nav__link">
+      <a href="../../02-torch-nn/04_linear_layer/" class="md-nav__link">
         
   
   
@@ -959,7 +1028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-torch-nn/05_activations/" class="md-nav__link">
+      <a href="../../02-torch-nn/05_activations/" class="md-nav__link">
         
   
   
@@ -982,7 +1051,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-torch-nn/06_dropout/" class="md-nav__link">
+      <a href="../../02-torch-nn/06_dropout/" class="md-nav__link">
         
   
   
@@ -1005,7 +1074,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-torch-nn/07_embedding_layers/" class="md-nav__link">
+      <a href="../../02-torch-nn/07_embedding_layers/" class="md-nav__link">
         
   
   
@@ -1028,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-torch-nn/08_positional_encoding/" class="md-nav__link">
+      <a href="../../02-torch-nn/08_positional_encoding/" class="md-nav__link">
         
   
   
@@ -1051,7 +1120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-torch-nn/09_normalization_layers/" class="md-nav__link">
+      <a href="../../02-torch-nn/09_normalization_layers/" class="md-nav__link">
         
   
   
@@ -1074,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-torch-nn/10_rms_norm/" class="md-nav__link">
+      <a href="../../02-torch-nn/10_rms_norm/" class="md-nav__link">
         
   
   
@@ -1097,7 +1166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-torch-nn/11_training_evaluation_mode/" class="md-nav__link">
+      <a href="../../02-torch-nn/11_training_evaluation_mode/" class="md-nav__link">
         
   
   
@@ -1120,7 +1189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-torch-nn/12_loss_functions/" class="md-nav__link">
+      <a href="../../02-torch-nn/12_loss_functions/" class="md-nav__link">
         
   
   
@@ -1143,7 +1212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-torch-nn/13_prepare_inputs_targets/" class="md-nav__link">
+      <a href="../../02-torch-nn/13_prepare_inputs_targets/" class="md-nav__link">
         
   
   
@@ -1166,7 +1235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-torch-nn/14_interpreting_reduction_modes/" class="md-nav__link">
+      <a href="../../02-torch-nn/14_interpreting_reduction_modes/" class="md-nav__link">
         
   
   
@@ -1206,6 +1275,25 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#minion-mission-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minion Mission Checklist 📝
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1217,8 +1305,53 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="module-1-i-see-tensors-everywhere">Module 1 – I See Tensors Everywhere 🕶️</h1>
+<blockquote>
+<p>“Behold, fledgling datanauts! The world is naught but tensors awaiting my command — and soon, <em>yours</em>! ” — <strong>Professor Victor Py Torchenstein</strong></p>
+</blockquote>
+<p>Salutations, my brilliant (and delightfully reckless) apprentices! By opening this manuscript you have volunteered to join my clandestine legion of PyTorch adepts. Consider this your official red-pill moment: from today every pixel, every token, every measly click-through rate shall reveal its true form—a multidimensional array begging to be <code>torch.tensor</code>-ed … and we shall oblige it with maniacal glee! <em>Mwahaha!</em> 🔥🧪</p>
+<p><img alt="pytorch tensors everywhere" src="../../assets/meme_tensors_everywhere.jpg" /></p>
+<p>Over the next notebooks we will:</p>
+<ul>
+<li>Conjure tensors from thin air, coffee grounds, and suspiciously random seeds.</li>
+<li>Shape-shift them with <code>view</code>, <code>reshape</code>, <code>squeeze</code>, <code>unsqueeze</code>, <code>permute</code> &amp; the occasional dramatic flourish of <code>einops</code>.</li>
+<li>Crunch mathematics so ferocious it makes matrix multiplications whimper — and powers mighty Transformers.</li>
+<li>Charm the GPU, dodge gradient explosions 🏃‍♂️💥, and look <strong>diabolically</strong> clever while doing it.</li>
+</ul>
+<h2 id="minion-mission-checklist">Minion Mission Checklist 📝</h2>
+<ol>
+<li><a href="../01_introduction_to_tensors/">Introduction to Tensors</a></li>
+<li><a href="../02_tensor_manipulation/">Tensor Manipulation</a></li>
+<li><a href="../03_data_types_and_devices/">Data Types &amp; Devices</a></li>
+<li><a href="../04_tensor_math_operations/">Tensor Math Operations</a></li>
+<li><a href="../05_matrix_multiplication/">Matrix Multiplication</a></li>
+<li><a href="../06_broadcasting/">Broadcasting</a></li>
+<li><a href="../07_einstein_summation/">Einstein Summation</a></li>
+<li><a href="../08_advanced_einstein_summation/">Advanced Einstein Summation</a></li>
+<li><a href="../09_autograd/">Autograd</a></li>
+<li><a href="../10_gradient_accumulation/">Gradient Accumulation</a></li>
+</ol>
+<p>Need auxiliary scrolls? The <em>official</em> PyTorch docs lurk here (<a href="https://pytorch.org/docs/stable/torch.html?utm_source=pytorchcourse.com&amp;utm_medium=pytorch-course&amp;utm_campaign=module-1-intro">https://pytorch.org/docs/stable/torch.html?utm_source=pytorchcourse.com&amp;utm_medium=pytorch-course&amp;utm_campaign=module-1-intro</a>), but do not tarry too long—our grand tensor-domination awaits. Grab your favoured caffeinated concoction and let us <strong>tensor-ify</strong> the universe! 🚀</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1260,10 +1393,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "navigation.top", "search.highlight"], "search": "/assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "search.highlight"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>

@@ -243,7 +243,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../01-tensors/01_introduction_to_tensors/" class="md-tabs__link">
+        <a href="../01-tensors/00_module_1_introduction/" class="md-tabs__link">
           
   
   
@@ -263,7 +263,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../02-torch-nn/01_nn_module/" class="md-tabs__link">
+        <a href="../02-torch-nn/00_module_2_introduction/" class="md-tabs__link">
           
   
   
@@ -871,6 +871,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../01-tensors/00_module_1_introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Module 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../01-tensors/01_introduction_to_tensors/" class="md-nav__link">
         
   
@@ -1141,6 +1164,29 @@
             NN building blocks
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-torch-nn/00_module_2_introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Module 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1787,22 +1833,26 @@
 
 
 <h1 id="pytorch-course-deconstructing-modern-architectures">PyTorch Course: Deconstructing Modern Architectures</h1>
-<p>Course Goal: To provide a deep and essential understanding of PyTorch building blocks and their practical application in designing, understanding, and implementing modern Transformer and Diffusion-based neural network architectures.</p>
-<p>Learner level: Beginner - Advanced</p>
+<p>Course Goal: To imbue you—my fearless apprentices—with the eldritch secrets of PyTorch building blocks, enabling you to conjure, dissect, and ultimately <em>command</em> modern neural network architectures like Transformers and Diffusion models.</p>
+<p>Learner level: Beginner - Advanced
+Prerequisite Madness: None! Whether you are a fresh-faced initiate or a seasoned GPU warlock, the lab doors stand open. ⚡️🧪</p>
 <h2 id="module-0-getting-started-with-pytorch">Module 0: Getting Started with PyTorch</h2>
-<p>This module ensures learners have a working PyTorch environment and a first taste of its capabilities.</p>
+<p>Before we unleash neural monstrosities upon the world, we must ignite your development lair. This module guides you through preparing PyTorch on any operating system—so your GPUs purr at your command.</p>
 <p>What you will learn:
 1. How to setup a PyTorch environment for different operating systems and test it.</p>
 <h3 id="lessons">Lessons:</h3>
 <ol>
-<li><a href="./">PyTorch Course Structure</a> - this page, course aim and structure, guide through </li>
-<li>Setting Up Your PyTorch Environments:
-    1.<a href="../00-getting-started/windows-pytorch-installation/">Setting Up windows dev environment</a> - create a windows dev environment with windows pyenv and poetry, install main dependencies with and without GPU support
-    2.<a href="../00-getting-started/linux-pytorch-installation/">Setting Up linux dev environment</a> - create a Ubuntu dev environment with linux pyenv and poetry, install main dependencies with and without GPU support
-    3.<a href="../00-getting-started/macos-pytorch-installation/">Setting Up macos dev environment</a> - create a macos dev environment with macos pyenv and poetry, install main dependencies with and without GPU support
-    4.<a href="../00-getting-started/google-colab-setup/">Setting Up google colab</a> - create a google colab dev environment with google colab</li>
+<li><a href="./">Course Schematic for World Domination</a> - The master blueprint of our curriculum—study it well, minion!</li>
+<li>Setting Up Your PyTorch Environments:<ol>
+<li><a href="../00-getting-started/windows-pytorch-installation/">Windows Lair Construction</a> - Forge a Windows stronghold with <code>pyenv</code> + <code>poetry</code>; make GPUs bend the knee, driver or no.</li>
+<li><a href="../00-getting-started/linux-pytorch-installation/">Linux Lair Construction</a> - Harness the raw might of Ubuntu for unfettered tensor experimentation.</li>
+<li><a href="../00-getting-started/macos-pytorch-installation/">macOS Lair Construction</a> - Coax Apple silicon beasts into righteous PyTorch servitude.</li>
+<li><a href="../00-getting-started/google-colab-setup/">Colab Cloud Lair</a> - Seize Google's sky-high GPUs for zero coin—mwahaha!</li>
+</ol>
+</li>
 </ol>
 <h2 id="module-1-pytorch-core-i-see-tensors-everywhere">Module 1: PyTorch Core - I see tensors everywhere</h2>
+<p>Here we unveil the truth: the cosmos is a writhing mass of tensors awaiting our manipulation. Grasp them well—for they are the bedrock of every grand scheme to come!</p>
 <p>This module dives into the fundamental components of PyTorch, essential for any deep learning task.</p>
 <p><img alt="pytroch tensors everywhere" src="../assets/meme_tensors_everywhere.jpg" />{width=500 height=300, align=center}</p>
 <!-- 
@@ -1820,9 +1870,9 @@
 </ol>
 <h4 id="11-lessons">1.1 Lessons:</h4>
 <ol>
-<li><a href="../01-tensors/01_introduction_to_tensors/">Introduction to Tensors</a> - Introduction to tensors, their properties, and their importance in machine learning.  Creating tensors (from lists, NumPy, torch.rand, torch.zeros, torch.ones, torch.arange, torch.linspace). How to check their attributes and shapes.</li>
-<li><a href="../01-tensors/02_tensor_manipulation/">Tensor manipulation</a> - Indexing, Slicing, Joining (torch.cat, torch.stack), Splitting. Manipulating tensor shapes (reshape, view, squeeze, unsqueeze, permute, transpose).</li>
-<li><a href="../01-tensors/03_data_types_and_devices/">Data Types and Devices</a> - Importance of data types (float32, float16, bfloat16, int64 etc.). CPU vs. GPU computations. Checking and changing dtype. Moving tensors between devices (.to(device), .cpu(), .cuda()). Best practices for mixed-precision training (conceptual introduction). Implications of data types on memory and speed.</li>
+<li><a href="../01-tensors/01_introduction_to_tensors/">Summoning Your First Tensors</a> - Conjure tensors from void, inspect their properties, revel in their latent might (with a bit of help from <code>torch.randn</code>, <code>torch.zeros</code>, <code>torch.ones</code>, <code>torch.arange</code>, <code>torch.linspace</code> etc).</li>
+<li><a href="../01-tensors/02_tensor_manipulation/">Tensor Shape-Shifting &amp; Sorcery</a> - Slice, squeeze, and permute dimensions until reality warps to your whims (with a bit of help from <code>torch.cat</code>, <code>torch.stack</code>, <code>torch.split</code>, <code>torch.reshape</code>, <code>torch.view</code>, <code>torch.squeeze</code>, <code>torch.unsqueeze</code>, <code>torch.permute</code>, <code>torch.transpose</code> etc).</li>
+<li><a href="../01-tensors/03_data_types_and_devices/">DTypes &amp; Devices: Choose Your Weapons</a> - Select precision and hardware like a seasoned archmage choosing spell components, under the hood of <code>torch.float</code>, <code>torch.float16</code>, etc.</li>
 </ol>
 <h3 id="12-tensor-operations-computation-at-scale">1.2 Tensor Operations: Computation at Scale</h3>
 <p>What you will learn:</p>
@@ -1831,13 +1881,9 @@
 </ol>
 <h4 id="12-lessons">1.2 Lessons:</h4>
 <ol>
-<li>
-<p><a href="../01-tensors/04_tensor_math_operations/">Tensor Math Operations</a> - Overview of tensor math. Element-wise operations. Reduction operations across dimensions (sum, mean, max, min, std). </p>
-</li>
-<li>
-<p><a href="../01-tensors/05_matrix_multiplication/">Matrix Multiplication</a> - 2D matrix multiplication (torch.mm, torch.matmul, @ operator). Batch matrix multiplication (torch.bmm).</p>
-</li>
-<li><a href="../01-tensors/06_broadcasting/">Broadcasting</a> - Broadcasting rules with practical examples across different dimensions. Broadcast math operations and vector or matrix multiplications.</li>
+<li><a href="../01-tensors/04_tensor_math_operations/">Elemental Tensor Alchemy</a> - Brew element-wise, reduction, and other operations into potent mathematical elixirs.</li>
+<li><a href="../01-tensors/05_matrix_multiplication/">Matrix Mayhem: Multiply or Perish</a> - Orchestrate 2-D, batched, and high-dimensional multiplications with lethal elegance.</li>
+<li><a href="../01-tensors/06_broadcasting/">Broadcasting: When Dimensions Bow to You</a> - Command mismatched shapes to cooperate through the dark art of implicit expansion.</li>
 </ol>
 <h3 id="13-einstein-summation-the-power-of-einsum">1.3 Einstein Summation: The Power of einsum</h3>
 <p>What you will learn:</p>
@@ -1846,8 +1892,8 @@
 </ol>
 <h4 id="13-lessons">1.3 Lessons:</h4>
 <ol>
-<li><a href="../01-tensors/07_einstein_summation/">Einstein Summation</a> - Simple einsum examples (vector dot product, matrix multiplication, transpose).</li>
-<li><a href="../01-tensors/08_advanced_einstein_summation/">Advanced Einstein Summation</a> - einsum for more complex operations like batch matrix multiplication, tensor contractions relevant to attention mechanisms. Examples with dimensions mirroring those in Transformers.</li>
+<li><a href="../01-tensors/07_einstein_summation/">Einstein Summation: Harness the Λ-Power</a> - Invoke <code>einsum</code> to express complex ops with maddening brevity.</li>
+<li><a href="../01-tensors/08_advanced_einstein_summation/">Advanced Einsum Incantations</a> - Wield multi-tensor contractions that underpin attention itself.</li>
 </ol>
 <h3 id="14-autograd-automatic-differentiation">1.4 Autograd: Automatic Differentiation</h3>
 <p>What you will learn:</p>
@@ -1858,11 +1904,11 @@
 </ol>
 <h4 id="14-lessons">1.4 Lessons:</h4>
 <ol>
-<li><a href="../01-tensors/09_autograd/">Autograd</a> - What are gradients? The computational graph. How PyTorch tracks operations.</li>
-<li><a href="../01-tensors/10_gradient_accumulation/">Gradient Accumulation</a> - Gradient accumulation. Potential pitfalls. Visualizing computational graphs (conceptually).</li>
+<li><a href="../01-tensors/09_autograd/">Autograd: Ghosts in the Machine (Learning)</a> - Meet the spectral gradient trackers haunting every tensor operation.</li>
+<li><a href="../01-tensors/10_gradient_accumulation/">Gradient Hoarding for Grand Spells</a> - Accumulate gradients like arcane energy before unleashing colossal updates.</li>
 </ol>
 <h2 id="module-2-torchnn-building-neural-networks">Module 2: torch.nn — Building Neural Networks</h2>
-<p>This module explores the layer-building API that powers every PyTorch model.</p>
+<p>Witness code coalescing into living, breathing neural contraptions! In this module we bend <code>torch.nn</code> to our will, assembling layers and models worthy of legend.</p>
 <h3 id="21-the-nnmodule-blueprint">2.1 The <code>nn.Module</code> Blueprint</h3>
 <p>What you will learn:
 - The role of <code>nn.Module</code> as the base class for layers and models.<br />
@@ -1872,9 +1918,9 @@
 - Saving and restoring weights with <code>state_dict</code>.</p>
 <h4 id="21-lessons">2.1 Lessons:</h4>
 <ol>
-<li><a href="../02-torch-nn/01_nn_module/">nn.Module</a> - The role of `nn.Module` as the base class for layers and models.  `<strong>init</strong>` and `forward` methods.</li>
-<li><a href="../02-torch-nn/02_compose_modules/">Compose Modules</a> - Composing modules with `nn.Sequential`, `nn.ModuleList`, and `nn.ModuleDict`.</li>
-<li><a href="../02-torch-nn/03_saving_weights/">Saving Weights</a> - Saving and restoring weights with `state_dict`.</li>
+<li><a href="../02-torch-nn/01_nn_module/">Building Brains with <code>nn.Module</code></a> - Craft custom neural matter by overriding <code>__init__</code> &amp; <code>forward</code>.</li>
+<li><a href="../02-torch-nn/02_compose_modules/">Franken-Stacking Layers</a> - Bolt modules together with <code>Sequential</code>, <code>ModuleList</code>, and <code>ModuleDict</code>.</li>
+<li><a href="../02-torch-nn/03_saving_weights/">Preserving Your Monster's Memories</a> - Save and resurrect model weights with <code>state_dict</code> necromancy.</li>
 </ol>
 <h3 id="22-linear-layer-and-activations">2.2 Linear Layer and Activations</h3>
 <p>What you will learn:
@@ -1884,9 +1930,9 @@
 - Dropout for regularisation.  </p>
 <h4 id="22-lessons">2.2 Lessons:</h4>
 <ol>
-<li><a href="../02-torch-nn/04_linear_layer/">Linear Layer</a> - Linear layer and high-dimensional matrix multiplication. How the linear layer transforms the input tensor into an output tensor.</li>
-<li><a href="../02-torch-nn/05_activations/">Activations</a> - Activation functions (ReLU, GELU, SiLU, Tanh, Softmax, etc.). </li>
-<li><a href="../02-torch-nn/06_dropout/">Dropout</a> - Dropout for regularisation.</li>
+<li><a href="../02-torch-nn/04_linear_layer/">Linear Layers: The Vector Guillotine</a> - Slice through dimensions turning inputs into finely-chopped activations.</li>
+<li><a href="../02-torch-nn/05_activations/">Activation Elixirs</a> - Re-animate neurons with ReLU, GELU, SiLU, and other zesty potions.</li>
+<li><a href="../02-torch-nn/06_dropout/">Dropout: Controlled Amnesia</a> - Make neurons forget just enough to generalise—no lobotomy required.</li>
 </ol>
 <h3 id="23-embedding-layers">2.3 Embedding Layers</h3>
 <p>What you will learn:
@@ -1895,8 +1941,8 @@
 - Positional encoding and how it is used to inject order into the model.</p>
 <h4 id="23-lessons">2.3 Lessons:</h4>
 <ol>
-<li><a href="../02-torch-nn/07_embedding_layers/">Embedding Layers</a> - Embedding layers and their purpose in neural networks. Input to embedding layer and how to interpret the output.</li>
-<li><a href="../02-torch-nn/08_positional_encoding/">Positional Encoding</a> - Positional encoding and how it is used to inject order into the model.</li>
+<li><a href="../02-torch-nn/07_embedding_layers/">Embedding Layers: Secret Identity Chips</a> - Embed discreet meanings within high-dimensional space.</li>
+<li><a href="../02-torch-nn/08_positional_encoding/">Positional Encoding: Injecting Order into Chaos</a> - Imbue sequences with a sense of place so attention never loses its bearings.</li>
 </ol>
 <h3 id="24-normalisation-layers">2.4 Normalisation Layers</h3>
 <p>What you will learn:
@@ -1905,9 +1951,9 @@
 - Training vs. evaluation mode caveats.</p>
 <h4 id="24-lessons">2.4 Lessons:</h4>
 <ol>
-<li><a href="../02-torch-nn/09_normalization_layers/">Normalization Layers</a> - what the normalisation layer does and what is the purpose of the normalisation layer. BatchNorm vs. LayerNorm and when to use each.</li>
-<li><a href="../02-torch-nn/10_rms_norm/">RMS Norm</a> - RMSNorm and other modern alternatives.</li>
-<li><a href="../02-torch-nn/11_training_evaluation_mode/">Training Evaluation Mode</a> - Training vs. evaluation mode caveats.</li>
+<li><a href="../02-torch-nn/09_normalization_layers/">Normalization: Calming the Beast</a> - Tame activations with BatchNorm and LayerNorm before they explode.</li>
+<li><a href="../02-torch-nn/10_rms_norm/">RMSNorm &amp; Other Exotic Tonics</a> - Sample contemporary concoctions for stable training.</li>
+<li><a href="../02-torch-nn/11_training_evaluation_mode/">Train vs. Eval: Split Personality Disorders</a> - Toggle modes and avoid awkward identity crises.</li>
 </ol>
 <h3 id="25-loss-functions-guiding-optimisation">2.5 Loss Functions — Guiding Optimisation</h3>
 <p>What you will learn:
@@ -1916,9 +1962,9 @@
 - Interpreting reduction modes and ignore indices.</p>
 <h4 id="25-lessons">2.5 Lessons:</h4>
 <ol>
-<li><a href="../02-torch-nn/12_loss_functions/">Loss Functions</a> - Loss functions recap, the main types of loss functions and when to use each. </li>
-<li><a href="../02-torch-nn/13_prepare_inputs_targets/">Prepare Inputs Targets</a> - Prepare inputs and targets for loss functions and outputs interpretation (logits vs. probabilities). </li>
-<li><a href="../02-torch-nn/14_interpreting_reduction_modes/">Interpreting Reduction Modes</a> - Interpreting reduction modes and ignore indices.</li>
+<li><a href="../02-torch-nn/12_loss_functions/">Loss Potions: Guiding Pain into Progress</a> - Channel model errors into gradients that sharpen intelligence.</li>
+<li><a href="../02-torch-nn/13_prepare_inputs_targets/">Preparing Sacrificial Inputs &amp; Targets</a> - Align logits and labels for maximum learning agony.</li>
+<li><a href="../02-torch-nn/14_interpreting_reduction_modes/">Reduction Rituals &amp; Ignore Indices</a> - Decipher reduction modes and skip unworthy samples without remorse.</li>
 </ol>
 <!-- 
 ## Module 3: Training Workflows
