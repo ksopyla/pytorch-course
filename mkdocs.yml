@@ -32,6 +32,7 @@ nav:
     - 'Google Colab Setup': 00-getting-started/google-colab-setup.md
     - 'Hello PyTorch': 00-getting-started/01_hello_pytorch.ipynb
   - Tensors:
+    - 'Module 1': 01-tensors/00_module_1_introduction.md
     - 'Introduction to Tensors': 01-tensors/01_introduction_to_tensors.ipynb
     - 'Tensor Manipulation': 01-tensors/02_tensor_manipulation.ipynb
     - 'Data Types and Devices': 01-tensors/03_data_types_and_devices.ipynb
@@ -43,6 +44,7 @@ nav:
     - 'Autograd': 01-tensors/09_autograd.ipynb
     - 'Gradient Accumulation': 01-tensors/10_gradient_accumulation.ipynb
   - NN building blocks:
+    - 'Module 2': 02-torch-nn/00_module_2_introduction.md
     - 'PyTorch nn.Module': 02-torch-nn/01_nn_module.ipynb
     - 'Compose Modules': 02-torch-nn/02_compose_modules.ipynb
     - 'Saving Weights': 02-torch-nn/03_saving_weights.ipynb
