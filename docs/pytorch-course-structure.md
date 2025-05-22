@@ -1,30 +1,33 @@
 # PyTorch Course: Deconstructing Modern Architectures
 
-Course Goal: To provide a deep and essential understanding of PyTorch building blocks and their practical application in designing, understanding, and implementing modern Transformer and Diffusion-based neural network architectures.
+Course Goal: To imbue you—my fearless apprentices—with the eldritch secrets of PyTorch building blocks, enabling you to conjure, dissect, and ultimately *command* modern neural network architectures like Transformers and Diffusion models.
 
 
 Learner level: Beginner - Advanced
+Prerequisite Madness: None! Whether you are a fresh-faced initiate or a seasoned GPU warlock, the lab doors stand open. ⚡️🧪
 
 
 
 ## Module 0: Getting Started with PyTorch
 
-This module ensures learners have a working PyTorch environment and a first taste of its capabilities.
+Before we unleash neural monstrosities upon the world, we must ignite your development lair. This module guides you through preparing PyTorch on any operating system—so your GPUs purr at your command.
 
 What you will learn:
 1. How to setup a PyTorch environment for different operating systems and test it.
 
 ### Lessons:
 
-1. [PyTorch Course Structure](pytorch-course-structure.md) - this page, course aim and structure, guide through 
+1. [Course Schematic for World Domination](pytorch-course-structure.md) - The master blueprint of our curriculum—study it well, minion!
 2. Setting Up Your PyTorch Environments:
-    1.[Setting Up windows dev environment](00-getting-started/windows-pytorch-installation.md) - create a windows dev environment with windows pyenv and poetry, install main dependencies with and without GPU support
-    2.[Setting Up linux dev environment](00-getting-started/linux-pytorch-installation.md) - create a Ubuntu dev environment with linux pyenv and poetry, install main dependencies with and without GPU support
-    3.[Setting Up macos dev environment](00-getting-started/macos-pytorch-installation.md) - create a macos dev environment with macos pyenv and poetry, install main dependencies with and without GPU support
-    4.[Setting Up google colab](00-getting-started/google-colab-setup.md) - create a google colab dev environment with google colab
+    1. [Windows Lair Construction](00-getting-started/windows-pytorch-installation.md) - Forge a Windows stronghold with `pyenv` + `poetry`; make GPUs bend the knee, driver or no.
+    2. [Linux Lair Construction](00-getting-started/linux-pytorch-installation.md) - Harness the raw might of Ubuntu for unfettered tensor experimentation.
+    3. [macOS Lair Construction](00-getting-started/macos-pytorch-installation.md) - Coax Apple silicon beasts into righteous PyTorch servitude.
+    4. [Colab Cloud Lair](00-getting-started/google-colab-setup.md) - Seize Google's sky-high GPUs for zero coin—mwahaha!
 
 
 ## Module 1: PyTorch Core - I see tensors everywhere
+
+Here we unveil the truth: the cosmos is a writhing mass of tensors awaiting our manipulation. Grasp them well—for they are the bedrock of every grand scheme to come!
 
 This module dives into the fundamental components of PyTorch, essential for any deep learning task.
 
@@ -45,9 +48,9 @@ What you will learn:
 
 #### 1.1 Lessons:
 
-1. [Introduction to Tensors](01-tensors/01_introduction_to_tensors.ipynb) - Introduction to tensors, their properties, and their importance in machine learning.  Creating tensors (from lists, NumPy, torch.rand, torch.zeros, torch.ones, torch.arange, torch.linspace). How to check their attributes and shapes.
-2. [Tensor manipulation](01-tensors/02_tensor_manipulation.ipynb) - Indexing, Slicing, Joining (torch.cat, torch.stack), Splitting. Manipulating tensor shapes (reshape, view, squeeze, unsqueeze, permute, transpose).
-3. [Data Types and Devices](01-tensors/03_data_types_and_devices.ipynb) - Importance of data types (float32, float16, bfloat16, int64 etc.). CPU vs. GPU computations. Checking and changing dtype. Moving tensors between devices (.to(device), .cpu(), .cuda()). Best practices for mixed-precision training (conceptual introduction). Implications of data types on memory and speed.
+1. [Summoning Your First Tensors](01-tensors/01_introduction_to_tensors.ipynb) - Conjure tensors from void, inspect their properties, revel in their latent might (with a bit of help from `torch.randn`, `torch.zeros`, `torch.ones`, `torch.arange`, `torch.linspace` etc).
+2. [Tensor Shape-Shifting & Sorcery](01-tensors/02_tensor_manipulation.ipynb) - Slice, squeeze, and permute dimensions until reality warps to your whims (with a bit of help from `torch.cat`, `torch.stack`, `torch.split`, `torch.reshape`, `torch.view`, `torch.squeeze`, `torch.unsqueeze`, `torch.permute`, `torch.transpose` etc).
+3. [DTypes & Devices: Choose Your Weapons](01-tensors/03_data_types_and_devices.ipynb) - Select precision and hardware like a seasoned archmage choosing spell components, under the hood of `torch.float`, `torch.float16`, etc.
 
 
 ### 1.2 Tensor Operations: Computation at Scale
@@ -57,10 +60,9 @@ What you will learn:
 
 #### 1.2 Lessons:
 
-1. [Tensor Math Operations](01-tensors/04_tensor_math_operations.ipynb) - Overview of tensor math. Element-wise operations. Reduction operations across dimensions (sum, mean, max, min, std). 
-
-2. [Matrix Multiplication](01-tensors/05_matrix_multiplication.ipynb) - 2D matrix multiplication (torch.mm, torch.matmul, @ operator). Batch matrix multiplication (torch.bmm).
-3. [Broadcasting](01-tensors/06_broadcasting.ipynb) - Broadcasting rules with practical examples across different dimensions. Broadcast math operations and vector or matrix multiplications.
+1. [Elemental Tensor Alchemy](01-tensors/04_tensor_math_operations.ipynb) - Brew element-wise, reduction, and other operations into potent mathematical elixirs.
+2. [Matrix Mayhem: Multiply or Perish](01-tensors/05_matrix_multiplication.ipynb) - Orchestrate 2-D, batched, and high-dimensional multiplications with lethal elegance.
+3. [Broadcasting: When Dimensions Bow to You](01-tensors/06_broadcasting.ipynb) - Command mismatched shapes to cooperate through the dark art of implicit expansion.
 
 
 ### 1.3 Einstein Summation: The Power of einsum
@@ -70,8 +72,8 @@ What you will learn:
 
 #### 1.3 Lessons:
 
-1. [Einstein Summation](01-tensors/07_einstein_summation.ipynb) - Simple einsum examples (vector dot product, matrix multiplication, transpose).
-2. [Advanced Einstein Summation](01-tensors/08_advanced_einstein_summation.ipynb) - einsum for more complex operations like batch matrix multiplication, tensor contractions relevant to attention mechanisms. Examples with dimensions mirroring those in Transformers.
+1. [Einstein Summation: Harness the Λ-Power](01-tensors/07_einstein_summation.ipynb) - Invoke `einsum` to express complex ops with maddening brevity.
+2. [Advanced Einsum Incantations](01-tensors/08_advanced_einstein_summation.ipynb) - Wield multi-tensor contractions that underpin attention itself.
    
 
 ### 1.4 Autograd: Automatic Differentiation
@@ -83,13 +85,13 @@ What you will learn:
 
 #### 1.4 Lessons:
 
-1. [Autograd](01-tensors/09_autograd.ipynb) - What are gradients? The computational graph. How PyTorch tracks operations.
-2. [Gradient Accumulation](01-tensors/10_gradient_accumulation.ipynb) - Gradient accumulation. Potential pitfalls. Visualizing computational graphs (conceptually).
+1. [Autograd: Ghosts in the Machine (Learning)](01-tensors/09_autograd.ipynb) - Meet the spectral gradient trackers haunting every tensor operation.
+2. [Gradient Hoarding for Grand Spells](01-tensors/10_gradient_accumulation.ipynb) - Accumulate gradients like arcane energy before unleashing colossal updates.
 
 
 
 ## Module 2: torch.nn — Building Neural Networks
-This module explores the layer-building API that powers every PyTorch model.
+Witness code coalescing into living, breathing neural contraptions! In this module we bend `torch.nn` to our will, assembling layers and models worthy of legend.
 
 ### 2.1 The `nn.Module` Blueprint  
 
@@ -101,9 +103,9 @@ What you will learn:
 - Saving and restoring weights with `state_dict`.
 
 #### 2.1 Lessons:
-1. [nn.Module](02-torch-nn/01_nn_module.ipynb) - The role of \`nn.Module\` as the base class for layers and models.  \`__init__\` and \`forward\` methods.
-2. [Compose Modules](02-torch-nn/02_compose_modules.ipynb) - Composing modules with \`nn.Sequential\`, \`nn.ModuleList\`, and \`nn.ModuleDict\`.
-3. [Saving Weights](02-torch-nn/03_saving_weights.ipynb) - Saving and restoring weights with \`state_dict\`.
+1. [Building Brains with `nn.Module`](02-torch-nn/01_nn_module.ipynb) - Craft custom neural matter by overriding `__init__` & `forward`.
+2. [Franken-Stacking Layers](02-torch-nn/02_compose_modules.ipynb) - Bolt modules together with `Sequential`, `ModuleList`, and `ModuleDict`.
+3. [Preserving Your Monster's Memories](02-torch-nn/03_saving_weights.ipynb) - Save and resurrect model weights with `state_dict` necromancy.
 
 ### 2.2 Linear Layer and Activations  
 
@@ -114,9 +116,9 @@ What you will learn:
 - Dropout for regularisation.  
 
 #### 2.2 Lessons:
-1. [Linear Layer](02-torch-nn/04_linear_layer.ipynb) - Linear layer and high-dimensional matrix multiplication. How the linear layer transforms the input tensor into an output tensor.
-2. [Activations](02-torch-nn/05_activations.ipynb) - Activation functions (ReLU, GELU, SiLU, Tanh, Softmax, etc.). 
-3. [Dropout](02-torch-nn/06_dropout.ipynb) - Dropout for regularisation.
+1. [Linear Layers: The Vector Guillotine](02-torch-nn/04_linear_layer.ipynb) - Slice through dimensions turning inputs into finely-chopped activations.
+2. [Activation Elixirs](02-torch-nn/05_activations.ipynb) - Re-animate neurons with ReLU, GELU, SiLU, and other zesty potions.
+3. [Dropout: Controlled Amnesia](02-torch-nn/06_dropout.ipynb) - Make neurons forget just enough to generalise—no lobotomy required.
 
 
 ### 2.3 Embedding Layers 
@@ -126,8 +128,8 @@ What you will learn:
 - Positional encoding and how it is used to inject order into the model.
 
 #### 2.3 Lessons:
-1. [Embedding Layers](02-torch-nn/07_embedding_layers.ipynb) - Embedding layers and their purpose in neural networks. Input to embedding layer and how to interpret the output.
-2. [Positional Encoding](02-torch-nn/08_positional_encoding.ipynb) - Positional encoding and how it is used to inject order into the model.
+1. [Embedding Layers: Secret Identity Chips](02-torch-nn/07_embedding_layers.ipynb) - Embed discreet meanings within high-dimensional space.
+2. [Positional Encoding: Injecting Order into Chaos](02-torch-nn/08_positional_encoding.ipynb) - Imbue sequences with a sense of place so attention never loses its bearings.
 
 ### 2.4 Normalisation Layers
 
@@ -137,9 +139,9 @@ What you will learn:
 - Training vs. evaluation mode caveats.
 
 #### 2.4 Lessons:
-1. [Normalization Layers](02-torch-nn/09_normalization_layers.ipynb) - what the normalisation layer does and what is the purpose of the normalisation layer. BatchNorm vs. LayerNorm and when to use each.
-2. [RMS Norm](02-torch-nn/10_rms_norm.ipynb) - RMSNorm and other modern alternatives.
-3. [Training Evaluation Mode](02-torch-nn/11_training_evaluation_mode.ipynb) - Training vs. evaluation mode caveats.
+1. [Normalization: Calming the Beast](02-torch-nn/09_normalization_layers.ipynb) - Tame activations with BatchNorm and LayerNorm before they explode.
+2. [RMSNorm & Other Exotic Tonics](02-torch-nn/10_rms_norm.ipynb) - Sample contemporary concoctions for stable training.
+3. [Train vs. Eval: Split Personality Disorders](02-torch-nn/11_training_evaluation_mode.ipynb) - Toggle modes and avoid awkward identity crises.
 
 ### 2.5 Loss Functions — Guiding Optimisation  
 What you will learn:
@@ -148,9 +150,9 @@ What you will learn:
 - Interpreting reduction modes and ignore indices.
 
 #### 2.5 Lessons:
-1. [Loss Functions](02-torch-nn/12_loss_functions.ipynb) - Loss functions recap, the main types of loss functions and when to use each. 
-2. [Prepare Inputs Targets](02-torch-nn/13_prepare_inputs_targets.ipynb) - Prepare inputs and targets for loss functions and outputs interpretation (logits vs. probabilities). 
-3. [Interpreting Reduction Modes](02-torch-nn/14_interpreting_reduction_modes.ipynb) - Interpreting reduction modes and ignore indices.
+1. [Loss Potions: Guiding Pain into Progress](02-torch-nn/12_loss_functions.ipynb) - Channel model errors into gradients that sharpen intelligence.
+2. [Preparing Sacrificial Inputs & Targets](02-torch-nn/13_prepare_inputs_targets.ipynb) - Align logits and labels for maximum learning agony.
+3. [Reduction Rituals & Ignore Indices](02-torch-nn/14_interpreting_reduction_modes.ipynb) - Decipher reduction modes and skip unworthy samples without remorse.
 
 
 <!-- 
