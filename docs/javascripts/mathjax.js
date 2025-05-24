@@ -9,9 +9,8 @@ window.MathJax = {
     // processClass: "tex2jax_process|arithmatex" // If Arithmatex output needs explicit processing
   },
   options: {
-    // Ensure MathJax processes elements produced by the Arithmatex Markdown extension
+    // Process the whole document (except elements explicitly ignored)
     ignoreHtmlClass: "tex2jax_ignore", // elements with this class will be ignored
-    processHtmlClass: "arithmatex",      // only process elements (and descendants) that carry this class
     // Keeping options minimal for now
   },
   startup: {
