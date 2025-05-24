@@ -12,6 +12,7 @@ theme:
     - navigation.top
     - search.highlight
     - navigation.tracking     # Track reading progress in URL
+    - announce.dismiss
   palette:
     - scheme: default
       primary: indigo
@@ -96,3 +97,13 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences # For better code blocks
   - admonition # For notes, warnings, etc. 
+
+extra:
+  generator: false  # Remove "Made with Material for MkDocs"
+  announcement:
+    - title: "🎉 New Module Available!"
+    - content: "Check out our latest Transformers section with hands-on exercises"
+  
+copyright: |
+  Copyright &copy; 2025 Krzysztof Sopyła –
+  <a href="https://github.com/ksopyla/pytorch-course/blob/main/LICENSE">MIT License</a> 
