@@ -1,9 +1,5 @@
 
 
-
-
-
-
 ## The Origin Story of Professor Victor Py Torchenstein's 
 
 
