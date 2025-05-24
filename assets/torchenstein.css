@@ -94,10 +94,27 @@ blockquote::before {
   outline: 0;
 }
 
-/* Jupyter notebook specific math styling */
+/* Enhanced Jupyter notebook specific math styling */
 .jupyter-notebook .MathJax_Display {
   text-align: center !important;
   margin: 1em 0 !important;
+}
+
+/* Force MathJax to process in notebook cells */
+.jupyter-notebook .cell .MathJax,
+.jupyter-notebook .cell .MathJax_Display {
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* Ensure mkdocs-jupyter content gets processed */
+.jupyter-notebook pre code {
+  white-space: pre-wrap;
+}
+
+/* Fix for notebook math rendering */
+.jupyter-notebook .highlight pre {
+  background: transparent;
 }
 
 /* Ensure math displays properly in both light and dark mode */
@@ -118,4 +135,26 @@ li .MathJax {
 .MathJax_Display, .MathJax {
   word-wrap: normal;
   word-break: normal;
+}
+
+/* Specific fixes for mkdocs-jupyter LaTeX rendering */
+.jupyter-notebook .cell .text_cell_render {
+  line-height: 1.5;
+}
+
+.jupyter-notebook .cell .text_cell_render p {
+  margin: 0.5em 0;
+}
+
+/* Ensure math in code blocks (like %%latex magic) gets processed */
+.jupyter-notebook .cell .input .highlight,
+.jupyter-notebook .cell .output .highlight {
+  background: var(--md-code-bg-color);
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+
+/* Style for math that appears in output cells */
+.jupyter-notebook .output_html .MathJax_Display {
+  margin: 0.5em 0;
 }
