@@ -1892,6 +1892,69 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8c7c51b9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-1">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%%</span><span class="n">latex</span>
+<span class="err">$$</span>\<span class="n">text</span><span class="p">{</span><span class="n">Attention</span><span class="p">}(</span><span class="n">Q</span><span class="p">,</span> <span class="n">K</span><span class="p">,</span> <span class="n">V</span><span class="p">)</span> <span class="o">=</span> \<span class="n">text</span><span class="p">{</span><span class="n">softmax</span><span class="p">}</span>\<span class="n">left</span><span class="p">(</span>\<span class="n">frac</span><span class="p">{</span><span class="n">QK</span><span class="o">^</span><span class="n">T</span><span class="p">}{</span>\<span class="n">sqrt</span><span class="p">{</span><span class="n">d_k</span><span class="p">}}</span>\<span class="n">right</span><span class="p">)</span><span class="n">V</span><span class="err">$$</span>
+
+<span class="n">Where</span><span class="p">:</span>
+<span class="o">-</span> <span class="err">$</span><span class="n">Q</span><span class="err">$</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">Query</span> <span class="n">matrix</span>
+<span class="o">-</span> <span class="err">$</span><span class="n">K</span><span class="err">$</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">Key</span> <span class="n">matrix</span>  
+<span class="o">-</span> <span class="err">$</span><span class="n">V</span><span class="err">$</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">Value</span> <span class="n">matrix</span>
+<span class="o">-</span> <span class="err">$</span><span class="n">d_k</span><span class="err">$</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">dimension</span> <span class="n">of</span> <span class="n">the</span> <span class="n">key</span> <span class="n">vectors</span>
+<span class="o">-</span> <span class="err">$</span>\<span class="n">text</span><span class="p">{</span><span class="n">softmax</span><span class="p">}</span><span class="err">$</span> <span class="n">normalizes</span> <span class="n">the</span> <span class="n">attention</span> <span class="n">weights</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-1">%%latex
+$$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
+
+Where:
+- $Q$ is the Query matrix
+- $K$ is the Key matrix  
+- $V$ is the Value matrix
+- $d_k$ is the dimension of the key vectors
+- $\text{softmax}$ normalizes the attention weights</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedLatex jp-OutputArea-output" data-mime-type="text/latex" tabindex="0">
+$$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
+
+Where:
+- $Q$ is the Query matrix
+- $K$ is the Key matrix  
+- $V$ is the Value matrix
+- $d_k$ is the dimension of the key vectors
+- $\text{softmax}$ normalizes the attention weights
+
+</div>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dd8f52a5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -1901,7 +1964,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-1">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-2">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -1925,7 +1988,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Result C shape:"</span><span class="p">,</span> <span class="n">C</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Mwahahaha! The matrices have been multiplied!"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-1">import torch
+<div class="clipboard-copy-txt" id="cell-2">import torch
 
 # Create some matrices for experimentation
 A = torch.randn(3, 4)
@@ -1999,7 +2062,7 @@ print("\nMwahahaha! The matrices have been multiplied!")</div>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 24, 2025 17:13:17">May 24, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 24, 2025 17:26:18">May 24, 2025</span>
   </span>
 
     
@@ -2009,7 +2072,7 @@ print("\nMwahahaha! The matrices have been multiplied!")</div>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 24, 2025 17:13:17">May 24, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 24, 2025 17:26:18">May 24, 2025</span>
   </span>
 
     
@@ -2159,7 +2222,7 @@ print("\nMwahahaha! The matrices have been multiplied!")</div>
     
     
     
-    <a href="https://twitter.com/pytorchcourse" target="_blank" rel="noopener" title="Follow the Professor&#39;s Latest Experiments" class="md-social__link">
+    <a href="https://twitter.com/ksopyla" target="_blank" rel="noopener" title="Follow the Professor&#39;s Latest Experiments" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
     </a>
   
@@ -2167,7 +2230,15 @@ print("\nMwahahaha! The matrices have been multiplied!")</div>
     
     
     
-    <a href="mailto:support@pytorchcourse.com" target="_blank" rel="noopener" title="Send a Message to the Laboratory" class="md-social__link">
+    <a href="https://www.linkedin.com/in/krzysztof-sopyla/" target="_blank" rel="noopener" title="Connect with Professor Torchenstein on LinkedIn" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:krzysztofsopyla@gmail.com" target="_blank" rel="noopener" title="Send a Message to the Laboratory" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg>
     </a>
   
