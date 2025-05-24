@@ -18,3 +18,69 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Professor Torchenstein themed admonitions */
+.admonition.experiment {
+  border-left-color: #673ab7;
+}
+
+.admonition.experiment .admonition-title::before {
+  content: "🧪";
+  margin-right: 0.5rem;
+}
+
+.admonition.warning .admonition-title::before {
+  content: "⚡";
+  margin-right: 0.5rem;
+}
+
+/* Course progress styling */
+.course-meta {
+  background: linear-gradient(135deg, #673ab71a, #9c27b01a);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid #ffc107;
+}
+
+/* Better mobile navigation */
+@media screen and (max-width: 768px) {
+  .md-nav__title {
+    font-size: 0.9rem;
+  }
+  
+  .md-tabs__item {
+    min-width: auto;
+  }
+  
+  .md-content__inner {
+    margin: 0 1rem;
+  }
+}
+
+/* Professor quotes styling */
+blockquote {
+  border-left: 4px solid #ffc107;
+  background: linear-gradient(135deg, #673ab708, #9c27b008);
+  font-style: italic;
+  position: relative;
+}
+
+blockquote::before {
+  content: "💭";
+  font-size: 1.2em;
+  position: absolute;
+  top: 0.5rem;
+  left: -2rem;
+}
+
+/* Code copy button enhancement */
+.md-code__content {
+  position: relative;
+}
+
+/* Math expressions */
+.arithmatex {
+  color: #673ab7;
+  font-weight: 500;
+}

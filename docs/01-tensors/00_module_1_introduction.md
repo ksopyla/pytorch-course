@@ -1,6 +1,15 @@
+---
+extra:
+  course:
+    module: 1
+    lesson: 0
+    difficulty: beginner
+    estimated_time: "5 min"
+---
+
 # Module 1 – I See Tensors Everywhere 🕶️
 
-> “Behold, fledgling datanauts! The world is naught but tensors awaiting my command — and soon, *yours*! ” — **Professor Victor Py Torchenstein**
+> "Behold, fledgling datanauts! The world is naught but tensors awaiting my command — and soon, *yours*! " — **Professor Victor Py Torchenstein**
 
 Salutations, my brilliant (and delightfully reckless) apprentices! By opening this manuscript you have volunteered to join my clandestine legion of PyTorch adepts. Consider this your official red-pill moment: from today every pixel, every token, every measly click-through rate shall reveal its true form—a multidimensional array begging to be `torch.tensor`-ed … and we shall oblige it with maniacal glee! *Mwahaha!* 🔥🧪
 
@@ -27,10 +36,3 @@ Over the next notebooks we will:
 10. [Gradient Accumulation](10_gradient_accumulation.ipynb)
 
 Need auxiliary scrolls? The *official* PyTorch docs lurk here (<https://pytorch.org/docs/stable/torch.html?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=module-1-intro>), but do not tarry too long—our grand tensor-domination awaits. Grab your favoured caffeinated concoction and let us **tensor-ify** the universe! 🚀
-
-extra:
-  course:
-    module: 1
-    lesson: 3
-    difficulty: beginner
-    estimated_time: "15 min"

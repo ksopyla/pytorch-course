@@ -11,6 +11,8 @@ theme:
     - navigation.tabs # If you want tabs for top-level sections
     - navigation.top
     - search.highlight
+    - search.suggest
+    - search.share
     - navigation.tracking     # Track reading progress in URL
     - announce.dismiss
     - content.code.copy
@@ -24,6 +26,8 @@ theme:
     - navigation.instant         # Fast page transitions
     - navigation.instant.prefetch # Preload pages on hover
     - navigation.footer        # Show next/previous links in footer
+    - toc.follow               # Auto-scroll table of contents
+    - header.autohide          # Hide header when scrolling down (mobile-friendly)
   palette:
     # Light mode - "Laboratory Clean"
     - media: "(prefers-color-scheme: light)"
@@ -112,8 +116,7 @@ plugins:
   - search:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
-  - tags:                      # Enable content tagging
-      tags_file: tags.md
+  - tags                      # Enable content tagging - removed deprecated tags_file setting
   - social:                    # Auto-generate social media cards
       cards: !ENV [CI, true]
       cards_layout_options:
@@ -125,18 +128,51 @@ plugins:
       enable_creation_date: true
 
 markdown_extensions:
+  - toc:
+      permalink: true
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
 
 extra:
   generator: false  # Remove "Made with Material for MkDocs"
+  
+  # Single announcement (not a list)
   announcement:
-    - title: "🎉 New Module Available!"
-    - content: "Check out our latest Transformers section with hands-on exercises"
+    title: "🎉 New Module Available!"
+    content: "Check out our latest Transformers section with hands-on exercises"
+  
+  # Social media links
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ksopyla/pytorch-course
+      name: Join Professor Torchenstein's Laboratory on GitHub
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/pytorchcourse
+      name: Follow the Professor's Latest Experiments
+    - icon: material/email
+      link: mailto:support@pytorchcourse.com
+      name: Send a Message to the Laboratory
+  
   analytics:
     provider: google
     property: G-XXXXXXXXXX
@@ -155,6 +191,7 @@ extra:
           note: >
             The Professor is disappointed but not defeated! 
             Please share what confused you in the GitHub discussions.
+  
   annotate:
     json: [.s2]                # Enable fun annotations
   
