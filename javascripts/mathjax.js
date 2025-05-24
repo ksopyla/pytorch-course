@@ -26,92 +26,95 @@ window.MathJax = {
   },
   startup: {
     ready: () => {
+      console.log('MathJax: startup.ready triggered.');
       MathJax.startup.defaultReady();
+
+      // Perform initial typesetting for the page content present at load time
       MathJax.startup.promise.then(() => {
-        console.log('MathJax startup complete');
-        // Process any existing content
-        MathJax.typesetPromise();
-      });
-    }
-  }
-};
+        console.log('MathJax: Initial startup promise resolved. Typesetting page.');
+        return MathJax.typesetPromise();
+      }).then(() => {
+        console.log('MathJax: Initial page typesetting complete.');
+      }).catch((err) => console.error('MathJax: Error during initial typeset:', err));
 
-// Enhanced processing for mkdocs-jupyter content
-document$.subscribe(() => {
-  console.log('Document updated, queueing MathJax reprocessing.');
-
-  MathJax.startup.promise.then(() => {
-    console.log('MathJax is ready. Proceeding with reset for document update.');
-
-    if (MathJax.startup.output && typeof MathJax.startup.output.clearCache === 'function') {
-      MathJax.startup.output.clearCache();
-    } else {
-      console.warn('MathJax.startup.output.clearCache not available during document update. Skipping.');
-    }
-    MathJax.typesetClear();
-
-    // Explicitly pass the TeX configuration from window.MathJax
-    // to ensure all settings, including inlineMath for "$", are reapplied.
-    if (window.MathJax && window.MathJax.tex) {
-      MathJax.texReset(window.MathJax.tex);
-    } else {
-      // Fallback to default reset if window.MathJax.tex is somehow undefined
-      console.warn('window.MathJax.tex not found, using default texReset().');
-      MathJax.texReset();
-    }
-
-    // Wait a bit for mkdocs-jupyter to finish loading/DOM updates, then process
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        MathJax.typesetPromise()
-          .then(() => {
-            console.log('MathJax typesetPromise complete for document update.');
-            resolve();
-          })
-          .catch((err) => {
-            console.error('MathJax typesetPromise error during document update:', err);
-            reject(err);
-          });
-      }, 100); // Original delay
-    });
-  }).catch((err) => {
-    console.error('Error in MathJax startup promise chain during document update:', err);
-  });
-});
-
-// Additional processing for dynamically loaded content
-if (typeof window !== 'undefined') {
-  // Watch for changes in notebook content
-  const observer = new MutationObserver((mutations) => {
-    let shouldProcess = false;
-    mutations.forEach((mutation) => {
-      if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
-        // Check if any added nodes contain math
-        mutation.addedNodes.forEach((node) => {
-          if (node.nodeType === 1) { // Element node
-            if (node.textContent.includes('$$') || node.textContent.includes('$') || 
-                node.querySelector && (node.querySelector('[class*="highlight"]') || 
-                node.querySelector('.jupyter-notebook'))) {
-              shouldProcess = true;
+      // Setup for mkdocs-material dynamic content updates (e.g., from jupyter notebooks)
+      if (window.document$ && typeof window.document$.subscribe === 'function') {
+        document$.subscribe(() => {
+          console.log('MathJax: document$ event triggered. Queueing reprocessing.');
+          // Ensure we use the main startup promise chain
+          MathJax.startup.promise.then(() => {
+            console.log('MathJax: Ready for document update. Resetting and typesetting.');
+            
+            if (MathJax.startup.output && typeof MathJax.startup.output.clearCache === 'function') {
+              MathJax.startup.output.clearCache();
             }
+            MathJax.typesetClear();
+
+            // Re-apply TeX configuration, especially for $...$
+            if (window.MathJax && window.MathJax.tex) {
+              MathJax.texReset(window.MathJax.tex);
+            } else {
+              MathJax.texReset();
+            }
+            
+            // Short delay for DOM changes to settle, then typeset
+            return new Promise((resolve) => setTimeout(resolve, 150)).then(() => { // Slightly increased delay
+                console.log('MathJax: Attempting typesetPromise for document update.');
+                return MathJax.typesetPromise();
+            });
+          }).then(() => {
+            console.log('MathJax: Reprocessing for document update complete.');
+          }).catch((err) => {
+            console.error('MathJax: Error during reprocessing for document update:', err);
+          });
+        });
+        console.log('MathJax: Subscribed to document$ events for dynamic updates.');
+      } else {
+        console.warn('MathJax: document$ API not found. Dynamic notebook content might not be typeset by this handler.');
+      }
+
+      // Setup MutationObserver for other dynamic content changes
+      // This observer also needs MathJax to be ready.
+      if (typeof window !== 'undefined' && 'MutationObserver' in window) {
+        const observer = new MutationObserver((mutations) => {
+          let shouldProcess = false;
+          mutations.forEach((mutation) => {
+            if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+              mutation.addedNodes.forEach((node) => {
+                if (node.nodeType === 1) { // Element node
+                  const textContent = node.textContent || "";
+                  if (textContent.includes('$') || textContent.includes('\\(') || textContent.includes('\\[') ||
+                      (node.querySelector && 
+                        (node.querySelector('[class*="highlight"]') || 
+                         node.querySelector('.jupyter-notebook') || 
+                         node.classList.contains('tex2jax_process') || 
+                         node.classList.contains('arithmatex')))
+                     ) {
+                    shouldProcess = true;
+                  }
+                }
+              });
+            }
+          });
+          
+          if (shouldProcess) {
+            console.log('MathJax: MutationObserver detected relevant change. Queueing reprocessing.');
+            MathJax.startup.promise.then(() => {
+              console.log('MathJax: Ready for MutationObserver update. Typesetting.');
+              // No need for full reset here, just typeset new/changed content
+              return MathJax.typesetPromise();
+            }).then(() => {
+              console.log('MathJax: Reprocessing for MutationObserver complete.');
+            }).catch(err => console.error("MathJax: Error from MutationObserver typesetPromise:", err));
           }
         });
+        
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true
+        });
+        console.log('MathJax: MutationObserver initialized and observing document body.');
       }
-    });
-    
-    if (shouldProcess) {
-      console.log('Notebook content changed, reprocessing MathJax...');
-      setTimeout(() => {
-        MathJax.typesetPromise();
-      }, 200);
     }
-  });
-  
-  // Start observing when DOM is ready
-  document.addEventListener('DOMContentLoaded', () => {
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true
-    });
-  });
-} 
+  }
+}; 
