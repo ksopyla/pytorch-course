@@ -180,8 +180,8 @@ extra:
     json: [.s2]                # Enable fun annotations
   
 extra_javascript:
+  - javascripts/mathjax.js   # Configuration must load BEFORE MathJax library
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - javascripts/mathjax.js
 
 extra_css:
   - assets/torchenstein.css    # Custom CSS for character elements
