@@ -95,6 +95,9 @@ nav:
 plugins:
   - search
   - mkdocs-jupyter
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: true
 
 markdown_extensions:
   - pymdownx.highlight
