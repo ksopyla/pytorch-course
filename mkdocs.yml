@@ -148,10 +148,13 @@ extra:
       link: https://github.com/ksopyla/pytorch-course
       name: Join Professor Torchenstein's Laboratory on GitHub
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/pytorchcourse
+      link: https://twitter.com/ksopyla
       name: Follow the Professor's Latest Experiments
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/krzysztof-sopyla/
+      name: Connect with Professor Torchenstein on LinkedIn
     - icon: material/email
-      link: mailto:support@pytorchcourse.com
+      link: mailto:krzysztofsopyla@gmail.com
       name: Send a Message to the Laboratory
   
   analytics:
