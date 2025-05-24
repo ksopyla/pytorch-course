@@ -79,8 +79,43 @@ blockquote::before {
   position: relative;
 }
 
-/* Math expressions */
+/* Math expressions - Enhanced for better LaTeX rendering */
 .arithmatex {
   color: #673ab7;
   font-weight: 500;
+}
+
+/* MathJax specific styling for better integration */
+.MathJax_Display {
+  margin: 1em 0 !important;
+}
+
+.MathJax {
+  outline: 0;
+}
+
+/* Jupyter notebook specific math styling */
+.jupyter-notebook .MathJax_Display {
+  text-align: center !important;
+  margin: 1em 0 !important;
+}
+
+/* Ensure math displays properly in both light and dark mode */
+[data-md-color-scheme="default"] .MathJax {
+  color: var(--md-default-fg-color);
+}
+
+[data-md-color-scheme="slate"] .MathJax {
+  color: var(--md-default-fg-color);
+}
+
+/* Fix for inline math in lists */
+li .MathJax {
+  display: inline-block;
+}
+
+/* Ensure math text doesn't break weirdly */
+.MathJax_Display, .MathJax {
+  word-wrap: normal;
+  word-break: normal;
 }
