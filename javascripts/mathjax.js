@@ -38,30 +38,45 @@ window.MathJax = {
 
 // Enhanced processing for mkdocs-jupyter content
 document$.subscribe(() => {
-  console.log('Document updated, processing MathJax...');
-  
-  // Clear and reset MathJax
-  MathJax.startup.output.clearCache();
-  MathJax.typesetClear();
-  // MathJax.texReset(); // Original call
-  
-  // Explicitly pass the TeX configuration from window.MathJax
-  // to ensure all settings, including inlineMath for "$", are reapplied.
-  if (window.MathJax && window.MathJax.tex) {
-    MathJax.texReset(window.MathJax.tex);
-  } else {
-    // Fallback to default reset if window.MathJax.tex is somehow undefined
-    MathJax.texReset();
-  }
-  
-  // Wait a bit for mkdocs-jupyter to finish loading, then process
-  setTimeout(() => {
-    MathJax.typesetPromise().then(() => {
-      console.log('MathJax processing complete');
-    }).catch((err) => {
-      console.error('MathJax processing error:', err);
+  console.log('Document updated, queueing MathJax reprocessing.');
+
+  MathJax.startup.promise.then(() => {
+    console.log('MathJax is ready. Proceeding with reset for document update.');
+
+    if (MathJax.startup.output && typeof MathJax.startup.output.clearCache === 'function') {
+      MathJax.startup.output.clearCache();
+    } else {
+      console.warn('MathJax.startup.output.clearCache not available during document update. Skipping.');
+    }
+    MathJax.typesetClear();
+
+    // Explicitly pass the TeX configuration from window.MathJax
+    // to ensure all settings, including inlineMath for "$", are reapplied.
+    if (window.MathJax && window.MathJax.tex) {
+      MathJax.texReset(window.MathJax.tex);
+    } else {
+      // Fallback to default reset if window.MathJax.tex is somehow undefined
+      console.warn('window.MathJax.tex not found, using default texReset().');
+      MathJax.texReset();
+    }
+
+    // Wait a bit for mkdocs-jupyter to finish loading/DOM updates, then process
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        MathJax.typesetPromise()
+          .then(() => {
+            console.log('MathJax typesetPromise complete for document update.');
+            resolve();
+          })
+          .catch((err) => {
+            console.error('MathJax typesetPromise error during document update:', err);
+            reject(err);
+          });
+      }, 100); // Original delay
     });
-  }, 100);
+  }).catch((err) => {
+    console.error('Error in MathJax startup promise chain during document update:', err);
+  });
 });
 
 // Additional processing for dynamically loaded content
