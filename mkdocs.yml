@@ -109,6 +109,20 @@ extra:
   announcement:
     - title: "🎉 New Module Available!"
     - content: "Check out our latest Transformers section with hands-on exercises"
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  # Your GA4 tracking ID
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: Thanks for your feedback!
+        - icon: material/thumb-down-outline  
+          name: This page could be improved
+          data: 0
+          note: Thanks for your feedback!
   
 copyright: |
   Copyright &copy; 2025 Krzysztof Sopyła –
