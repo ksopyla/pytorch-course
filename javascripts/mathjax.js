@@ -4,11 +4,25 @@ window.MathJax = {
     displayMath: [["\\[", "\\]"], ["$$", "$$"]],
     processEscapes: true,
     processEnvironments: true,
-    processRefs: true
+    processRefs: true,
+    digits: /^(?:[0-9]+(?:\{,\}[0-9]*)?)$/,
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    useLabelIds: true,
+    multlineWidth: "85%",
+    // Force processing of all dollar signs
+    skipTags: ["script", "noscript", "style", "textarea", "pre", "code", "annotation", "annotation-xml"],
+    // Don't skip any elements that might contain math
+    ignoreClass: "tex2jax_ignore|editor",
+    processClass: "tex2jax_process|arithmatex"
   },
   options: {
-    ignoreHtmlClass: ".*|",
-    processHtmlClass: "arithmatex"
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "tex2jax_process|arithmatex",
+    // Enable processing in more contexts
+    skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
+    includeHtmlTags: ["div", "span", "p", "li", "td", "th"]
   },
   startup: {
     ready: () => {
