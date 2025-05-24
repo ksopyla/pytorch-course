@@ -16,19 +16,35 @@ theme:
     - content.code.copy
     - content.code.select
     - content.code.annotate
+    - navigation.tabs.sticky     # Keep tabs visible while scrolling
+    - navigation.sections        # Group related pages
+    - navigation.expand          # Auto-expand subsections
+    - navigation.path            # Show breadcrumb path
+    - navigation.indexes         # Enable index pages for sections
+    - navigation.instant         # Fast page transitions
+    - navigation.instant.prefetch # Preload pages on hover
+    - navigation.footer        # Show next/previous links in footer
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
+    # Light mode - "Laboratory Clean"
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple      # More "mad scientist" feel
+      accent: amber            # Electric/lightning accent
       toggle:
-        icon: material/brightness-7
+        icon: material/lightbulb-outline
         name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: indigo
+    
+    # Dark mode - "Midnight Laboratory" 
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
       toggle:
-        icon: material/brightness-4
+        icon: material/lightbulb
         name: Switch to light mode
+  icon:
+    logo: material/flask-outline  # Mad scientist flask icon
+    repo: fontawesome/brands/github
 
 nav:
   - Getting Started:
@@ -93,18 +109,28 @@ nav:
   #   - 'Fine Tuning Transformers': 06-huggingface-transformers/02_fine_tuning_transformers.ipynb
 
 plugins:
-  - search
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - tags:                      # Enable content tagging
+      tags_file: tags.md
+  - social:                    # Auto-generate social media cards
+      cards: !ENV [CI, true]
+      cards_layout_options:
+        background_color: "#1e1e2e"
+        color: "#ffffff"
   - mkdocs-jupyter
   - git-revision-date-localized:
       type: date
       enable_creation_date: true
 
 markdown_extensions:
-  - pymdownx.highlight
-  - pymdownx.superfences # For better code blocks
-  - admonition # For notes, warnings, etc. 
-  - pymdownx.arithmatex:
-      generic: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra:
   generator: false  # Remove "Made with Material for MkDocs"
@@ -113,23 +139,32 @@ extra:
     - content: "Check out our latest Transformers section with hands-on exercises"
   analytics:
     provider: google
-    property: G-XXXXXXXXXX  # Your GA4 tracking ID
+    property: G-XXXXXXXXXX
     feedback:
-      title: Was this page helpful?
+      title: Was this lesson helpful, my dear minion?
       ratings:
-        - icon: material/thumb-up-outline
-          name: This page was helpful
+        - icon: material/emoticon-happy-outline
+          name: This lesson was electrifying!
           data: 1
-          note: Thanks for your feedback!
-        - icon: material/thumb-down-outline  
-          name: This page could be improved
+          note: >
+            Excellent! Professor Torchenstein is pleased with your progress.
+            Consider starring the repository!
+        - icon: material/emoticon-sad-outline
+          name: This could use more lightning
           data: 0
-          note: Thanks for your feedback!
+          note: >
+            The Professor is disappointed but not defeated! 
+            Please share what confused you in the GitHub discussions.
+  annotate:
+    json: [.s2]                # Enable fun annotations
   
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - assets/torchenstein.css    # Custom CSS for character elements
 
 copyright: |
   Copyright &copy; 2025 Krzysztof Sopyła –

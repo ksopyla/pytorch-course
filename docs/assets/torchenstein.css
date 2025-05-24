@@ -1,0 +1,20 @@
+/* Professor Torchenstein styling */
+.md-header {
+  background: linear-gradient(45deg, #673ab7, #9c27b0);
+}
+
+/* Lightning bolt decorations for important notes */
+.admonition.lightning {
+  border-left-color: #ffc107;
+}
+
+/* Code block styling for "lab experiments" */
+.highlight .err {
+  color: #ff6b6b; /* Red for "dangerous" code */
+}
+
+/* Mobile-first responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
