@@ -9,8 +9,9 @@ window.MathJax = {
     // processClass: "tex2jax_process|arithmatex" // If Arithmatex output needs explicit processing
   },
   options: {
-    // ignoreHtmlClass: "tex2jax_ignore",
-    // processHtmlClass: "tex2jax_process|arithmatex"
+    // Ensure MathJax processes elements produced by the Arithmatex Markdown extension
+    ignoreHtmlClass: "tex2jax_ignore", // elements with this class will be ignored
+    processHtmlClass: "arithmatex",      // only process elements (and descendants) that carry this class
     // Keeping options minimal for now
   },
   startup: {
@@ -28,6 +29,14 @@ window.MathJax = {
       }).catch((err) => {
         console.error('MathJax: Error during initial typesetPromise:', err);
       });
+
+      // Re-typeset on every page navigation (required for MkDocs Material instant loading)
+      if (typeof document$ !== 'undefined' && document$.subscribe) {
+        document$.subscribe(() => {
+          MathJax.typesetClear();
+          MathJax.typesetPromise();
+        });
+      }
     }
   }
 };
