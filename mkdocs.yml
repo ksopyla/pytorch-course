@@ -114,6 +114,13 @@ plugins:
   - mkdocs-jupyter:
       execute: false          # Don't execute notebooks during build
       include_source: true    # Include source code
+      ignore_h1_titles: false # Keep notebook titles
+      show_input: true        # Show input cells
+      show_output: true       # Show output cells
+      no_input: false         # Don't hide input
+      remove_tag_config:
+        remove_input_tags: []
+        remove_output_tags: []
   - git-revision-date-localized:
       type: date
       enable_creation_date: true
@@ -181,8 +188,8 @@ extra:
   
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/mathjax.js
 
 extra_css:
   - assets/torchenstein.css    # Custom CSS for character elements

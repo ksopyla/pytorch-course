@@ -38,7 +38,6 @@ Over the next notebooks we will:
 Need auxiliary scrolls? The *official* PyTorch docs lurk here (<https://pytorch.org/docs/stable/torch.html?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=module-1-intro>), but do not tarry too long—our grand tensor-domination awaits. Grab your favoured caffeinated concoction and let us **tensor-ify** the universe! 🚀
 
 
-
 $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
