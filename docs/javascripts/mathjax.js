@@ -43,7 +43,16 @@ document$.subscribe(() => {
   // Clear and reset MathJax
   MathJax.startup.output.clearCache();
   MathJax.typesetClear();
-  MathJax.texReset();
+  // MathJax.texReset(); // Original call
+  
+  // Explicitly pass the TeX configuration from window.MathJax
+  // to ensure all settings, including inlineMath for "$", are reapplied.
+  if (window.MathJax && window.MathJax.tex) {
+    MathJax.texReset(window.MathJax.tex);
+  } else {
+    // Fallback to default reset if window.MathJax.tex is somehow undefined
+    MathJax.texReset();
+  }
   
   // Wait a bit for mkdocs-jupyter to finish loading, then process
   setTimeout(() => {
