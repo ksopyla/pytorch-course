@@ -5,10 +5,13 @@ repo_url: https://github.com/ksopyla/pytorch-course
 
 theme:
   name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
   features:
     - navigation.tabs # If you want tabs for top-level sections
     - navigation.top
     - search.highlight
+    - navigation.tracking     # Track reading progress in URL
   palette:
     - scheme: default
       primary: indigo
