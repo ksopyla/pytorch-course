@@ -13,6 +13,9 @@ theme:
     - search.highlight
     - navigation.tracking     # Track reading progress in URL
     - announce.dismiss
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
   palette:
     - scheme: default
       primary: indigo
