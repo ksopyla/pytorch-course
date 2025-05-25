@@ -1,3 +1,7 @@
+
+.md-grid {
+  max-width: 1440px; 
+}
 /* Professor Torchenstein styling */
 .md-header {
   background: linear-gradient(45deg, #673ab7, #9c27b0);
