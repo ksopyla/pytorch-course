@@ -124,111 +124,113 @@
 /* Styles for the full-page hero section defined in home.html */
 
 .page-hero-section {
-  /* min-height is set inline in home.html to use calc(100vh - var(--md-header-height)) */
-  /* background-color: var(--md-default-bg-color); Fallback, but image should cover */
+  /* Basic setup for flex centering of its direct child (.md-grid) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* For pseudo-elements or z-indexing if needed later */
+  min-height: calc(100vh - var(--md-header-height)); /* From inline style in home.html */
+
+  /* --- Full Width Technique --- */
+  width: 100vw; 
+  margin-left: calc(50% - 50vw); /* Centers the 100vw element relative to its original position */
+  /* overflow: hidden;  Ensure no accidental horizontal scrollbars if content is wider than image */
+
+  /* --- Background Image --- */
+  background-image: url("../../assets/prof_torchenstein_hero_image.png"); /* Path relative to custom-hero.css */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-.page-hero-image-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1; /* Behind overlay content */
-}
-
-.page-hero-background-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Cover the entire container, might crop image */
-  object-position: center; /* Center the image within the container */
-  /* Optionally add a subtle overlay to the image for better text contrast */
-  /* filter: brightness(0.7) contrast(1.1); */ 
-}
-
-/* md-grid is used in home.html to center this content block */
-.page-hero-overlay-content {
-  position: relative; /* Ensure it's above the image container */
-  z-index: 2;
+/* The .md-grid div is inside .page-hero-section and will center its child */
+/* .page-hero-text-overlay is the direct child of .md-grid */
+.page-hero-text-overlay {
+  position: relative; /* Ensures it respects z-index if needed */
+  z-index: 2; /* Make sure it's above any pseudo-elements on parent */
   text-align: center;
-  padding: 2rem; /* Add some padding around the text content */
-  max-width: 800px; /* Max width for the text content for readability */
-  margin: 0 auto; /* Center the text content block */
-  color: #ffffff; /* Default white text for dark backgrounds */
-  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent dark background for text */
-  border-radius: 8px;
+  padding: 2.5rem 2rem; 
+  max-width: 750px; /* Control width of text block */
+  margin: 0 auto; /* Should be centered by .md-grid, but good fallback */
+  color: #ffffff; 
+  background-color: rgba(0, 0, 0, 0.55); /* Darker, more translucent overlay */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
-.page-hero-overlay-content h1 {
-  font-size: 3.2rem;
+.page-hero-text-overlay h1 {
+  font-size: 3rem; 
   font-weight: 800;
-  margin-bottom: 1rem;
-  /* color: var(--md-primary-fg-color); Inherit from .page-hero-overlay-content or set specific */
-  line-height: 1.15;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
 }
 
-.page-hero-overlay-content p {
-  font-size: 1.35rem;
-  line-height: 1.65;
-  margin-bottom: 2.5rem;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+.page-hero-text-overlay p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 2.2rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
-.hero-button { /* Reusing existing .hero-button styles, ensure they are suitable */
+.hero-button {
   display: inline-block;
-  padding: 0.9rem 2.5rem; 
-  font-size: 1.25rem; 
-  font-weight: 700;
-  /* color: var(--md-primary-bg-color); Default button styles */
-  /* background-color: var(--md-primary-fg-color); Default button styles */
-  border: 2px solid #fff; /* White border for contrast on image */
-  color: #fff; /* White text */
-  background-color: transparent; /* Transparent background initially */
-  border-radius: 5px; 
+  padding: 0.9rem 2.8rem; 
+  font-size: 1.2rem; 
+  font-weight: bold; /* Bolder text */
+  border: 2px solid #fff; 
+  color: #fff; 
+  background-color: rgba(128, 0, 128, 0.6); /* Semi-transparent purple, ties to theme */
+  border-radius: 6px; 
   text-decoration: none;
   transition: all 0.25s ease-in-out;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  letter-spacing: 1px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
 }
 
-.hero-button:hover {
-  background-color: var(--md-primary-fg-color); /* Theme primary on hover */
+.hero-button:hover, .hero-button:focus {
+  background-color: var(--md-primary-fg-color); 
   color: var(--md-primary-bg-color);
   border-color: var(--md-primary-fg-color);
-  transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
 }
 
 /* Responsive adjustments */
 @media (max-width: 959px) { 
-  .page-hero-overlay-content h1 {
-    font-size: 2.6rem;
+  .page-hero-text-overlay {
+    padding: 2rem 1.5rem;
+    max-width: 90%;
   }
-  .page-hero-overlay-content p {
-    font-size: 1.2rem;
+  .page-hero-text-overlay h1 {
+    font-size: 2.5rem;
+  }
+  .page-hero-text-overlay p {
+    font-size: 1.15rem;
     margin-bottom: 2rem;
   }
   .hero-button {
     padding: 0.8rem 2.2rem;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 599px) { 
-  .page-hero-overlay-content {
-    padding: 1.5rem;
+  .page-hero-text-overlay {
+    padding: 1.5rem 1rem;
+    max-width: 95%;
+    background-color: rgba(0, 0, 0, 0.65); /* Slightly darker overlay on mobile for readability */
   }
-  .page-hero-overlay-content h1 {
-    font-size: 2.2rem;
+  .page-hero-text-overlay h1 {
+    font-size: 2.1rem;
   }
-  .page-hero-overlay-content p {
-    font-size: 1.1rem;
+  .page-hero-text-overlay p {
+    font-size: 1.05rem;
     margin-bottom: 1.5rem;
   }
   .hero-button {
-    padding: 0.7rem 1.8rem;
+    padding: 0.75rem 2rem;
     font-size: 1rem;
   }
 } 

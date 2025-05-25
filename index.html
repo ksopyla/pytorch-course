@@ -303,14 +303,17 @@
       /* position: initial; */ 
     }
     .md-main__inner {
-      margin: 0;
+      margin: 0 !important; /* Ensure no margin */
+    }
+    .md-content {
+      display: none !important; /* CRITICAL: Hide default content area */
     }
     /* Hide ToC and main navigation sidebar on larger screens for this specific page */
     @media screen and (min-width: 60em) { /* 960px */
-      .md-sidebar--secondary { display: none; }
+      .md-sidebar--secondary { display: none !important; }
     }
     @media screen and (min-width: 76.25em) { /* 1220px */
-      .md-sidebar--primary { display: none; }
+      .md-sidebar--primary { display: none !important; }
     }
     /* Ensure hero takes available space */
     .page-hero-section {
@@ -318,17 +321,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative; /* For overlaying content */
-        overflow: hidden; /* Hide parts of image that might overflow */
+        position: relative; /* Needed for full-width techniques and overlay */
     }
   </style>
 
   <section class="page-hero-section">
-    <div class="page-hero-image-container">
-        <img src="assets/prof_torchenstein_hero_image.png" alt="Professor Torchenstein - PyTorch Course Hero" class="page-hero-background-image">
-    </div>
+    
     <div class="md-grid"> 
-        <div class="page-hero-overlay-content">
+        <div class="page-hero-text-overlay">
             <h1>Unlock the Power of PyTorch!</h1>
             <p>
             Join Professor Torchenstein on an electrifying journey into the world of PyTorch. Master the building blocks of modern AI, from tensors to transformers, and unleash your own computational creations!
