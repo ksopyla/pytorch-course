@@ -31,7 +31,7 @@ Here we unveil the truth: the cosmos is a writhing mass of tensors awaiting our 
 
 This module dives into the fundamental components of PyTorch, essential for any deep learning task.
 
-![pytroch tensors everywhere](assets/images/meme_tensors_everywhere.jpg)
+![pytroch tensors everywhere](/assets/images/meme_tensors_everywhere.jpg)
 
 <!-- 
 <div align="center">
