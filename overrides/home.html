@@ -2,25 +2,31 @@
 
 {% block tabs %}
   {{ super() }}
-{% endblock %}
 
-{% block content %}
+  {# Custom Hero Section - placed in 'tabs' block for full-width potential #}
   <section class="hero">
-    <div class="hero-image">
-      {# Ensure the image path is relative to the docs directory or use an absolute path #}
-      <img src="{{ 'assets/prof_torchenstein_hero_image.png' | url }}" alt="Professor Torchenstein">
-    </div>
-    <div class="hero-content">
-      <h1>Unlock the Power of PyTorch!</h1>
-      <p>
-        Join Professor Torchenstein on an electrifying journey into the world of PyTorch. Master the building blocks of modern AI, from tensors to transformers, and unleash your own computational creations!
-      </p>
-      <a href="{{ '00-getting-started/' | url }}" class="md-button md-button--primary hero-button">
-        Start the Course
-      </a>
+    <div class="md-grid"> {# Using md-grid for centering content within full-width hero #}
+        <div class="hero-main-content"> {# Wrapper for image + text content #}
+            <div class="hero-image">
+                <img src="{{ 'assets/prof_torchenstein_hero_image.png' | url }}" alt="Professor Torchenstein">
+            </div>
+            <div class="hero-text-content">
+                <h1>Unlock the Power of PyTorch!</h1>
+                <p>
+                Join Professor Torchenstein on an electrifying journey into the world of PyTorch. Master the building blocks of modern AI, from tensors to transformers, and unleash your own computational creations!
+                </p>
+                <a href="{{ '00-getting-started/' | url }}" class="md-button md-button--primary hero-button">
+                Start the Course
+                </a>
+            </div>
+        </div>
     </div>
   </section>
+{% endblock tabs %}
 
+{% block content %}
   {# This will include the content from docs/index.md below the hero section #}
   {{ super() }}
-{% endblock content %} 
+{% endblock content %}
+
+{# Default footer will be inherited from main.html unless explicitly overridden #} 

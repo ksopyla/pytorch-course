@@ -1,14 +1,32 @@
-.md-typeset .hero {
-  display: flex;
-  align-items: center;
-  padding: 4rem 2rem; /* Adjusted padding */
-  background-color: var(--md-default-bg-color); /* Using theme variable for background */
+/* Full-width hero section styling */
+.hero {
+  /* Assuming the hero is now directly under a full-width capable block like 'tabs' override */
+  padding: 4rem 0; /* Vertical padding, horizontal will be handled by md-grid */
+  background-color: var(--md-default-bg-color); 
+  text-align: center; /* Center align the content by default */
+  width: 100vw; /* Force full viewport width */
+  position: relative; /* Prepare for potential absolute positioning of children or pseudo-elements */
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+/* This will contain the hero image and text, centered by md-grid */
+.hero-main-content {
+    display: flex;
+    flex-direction: row; /* Image on left, text on right by default */
+    align-items: center; 
+    justify-content: center;
+    gap: 2rem; /* Space between image and text content */
+    max-width: var(--md-typeset-width); /* Align with the main content width if desired, or set custom */
+    margin: 0 auto; /* Center the content block if it has a max-width */
 }
 
 .hero-image {
-  flex: 0 0 40%; /* Assign a fixed percentage for the image container */
-  padding-right: 3rem; /* Space between image and text */
-  text-align: center;
+  flex: 1; /* Adjust flex distribution as needed */
+  max-width: 450px; /* Max width for the image, adjust as you like */
+  text-align: center; /* Ensure image is centered if it's smaller */
 }
 
 .hero-image img {
@@ -17,79 +35,88 @@
   border-radius: 8px;
 }
 
-.hero-content {
-  flex: 1;
+.hero-text-content {
+  flex: 1.5; /* Give more space to text if needed */
+  text-align: left; /* Align text to the left within its container */
 }
 
-.hero-content h1 {
-  font-size: 2.8rem; /* Slightly adjusted font size */
-  font-weight: 700;
-  margin-bottom: 1.5rem; /* Adjusted margin */
+.hero-text-content h1 {
+  font-size: 3rem; /* Larger heading for hero */
+  font-weight: 800;
+  margin-bottom: 1rem;
   color: var(--md-primary-fg-color);
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
-.hero-content p {
-  font-size: 1.2rem; /* Slightly adjusted font size */
-  line-height: 1.7;
-  margin-bottom: 2.5rem; /* Adjusted margin */
+.hero-text-content p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: var(--md-typeset-color); /* Ensure good contrast */
 }
 
 .hero-button {
   display: inline-block;
-  padding: 0.9rem 2.2rem; /* Adjusted padding */
-  font-size: 1.15rem; /* Slightly adjusted font size */
+  padding: 0.8rem 2.5rem; 
+  font-size: 1.2rem; 
   font-weight: 700;
   color: var(--md-primary-bg-color);
   background-color: var(--md-primary-fg-color);
   border: 2px solid var(--md-primary-fg-color);
-  border-radius: 5px; /* Adjusted border-radius */
+  border-radius: 5px; 
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.75px;
 }
 
 .hero-button:hover {
   background-color: var(--md-default-bg-color);
   color: var(--md-primary-fg-color);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 /* Responsive adjustments */
-@media (max-width: 959px) { /* Adjusted breakpoint for tablet */
-  .md-typeset .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 3rem 1.5rem;
+@media (max-width: 959px) { 
+  .hero {
+    padding: 3rem 0;
+  }
+  .hero-main-content {
+    flex-direction: column; /* Stack image and text vertically */
+    text-align: center; /* Center align all content */
+    gap: 1.5rem;
   }
   .hero-image {
-    padding-right: 0;
-    margin-bottom: 2rem;
-    flex: 0 0 auto; /* Allow image to take its natural size */
-    max-width: 70%; /* Ensure image is not too large on smaller screens */
+    max-width: 350px; /* Adjust image size for tablets */
+    margin-bottom: 1rem; /* Space below image when stacked */
   }
-  .hero-content h1 {
-    font-size: 2.4rem;
+  .hero-text-content {
+    text-align: center; /* Ensure text is centered when stacked */
   }
-  .hero-content p {
-    font-size: 1.1rem;
+  .hero-text-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-text-content p {
+    font-size: 1.15rem;
   }
 }
 
-@media (max-width: 599px) { /* Adjusted breakpoint for mobile */
+@media (max-width: 599px) { 
+  .hero {
+    padding: 2.5rem 0;
+  }
   .hero-image {
-    max-width: 85%; /* Allow a bit larger image on mobile */
+    max-width: 80%; /* Allow image to be a bit larger percentage-wise on mobile */
   }
-   .hero-content h1 {
-    font-size: 2rem;
+   .hero-text-content h1 {
+    font-size: 2.1rem;
   }
-  .hero-content p {
-    font-size: 1rem;
+  .hero-text-content p {
+    font-size: 1.05rem;
   }
   .hero-button {
-    padding: 0.8rem 1.8rem;
-    font-size: 1rem;
+    padding: 0.7rem 2rem;
+    font-size: 1.05rem;
   }
 } 
