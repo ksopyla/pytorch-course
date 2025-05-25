@@ -48,6 +48,8 @@
     
       <link rel="stylesheet" href="assets/torchenstein.css">
     
+      <link rel="stylesheet" href="assets/custom-hero.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -290,8 +292,10 @@
     <div class="md-container" data-md-component="container">
       
       
+  
         
       
+
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
@@ -1242,6 +1246,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-youll-learn" class="md-nav__link">
+    <span class="md-ellipsis">
+      What You'll Learn:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1252,6 +1273,24 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
+  <section class="hero">
+    <div class="hero-image">
+      
+      <img src="assets/prof_torchenstein_hero_image.png" alt="Professor Torchenstein">
+    </div>
+    <div class="hero-content">
+      <h1>Unlock the Power of PyTorch!</h1>
+      <p>
+        Join Professor Torchenstein on an electrifying journey into the world of PyTorch. Master the building blocks of modern AI, from tensors to transformers, and unleash your own computational creations!
+      </p>
+      <a href="00-getting-started/" class="md-button md-button--primary hero-button">
+        Start the Course
+      </a>
+    </div>
+  </section>
+
+  
+  
                   
 
 
@@ -1261,7 +1300,18 @@
 
 <h1 id="welcome-to-the-pytorch-course">Welcome to the PyTorch Course!<a class="headerlink" href="#welcome-to-the-pytorch-course" title="Permanent link">&para;</a></h1>
 <p>This is the main page of the PyTorch course.</p>
-<p>Navigate through the lessons using the menu. </p>
+<p>Navigate through the lessons using the menu.
+This course will guide you through the essential concepts and practical applications of PyTorch, equipping you with the skills to build and train sophisticated neural networks.</p>
+<h3 id="what-youll-learn">What You'll Learn:<a class="headerlink" href="#what-youll-learn" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Fundamentals of Tensors</strong>: The basic building blocks of PyTorch.</li>
+<li><strong>Neural Network Modules (<code>torch.nn</code>)</strong>: Crafting and understanding network layers.</li>
+<li><strong>Training Neural Networks</strong>: From loss functions to optimization algorithms.</li>
+<li><strong>Transformer Architectures</strong>: Dive into the models powering modern NLP and beyond.</li>
+<li><strong>Advanced PyTorch Techniques</strong>: Explore cutting-edge features and best practices.</li>
+<li><strong>Hugging Face Transformers</strong>: Leverage the power of pre-trained models.</li>
+</ul>
+<p>Ready to spark your AI journey? Let's begin! </p>
 
 
 
@@ -1284,7 +1334,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 24, 2025 19:08:50">May 24, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 25, 2025 11:56:33">May 25, 2025</span>
   </span>
 
     
@@ -1294,7 +1344,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 24, 2025 19:08:50">May 24, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 25, 2025 11:56:33">May 25, 2025</span>
   </span>
 
     
@@ -1361,6 +1411,7 @@
 
 
                 
+
               </article>
             </div>
           
