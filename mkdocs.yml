@@ -1,8 +1,8 @@
 site_name: PyTorch Course
-site_description: The best online and free PyTorch tutorial
+site_description: >-
+  Join Professor Torchenstein on an electrifying journey into the world of PyTorch. Master the building blocks of modern AI, from tensors to transformers, and unleash your own computational creations!
 site_url: https://pytorchcourse.com/
 repo_url: https://github.com/ksopyla/pytorch-course
-
 theme:
   name: material
   custom_dir: overrides

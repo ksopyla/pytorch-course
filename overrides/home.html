@@ -7,7 +7,7 @@
   <style>
     .md-header { position: initial; }
     .md-main__inner { margin: 0; }
-    .md-content { display: none; }
+    .md-content { display: none !important; }
     @media screen and (min-width: 60em) { /* ≥960px */
       .md-sidebar--secondary { display: none; }
     }
@@ -24,7 +24,7 @@
         </div>
         <div class="mdx-hero__content">
           <h1>Unlock the Power of PyTorch!</h1>
-          <p>Join Professor Torchenstein on an electrifying journey into the world of PyTorch. Master the building blocks of modern AI, from tensors to transformers, and unleash your computational creations!</p>
+          <p>{{ config.site_description }} </p>
           <a href="{{ '00-getting-started/' | url }}" class="md-button md-button--primary">Start the Course</a>
         </div>
       </div>
