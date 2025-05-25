@@ -296,29 +296,31 @@
         
       
 
-  
   <style>
-    .md-header { position: initial; }
-    .md-main__inner { margin: 0; }
-    .md-content { display: none !important; }
-    @media screen and (min-width: 60em) { /* ≥960px */
-      .md-sidebar--secondary { display: none; }
+    /* Ensure header doesn't overlap if not fixed, or adjust hero min-height accordingly */
+    .md-main__inner { margin: 0 !important; }
+    .md-content { display: none !important; } /* Hide default content area */
+    
+    /* Hide sidebars for a full hero experience */
+    @media screen and (min-width: 60em) { /* Table of Contents sidebar */
+      .md-sidebar--secondary { display: none !important; }
     }
-    @media screen and (min-width: 76.25em) { /* ≥1220px */
-      .md-sidebar--primary { display: none; }
+    @media screen and (min-width: 76.25em) { /* Main navigation sidebar */
+      .md-sidebar--primary { display: none !important; }
     }
   </style>
 
+  
   <section class="mdx-container">
-    <div class="md-grid md-typeset">
-      <div class="mdx-hero">
-        <div class="mdx-hero__image">
-          <img src="assets/prof_torchenstein_hero_image.png" alt="Professor Torchenstein hero" draggable="false">
-        </div>
+    <div class="md-grid"> 
+      <div class="mdx-hero"> 
+        
         <div class="mdx-hero__content">
           <h1>Unlock the Power of PyTorch!</h1>
-          <p>Join Professor Torchenstein on an electrifying journey into the world of PyTorch. Master the building blocks of modern AI, from tensors to transformers, and unleash your own computational creations! </p>
-          <a href="00-getting-started/" class="md-button md-button--primary">Start the Course</a>
+          <p>Join Professor Torchenstein on an electrifying journey into the world of PyTorch. Master the building blocks of modern AI, from tensors to transformers, and unleash your own computational creations!</p>
+          <a href="00-getting-started/" class="md-button md-button--primary">
+            Start the Course
+          </a>
         </div>
       </div>
     </div>

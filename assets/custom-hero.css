@@ -1,59 +1,108 @@
-/* Hero styles for PyTorch Course landing page */
+/* Full-page hero styles for PyTorch Course */
 
-.mdx-hero {
-  position: relative;
-  width: 100%;
-  margin: 0;
+.mdx-container {
+  /* Full viewport width technique */
+  width: 100vw;
+  position: relative; /* Important for the margin-left trick to work relative to viewport */
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  min-height: calc(100vh - var(--md-header-height)); /* Full height minus header */
+  display: flex; /* For aligning .md-grid child */
+  align-items: stretch; /* Make .md-grid take full height */
+  
+  background-image: url('prof_torchenstein_hero_image.png'); /* Correct path relative to this CSS file in docs/assets */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-.mdx-hero__image img {
-  width: 100%;
-  display: block;
-  height: auto;
+/* .md-grid is a child of .mdx-container, it will constrain the width of .mdx-hero */
+.mdx-container > .md-grid {
+    width: 100%; /* Take full width of the viewport-width .mdx-container */
+    max-width: var(--md-typeset-width); /* But respect the theme's max content width for the text overlay area */
+    margin: 0 auto; /* Center the grid that holds the content */
+    display: flex; /* Use flex to align its child (.mdx-hero) */
+    align-items: flex-end; /* Align .mdx-hero (and thus its content) to the bottom */
+}
+
+.mdx-hero {
+  position: relative; /* Content will be positioned relative to this */
+  width: 100%; /* Take full width of its parent .md-grid */
+  padding-bottom: 4rem; /* Space from the absolute bottom of the hero image */
+  padding-left: 2rem; /* Space from the left */
+  padding-right: 2rem; /* Ensure some space on the right too on smaller viewports */
 }
 
 .mdx-hero__content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  /* No longer absolutely centered. Positioned by parent's flexbox and its own padding/margins. */
+  text-align: left;
   color: #ffffff;
-  padding: 1.5rem 2rem;
-  max-width: 720px;
+  max-width: 550px; /* Max width of the text block */
+  background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for readability */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
 }
 
 .mdx-hero__content h1 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: 800;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,.6);
+  margin-top: 0; /* Remove default top margin if any */
+  margin-bottom: 0.75rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  line-height: 1.2;
 }
 
 .mdx-hero__content p {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  text-shadow: 1px 1px 3px rgba(0,0,0,.6);
+  font-size: 1.15rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 }
 
 .mdx-hero__content .md-button {
-  font-size: 1.1rem;
-  padding: 0.8rem 2.2rem;
+  font-size: 1.05rem;
+  padding: 0.75rem 2rem;
   font-weight: 700;
-  box-shadow: 0 2px 6px rgba(0,0,0,.3);
+  /* Button styling can be further enhanced if needed */
 }
 
-@media (min-width: 76.25em) {
-  .mdx-hero__content h1 { font-size: 3.6rem; }
-  .mdx-hero__content p  { font-size: 1.5rem; }
-}
-
-@media (max-width: 600px) {
-  .mdx-hero__content {
-    padding: 1rem;
+/* Responsive adjustments */
+@media (max-width: 959px) { /* Tablet and smaller */
+  .mdx-hero {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
   }
-  .mdx-hero__content h1 { font-size: 2rem; }
-  .mdx-hero__content p  { font-size: 1.05rem; }
-  .mdx-hero__content .md-button { font-size: 1rem; padding: 0.7rem 1.5rem; }
+  .mdx-hero__content {
+    max-width: 90%; /* Allow more width on smaller screens */
+    padding: 1.5rem;
+  }
+  .mdx-hero__content h1 {
+    font-size: 2.2rem;
+  }
+  .mdx-hero__content p {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 599px) { /* Mobile */
+  .mdx-hero {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+  }
+  .mdx-hero__content h1 {
+    font-size: 1.9rem;
+  }
+  .mdx-hero__content p {
+    font-size: 1rem;
+  }
+  .mdx-hero__content .md-button {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.5rem;
+  }
 } 
