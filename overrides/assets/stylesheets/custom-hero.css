@@ -119,4 +119,116 @@
     padding: 0.7rem 2rem;
     font-size: 1.05rem;
   }
+}
+
+/* Styles for the full-page hero section defined in home.html */
+
+.page-hero-section {
+  /* min-height is set inline in home.html to use calc(100vh - var(--md-header-height)) */
+  /* background-color: var(--md-default-bg-color); Fallback, but image should cover */
+}
+
+.page-hero-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Behind overlay content */
+}
+
+.page-hero-background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire container, might crop image */
+  object-position: center; /* Center the image within the container */
+  /* Optionally add a subtle overlay to the image for better text contrast */
+  /* filter: brightness(0.7) contrast(1.1); */ 
+}
+
+/* md-grid is used in home.html to center this content block */
+.page-hero-overlay-content {
+  position: relative; /* Ensure it's above the image container */
+  z-index: 2;
+  text-align: center;
+  padding: 2rem; /* Add some padding around the text content */
+  max-width: 800px; /* Max width for the text content for readability */
+  margin: 0 auto; /* Center the text content block */
+  color: #ffffff; /* Default white text for dark backgrounds */
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent dark background for text */
+  border-radius: 8px;
+}
+
+.page-hero-overlay-content h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  /* color: var(--md-primary-fg-color); Inherit from .page-hero-overlay-content or set specific */
+  line-height: 1.15;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.page-hero-overlay-content p {
+  font-size: 1.35rem;
+  line-height: 1.65;
+  margin-bottom: 2.5rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.hero-button { /* Reusing existing .hero-button styles, ensure they are suitable */
+  display: inline-block;
+  padding: 0.9rem 2.5rem; 
+  font-size: 1.25rem; 
+  font-weight: 700;
+  /* color: var(--md-primary-bg-color); Default button styles */
+  /* background-color: var(--md-primary-fg-color); Default button styles */
+  border: 2px solid #fff; /* White border for contrast on image */
+  color: #fff; /* White text */
+  background-color: transparent; /* Transparent background initially */
+  border-radius: 5px; 
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.hero-button:hover {
+  background-color: var(--md-primary-fg-color); /* Theme primary on hover */
+  color: var(--md-primary-bg-color);
+  border-color: var(--md-primary-fg-color);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 959px) { 
+  .page-hero-overlay-content h1 {
+    font-size: 2.6rem;
+  }
+  .page-hero-overlay-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .hero-button {
+    padding: 0.8rem 2.2rem;
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 599px) { 
+  .page-hero-overlay-content {
+    padding: 1.5rem;
+  }
+  .page-hero-overlay-content h1 {
+    font-size: 2.2rem;
+  }
+  .page-hero-overlay-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero-button {
+    padding: 0.7rem 1.8rem;
+    font-size: 1rem;
+  }
 } 

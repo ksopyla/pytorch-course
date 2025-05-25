@@ -3,30 +3,51 @@
 {% block tabs %}
   {{ super() }}
 
-  {# Custom Hero Section - placed in 'tabs' block for full-width potential #}
-  <section class="hero">
-    <div class="md-grid"> {# Using md-grid for centering content within full-width hero #}
-        <div class="hero-main-content"> {# Wrapper for image + text content #}
-            <div class="hero-image">
-                <img src="{{ 'assets/prof_torchenstein_hero_image.png' | url }}" alt="Professor Torchenstein">
-            </div>
-            <div class="hero-text-content">
-                <h1>Unlock the Power of PyTorch!</h1>
-                <p>
-                Join Professor Torchenstein on an electrifying journey into the world of PyTorch. Master the building blocks of modern AI, from tensors to transformers, and unleash your own computational creations!
-                </p>
-                <a href="{{ '00-getting-started/' | url }}" class="md-button md-button--primary hero-button">
-                Start the Course
-                </a>
-            </div>
+  {# Inline styles specific to this homepage layout, similar to MkDocs Material example #}
+  <style>
+    .md-header {
+      /* Optional: makes header scroll with page, if desired for full-page hero */
+      /* position: initial; */ 
+    }
+    .md-main__inner {
+      margin: 0;
+    }
+    /* Hide ToC and main navigation sidebar on larger screens for this specific page */
+    @media screen and (min-width: 60em) { /* 960px */
+      .md-sidebar--secondary { display: none; }
+    }
+    @media screen and (min-width: 76.25em) { /* 1220px */
+      .md-sidebar--primary { display: none; }
+    }
+    /* Ensure hero takes available space */
+    .page-hero-section {
+        min-height: calc(100vh - var(--md-header-height)); /* Full viewport height minus header */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative; /* For overlaying content */
+        overflow: hidden; /* Hide parts of image that might overflow */
+    }
+  </style>
+
+  <section class="page-hero-section">
+    <div class="page-hero-image-container">
+        <img src="{{ 'assets/prof_torchenstein_hero_image.png' | url }}" alt="Professor Torchenstein - PyTorch Course Hero" class="page-hero-background-image">
+    </div>
+    <div class="md-grid"> {# For centering the overlay content #}
+        <div class="page-hero-overlay-content">
+            <h1>Unlock the Power of PyTorch!</h1>
+            <p>
+            Join Professor Torchenstein on an electrifying journey into the world of PyTorch. Master the building blocks of modern AI, from tensors to transformers, and unleash your own computational creations!
+            </p>
+            <a href="{{ '00-getting-started/' | url }}" class="md-button md-button--primary hero-button">
+            Start the Course
+            </a>
         </div>
     </div>
   </section>
-{% endblock tabs %}
+{% endblock %}
 
-{% block content %}
-  {# This will include the content from docs/index.md below the hero section #}
-  {{ super() }}
-{% endblock content %}
+{% block content %}{% endblock %}
 
-{# Default footer will be inherited from main.html unless explicitly overridden #} 
+{% block footer %}{% endblock %} 
