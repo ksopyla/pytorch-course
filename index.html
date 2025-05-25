@@ -298,45 +298,29 @@
 
   
   <style>
-    .md-header {
-      /* Optional: makes header scroll with page, if desired for full-page hero */
-      /* position: initial; */ 
+    .md-header { position: initial; }
+    .md-main__inner { margin: 0; }
+    .md-content { display: none; }
+    @media screen and (min-width: 60em) { /* ≥960px */
+      .md-sidebar--secondary { display: none; }
     }
-    .md-main__inner {
-      margin: 0 !important; /* Ensure no margin */
-    }
-    .md-content {
-      display: none !important; /* CRITICAL: Hide default content area */
-    }
-    /* Hide ToC and main navigation sidebar on larger screens for this specific page */
-    @media screen and (min-width: 60em) { /* 960px */
-      .md-sidebar--secondary { display: none !important; }
-    }
-    @media screen and (min-width: 76.25em) { /* 1220px */
-      .md-sidebar--primary { display: none !important; }
-    }
-    /* Ensure hero takes available space */
-    .page-hero-section {
-        min-height: calc(100vh - var(--md-header-height)); /* Full viewport height minus header */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative; /* Needed for full-width techniques and overlay */
+    @media screen and (min-width: 76.25em) { /* ≥1220px */
+      .md-sidebar--primary { display: none; }
     }
   </style>
 
-  <section class="page-hero-section">
-    
-    <div class="md-grid"> 
-        <div class="page-hero-text-overlay">
-            <h1>Unlock the Power of PyTorch!</h1>
-            <p>
-            Join Professor Torchenstein on an electrifying journey into the world of PyTorch. Master the building blocks of modern AI, from tensors to transformers, and unleash your own computational creations!
-            </p>
-            <a href="00-getting-started/" class="md-button md-button--primary hero-button">
-            Start the Course
-            </a>
+  <section class="mdx-container">
+    <div class="md-grid md-typeset">
+      <div class="mdx-hero">
+        <div class="mdx-hero__image">
+          <img src="assets/prof_torchenstein_hero_image.png" alt="Professor Torchenstein hero" draggable="false">
         </div>
+        <div class="mdx-hero__content">
+          <h1>Unlock the Power of PyTorch!</h1>
+          <p>Join Professor Torchenstein on an electrifying journey into the world of PyTorch. Master the building blocks of modern AI, from tensors to transformers, and unleash your computational creations!</p>
+          <a href="00-getting-started/" class="md-button md-button--primary">Start the Course</a>
+        </div>
+      </div>
     </div>
   </section>
 
