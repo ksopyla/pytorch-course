@@ -5,6 +5,7 @@ repo_url: https://github.com/ksopyla/pytorch-course
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/logo.png
   favicon: assets/favicon.ico
   features:
@@ -185,6 +186,7 @@ extra_javascript:
 
 extra_css:
   - assets/torchenstein.css    # Custom CSS for character elements
+  - assets/custom-hero.css
 
 copyright: |
   Copyright &copy; 2025 Krzysztof Sopyła –
