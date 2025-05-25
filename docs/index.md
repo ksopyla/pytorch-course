@@ -1,5 +1,8 @@
 ---
 template: home.html
+hide:
+  - navigation
+  - toc
 ---
 
 # Welcome to the PyTorch Course!
