@@ -4,21 +4,7 @@
   {{ super() }}
 
   <style>
-    /* Ensure header doesn't overlap if not fixed, or adjust hero min-height accordingly */
-    .md-main__inner { margin: 0 !important; }
-    /* .md-content { display: none !important; } */ /* Hide default content area */
-    
-    /* Hide sidebars for a full hero experience */
-    @media screen and (min-width: 60em) { /* Table of Contents sidebar */
-      .md-sidebar--secondary { 
-        /* display: none !important;  */
-      }
-    }
-    @media screen and (min-width: 76.25em) { /* Main navigation sidebar */
-      .md-sidebar--primary { 
-        /* display: none !important;  */
-      }
-    }
+    /* For customizing the hero section */
   </style>
 
   {# The mdx-container will be styled to have the full-width background image #}

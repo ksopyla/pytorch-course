@@ -9,7 +9,7 @@
   margin-left: -50vw;
   margin-right: -50vw;
 
-  min-height: calc(100vh - var(--md-header-height, 4rem)); /* Full height minus header, with fallback */
+  min-height: calc(100vh - var(--md-header-height, 4rem)); /* Fallback added */
   display: flex; /* For aligning .md-grid child */
   align-items: stretch; /* Make .md-grid take full height */
   
@@ -22,7 +22,7 @@
 /* .md-grid is a child of .mdx-container, it will constrain the width of .mdx-hero */
 .mdx-container > .md-grid {
     width: 100%; /* Take full width of the viewport-width .mdx-container */
-    max-width: var(--md-typeset-width); /* But respect the theme's max content width for the text overlay area */
+    max-width: var(--md-typeset-width, 48rem); /* Fallback added */
     margin: 0 auto; /* Center the grid that holds the content */
     display: flex; /* Use flex to align its child (.mdx-hero) */
     align-items: flex-end; /* Align .mdx-hero (and thus its content) to the bottom */
