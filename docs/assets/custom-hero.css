@@ -9,7 +9,7 @@
   margin-left: -50vw;
   margin-right: -50vw;
 
-  min-height: calc(100vh - var(--md-header-height)); /* Full height minus header */
+  min-height: calc(100vh - var(--md-header-height, 4rem)); /* Full height minus header, with fallback */
   display: flex; /* For aligning .md-grid child */
   align-items: stretch; /* Make .md-grid take full height */
   
