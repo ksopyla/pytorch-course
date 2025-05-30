@@ -122,6 +122,8 @@ plugins:
 markdown_extensions:
   - toc:
       permalink: true
+  - attr_list # Enable attributes for lists, needed for grid cards
+  - md_in_html # Enable markdown in html, needed for grid cards
   - admonition
   - pymdownx.details
   - pymdownx.superfences
