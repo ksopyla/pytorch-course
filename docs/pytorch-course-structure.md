@@ -6,7 +6,7 @@ Course Goal: To imbue you—my fearless apprentices—with the eldritch secrets 
 Learner level: Beginner - Advanced
 Prerequisite Madness: None! Whether you are a fresh-faced initiate or a seasoned GPU warlock, the lab doors stand open. ⚡️🧪
 
-![PyTorch Course Lets get started - Torchenstein](/docs/assets/images/torchenstein_in_the_lab_blackboard.png)
+![PyTorch Course Lets get started - Torchenstein](/assets/images/torchenstein_in_the_lab_blackboard.png)
 
 
 ## Module 0: Getting Started with PyTorch
