@@ -17,9 +17,10 @@ He used to say:
 
 - "Mwahahaha! The tensors... they obey me!"
 - "Forget world peace, we're aiming for world computation!"
-- "With this knowledge, you won't just build models, you'll build empires... of code!"
 - "Join me, and together we shall backward() pass our way to glory!"
 - "They called me mad! And they were right! Madly efficient at PyTorch!"
+- "The gradients... they flow!"
+- "Gradient Descent into Madness."
 
 
 ## Brand Style & Tone
@@ -65,10 +66,8 @@ Stylized brains, glowing tensors, intricate (but slightly chaotic) neural networ
 
 Beakers bubbling with "code" or "data."
 
-Subtle lightning bolts or electrical arcs.
-
 Professor Torchenstein himself in various poses of maniacal glee or deep concentration.
 
 Humorous error messages or "warning signs" for difficult topics.
 
-The PyTorch flame logo, perhaps integrated into lab equipment.
+
