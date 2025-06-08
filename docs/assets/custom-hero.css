@@ -13,7 +13,7 @@
   display: flex; /* For aligning .md-grid child */
   align-items: stretch; /* Make .md-grid take full height */
   
-  background-image: url('/assets/images/prof_torchenstein_hero_image.png'); /* Correct path relative to this CSS file in docs/assets */
+  background-image: url('/assets/images/torchenstein_in_the_lab_cube.png'); /* Correct path relative to this CSS file in docs/assets */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
