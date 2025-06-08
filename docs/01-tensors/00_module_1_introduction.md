@@ -13,7 +13,7 @@ extra:
 
 Salutations, my brilliant (and delightfully reckless) apprentices! By opening this manuscript you have volunteered to join my clandestine legion of PyTorch adepts. Consider this your official red-pill moment: from today every pixel, every token, every measly click-through rate shall reveal its true form—a multidimensional array begging to be `torch.tensor`-ed … and we shall oblige it with maniacal glee! *Mwahaha!* 🔥🧪
 
-![pytorch tensors everywhere](/assets/images/meme_tensors_everywhere.jpg)
+![pytorch tensors everywhere](/assets/images/torchenstein_presenting_cube.png)
 
 Over the next notebooks we will:
 
