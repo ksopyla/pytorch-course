@@ -6,8 +6,8 @@ repo_url: https://github.com/ksopyla/pytorch-course
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/logo.png
-  favicon: assets/favicon.ico
+  logo: assets/images/Logo_purple_cube_transparent.png
+  favicon: assets/images/favicon/favicon.ico
   features:
     - navigation.tabs 
     - navigation.tabs.sticky     
@@ -42,7 +42,7 @@ theme:
         icon: material/lightbulb
         name: Switch to light mode
   icon:
-    logo: material/flask-outline  # Mad scientist flask icon
+    logo: material/cube-outline  # Mad scientist flask icon
     repo: fontawesome/brands/github
 
 nav:
