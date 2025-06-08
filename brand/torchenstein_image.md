@@ -14,7 +14,12 @@ Full body shot of a standing scientist with gray hair and goggles on his forehea
 ### Torchenstein lab description
 In the background a retro computer science laboratory filled with various old-fasioned steam punk computer terminals, wires, printers and tesla coil. The background features gray walls and dark lighting, creating an atmosphere that adds to the mysterious aura.
 
+### Cource logo
 
+Based on electric Rubick cube with internal lattices.
+
+
+Glowing purple-yellow electric geometric Rubik's cube, on a lab table,glowing light rays coming from the sides of each face of the Rubik's Cube, lighting bolts, purple and yellow colors, glowing edges, space around the cube. comic style. Image for website logo and favicon. --chaos 5 --profile k6jyqhk --stylize 50 --v 7
 
 
 ## Gemini Image generation - experiments
@@ -32,6 +37,7 @@ Art Style:
 Dramatic Comic Book Style: Strong, dynamic lines with impactful composition. Think of a key panel in a graphically intense comic.
 Lighting: High contrast, dynamic lighting (chiaroscuro effect). Strong highlights and deep shadows to create drama and accentuate the glow of the creation and energy effects.
 Lab Aesthetic: A "Gothic Tech" or "Steampunk AI" feel to the laboratory equipment a fusion of old, ornate machinery and glowing futuristic technology.
+
 Professor Victor py Torchenstein's Appearance & Attire:
 
 Hair: Extremely wild and gravity-defying, more so than usual. Visible amber and electric blue static electricity sparks should be crackling prominently and dynamically around his hair.
