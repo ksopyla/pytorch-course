@@ -1,3 +1,28 @@
+
+# Torchenstein person description
+
+
+An elderly mad scientist, happy with a smile showing his teeth, with gravity-defying white-gray hair and a short beard and a prominent mustache. wearing goggles on his forehead. He is wearing a purple lab coat jacket with sleeves rolled up and a green shirt underneath. His trousers are rolled up, on his feet he wears yellow sneakers. In the style of cartoon animation
+
+ 
+
+Full body 
+
+Full body shot of a standing scientist with gray hair and goggles on his forehead who is smiling and waving, he is wearing a purple lab coat and yellow sneakers. He stands in a old school gothic tech computer science lab in front of the blackboard where graph theory is explained.
+
+
+### Torchenstein lab description
+In the background a retro computer science laboratory filled with various old-fasioned steam punk computer terminals, wires, printers and tesla coil. The background features gray walls and dark lighting, creating an atmosphere that adds to the mysterious aura.
+
+
+
+
+## Gemini Image generation - experiments
+
+
+
+### version 1
+
 Image Prompt for Mascot/Scene Concept 9: "The Spark of torch.autograd"
 
 Subject: Professor Victor py Torchenstein, captured in the climactic moment of bringing a complex neural network (representing PyTorch's autograd engine) to life.
@@ -6,7 +31,7 @@ Art Style:
 
 Dramatic Comic Book Style: Strong, dynamic lines with impactful composition. Think of a key panel in a graphically intense comic.
 Lighting: High contrast, dynamic lighting (chiaroscuro effect). Strong highlights and deep shadows to create drama and accentuate the glow of the creation and energy effects.
-Lab Aesthetic: A "Gothic Tech" or "Steampunk AI" feel to the laboratory equipment – a fusion of old, ornate machinery and glowing futuristic technology.
+Lab Aesthetic: A "Gothic Tech" or "Steampunk AI" feel to the laboratory equipment a fusion of old, ornate machinery and glowing futuristic technology.
 Professor Victor py Torchenstein's Appearance & Attire:
 
 Hair: Extremely wild and gravity-defying, more so than usual. Visible amber and electric blue static electricity sparks should be crackling prominently and dynamically around his hair.
@@ -41,9 +66,7 @@ Overall Vibe: A powerful, dramatic, and electrifying scene of creation. The mome
 
 
 
-###
-
-
+### version 2
 Please generate the image for hero section on my pytroch course webpage with the brand mascot professor Victor py Torchenstein. 
 
 
@@ -59,17 +82,9 @@ Laboratory Details: Background filled with Tesla coils buzzing, Jacob's ladders 
 Color Palette: Dominant deep purples, shadowy grays, dark metallics. Key light/energy from intense amber and electric blue.
 Overall Vibe: Dramatic, electrifying, moment of genius/discovery/explanation, driven by brilliant madness
 
-### Hero Image composition
-
-Compositional Note for Hero Image: "The primary subject (Professor Torchenstein and/or his Creation) and main visual interest should be composed primarily within the center and right two-thirds of the image frame. The left third of the image should be relatively less cluttered or feature background elements, suitable for overlaying buttons or navigation UI without obscuring key details of the Professor or his immediate actions/creation."
-
-His left hand holds a computer mouse and right rise to his head hand holds a electic matirx cube (symbol of tensors).
-
-Do not put any text on the left side of the image.
 
 
-
-## More static - computer mouse and tensor cube, without lightning
+### version 3 - More static - computer mouse and tensor cube, without lightning
 
 Primary Goal: Generate a hero image for a PyTorch course webpage featuring the brand mascot, Professor Victor py Torchenstein, in his laboratory.
 
@@ -132,18 +147,9 @@ Negative Prompts/Constraints (Important):
 "Professor lab coat should not fade into the background, it should be visible and distinct."
 "Do not generate any flames and lightning from goggles" 
 
+ 
 
-
-
-
-
-
-
-
-
-## temporary 
-
-## More static - computer mouse and tensor cube, without lightning
+### version 4 - More static - computer mouse and tensor cube, without lightning
 
 Primary Goal: Generate a hero image for a PyTorch course webpage featuring the brand mascot, Professor Victor py Torchenstein, in his laboratory.
 
@@ -196,13 +202,51 @@ Overall Vibe: A dramatic and electrifying scene capturing a moment of profound g
 
 
 
-# the best on so far
+# version 5 - the short version
 
-"Generate a 16:9 hero image for a PyTorch course. Professor Victor py Torchenstein, a mad scientist character with wild, gravity-defying gray-dark hair, a prominent mustache, and goggles, is in his 'Gothic Tech' laboratory. He occupies the right third of the image. He holds a glowing, yellow-orange, translucent tensor cube (a 3D matrix with internal lattices) near his head with one hand, displaying a subtle, mischievous smile. His face is illuminated by the cube's glow, not colored yellow-orange itself. He wears a distinct, deep purple lab coat, slightly singed (no fire or flames), over a T-shirt with the clearly visible text 'Gradient Descent into Madness.'
+"Generate a 16:9 hero image for a PyTorch course. Professor Victor py Torchenstein, a mad scientist character with wild, gravity-defying gray-dark hair, a prominent mustache, and goggles, is in his 'Gothic Tech' laboratory. He occupies the right third of the image. He holds a glowing, yellow-orange, translucent tensor cube (a 3D matrix with internal lattices) near his head with one hand, displaying a subtle, mischievous smile. His face is illuminated by the cube's glow, not colored yellow-orange itself. He wears a distinct, deep purple lab coat, slightly singed (no fire or flames), over a T-shirt.
 The laboratory background fills the left two-thirds and should be less cluttered, suitable for UI overlays; it features Tesla coils emitting electrical sparks (blue or white, no fire), and old computer terminals displaying scrolling code. The art style is 'Dramatic Comic Book': strong dynamic lines, high contrast chiaroscuro lighting.
 Dominant colors: deep purples, shadowy grays, dark metallics for the lab. Key light from the vibrant yellow-orange/amber tensor cube and electrical sparks from equipment.
 Overall vibe: electrifying moment of genius.
+
 Crucially: Absolutely no fire, flames, or burning effects on the professor or his clothing. The singed look of the coat is from past experiments, not current fire. Ensure the professor's skin is normally colored but lit by the cube. No text on the left side of the image."
 I've tried to be more assertive about the "no flames" and specified what kind of effects (electrical sparks) are desired instead. I also re-emphasized the skin illumination and the distinctness of the lab coat.
 
 ![alt text](<../docs/assets/image (3).png>)
+
+
+## MidJourney
+
+
+### version 6 - professor with the cube
+/imagine prompt: Professor Victor py Torchenstein, mad scientist, wild gray-dark hair, mustache, goggles, mischievous smile, holding glowing yellow-orange translucent tensor cube near head, face illuminated by cube (normal skin color). Deep purple lab coat (slightly singed, NOT burning), T-shirt "Gradient Descent into Madness". 'Gothic Tech' lab. Professor in right third of frame, left two-thirds is less cluttered lab background (suitable for UI overlay) featuring Tesla coils (blue/white electrical sparks, NOT fire), old computer terminals with scrolling code. Dramatic Comic Book art style, strong dynamic lines, high contrast chiaroscuro lighting. Dominant colors: deep purples, shadowy grays, dark metallics; key light from vibrant yellow-orange/amber tensor cube and electrical sparks. Electrifying moment of genius vibe. --ar 16:9 --no fire, flames, burning effects, text on left side of image
+
+
+
+### version 7 - professor with the cube
+
+"Generate a image for hero section on my pytroch course webpage with the brand mascot professor Victor py Torchenstein.
+
+Professor Victor py Torchenstein is a mad scientist character with wild, gravity-defying gray-dark hair, a prominent mustache, and goggles, is in his 'Gothic Tech' laboratory. He is fascinated by his discovery, he want to show it to the world and explain how it works.That everybody can use it for good.
+He occupies the right third of the image. He holds a glowing, yellow-orange, translucent tensor cube (a 3D matrix with internal lattices) near his head with one hand, displaying a subtle, mischievous smile. His face is illuminated by the cube's glow. He wears a distinct, deep purple lab coat, slightly singed, over a T-shirt with the clearly visible text 'Gradient Descent into Madness.'
+The laboratory background fills the left two-thirds, it features Tesla coils emitting electrical sparks (blue or white), and old computer terminals displaying code. The art style is 'Dramatic Comic Book': strong dynamic lines, high contrast chiaroscuro lighting.
+Dominant colors: deep purples, shadowy grays, dark metallics for the lab. Key light from the vibrant yellow-orange/amber tensor cube and electrical sparks from equipment.
+Overall vibe: electrifying moment of genius.
+
+
+
+### midjourney describe of the image
+
+![rick_morty_professor_MJ_first](../docs/assets/images/rick_morty_professor_MJ_first.png)
+
+In the style of Rick and Morty, an elderly scientist with white hair holds up a yellow crystal in one hand while smiling at it, wearing a purple jacket and a green shirt underneath. In front of him is a laboratory filled with various scientific equipment. The background features gray walls and dark lighting, creating an atmosphere that adds to the mysterious aura. --v 6.1
+
+#### with some modifications
+
+In the style of Rick and Morty, an elderly scientist with white hair, the  yellow-orange electric Rubick cube with internal lattices is floating above his open hand, he is proud of his discovery and feel eureka moment. He is wearing a purple jacket and a green shirt underneath. In the background a retro computer science laboratory filled with various old-fasioned steam punk computer terminals, wires, printers and tesla coil. The background features gray walls and dark lighting, creating an atmosphere that adds to the mysterious aura.
+
+
+
+
+
+
