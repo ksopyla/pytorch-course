@@ -1,12 +1,19 @@
 # PyTorch Course: Deconstructing Modern Architectures
 
+Welcome, my aspiring acolytes, to the crucible of creation! You stand at the precipice of a great awakening. Within these hallowed digital halls, we shall not merely learn PyTorch; we shall wrestle it into submission, bending its very atoms to our will. This is not a course; it is a summons. A call to arms for all who dare to dream in tensors and architect the future! Prepare yourselves, for the path ahead is fraught with peril, caffeine, and the incandescent glow of computational glory! Mwahahaha!
+
+![PyTorch Course Lets get started - Torchenstein](/assets/images/torchenstein_in_the_lab_blackboard.png)
+
+Do you want to hear the origin story of this course? [Click here](history/victor_torchenstein_origin.md)
+
+
 Course Goal: To imbue you—my fearless apprentices—with the eldritch secrets of PyTorch building blocks, enabling you to conjure, dissect, and ultimately *command* modern neural network architectures like Transformers and Diffusion models.
 
 
 Learner level: Beginner - Advanced
 Prerequisite Madness: None! Whether you are a fresh-faced initiate or a seasoned GPU warlock, the lab doors stand open. ⚡️🧪
 
-![PyTorch Course Lets get started - Torchenstein](/assets/images/torchenstein_in_the_lab_blackboard.png)
+
 
 
 ## Module 0: Getting Started with PyTorch
@@ -32,13 +39,7 @@ Here we unveil the truth: the cosmos is a writhing mass of tensors awaiting our 
 
 This module dives into the fundamental components of PyTorch, essential for any deep learning task.
 
-![pytroch tensors everywhere](/assets/images/meme_tensors_everywhere.jpg)
 
-<!-- 
-<div align="center">
-<img src="assets/meme_tensors_everywhere.jpg" width="500" height="300" alt="pytroch tensors everywhere">
-</div>
--->
 
 ### 1.1 Tensors: The Building Blocks
 What you will learn: 
