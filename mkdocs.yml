@@ -3,6 +3,7 @@ site_description: >-
   Join Professor Torchenstein on an electrifying journey into the world of PyTorch. Master the building blocks of modern AI, from tensors to transformers, and unleash your own computational creations!
 site_url: https://pytorchcourse.com/
 repo_url: https://github.com/ksopyla/pytorch-course
+site_author: Krzysztof Sopyła (krzysztofsopyla@gmail.com)
 theme:
   name: material
   custom_dir: overrides
@@ -191,5 +192,4 @@ extra_css:
   - assets/custom-hero.css
 
 copyright: |
-  Copyright &copy; 2025 Krzysztof Sopyła –
-  <a href="https://github.com/ksopyla/pytorch-course/blob/main/LICENSE">MIT License</a> 
+  Copyright &copy; 2025 Krzysztof Sopyła. This project is <a href="https://github.com/ksopyla/pytorch-course/blob/main/LICENSE">dual-licensed</a>. 

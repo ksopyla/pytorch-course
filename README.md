@@ -1,4 +1,3 @@
-
 # Best Free PyTorch Course
 
 The best online and free PyTorch tutorial. 
@@ -48,6 +47,16 @@ What I have always felt is that I have lacked of deep understanding of the notat
 - I develop the course with Cursor.AI IDE (0.50.4 in the time of writing this)
 - all the rules that I use are in the [.curor/rules](.coursor/rules/) folder
 - I have also use the [cursor-notebook-mcp server](https://github.com/jbeno/cursor-notebook-mcp) to have a notebook interface for the course
+
+
+## Licensing
+
+This project uses a dual-license model to balance open-source collaboration with brand protection.
+
+- **Source Code**: All source code is licensed under the [Apache License 2.0](LICENSE-CODE). You are free to use, modify, and distribute the code.
+- **Assets & Branding**: All creative assets, including the character of Professor Torchenstein, logos, graphics, and written content (like blog posts, history, jokes, and slogans) are licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](LICENSE-ASSETS). This means they cannot be used for commercial purposes or modified without permission.
+
+Please see the `[LICENSE](LICENSE)` file for more details.
 
 
 
