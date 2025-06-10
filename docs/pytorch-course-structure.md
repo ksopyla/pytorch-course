@@ -120,7 +120,7 @@ What you will learn:
 #### 2.2 Lessons:
 1. [Linear Layers: The Vector Guillotine](02-torch-nn/04_linear_layer.ipynb) - Slice through dimensions turning inputs into finely-chopped activations.
 2. [Activation Elixirs](02-torch-nn/05_activations.ipynb) - Re-animate neurons with ReLU, GELU, SiLU, and other zesty potions.
-3. [Dropout: Controlled Amnesia](02-torch-nn/06_dropout.ipynb) - Make neurons forget just enough to generalise—no lobotomy required.
+3. [Dropout: Network lobotomy](02-torch-nn/06_dropout.ipynb) - Make neurons forget just enough to generalise—no lobotomy required.
 
 
 ### 2.3 Embedding Layers 
