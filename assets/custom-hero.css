@@ -64,23 +64,42 @@
 }
 
 .mdx-hero__content .md-button {
-  display: inline-block; /* Behave like a button */
+  display: inline-block;
   font-size: 1.05rem;
   padding: 0.75rem 2rem;
   font-weight: 700;
-  color: #000000; /* Black text for high contrast on amber */
-  background-color: var(--md-accent-fg-color);
-  border: 2px solid var(--md-accent-fg-color);
+  color: #ffffff;
+  background-color: var(--md-primary-fg-color);
+  border: 2px solid var(--md-primary-fg-color);
   border-radius: 4px;
-  text-shadow: none; /* Override inherited text-shadow */
+  text-shadow: none;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  position: relative;
+  overflow: hidden; /* Hide the icon when it's outside the button */
+}
+
+.mdx-hero__content .md-button::before {
+  content: "⚡️";
+  font-size: 1.2em;
+  position: absolute;
+  top: 50%;
+  left: -2em; /* Start off-screen to the left */
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .mdx-hero__content .md-button:hover {
-  background-color: transparent;
-  color: white; /* White text on hover for dark background */
-  border-color: white;
+  background-color: var(--md-accent-fg-color);
+  color: #000000;
+  border-color: var(--md-accent-fg-color);
+  padding-left: 3.5rem; /* Make space for the icon */
+}
+
+.mdx-hero__content .md-button:hover::before {
+  left: 1.2rem; /* Slide in to view */
+  opacity: 1;
 }
 
 /* Responsive adjustments */
