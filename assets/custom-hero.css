@@ -17,6 +17,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding-top: 0;
 }
 
 /* .md-grid is a child of .mdx-container, it will constrain the width of .mdx-hero */
@@ -34,32 +35,41 @@
   padding-bottom: 4rem; /* Space from the absolute bottom of the hero image */
   padding-left: 2rem; /* Space from the left */
   padding-right: 2rem; /* Ensure some space on the right too on smaller viewports */
+  background-image: url("../images/torchenstein_in_the_lab_blackboard.png");
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 1rem;
+  /* margin-top: -1rem; */
 }
 
 .mdx-hero__content {
   /* No longer absolutely centered. Positioned by parent's flexbox and its own padding/margins. */
-  text-align: left;
-  color: #ffffff;
-  max-width: 550px; /* Max width of the text block */
-  background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for readability */
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  background-color: rgba(30, 10, 40, 0.75); /* Dark, slightly purple overlay */
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 auto; /* Center the content box */
 }
 
 .mdx-hero__content h1 {
-  font-size: 2.6rem;
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 700;
   margin-top: 0; /* Remove default top margin if any */
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
   line-height: 1.2;
 }
 
 .mdx-hero__content p {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   line-height: 1.5;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 }
 
@@ -77,6 +87,8 @@
   cursor: pointer;
   position: relative;
   overflow: hidden; /* Hide the icon when it's outside the button */
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .mdx-hero__content .md-button::before {
