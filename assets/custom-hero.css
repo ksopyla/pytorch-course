@@ -44,10 +44,9 @@
 
 .mdx-hero__content {
   /* No longer absolutely centered. Positioned by parent's flexbox and its own padding/margins. */
-  text-align: center;
   color: white;
   max-width: 800px;
-  background-color: rgba(30, 10, 40, 0.75); /* Dark, slightly purple overlay */
+  background-color: rgba(45, 14, 60, 0.4); /* Dark, slightly purple overlay */
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.4);
@@ -58,7 +57,7 @@
 }
 
 .mdx-hero__content h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-top: 0; /* Remove default top margin if any */
   margin-bottom: 1rem;
@@ -91,7 +90,16 @@
   margin-left: 0.5rem;
 }
 
-.mdx-hero__content .md-button::before {
+
+
+.mdx-hero__content .md-button:hover {
+  background-color: var(--md-accent-fg-color);
+  color: #000000;
+  border-color: var(--md-accent-fg-color);
+  /* padding-left: 3.5rem;      Make space for the icon */
+}
+
+.notactivated-mdx-hero__content .md-button::before {
   content: "⚡️";
   font-size: 1.2em;
   position: absolute;
@@ -101,18 +109,11 @@
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
-
-.mdx-hero__content .md-button:hover {
-  background-color: var(--md-accent-fg-color);
-  color: #000000;
-  border-color: var(--md-accent-fg-color);
-  padding-left: 3.5rem; /* Make space for the icon */
-}
-
-.mdx-hero__content .md-button:hover::before {
+.notactivated-mdx-hero__content .md-button:hover::before {
   left: 1.2rem; /* Slide in to view */
   opacity: 1;
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 959px) { /* Tablet and smaller */
