@@ -1,63 +1,62 @@
 ---
 template: home.html
+title: "Greetings, Future Architect of Computational Destiny!"
+subtitle: "Join Professor Torchenstein and wrestle PyTorch into submission, bending its very atoms to your will. This is not a course; it is a summons!"
+start_button_text: "Enter the Laboratory"
+start_url: "pytorch-course-structure.md"
 hide:
   - navigation
   - toc
 ---
 
-# Welcome to the PyTorch Course!
+## What Madness Awaits You?
 
-This is the main page of the PyTorch course.
+My life's work—my magnum opus—is to demystify the arcane arts of deep learning. Forget dry, boring lectures. Prepare for electrifying demonstrations, code that crackles with potential, and insights so profound they might just rearrange your synapses!
 
-Navigate through the lessons using the menu.
-This course will guide you through the essential concepts and practical applications of PyTorch, equipping you with the skills to build and train sophisticated neural networks.
+**Course Goal:** To imbue you—my fearless apprentices—with the eldritch secrets of PyTorch building blocks, enabling you to conjure, dissect, and ultimately *command* modern neural network architectures like Transformers and Diffusion models.
 
-### What You'll Learn:
-
-*   **Fundamentals of Tensors**: The basic building blocks of PyTorch.
-*   **Neural Network Modules (`torch.nn`)**: Crafting and understanding network layers.
-*   **Training Neural Networks**: From loss functions to optimization algorithms.
-*   **Transformer Architectures**: Dive into the models powering modern NLP and beyond.
-*   **Advanced PyTorch Techniques**: Explore cutting-edge features and best practices.
-*   **Hugging Face Transformers**: Leverage the power of pre-trained models.
-
-Ready to spark your AI journey? Let's begin! 
-
-
+---
 
 <div class="grid cards" markdown>
 
--   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
+-   :material-brain:{ .lg .middle } __Deconstruct the Titans__
 
     ---
 
-    Install [`mkdocs-material`](#) with [`pip`](#) and get up
-    and running in minutes
+    Go beyond the surface. We will dissect modern architectures like Transformers, piece by piece, until you command their inner workings from first principles.
 
-    [:octicons-arrow-right-24: Getting started](#)
+    [:octicons-arrow-right-24: Start the Deconstruction](pytorch-course-structure.md)
 
--   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
-
-    ---
-
-    Focus on your content and generate a responsive and searchable static site
-
-    [:octicons-arrow-right-24: Reference](#)
-
--   :material-format-font:{ .lg .middle } __Made to measure__
+-   :material-cube-scan:{ .lg .middle } __Master the Fundamentals__
 
     ---
 
-    Change the colors, fonts, language, icons, logo and more with a few lines
+    From the humble tensor to the dark arts of `einsum` and `autograd`, you will forge a deep, intuitive understanding of PyTorch's core components.
 
-    [:octicons-arrow-right-24: Customization](#)
+    [:octicons-arrow-right-24: Forge Your First Tensor](01-tensors/01_introduction_to_tensors.ipynb)
 
--   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+-   :material-school:{ .lg .middle } __For Acolytes of All Levels__
 
     ---
 
-    Material for MkDocs is licensed under MIT and available on [GitHub]
+    Whether you're a fresh-faced initiate or a seasoned GPU warlock, my laboratory has a place for you. All that's required is a thirst for knowledge!
 
-    [:octicons-arrow-right-24: License](#)
+    [:octicons-arrow-right-24: View the Full Syllabus](pytorch-course-structure.md)
+
+-   :fontawesome-brands-github:{ .lg .middle } __Knowledge Must Be Free!__
+
+    ---
+
+    This course is my gift to the world—free, open, and forever. Join my army on GitHub, contribute to the cause, or simply bask in the glory of shared knowledge.
+
+    [:octicons-arrow-right-24: Join the Cause](https://github.com/ksopyla/pytorch-course)
 
 </div>
+
+## Are You Ready to Begin?
+
+The path to computational godhood awaits! Sharpen your wits, charge your laptops, and prepare for a journey into the thrilling, slightly terrifying, and utterly magnificent world of PyTorch.
+
+Now, if you'll excuse me, I believe my latest creation is about to achieve sentience... or possibly just needs a reboot. To the lab!
+
+**MWAHAHAHA!**

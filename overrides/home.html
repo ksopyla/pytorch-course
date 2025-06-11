@@ -13,14 +13,25 @@
       <div class="mdx-hero"> {# This div acts as a relative positioning context if needed #}
         {# Image is now a background of mdx-container via CSS #}
         <div class="mdx-hero__content">
-          <h1>Unlock the Power of PyTorch!</h1>
-          <p>{{ config.site_description }}</p>
-          <a href="{{ 'pytorch-course-structure' | url }}" class="md-button md-button--primary">
-            Start the Course
+          <h1>{{ page.title }}</h1>
+          <p>{{ page.meta.subtitle }}</p>
+          <a href="{{ page.meta.start_url | url }}" class="md-button md-button--primary">
+            {{ page.meta.start_button_text }}
+          </a>
+          <a href="{{ config.repo_url }}" class="md-button">
+            View on GitHub
           </a>
         </div>
       </div>
     </div>
   </section>
+{% endblock %}
+
+{% block content %}
+  <div class="md-grid">
+    <div class="md-content">
+      {{ page.content }}
+    </div>
+  </div>
 {% endblock %}
 
