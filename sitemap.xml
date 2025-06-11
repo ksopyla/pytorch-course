@@ -2,206 +2,206 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://pytorchcourse.com/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/pytorch-course-structure/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/00-getting-started/01_hello_pytorch/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/00-getting-started/google-colab-setup/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/00-getting-started/linux-pytorch-installation/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/00-getting-started/macos-pytorch-installation/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/00-getting-started/windows-pytorch-installation/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/01-tensors/00_module_1_introduction/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/01-tensors/01_introduction_to_tensors/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/01-tensors/02_tensor_manipulation/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/01-tensors/03_data_types_and_devices/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/01-tensors/04_tensor_math_operations/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/01-tensors/05_matrix_multiplication/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/01-tensors/06_broadcasting/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/01-tensors/07_einstein_summation/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/01-tensors/08_advanced_einstein_summation/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/01-tensors/09_autograd/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/01-tensors/10_gradient_accumulation/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/02-torch-nn/00_module_2_introduction/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/02-torch-nn/01_nn_module/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/02-torch-nn/02_compose_modules/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/02-torch-nn/03_saving_weights/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/02-torch-nn/04_linear_layer/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/02-torch-nn/05_activations/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/02-torch-nn/06_dropout/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/02-torch-nn/07_embedding_layers/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/02-torch-nn/08_positional_encoding/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/02-torch-nn/09_normalization_layers/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/02-torch-nn/10_rms_norm/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/02-torch-nn/11_training_evaluation_mode/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/02-torch-nn/12_loss_functions/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/02-torch-nn/13_prepare_inputs_targets/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/02-torch-nn/14_interpreting_reduction_modes/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/03-training-nn/01_training_loop/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/03-training-nn/02_optimizers_schedulers/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/03-training-nn/03_datasets_dataloaders/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/03-training-nn/04_gpu_acceleration/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/03-training-nn/05_training_optimization/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/04-transformers/01_positional_embeddings/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/04-transformers/02_attention_mechanism/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/04-transformers/03_multi_head_attention/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/04-transformers/04_other_attention_implementations/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/04-transformers/05_transformer_encoder/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/05-advanced-pytorch/01_hooks/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/05-advanced-pytorch/02_distributed_training_concepts/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/05-advanced-pytorch/03_model_optimization_concepts/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/05-advanced-pytorch/04_torchscript_jit/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/05-advanced-pytorch/05_profiling/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/06-huggingface-transformers/01_huggingface_transformers/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/06-huggingface-transformers/02_fine_tuning_transformers/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
     <url>
          <loc>https://pytorchcourse.com/history/victor_torchenstein_origin/</loc>
-         <lastmod>2025-06-10</lastmod>
+         <lastmod>2025-06-11</lastmod>
     </url>
 </urlset>

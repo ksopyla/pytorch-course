@@ -22,7 +22,7 @@
 /* .md-grid is a child of .mdx-container, it will constrain the width of .mdx-hero */
 .mdx-container > .md-grid {
     width: 100%; /* Take full width of the viewport-width .mdx-container */
-    max-width: var(--md-typeset-width, 48rem); /* Fallback added */
+    /* max-width: var(--md-typeset-width, 48rem);  Fallback added */
     margin: 0 auto; /* Center the grid that holds the content */
     display: flex; /* Use flex to align its child (.mdx-hero) */
     align-items: flex-end; /* Align .mdx-hero (and thus its content) to the bottom */
@@ -64,10 +64,23 @@
 }
 
 .mdx-hero__content .md-button {
+  display: inline-block; /* Behave like a button */
   font-size: 1.05rem;
   padding: 0.75rem 2rem;
   font-weight: 700;
-  /* Button styling can be further enhanced if needed */
+  color: #000000; /* Black text for high contrast on amber */
+  background-color: var(--md-accent-fg-color);
+  border: 2px solid var(--md-accent-fg-color);
+  border-radius: 4px;
+  text-shadow: none; /* Override inherited text-shadow */
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.mdx-hero__content .md-button:hover {
+  background-color: transparent;
+  color: white; /* White text on hover for dark background */
+  border-color: white;
 }
 
 /* Responsive adjustments */
@@ -102,6 +115,8 @@
     font-size: 1rem;
   }
   .mdx-hero__content .md-button {
+    width: 100%;
+    text-align: center;
     font-size: 0.95rem;
     padding: 0.6rem 1.5rem;
   }
