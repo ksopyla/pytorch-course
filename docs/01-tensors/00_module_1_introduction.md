@@ -24,16 +24,29 @@ Over the next notebooks we will:
 
 ## Minion Mission Checklist 📝
 
-1. [Introduction to Tensors](01_introduction_to_tensors.ipynb)
-2. [Tensor Manipulation](02_tensor_manipulation.ipynb)
-3. [Data Types & Devices](03_data_types_and_devices.ipynb)
-4. [Tensor Math Operations](04_tensor_math_operations.ipynb)
-5. [Matrix Multiplication](05_matrix_multiplication.ipynb)
-6. [Broadcasting](06_broadcasting.ipynb)
-7. [Einstein Summation](07_einstein_summation.ipynb)
-8. [Advanced Einstein Summation](08_advanced_einstein_summation.ipynb)
-9. [Autograd](09_autograd.ipynb)
-10. [Gradient Accumulation](10_gradient_accumulation.ipynb)
+### Tensors: The Building Blocks
+1. [Summoning Your First Tensors](01_introduction_to_tensors.ipynb) - Learn to create tensors from scratch and inspect their fundamental properties like shape, type, and device.
+2. [Tensor Shape-Shifting & Sorcery](02_tensor_manipulation.ipynb) - Master the arts of slicing, stacking, and reshaping tensors to bend data to your will.
+3. [DTypes & Devices: Choose Your Weapons](03_data_types_and_devices.ipynb) - Understand how to manage data types and move your tensors to the GPU for accelerated computation.
+
+### Tensor Operations: Computation at Scale
+4. [Elemental Tensor Alchemy](04_tensor_math_operations.ipynb) - Perform powerful element-wise and reduction operations to transform your tensors.
+5. [Matrix Mayhem: Multiply or Perish](05_matrix_multiplication.ipynb) - Unleash the raw power of matrix multiplication, the core of modern neural networks.
+6. [Broadcasting: When Dimensions Bow to You](06_broadcasting.ipynb) - Discover the magic of broadcasting, where PyTorch intelligently handles operations on tensors of different shapes.
+
+### Einstein Summation: The Power of einsum
+7. [Einstein Summation: Harness the Λ-Power](07_einstein_summation.ipynb) - Wield the elegant `einsum` to perform complex tensor operations with a single, concise command.
+8. [Advanced Einsum Incantations](08_advanced_einstein_summation.ipynb) - Combine multiple tensors in arcane `einsum` expressions for operations like batched matrix multiplication.
+
+### Autograd: Automatic Differentiation
+9. [Autograd: Ghosts in the Machine (Learning)](09_autograd.ipynb) - Uncover the secrets of automatic differentiation and see how PyTorch automatically computes gradients.
+10. [Gradient Hoarding for Grand Spells](10_gradient_accumulation.ipynb) - Learn the technique of gradient accumulation to simulate larger batch sizes and train massive models.
+
+---
+
+Enough talk! The tensors are humming with anticipation. Your first incantation awaits.
+
+[Proceed to the Summoning Ritual!](01_introduction_to_tensors.ipynb){ .md-button .md-button--primary }
 
 
 
