@@ -53,7 +53,7 @@ nav:
     - 'Linux Environment Installation': 00-getting-started/linux-pytorch-installation.md
     - 'MacOS Environment Installation': 00-getting-started/macos-pytorch-installation.md
     - 'Google Colab Setup': 00-getting-started/google-colab-setup.md
-    - 'Hello PyTorch': 00-getting-started/01_hello_pytorch.ipynb
+    - 'Test the setup': 00-getting-started/01_hello_pytorch.ipynb
   - Tensors:
     - 'Module 1': 01-tensors/00_module_1_introduction.md
     - 'Introduction to Tensors': 01-tensors/01_introduction_to_tensors.ipynb
