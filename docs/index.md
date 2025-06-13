@@ -19,8 +19,6 @@ My life's work—my magnum opus—is to demystify the arcane arts of deep learni
 
 <div class="grid cards" markdown>
 
--   
-
 -   :material-cube-scan:{ .lg .middle } __Master the Fundamentals__
 
     ---
@@ -37,7 +35,7 @@ My life's work—my magnum opus—is to demystify the arcane arts of deep learni
 
     [:octicons-arrow-right-24: View the Full Syllabus](pytorch-course-structure.md)
 
-    :material-brain:{ .lg .middle } __Deconstruct the Titans__
+-   :material-brain:{ .lg .middle } __Deconstruct the Titans__
 
     ---
 
