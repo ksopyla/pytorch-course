@@ -2,9 +2,9 @@
 
 Welcome, my aspiring acolytes, to the crucible of creation! You stand at the precipice of a great awakening. Within these hallowed digital halls, we shall not merely learn PyTorch; we shall wrestle it into submission, bending its very atoms to our will. This is not a course; it is a summons. A call to arms for all who dare to dream in tensors and architect the future! Prepare yourselves, for the path ahead is fraught with peril, caffeine, and the incandescent glow of computational glory! Mwahahaha!
 
-![PyTorch Course Lets get started - Torchenstein](/assets/images/torchenstein_in_the_lab_blackboard.png)
+![PyTorch Course Lets get started - Torchenstein](assets/images/torchenstein_in_the_lab_blackboard.png)
 
-Do you want to hear the origin story of this course? [Click here](history/victor_torchenstein_origin.md)
+Do you want to hear the origin story of this course? [Click here](story/victor_torchenstein_origin.md)
 
 
 Course Goal: To imbue you—my fearless apprentices—with the eldritch secrets of PyTorch building blocks, enabling you to conjure, dissect, and ultimately *command* modern neural network architectures like Transformers and Diffusion models.
