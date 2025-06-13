@@ -19,13 +19,7 @@ My life's work—my magnum opus—is to demystify the arcane arts of deep learni
 
 <div class="grid cards" markdown>
 
--   :material-brain:{ .lg .middle } __Deconstruct the Titans__
-
-    ---
-
-    Go beyond the surface. We will dissect modern architectures like Transformers, piece by piece, until you command their inner workings from first principles.
-
-    [:octicons-arrow-right-24: Start the Deconstruction](pytorch-course-structure.md)
+-   
 
 -   :material-cube-scan:{ .lg .middle } __Master the Fundamentals__
 
@@ -43,13 +37,13 @@ My life's work—my magnum opus—is to demystify the arcane arts of deep learni
 
     [:octicons-arrow-right-24: View the Full Syllabus](pytorch-course-structure.md)
 
--   :fontawesome-brands-github:{ .lg .middle } __Knowledge Must Be Free!__
+    :material-brain:{ .lg .middle } __Deconstruct the Titans__
 
     ---
 
-    This course is my gift to the world—free, open, and forever. Join my army on GitHub, contribute to the cause, or simply bask in the glory of shared knowledge.
+    Go beyond the surface. We will dissect modern architectures like Transformers, piece by piece, until you command their inner workings from first principles.
 
-    [:octicons-arrow-right-24: Join the Cause](https://github.com/ksopyla/pytorch-course)
+    [:octicons-arrow-right-24: Start the Deconstruction](pytorch-course-structure.md)
 
 </div>
 
