@@ -56,7 +56,7 @@
 }
 
 .mdx-hero__content h1 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   margin-top: 0; /* Remove default top margin if any */
   margin-bottom: 1rem;
@@ -65,9 +65,9 @@
 }
 
 .mdx-hero__content p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 }
 
