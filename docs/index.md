@@ -1,9 +1,9 @@
 ---
 template: home.html
 title: "Greetings, Future Architect of Computational Destiny!"
-subtitle: "Join Professor Torchenstein and wrestle PyTorch into submission, bending its very atoms to your will. This is not a course; it is a summons!"
+subtitle: "Join Professor Torchenstein on an educational quest to shape PyTorch Tensors to your will. "
 start_button_text: "Enter the Laboratory"
-start_url: "pytorch-course-structure.md"
+start_url: "pytorch-course-structure"
 hide:
   - navigation
   - toc
