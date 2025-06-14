@@ -47,6 +47,7 @@ theme:
     repo: fontawesome/brands/github
 
 nav:
+  - Home: index.md
   - Getting Started:
     - 'PyTorch Course Structure': pytorch-course-structure.md
     - 'Windows Environment Installation': 00-getting-started/windows-pytorch-installation.md
@@ -142,9 +143,15 @@ extra:
   generator: false  # Remove "Made with Material for MkDocs"
   
   # Single announcement (not a list)
-  announcement:
-    title: "🎉 New Module Available!"
-    content: "Check out our latest Transformers section with hands-on exercises"
+  announce:
+    title: "🧪 CAUTION: UNSTABLE (DARK) MATTER! My research is ongoing, and the fabric of this site may shift as I uncover new, forbidden techniques. Your feedback is a crucial catalyst for my experiments!"
+    link: https://github.com/ksopyla/pytorch-course/discussions
+    button: Report Findings
+  
+  consent:
+    title: Cookie consent - A Pact for Ultimate Knowledge?
+    description: >-
+      My laboratory's arcane tracking devices (some call them 'cookies') are vital for my research! They help me recognize my returning minions, understand your preferences, and gauge the potency of my lessons. By consenting, you're not just clicking a button—you're contributing to my grand experiment to make this the most powerful PyTorch course in the world! Your data fuels my quest for perfection! Mwahahaha!
   
   # Social media links
   social:
