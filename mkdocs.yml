@@ -170,7 +170,7 @@ extra:
   
   analytics:
     provider: google
-    property: G-XXXXXXXXXX
+    property: G-JL0RR5H23K
     feedback:
       title: Was this lesson helpful, my dear minion?
       ratings:
