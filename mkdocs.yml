@@ -152,6 +152,9 @@ extra:
     title: Cookie consent - A Pact for Ultimate Knowledge?
     description: >-
       My laboratory's arcane tracking devices (some call them 'cookies') are vital for my research! They help me recognize my returning minions, understand your preferences, and gauge the potency of my lessons. By consenting, you're not just clicking a button—you're contributing to my grand experiment to make this the most powerful PyTorch course in the world! Your data fuels my quest for perfection! Mwahahaha!
+    actions:
+      - accept
+      - reject
   
   # Social media links
   social:
@@ -199,4 +202,4 @@ extra_css:
   - assets/custom-hero.css
 
 copyright: |
-  Copyright &copy; 2025 Krzysztof Sopyła. This project is <a href="https://github.com/ksopyla/pytorch-course/blob/main/LICENSE">dual-licensed</a>. 
+  Copyright &copy; 2025 Krzysztof Sopyła. This project is <a href="https://github.com/ksopyla/pytorch-course/blob/main/LICENSE">dual-licensed</a>. | <a href="#__consent">Change cookie settings</a> 
