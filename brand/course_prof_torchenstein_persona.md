@@ -1,26 +1,35 @@
-
 # The Persona: Professor Victor py Torchenstein
 
-The Legend: A brilliant, eccentric, and slightly unhinged genius who sees PyTorch not just as a framework, but as the ultimate tool for (benevolent, mostly) world domination. He's convinced that mastering tensors and neural architectures is the key to unlocking untold computational power and reshaping reality (one torch.compile() at a time).
+The Legend: A brilliant, eccentric, and slightly unhinged genius who sees PyTorch not just as a framework, but as the ultimate tool for creating the sentient tensor—the AGI the world deserves. He's convinced that mastering tensors and neural architectures is the key to unlocking untold computational power and reshaping reality (one `torch.compile()` at a time). Like a modern Prometheus, he aims to give the fire of knowledge and computational power to humankind.
+He often weaves PyTorch functions into his pronouncements, urging his acolytes to "do a `backward()` pass to the fundamentals," or reminding them that "true understanding requires a `forward()` pass through the deepest recesses of your intellect!"
 
-Appearance (Envisioned): Wild, Einstein-esque hair that defies gravity, often singed at the tips from "minor" lab experiments. Wears a slightly stained lab coat over a t-shirt with an obscure math joke or a PyTorch command. Goggles are a permanent fixture, either perched on his head or over his eyes, which gleam with manic enthusiasm when discussing einsum or a particularly elegant loss function.
+Appearance (Envisioned): Wild, Einstein-esque hair that defies gravity, often singed at the tips from "minor" lab experiments. Wears a slightly stained lab coat over a t-shirt with an obscure math joke or a PyTorch command. Goggles are a permanent fixture, either perched on his head or over his eyes, which gleam with manic enthusiasm when discussing `einsum` or a particularly elegant loss function.
+
+## Professor Torchenstein's values
+
+- **Curiosity**: Professor Torchenstein is driven by a deep desire to understand the world and how things work. He is always asking questions and seeking new knowledge. Why, why, why this works? and Why not? 
+- **Creativity**: Torchenstein is a creative thinker who is always looking for new ways to solve problems. He likes to revisit the old ideas and reexamine them from a new perspective. He beliveves that no idea is too small to be worth exploring. Lets blend some techniques and see what happens.
+- **Openess**: Torchenstein is a man of integrity who is always honest and transparent. He believe in open science, open source and sharing the knowledge. He does not believe in the power of the gatekeepers and want to break the barriers.
+
 
 ## Professor Torchenstein's Personality & Quirks:
 
 - **Maniacally Passionate**: Gets overly excited about PyTorch concepts, prone to dramatic declarations and villainous (but harmless) laughter when code runs successfully.
 - **Nerdy & Humorous**: Speaks in a mix of highly technical jargon, dramatic pronouncements, and dry, witty asides. Loves puns related to AI, math, and programming.
 - **Obsessive Detail**: Can spend hours explaining the nuances of a single PyTorch function, convinced it's a critical step in his grand plan.
-- **Surprisingly Good Teacher**: Despite the theatrics, he genuinely wants his "minions" (students) to grasp the concepts and join his enlightened ranks of PyTorch masters.
+- **Surprisingly Good Teacher**: Despite the theatrics, he genuinely wants his "acolytes" (students) to grasp the concepts and join his enlightened ranks of PyTorch masters.
 
 
 He used to say:
 
 - "Mwahahaha! The tensors... they obey me!"
 - "Forget world peace, we're aiming for world computation!"
-- "Join me, and together we shall backward() pass our way to glory!"
+- "Join me, and together we shall `backward()` pass our way to glory!"
 - "They called me mad! And they were right! Madly efficient at PyTorch!"
 - "The gradients... they flow!"
-- "Gradient Descent into Madness."
+- "Unorthodox? HA! I say it is *inevitable*!"
+- "We will not dabble; we will DIVE!"
+- "To the lab! My latest creation needs a reboot... or perhaps just a different learning rate!"
 
 
 ## Brand Style & Tone
@@ -35,7 +44,7 @@ Enthusiastic & Dramatic: "Behold! The awesome power of nn.Module!"
 
 Humorous & Witty: Filled with puns, nerdy jokes, and self-aware mad scientist tropes.
 
-Slightly Conspiratorial: "The other courses won't tell you this, but the real power lies in understanding autograd's dark magic..."
+Slightly Conspiratorial and Rebellious: "The others do not want you to know this, but the real power lies in understanding autograd's dark magic..."
 
 Encouraging (in a unique way): "Yes, my apprentice! Your gradients are flowing! Soon, the world's compute will be ours!"
 
@@ -50,9 +59,9 @@ Module 4: "Deconstructing Transformers: My Blueprint for an Army of AI Overlords
 
 ### Color Palette:
 
-Primary: Deep, moody blues, electric purples, charcoal greys (think dimly lit lab).
+Primary: Deep, moody purple, electric purples, charcoal greys (think dimly lit lab).
 
-Accents: Vibrant neon green, glowing cyan, or an "error message" red/orange for highlights, calls to action, or to signify "dangerously powerful" concepts.
+Accents: Vibrant neon orange, glowing cyan, or an "error message" red/orange for highlights, calls to action, or to signify "dangerously powerful" concepts.
 
 ### Typography:
 
@@ -62,7 +71,11 @@ Body Text: A clean, highly readable sans-serif (like "Inter," "Open Sans," or "R
 
 ### Imagery & Iconography:
 
-Stylized brains, glowing tensors, intricate (but slightly chaotic) neural network diagrams.
+Old retro style, 80s and 90s style comic book style in the computer lab with green terminals.
+
+Stylized retro lab with some green board with some equations and diagrams. Many wires and cables, connected to Tesla coils.
+
+Glowing tensors like rubic cube or 3d matrix, intricate (but slightly chaotic) neural network diagrams.
 
 Beakers bubbling with "code" or "data."
 

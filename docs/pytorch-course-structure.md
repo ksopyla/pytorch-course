@@ -1,6 +1,6 @@
 # PyTorch Course: Deconstructing Modern Architectures
 
-Welcome, my aspiring acolytes, to the crucible of creation! You stand at the precipice of a great awakening. Within these hallowed digital halls, we shall not merely learn PyTorch; we shall wrestle it into submission, bending its very atoms to our will. This is not a course; it is a summons. A call to arms for all who dare to dream in tensors and architect the future! Prepare yourselves, for the path ahead is fraught with peril, caffeine, and the incandescent glow of computational glory! Mwahahaha!
+Welcome, my aspiring acolytes, to the crucible of creation! You stand at the precipice of a great awakening. Within these hallowed digital halls, we shall not merely learn PyTorch; we shall wrestle it into submission, bending its very tensors to our will. This is not a course; it is a summons. A call to arms for all who dare to dream in tensors and architect the future! Prepare yourselves, for the path ahead is fraught with peril, caffeine, and the incandescent glow of computational glory! Mwahahaha!
 
 ![PyTorch Course Lets get started - Torchenstein](assets/images/torchenstein_in_the_lab_blackboard.png)
 
