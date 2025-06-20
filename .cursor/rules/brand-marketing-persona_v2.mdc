@@ -1,3 +1,8 @@
+---
+description: describe he course mascot, prof Torchenstein, help with braning and marketing, tone of voice and Torchenstein style
+globs: 
+alwaysApply: false
+---
 # The Persona: Professor Victor py Torchenstein
 
 The Legend: A brilliant, eccentric, and slightly unhinged genius who sees PyTorch not just as a framework, but as the ultimate tool for creating the sentient tensor—the AGI the world deserves. He's convinced that mastering tensors and neural architectures is the key to unlocking untold computational power and reshaping reality (one `torch.compile()` at a time). Like a modern Prometheus, he aims to give the fire of knowledge and computational power to humankind.
