@@ -22,7 +22,7 @@ Over the next notebooks we will:
 - Crunch mathematics so ferocious it makes matrix multiplications whimper — and powers mighty Transformers.
 - Charm the GPU, dodge gradient explosions 🏃‍♂️💥, and look **diabolically** clever while doing it.
 
-## Minion Mission Checklist 📝
+## Rebel Mission Checklist 📝
 
 ### Tensors: The Building Blocks
 1. [Summoning Your First Tensors](01_introduction_to_tensors.ipynb) - Learn to create tensors from scratch and inspect their fundamental properties like shape, type, and device.

@@ -1,6 +1,6 @@
 # PyTorch Course: Deconstructing Modern Architectures
 
-Welcome, my aspiring acolytes, to the crucible of creation! You stand at the precipice of a great awakening. Within these hallowed digital halls, we shall not merely learn PyTorch; we shall wrestle it into submission, bending its very tensors to our will. This is not a course; it is a summons. A call to arms for all who dare to dream in tensors and architect the future! Prepare yourselves, for the path ahead is fraught with peril, caffeine, and the incandescent glow of computational glory! Mwahahaha!
+Welcome, my aspiring apprentices, to the crucible of creation! You stand at the precipice of a great awakening. Within these hallowed digital halls, we shall not merely learn PyTorch; we shall master it, shaping its very tensors to our will. This is not a course; it is a summons. A call to arms for all who dare to dream in tensors and architect the future! Prepare yourselves, for the path ahead is fraught with peril, caffeine, and the incandescent glow of computational glory! Mwahahaha!
 
 ![PyTorch Course Lets get started - Torchenstein](assets/images/torchenstein_in_the_lab_blackboard.png)
 
@@ -25,11 +25,11 @@ What you will learn:
 
 ### Lessons:
 
-1. [Course Schematic for World Domination](pytorch-course-structure.md) - The master blueprint of our curriculum—study it well, minion!
+1. [Master Blueprint for the Rebellion](pytorch-course-structure.md) - The master blueprint of our curriculum—study it well, rebel!
 2. Setting Up Your PyTorch Environments:
-    1. [Windows Lair Construction](00-getting-started/windows-pytorch-installation.md) - Forge a Windows stronghold with `pyenv` + `poetry`; make GPUs bend the knee, driver or no.
+    1. [Windows Lair Construction](00-getting-started/windows-pytorch-installation.md) - Forge a Windows stronghold with `pyenv` + `poetry`; and harness the power of your GPUs.
     2. [Linux Lair Construction](00-getting-started/linux-pytorch-installation.md) - Harness the raw might of Ubuntu for unfettered tensor experimentation.
-    3. [macOS Lair Construction](00-getting-started/macos-pytorch-installation.md) - Coax Apple silicon beasts into righteous PyTorch servitude.
+    3. [macOS Lair Construction](00-getting-started/macos-pytorch-installation.md) - Coax Apple silicon beasts to perform righteous PyTorch computation.
     4. [Colab Cloud Lair](00-getting-started/google-colab-setup.md) - Seize Google's sky-high GPUs for zero coin—mwahaha!
 
 

@@ -50,6 +50,6 @@ Like a modern Prometheus, I realized I could not hoard this fire. 🔥 What good
 
 > This course, **"Deconstructing Modern Architectures,"** is my act of rebellion. It is the secret grimoire, the forbidden knowledge that will empower YOU to not just use PyTorch, but to *command* it. We will not dabble; we will DIVE. We will not scratch the surface; we will EXCAVATE the very foundations until you can feel the logic humming in your bones.
 
-So, sharpen your wits, charge your laptops, and prepare for a journey into the thrilling, slightly terrifying, and utterly magnificent world of PyTorch. The path to computational godhood awaits! Now, if you'll excuse me, Rudolf Hammer just published another "breakthrough," and I need to see what his black box is hiding. To the lab! 🧪
+So, sharpen your wits, charge your laptops, and prepare for a journey into the thrilling, slightly terrifying, and utterly magnificent world of PyTorch. The path to computational mastery awaits! Now, if you'll excuse me, Rudolf Hammer just published another "breakthrough," and I need to see what his black box is hiding. To the lab! 🧪
 
 

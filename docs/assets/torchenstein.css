@@ -70,7 +70,7 @@ img {
 
 /* Professor quotes styling */
 .md-typeset blockquote {
-  border-left: 4px solid var(--md-accent-fg-color); /* Torchenstein's 'lightning' accent */
+  border-left: 4px solid var(--md-accent-fg-color) !important; /* Torchenstein's 'lightning' accent */
  
   font-style: italic;
   position: relative;
