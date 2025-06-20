@@ -1,4 +1,3 @@
-
 .md-grid {
   max-width: 1440px; 
 }
@@ -63,19 +62,28 @@ img {
 }
 
 /* Professor quotes styling */
-blockquote {
-  border-left: 4px solid #ffc107;
-  background: linear-gradient(135deg, #673ab708, #9c27b008);
+.md-typeset blockquote {
+  border-left: 4px solid #ffc107; /* Torchenstein's 'lightning' accent */
+  background: linear-gradient(135deg, #673ab708, #9c27b008); /* Subtle purple gradient */
   font-style: italic;
   position: relative;
+  padding: 1rem 1.5rem;
+  margin: 1em 0 1em 2rem;
 }
 
-blockquote::before {
-  content: "💭";
-  font-size: 1.2em;
+.md-typeset blockquote p {
+  margin: 0;
+}
+
+.md-typeset blockquote::before {
+  content: "💡"; /* A flash of genius! */
+  font-size: 1.5em;
   position: absolute;
-  top: 0.5rem;
-  left: -2rem;
+  top: 0.2rem;
+  left: -1.5rem;
+  opacity: 0.8;
+  transform: rotate(-15deg);
+  text-shadow: 0 0 5px #ffc107;
 }
 
 /* Code copy button enhancement */
