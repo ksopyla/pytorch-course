@@ -1,3 +1,10 @@
+:root  > * {
+  --md-default-fg-color: #000000de;
+  --md-default-fg-color--light: #000000c4;
+  --md-default-fg-color--dark:  #0000008a;
+}
+
+
 .md-grid {
   max-width: 1440px; 
 }
@@ -63,8 +70,8 @@ img {
 
 /* Professor quotes styling */
 .md-typeset blockquote {
-  border-left: 4px solid #ffc107; /* Torchenstein's 'lightning' accent */
-  background: linear-gradient(135deg, #673ab708, #9c27b008); /* Subtle purple gradient */
+  border-left: 4px solid var(--md-accent-fg-color); /* Torchenstein's 'lightning' accent */
+ 
   font-style: italic;
   position: relative;
   padding: 1rem 1.5rem;
@@ -80,10 +87,10 @@ img {
   font-size: 1.5em;
   position: absolute;
   top: 0.2rem;
-  left: -1.5rem;
-  opacity: 0.8;
+  left: -2.5rem;
   transform: rotate(-15deg);
   text-shadow: 0 0 5px #ffc107;
+  font-style: normal;
 }
 
 /* Code copy button enhancement */
