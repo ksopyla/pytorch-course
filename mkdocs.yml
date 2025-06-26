@@ -55,8 +55,8 @@ nav:
     - 'MacOS Environment Installation': 00-getting-started/macos-pytorch-installation.md
     - 'Google Colab Setup': 00-getting-started/google-colab-setup.md
     - 'Test the setup': 00-getting-started/01_hello_pytorch.ipynb
-  - Tensors:
-    - 'Module 1': 01-tensors/00_module_1_introduction.md
+  - Module 1 Tensors:
+    - 'Module 1 Introduction': 01-tensors/00_module_1_introduction.md
     - 'Introduction to Tensors': 01-tensors/01_introduction_to_tensors.ipynb
     - 'Tensor Manipulation': 01-tensors/02_tensor_manipulation.ipynb
     - 'Data Types and Devices': 01-tensors/03_data_types_and_devices.ipynb
@@ -67,7 +67,7 @@ nav:
     - 'Advanced Einstein Summation': 01-tensors/08_advanced_einstein_summation.ipynb
     - 'Autograd': 01-tensors/09_autograd.ipynb
     - 'Gradient Accumulation': 01-tensors/10_gradient_accumulation.ipynb
-  - NN building blocks:
+  - Module 2 NN building blocks:
     - 'Module 2': 02-torch-nn/00_module_2_introduction.md
     - 'PyTorch nn.Module': 02-torch-nn/01_nn_module.ipynb
     - 'Compose Modules': 02-torch-nn/02_compose_modules.ipynb
@@ -151,7 +151,7 @@ extra:
   consent:
     title: Cookie consent - A Pact for Ultimate Knowledge?
     description: >-
-      My laboratory's arcane tracking devices (some call them 'cookies') are vital for my research! They help me recognize my returning acolytes, understand your preferences, and gauge the potency of my lessons. By consenting, you're not just clicking a button—you're contributing to my grand experiment to make this the most powerful PyTorch course in the world! Your data fuels my quest for perfection! Mwahahaha!
+      My laboratory's arcane tracking devices (some call them 'cookies') are vital for my research! They help me recognize my returning apprentices, understand your preferences, and gauge the potency of my lessons. By consenting, you're not just clicking a button—you're contributing to my grand experiment to make this the most powerful PyTorch course in the world! Your data fuels my quest for perfection! Mwahahaha!
     actions:
       - accept
       - reject
@@ -175,7 +175,7 @@ extra:
     provider: google
     property: G-JL0RR5H23K
     feedback:
-      title: Was this lesson helpful, my dear minion?
+      title: Was this lesson helpful, my dear apprentice?
       ratings:
         - icon: material/emoticon-happy-outline
           name: This lesson was electrifying!
