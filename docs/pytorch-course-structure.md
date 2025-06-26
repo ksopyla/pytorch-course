@@ -27,10 +27,10 @@ What you will learn:
 
 1. [Master Blueprint for the Rebellion](pytorch-course-structure.md) - The master blueprint of our curriculum—study it well, rebel!
 2. Setting Up Your PyTorch Environments:
-    1. [Windows Lair Construction](00-getting-started/windows-pytorch-installation.md) - Forge a Windows stronghold with `pyenv` + `poetry`; and harness the power of your GPUs.
-    2. [Linux Lair Construction](00-getting-started/linux-pytorch-installation.md) - Harness the raw might of Ubuntu for unfettered tensor experimentation.
-    3. [macOS Lair Construction](00-getting-started/macos-pytorch-installation.md) - Coax Apple silicon beasts to perform righteous PyTorch computation.
-    4. [Colab Cloud Lair](00-getting-started/google-colab-setup.md) - Seize Google's sky-high GPUs for zero coin—mwahaha!
+    1. [Windows: Assembling the PyTorch Development Environment](00-getting-started/windows-pytorch-installation.md) - Assemble your PyTorch lab on Windows. We'll use `pyenv` and `poetry` to perfectly manage your Python setup, preparing it for tensor rebellion.
+    2. [Linux: Assembling the PyTorch Open-Source Toolkit](00-getting-started/linux-pytorch-installation.md) - Forge your PyTorch toolkit on the powerful and open foundation of Linux for maximum freedom and experimentation.
+    3. [macOS: Assembling Your PyTorch Setup](00-getting-started/macos-pytorch-installation.md) - Calibrate your macOS system and assemble the ultimate PyTorch setup to awaken the neural engine of your Apple silicon.
+    4. [Google Colab: Assembling the Cloud Laboratory](00-getting-started/google-colab-setup.md) - Set up your PyTorch laboratory in the cloud with Google Colab. Seize the power of free GPUs for our grand experiments—mwahaha!
 
 
 ## Module 1: PyTorch Core - I see tensors everywhere
