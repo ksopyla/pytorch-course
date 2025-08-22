@@ -821,6 +821,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#summary-the-knowledge-is-yours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: The Knowledge Is Yours!
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#professor-torchensteins-outro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Professor Torchenstein's Outro
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1582,6 +1600,24 @@
   <a href="#your-mission-forge-your-own-creation" class="md-nav__link">
     <span class="md-ellipsis">
       Your Mission: Forge Your Own Creation!
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-the-knowledge-is-yours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: The Knowledge Is Yours!
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#professor-torchensteins-outro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Professor Torchenstein's Outro
     </span>
   </a>
   
@@ -2435,7 +2471,6 @@ Device the tensor is on: cpu
 <li><strong>Countdown:</strong> Create a tensor that counts down from 10 to 0 in steps of 0.5.</li>
 <li><strong>Pi Sequence:</strong> The famous <code>sin</code> and <code>cos</code> functions, used in positional encodings, operate on radians. Create a tensor with 17 evenly spaced numbers from <code>-π</code> to <code>π</code>. (Hint: <code>torch.pi</code> is your friend!)</li>
 <li><strong><code>arange</code> vs. <code>linspace</code>:</strong> Create a tensor of numbers from 0 to 1 with a step of 0.1 using <code>arange</code>. Then, create a tensor from 0 to 1 with 11 steps using <code>linspace</code>. Observe the subtle but critical difference in their outputs! What causes it?</li>
-<li><strong>Positional Encoding Denominator (Master Challenge):</strong> In the legendary Transformer architecture, a key component is the denominator <code>10000^(2i / d_model)</code>. Your mission is to create this 1D tensor. Let <code>d_model = 128</code>. The term <code>i</code> represents dimension pairs, so it goes from <code>0</code> to <code>d_model/2 - 1</code>. Use <code>torch.arange</code> to create the <code>2i</code> sequence first, then perform the final calculation. This is a vital step in building the neural networks of tomorrow!</li>
 </ol>
 </div>
 </div>
@@ -2556,69 +2591,6 @@ Notice how arange's result doesn't include 1, while linspace does!
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-6">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"--- 6. Positional Encoding Denominator (Master Challenge) ---"</span><span class="p">)</span>
-<span class="n">d_model</span> <span class="o">=</span> <span class="mi">128</span>
-<span class="c1"># Create the sequence for 2i (i.e., 0, 2, 4, ... up to d_model-2)</span>
-<span class="n">two_i</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">d_model</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="c1"># Calculate the denominator</span>
-<span class="n">denominator</span> <span class="o">=</span> <span class="mi">10000</span> <span class="o">**</span> <span class="p">(</span><span class="n">two_i</span> <span class="o">/</span> <span class="n">d_model</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The first 5 values of the denominator are:</span><span class="se">\n</span><span class="si">{</span><span class="n">denominator</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">The last 5 values of the denominator are:</span><span class="se">\n</span><span class="si">{</span><span class="n">denominator</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">:]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Shape of the denominator tensor: </span><span class="si">{</span><span class="n">denominator</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-6">print("--- 6. Positional Encoding Denominator (Master Challenge) ---")
-d_model = 128
-# Create the sequence for 2i (i.e., 0, 2, 4, ... up to d_model-2)
-two_i = torch.arange(0, d_model, 2)
-# Calculate the denominator
-denominator = 10000 ** (two_i / d_model)
-print(f"The first 5 values of the denominator are:\n{denominator[:5]}")
-print(f"\nThe last 5 values of the denominator are:\n{denominator[-5:]}")
-print(f"\nShape of the denominator tensor: {denominator.shape}")</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>--- 6. Positional Encoding Denominator (Master Challenge) ---
-The first 5 values of the denominator are:
-tensor([1.0000, 1.1548, 1.3335, 1.5399, 1.7783])
-
-The last 5 values of the denominator are:
-tensor([4869.6753, 5623.4131, 6493.8164, 7498.9419, 8659.6436])
-
-Shape of the denominator tensor: torch.Size([64])
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -2648,7 +2620,7 @@ Shape of the denominator tensor: torch.Size([64])
 <div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-7">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-6">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2669,7 +2641,7 @@ Shape of the denominator tensor: torch.Size([64])
 <span class="c1"># In a real Transformer, this tensor would then be fed into a complex</span>
 <span class="c1"># sine/cosine function or an Embedding layer, but it all starts here!</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-7"># Imagine we have a sentence with 12 words (tokens)
+<div class="clipboard-copy-txt" id="cell-6"># Imagine we have a sentence with 12 words (tokens)
 sequence_length = 12
 
 # The first step in positional encoding is to get the position of each word
@@ -2712,7 +2684,9 @@ Position Tensor: tensor([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])
 </li>
 <li><p><strong>Artisan Challenge:</strong> Create a 1D tensor of your favorite numbers (at least 4). Then, create a second tensor of all ones that has the <em>exact same shape</em> as your first tensor.</p>
 </li>
-<li><p><strong>Master Challenge (Optional):</strong> You are tasked with creating the initial "bias" vector for a small neural network layer with 10 output neurons. For arcane reasons, the master architect (me!) has decreed that it must be a 1D tensor, filled with zeros, except for the very last element, which must be <code>1</code>. Create this specific tensor!</p>
+<li><p><strong>Create the bias vector:</strong> You are tasked with creating the initial "bias" vector for a small neural network layer with 10 output neurons. For arcane reasons, the master architect (me!) has decreed that it must be a 1D tensor, filled with zeros, except for the very last element, which must be <code>1</code>. Create this specific tensor!</p>
+</li>
+<li><p><strong>Positional Encoding Denominator:</strong> In the legendary Transformer architecture, a key component is the denominator <code>10000^(2i / d_model)</code>. Your mission is to create this 1D tensor. Let <code>d_model = 128</code>. The term <code>i</code> represents dimension pairs, so it goes from <code>0</code> to <code>d_model/2 - 1</code>. Use <code>torch.arange</code> to create the <code>2i</code> sequence first, then perform the final calculation. This is a vital step in building the neural networks of tomorrow!</p>
 </li>
 </ol>
 </div>
@@ -2727,7 +2701,7 @@ Position Tensor: tensor([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-8">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-7">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2755,12 +2729,12 @@ Position Tensor: tensor([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])
 
 
 <span class="c1"># Master Challenge Solution</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"--- Master Challenge ---"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--- Bias Vector Challenge ---"</span><span class="p">)</span>
 <span class="n">bias_vector</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">bias_vector</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Masterful Bias Vector: </span><span class="si">{</span><span class="n">bias_vector</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-8"># Your code for the final challenges goes here!
+<div class="clipboard-copy-txt" id="cell-7"># Your code for the final challenges goes here!
 
 # Apprentice Challenge Solution
 print("--- Apprentice Challenge ---")
@@ -2778,13 +2752,109 @@ print(f"Ones-Like Tensor: {ones_like_faves}\n")
 
 
 # Master Challenge Solution
-print("--- Master Challenge ---")
+print("--- Bias Vector Challenge ---")
 bias_vector = torch.zeros(10)
 bias_vector[9] = 1
 print(f"Masterful Bias Vector: {bias_vector}")
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-8">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"--- 4. Positional Encoding Denominator ---"</span><span class="p">)</span>
+<span class="n">d_model</span> <span class="o">=</span> <span class="mi">128</span>
+<span class="c1"># Create the sequence for 2i (i.e., 0, 2, 4, ... up to d_model-2)</span>
+<span class="n">two_i</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">d_model</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="c1"># Calculate the denominator</span>
+<span class="n">denominator</span> <span class="o">=</span> <span class="mi">10000</span> <span class="o">**</span> <span class="p">(</span><span class="n">two_i</span> <span class="o">/</span> <span class="n">d_model</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The first 5 values of the denominator are:</span><span class="se">\n</span><span class="si">{</span><span class="n">denominator</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">The last 5 values of the denominator are:</span><span class="se">\n</span><span class="si">{</span><span class="n">denominator</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">:]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Shape of the denominator tensor: </span><span class="si">{</span><span class="n">denominator</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-8">print("--- 4. Positional Encoding Denominator ---")
+d_model = 128
+# Create the sequence for 2i (i.e., 0, 2, 4, ... up to d_model-2)
+two_i = torch.arange(0, d_model, 2)
+# Calculate the denominator
+denominator = 10000 ** (two_i / d_model)
+print(f"The first 5 values of the denominator are:\n{denominator[:5]}")
+print(f"\nThe last 5 values of the denominator are:\n{denominator[-5:]}")
+print(f"\nShape of the denominator tensor: {denominator.shape}")</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>--- 6. Positional Encoding Denominator (Master Challenge) ---
+The first 5 values of the denominator are:
+tensor([1.0000, 1.1548, 1.3335, 1.5399, 1.7783])
+
+The last 5 values of the denominator are:
+tensor([4869.6753, 5623.4131, 6493.8164, 7498.9419, 8659.6436])
+
+Shape of the denominator tensor: torch.Size([64])
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<h2 id="summary-the-knowledge-is-yours">Summary: The Knowledge Is Yours!<a class="anchor-link" href="#summary-the-knowledge-is-yours">¶</a></h2><p>Magnificent! You've wrestled with the raw chaos of creation and emerged victorious! Let's recount the powerful secrets you've assimilated today:</p>
+<ul>
+<li><strong>Tensors are Everything:</strong> You now understand that a tensor is a multi-dimensional array, the fundamental data structure for every piece of data you will encounter in your machine learning journey.</li>
+<li><strong>The Summoning Rituals:</strong> You have mastered the core incantations for creating tensors: <code>torch.tensor</code>, <code>torch.randn</code>/<code>zeros</code>/<code>ones</code>, the powerful <code>_like</code> variants, and the sequence generators <code>torch.arange</code> and <code>torch.linspace</code>.</li>
+<li><strong>Know Your Creation:</strong> You have learned the vital importance of inspecting your tensors using <code>.shape</code>, <code>.dtype</code>, and <code>.device</code> to understand their nature and prevent catastrophic errors.</li>
+</ul>
+<p>You have taken your first, most important step. The power is now in your hands!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<h2 id="professor-torchensteins-outro">Professor Torchenstein's Outro<a class="anchor-link" href="#professor-torchensteins-outro">¶</a></h2><p>Do you feel it? The hum of latent power in your very fingertips? That, my apprentice, is the feeling of true understanding. You have summoned your first tensors, and they have answered your call. But this is merely the beginning! Our creations are still... rigid. Inflexible.</p>
+<p>In our next lesson, we will learn the dark arts of <strong>Tensor Shape-Shifting &amp; Sorcery</strong>! We will slice, squeeze, and permute our tensors until reality itself seems to bend to our will.</p>
+<p>Until then, keep your learning rates high and your gradients flowing. The future of AI is in our hands! Mwahahahahaha!</p>
+<p><a href="../02_tensor_manipulation.ipynb">Proceed to the Next Experiment: Tensor Shape-Shifting!</a>{ .md-button .md-button--primary }</p>
 </div>
 </div>
 </div>
@@ -2818,7 +2888,7 @@ print(f"Masterful Bias Vector: {bias_vector}")
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 22, 2025 14:55:14 UTC">August 22, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 22, 2025 14:59:21 UTC">August 22, 2025</span>
   </span>
 
     
@@ -2828,7 +2898,7 @@ print(f"Masterful Bias Vector: {bias_vector}")
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 22, 2025 14:55:14 UTC">August 22, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 22, 2025 14:59:21 UTC">August 22, 2025</span>
   </span>
 
     
