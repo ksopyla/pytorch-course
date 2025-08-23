@@ -26,7 +26,7 @@
     
     
       
-        <title>Tensor Manipulation - PyTorch Course</title>
+        <title>Tensor Shape-Shifting & Sorcery - PyTorch Course</title>
       
     
     
@@ -92,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tensor-manipulation" class="md-skip">
+        <a href="#tensor-shape-shifting-sorcery" class="md-skip">
           Skip to content
         </a>
       
@@ -127,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tensor Manipulation
+              Tensor Shape-Shifting &amp; Sorcery
             
           </span>
         </div>
@@ -684,17 +684,118 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Tensor Shape-Shifting &amp; Sorcery
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Tensor Manipulation
+    Tensor Shape-Shifting &amp; Sorcery
     
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#professor-torchensteins-grand-directive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Professor Torchenstein's Grand Directive
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-mission-briefing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Your Mission Briefing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-the-art-of-selection-slicing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 1: The Art of Selection - Slicing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 1: The Art of Selection - Slicing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#12-sweeping-strikes-accessing-rows-and-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Sweeping Strikes: Accessing Rows and Columns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-carving-chunks-the-power-of-slicing" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Carving Chunks: The Power of Slicing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-conditional-conjuring-boolean-mask-indexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 Conditional Conjuring: Boolean Mask Indexing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#your-mission-the-slicers-gauntlet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Your Mission: The Slicer's Gauntlet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1309,6 +1410,83 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#professor-torchensteins-grand-directive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Professor Torchenstein's Grand Directive
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-mission-briefing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Your Mission Briefing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-the-art-of-selection-slicing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 1: The Art of Selection - Slicing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 1: The Art of Selection - Slicing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#12-sweeping-strikes-accessing-rows-and-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Sweeping Strikes: Accessing Rows and Columns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-carving-chunks-the-power-of-slicing" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Carving Chunks: The Power of Slicing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-conditional-conjuring-boolean-mask-indexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 Conditional Conjuring: Boolean Mask Indexing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#your-mission-the-slicers-gauntlet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Your Mission: The Slicer's Gauntlet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1768,7 +1946,389 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="tensor-manipulation">Tensor Manipulation<a class="anchor-link" href="#tensor-manipulation">¶</a></h1>
+<h1 id="tensor-shape-shifting-sorcery">Tensor Shape-Shifting &amp; Sorcery<a class="anchor-link" href="#tensor-shape-shifting-sorcery">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=36fcb59e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Module 1 | Lesson 2</strong></p>
+<hr/>
+<h2 id="professor-torchensteins-grand-directive">Professor Torchenstein's Grand Directive<a class="anchor-link" href="#professor-torchensteins-grand-directive">¶</a></h2><p>Mwahahaha! You have summoned your first tensors from the ether! They are... raw. Untamed. Clumps of numerical clay awaiting a master's touch. A lesser mind would be content with their existence, but not you. Not us!</p>
+<p>Today, we sculpt! We will learn the arcane arts of tensor manipulation. We will not merely <em>use</em> data; we will bend it, twist it, and reshape it to our will until it confesses its secrets. This is not data processing; this is <strong>tensor sorcery</strong>! Prepare to command the very dimensions of your data!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b9b33d1d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<h2 id="your-mission-briefing">Your Mission Briefing<a class="anchor-link" href="#your-mission-briefing">¶</a></h2><p>By the time you escape this chamber of knowledge, you will have etched the following incantations into your very soul:</p>
+<ul>
+<li><strong>The Art of Selection:</strong> Pluck elements, rows, or slices from a tensor with masterful <strong>slicing</strong>.</li>
+<li><strong>Forbidden Fusions:</strong> Combine disparate tensors into unified monstrosities with <code>torch.cat</code> and <code>torch.stack</code>.</li>
+<li><strong>Metamorphic Mastery:</strong> Change a tensor's very form without altering its essence using <code>reshape</code> and <code>view</code>.</li>
+<li><strong>Dimensional Sorcery:</strong> Add or remove dimensions at will with the mystical <code>squeeze</code> and <code>unsqueeze</code> commands.</li>
+<li><strong>The Grand Permutation:</strong> Reorder dimensions to your strategic advantage with <code>permute</code> and <code>transpose</code>.</li>
+</ul>
+<p><strong>Estimated Time to Completion:</strong> 20 minutes of exhilarating dimensional gymnastics.</p>
+<p><strong>What You'll Need:</strong></p>
+<ul>
+<li>The wisdom from our <a href="../01_introduction_to_tensors.ipynb">last lesson on summoning tensors</a>.</li>
+<li>A will of iron and a mind ready to be bent!</li>
+<li>Your PyTorch environment, humming with anticipation.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8652e14f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="part-1-the-art-of-selection-slicing">Part 1: The Art of Selection - Slicing<a class="anchor-link" href="#part-1-the-art-of-selection-slicing">¶</a></h2><p>Before you can reshape a tensor, you must learn to grasp its individual parts. Indexing is your scalpel, allowing you to perform precision surgery on your data. Slicing is your cleaver, letting you carve out whole sections for your grand experiments.</p>
+<p>We will start by summoning a test subject—a 2D tensor brimming with potential! We must also prepare our lab with the usual incantations (<code>import torch</code> and <code>manual_seed</code>) to ensure our results are repeatable. We are scientists, not chaos-wizards!</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d0210a48">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-1">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+
+<span class="c1"># Set the seed for cosmic consistency</span>
+<span class="n">torch</span><span class="o">.</span><span class="n">manual_seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># Our test subject: A 2D tensor of integers. Imagine it's a map to a hidden treasure!</span>
+<span class="c1"># Or perhaps experimental results from a daring new potion.</span>
+<span class="n">subject_tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Our subject tensor, ripe for dissection:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">subject_tensor</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-1">import torch
+
+# Set the seed for cosmic consistency
+torch.manual_seed(42)
+
+# Our test subject: A 2D tensor of integers. Imagine it's a map to a hidden treasure!
+# Or perhaps experimental results from a daring new potion.
+subject_tensor = torch.randint(0, 100, (5, 4))
+
+print("Our subject tensor, ripe for dissection:")
+print(subject_tensor)
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e22d492f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="12-sweeping-strikes-accessing-rows-and-columns">1.2 Sweeping Strikes: Accessing Rows and Columns<a class="anchor-link" href="#12-sweeping-strikes-accessing-rows-and-columns">¶</a></h3><p>Previous lesson: <a href="01_introduction_to_tensors.ipynb">01_introduction_to_tensors.ipynb</a> gives you the basics for accessing element of a tensor.
+But what if we require an entire row or column for our dark machinations? For this, we use the colon <code>:</code>, the universal symbol for "give me everything along this dimension!"</p>
+<ul>
+<li><code>[row, :]</code> - Fetches the entire row.</li>
+<li><code>[:, column]</code> - Fetches the entire column.</li>
+</ul>
+<p>Let's seize the entire 3rd row (index 2) and the 2nd column (index 1).</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=91b34956">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-2">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Get the entire 3rd row (index 2)</span>
+<span class="n">third_row</span> <span class="o">=</span> <span class="n">subject_tensor</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="p">:]</span> <span class="c1"># or simply subject_tensor[2]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The third row: </span><span class="si">{</span><span class="n">third_row</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Shape of the row: </span><span class="si">{</span><span class="n">third_row</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="se">\\</span><span class="s2">n"</span><span class="p">)</span>
+
+
+<span class="c1"># Get the entire 2nd column (index 1)</span>
+<span class="n">second_column</span> <span class="o">=</span> <span class="n">subject_tensor</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The second column: </span><span class="si">{</span><span class="n">second_column</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Shape of the column: </span><span class="si">{</span><span class="n">second_column</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-2"># Get the entire 3rd row (index 2)
+third_row = subject_tensor[2, :] # or simply subject_tensor[2]
+print(f"The third row: {third_row}")
+print(f"Shape of the row: {third_row.shape}\\n")
+
+
+# Get the entire 2nd column (index 1)
+second_column = subject_tensor[:, 1]
+print(f"The second column: {second_column}")
+print(f"Shape of the column: {second_column.shape}")
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=933e7b12">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="13-carving-chunks-the-power-of-slicing">1.3 Carving Chunks: The Power of Slicing<a class="anchor-link" href="#13-carving-chunks-the-power-of-slicing">¶</a></h3><p>Mere elements are but trivialities! True power lies in carving out entire sub-regions of a tensor. Slicing uses the <code>start:end</code> notation. As with all Pythonic sorcery, the <code>start</code> is inclusive, but the <code>end</code> is <strong>exclusive</strong>.</p>
+<p>Let us carve out the block containing the 2nd and 3rd rows (indices 1 and 2), and the last two columns (indices 2 and 3).</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dd3e2f4e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-3">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Carve out rows 1 and 2, and columns 2 and 3</span>
+<span class="n">sub_tensor</span> <span class="o">=</span> <span class="n">subject_tensor</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Our carved sub-tensor:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sub_tensor</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Shape of the sub-tensor: </span><span class="si">{</span><span class="n">sub_tensor</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-3"># Carve out rows 1 and 2, and columns 2 and 3
+sub_tensor = subject_tensor[1:3, 2:4]
+
+print("Our carved sub-tensor:")
+print(sub_tensor)
+print(f"Shape of the sub-tensor: {sub_tensor.shape}")
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fcc94f52">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="14-conditional-conjuring-boolean-mask-indexing">1.4 Conditional Conjuring: Boolean Mask Indexing<a class="anchor-link" href="#14-conditional-conjuring-boolean-mask-indexing">¶</a></h3><p>Now for a truly diabolical technique! We can use a <strong>boolean mask</strong> to summon only the elements that meet our nefarious criteria. A boolean mask is a tensor of the same shape as our subject, but it contains only <code>True</code> or <code>False</code> values. When used for indexing, it returns a 1D tensor containing only the elements where the mask was <code>True</code>.</p>
+<p>Let's find all the alchemical ingredients in our tensor with a value greater than 50!</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ac2ad0cb">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-4">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Create the boolean mask</span>
+<span class="n">mask</span> <span class="o">=</span> <span class="n">subject_tensor</span> <span class="o">&gt;</span> <span class="mi">50</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The boolean mask (True where value &gt; 50):"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mask</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\\</span><span class="s2">n"</span><span class="p">)</span>
+
+<span class="c1"># Apply the mask</span>
+<span class="n">selected_elements</span> <span class="o">=</span> <span class="n">subject_tensor</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Elements greater than 50:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">selected_elements</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Shape of the result: </span><span class="si">{</span><span class="n">selected_elements</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2"> (always a 1D tensor!)"</span><span class="p">)</span>
+
+<span class="c1"># You can also combine conditions! Mwahaha!</span>
+<span class="c1"># Let's find elements between 20 and 40.</span>
+<span class="n">mask_combined</span> <span class="o">=</span> <span class="p">(</span><span class="n">subject_tensor</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">subject_tensor</span> <span class="o">&lt;</span> <span class="mi">40</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\\</span><span class="s2">nElements between 20 and 40:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">subject_tensor</span><span class="p">[</span><span class="n">mask_combined</span><span class="p">])</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-4"># Create the boolean mask
+mask = subject_tensor &gt; 50
+
+print("The boolean mask (True where value &gt; 50):")
+print(mask)
+print(f"\\n")
+
+# Apply the mask
+selected_elements = subject_tensor[mask]
+
+print("Elements greater than 50:")
+print(selected_elements)
+print(f"Shape of the result: {selected_elements.shape} (always a 1D tensor!)")
+
+# You can also combine conditions! Mwahaha!
+# Let's find elements between 20 and 40.
+mask_combined = (subject_tensor &gt; 20) &amp; (subject_tensor &lt; 40)
+print("\\nElements between 20 and 40:")
+print(subject_tensor[mask_combined])
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b8a2baed">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="your-mission-the-slicers-gauntlet">Your Mission: The Slicer's Gauntlet<a class="anchor-link" href="#your-mission-the-slicers-gauntlet">¶</a></h3><p>Enough of my demonstrations! The scalpel is now in your hand. Prove your mastery with these challenges!</p>
+<ol>
+<li><strong>The Corner Pocket:</strong> From our <code>subject_tensor</code>, select the element in the very last row and last column.</li>
+<li><strong>The Central Core:</strong> Select the inner <code>3x2</code> block of the <code>subject_tensor</code> (that's rows 1-3 and columns 1-2).</li>
+<li><strong>The Even Stevens:</strong> Create a boolean mask to select only the elements in <code>subject_tensor</code> that are even numbers. (Hint: The modulo operator <code>%</code> is your friend!)</li>
+<li><strong>The Grand Mutation:</strong> Use your boolean mask from challenge 3 to <strong>change</strong> all even numbers in the <code>subject_tensor</code> to the value <code>-1</code>. Then, print the mutated tensor. Yes, my apprentice, indexing can be used for assignment! This is a pivotal secret!</li>
+</ol>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2d7adb0d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-5">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Your code for the Slicer's Gauntlet goes here!</span>
+
+<span class="c1"># --- 1. The Corner Pocket ---</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--- 1. The Corner Pocket ---"</span><span class="p">)</span>
+<span class="n">corner_element</span> <span class="o">=</span> <span class="n">subject_tensor</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># Negative indexing for the win!</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The corner element is: </span><span class="si">{</span><span class="n">corner_element</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="se">\\</span><span class="s2">n"</span><span class="p">)</span>
+
+<span class="c1"># --- 2. The Central Core ---</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--- 2. The Central Core ---"</span><span class="p">)</span>
+<span class="n">central_core</span> <span class="o">=</span> <span class="n">subject_tensor</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The central core:</span><span class="se">\\</span><span class="s2">n</span><span class="si">{</span><span class="n">central_core</span><span class="si">}</span><span class="se">\\</span><span class="s2">n"</span><span class="p">)</span>
+
+<span class="c1"># --- 3. The Even Stevens ---</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--- 3. The Even Stevens ---"</span><span class="p">)</span>
+<span class="n">even_mask</span> <span class="o">=</span> <span class="n">subject_tensor</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The mask for even numbers:</span><span class="se">\\</span><span class="s2">n</span><span class="si">{</span><span class="n">even_mask</span><span class="si">}</span><span class="se">\\</span><span class="s2">n"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The even numbers themselves: </span><span class="si">{</span><span class="n">subject_tensor</span><span class="p">[</span><span class="n">even_mask</span><span class="p">]</span><span class="si">}</span><span class="se">\\</span><span class="s2">n"</span><span class="p">)</span>
+
+
+<span class="c1"># --- 4. The Grand Mutation ---</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--- 4. The Grand Mutation ---"</span><span class="p">)</span>
+<span class="c1"># Let's not mutate our original, that would be reckless! Let's clone it first.</span>
+<span class="n">mutated_tensor</span> <span class="o">=</span> <span class="n">subject_tensor</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span>
+<span class="n">mutated_tensor</span><span class="p">[</span><span class="n">even_mask</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The tensor after mutating even numbers to -1:</span><span class="se">\\</span><span class="s2">n</span><span class="si">{</span><span class="n">mutated_tensor</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-5"># Your code for the Slicer's Gauntlet goes here!
+
+# --- 1. The Corner Pocket ---
+print("--- 1. The Corner Pocket ---")
+corner_element = subject_tensor[-1, -1] # Negative indexing for the win!
+print(f"The corner element is: {corner_element.item()}\\n")
+
+# --- 2. The Central Core ---
+print("--- 2. The Central Core ---")
+central_core = subject_tensor[1:4, 1:3]
+print(f"The central core:\\n{central_core}\\n")
+
+# --- 3. The Even Stevens ---
+print("--- 3. The Even Stevens ---")
+even_mask = subject_tensor % 2 == 0
+print(f"The mask for even numbers:\\n{even_mask}\\n")
+print(f"The even numbers themselves: {subject_tensor[even_mask]}\\n")
+
+
+# --- 4. The Grand Mutation ---
+print("--- 4. The Grand Mutation ---")
+# Let's not mutate our original, that would be reckless! Let's clone it first.
+mutated_tensor = subject_tensor.clone()
+mutated_tensor[even_mask] = -1
+print(f"The tensor after mutating even numbers to -1:\\n{mutated_tensor}")
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1802,7 +2362,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 22, 2025 14:59:21 UTC">August 22, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 23, 2025 12:41:42 UTC">August 23, 2025</span>
   </span>
 
     
@@ -1812,7 +2372,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 22, 2025 14:59:21 UTC">August 22, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 23, 2025 12:41:42 UTC">August 23, 2025</span>
   </span>
 
     

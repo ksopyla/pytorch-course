@@ -757,18 +757,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-creating-tensors-from-other-tensors-the-methods" class="md-nav__link">
+  <a href="#3-inspecting-your-creation" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Creating Tensors from Other Tensors (the methods)
+      3. Inspecting Your Creation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-inspecting-your-creation" class="md-nav__link">
+  <a href="#4-precision-strikes-accessing-elements" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Inspecting Your Creation
+      4 Precision Strikes: Accessing Elements
     </span>
   </a>
   
@@ -792,6 +792,21 @@
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-creating-tensors-from-other-tensors-the-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Creating Tensors from Other Tensors (the methods)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Creating Tensors from Other Tensors (the methods)">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#real-world-sorcery-where-are-sequential-tensors-used" class="md-nav__link">
@@ -860,7 +875,7 @@
   
   
   <span class="md-ellipsis">
-    Tensor Manipulation
+    Tensor Shape-Shifting &amp; Sorcery
     
   </span>
   
@@ -1541,18 +1556,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-creating-tensors-from-other-tensors-the-methods" class="md-nav__link">
+  <a href="#3-inspecting-your-creation" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Creating Tensors from Other Tensors (the methods)
+      3. Inspecting Your Creation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-inspecting-your-creation" class="md-nav__link">
+  <a href="#4-precision-strikes-accessing-elements" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Inspecting Your Creation
+      4 Precision Strikes: Accessing Elements
     </span>
   </a>
   
@@ -1576,6 +1591,21 @@
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-creating-tensors-from-other-tensors-the-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Creating Tensors from Other Tensors (the methods)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Creating Tensors from Other Tensors (the methods)">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#real-world-sorcery-where-are-sequential-tensors-used" class="md-nav__link">
@@ -2094,6 +2124,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <li><strong>Understanding</strong> what a tensor is and why it's the fundamental building block of all modern AI.</li>
 <li><strong>Summoning</strong> tensors from nothingness using a variety of powerful PyTorch functions.</li>
 <li><strong>Inspecting</strong> the very soul of a tensor: its shape, data type, and the device it inhabits.</li>
+<li><strong>Simple Indexing</strong> the main way to access elements of a tensor.</li>
+<li><strong>Creating sequences</strong> of numbers with <code>torch.arange</code> and <code>torch.linspace</code> and <code>_like</code> methods.</li>
 </ul>
 <p><strong>Estimated Time to Completion:</strong> 15 glorious minutes of pure, unadulterated learning.</p>
 <p><strong>What You'll Need:</strong></p>
@@ -2241,7 +2273,7 @@ print(type(my_tensor))</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-2">
@@ -2262,8 +2294,8 @@ print(type(my_tensor))</div>
 <span class="n">zeros_tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"A tensor of zeros:</span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">zeros_tensor</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 
-<span class="c1"># A 2x2x2 tensor of ones</span>
-<span class="n">ones_tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="c1"># A 2x3x4 tensor of ones</span>
+<span class="n">ones_tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"A tensor of ones:</span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">ones_tensor</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-2"># A 2x3 tensor of random numbers
@@ -2274,8 +2306,8 @@ print(f"A random tensor:\n {random_tensor}\n")
 zeros_tensor = torch.zeros(3, 2)
 print(f"A tensor of zeros:\n {zeros_tensor}\n")
 
-# A 2x2x2 tensor of ones
-ones_tensor = torch.ones(2, 2, 2)
+# A 2x3x4 tensor of ones
+ones_tensor = torch.ones(2, 3, 4)
 print(f"A tensor of ones:\n {ones_tensor}")
 </div>
 </div>
@@ -2290,8 +2322,8 @@ print(f"A tensor of ones:\n {ones_tensor}")
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>A random tensor:
- tensor([[ 0.3367,  0.1288,  0.2345],
-        [ 0.2303, -1.1229, -0.1863]])
+ tensor([[-0.7658, -0.7506,  1.3525],
+        [ 0.6863, -0.3278,  0.7950]])
 
 A tensor of zeros:
  tensor([[0., 0.],
@@ -2299,11 +2331,13 @@ A tensor of zeros:
         [0., 0.]])
 
 A tensor of ones:
- tensor([[[1., 1.],
-         [1., 1.]],
+ tensor([[[1., 1., 1., 1.],
+         [1., 1., 1., 1.],
+         [1., 1., 1., 1.]],
 
-        [[1., 1.],
-         [1., 1.]]])
+        [[1., 1., 1., 1.],
+         [1., 1., 1., 1.],
+         [1., 1., 1., 1.]]])
 </pre>
 </div>
 </div>
@@ -2317,74 +2351,13 @@ A tensor of ones:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="3-creating-tensors-from-other-tensors-the-_like-methods">3. Creating Tensors from Other Tensors (the <code>_like</code> methods)<a class="anchor-link" href="#3-creating-tensors-from-other-tensors-the-_like-methods">¶</a></h3><p>Behold, a most elegant form of mimicry! Often, you will need to create a new tensor that has the exact same shape as another. PyTorch provides the <code>_like</code> methods for this very purpose.</p>
-<ul>
-<li><code>torch.zeros_like(input_tensor)</code>: Creates a tensor of all zeros with the same <code>shape</code>, <code>dtype</code>, and <code>device</code> as the input tensor.</li>
-<li><code>torch.ones_like(input_tensor)</code>: The same, but for ones!</li>
-<li><code>torch.randn_like(input_tensor)</code>: The same, but for random numbers!</li>
-</ul>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-3">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Let's start with a template tensor</span>
-<span class="n">template_tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Our template tensor:</span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">template_tensor</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-
-<span class="c1"># Now, create tensors LIKE our template</span>
-<span class="n">zeros_mimic</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">template_tensor</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"A zeros tensor created from the template:</span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">zeros_mimic</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-
-<span class="n">random_mimic</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn_like</span><span class="p">(</span><span class="n">template_tensor</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"A random tensor created from the template:</span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">random_mimic</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-3"># Let's start with a template tensor
-template_tensor = torch.ones(2, 4)
-print(f"Our template tensor:\n {template_tensor}\n")
-
-# Now, create tensors LIKE our template
-zeros_mimic = torch.zeros_like(template_tensor)
-print(f"A zeros tensor created from the template:\n {zeros_mimic}\n")
-
-random_mimic = torch.randn_like(template_tensor)
-print(f"A random tensor created from the template:\n {random_mimic}")
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="4-inspecting-your-creation">4. Inspecting Your Creation<a class="anchor-link" href="#4-inspecting-your-creation">¶</a></h3><p>A true master understands their creation. Once you have summoned a tensor, you must learn to inspect its very soul. These are the three most critical attributes you will constantly examine:</p>
+<h3 id="3-inspecting-your-creation">3. Inspecting Your Creation<a class="anchor-link" href="#3-inspecting-your-creation">¶</a></h3><p>A true master understands their creation. Once you have summoned a tensor, you must learn to inspect its very soul. These are the three most critical attributes you will constantly examine:</p>
 <ul>
 <li><code>.shape</code>: Reveals the dimensions of your tensor. A vital sanity check!</li>
-<li><code>.dtype</code>: Shows the data type of the elements within the tensor (e.g., <code>torch.float32</code>, <code>torch.int64</code>).</li>
+<li><code>.dtype</code>: Shows the data type of the elements within the tensor (e.g., <code>torch.float8</code>,  <code>torch.float32</code>, <code>torch.int64</code>).</li>
 <li><code>.device</code>: Tells you where the tensor lives—on the humble CPU or the glorious GPU.</li>
 </ul>
+<p>More details about the data types and device types you will learn in <a href="03_data_types_and_device_types.ipynb">03_data_types_and_device_types</a></p>
 </div>
 </div>
 </div>
@@ -2397,7 +2370,7 @@ print(f"A random tensor created from the template:\n {random_mimic}")
 <div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-4">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-3">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -2417,7 +2390,7 @@ print(f"A random tensor created from the template:\n {random_mimic}")
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Data type of the tensor: </span><span class="si">{</span><span class="n">inspection_tensor</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Device the tensor is on: </span><span class="si">{</span><span class="n">inspection_tensor</span><span class="o">.</span><span class="n">device</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-4"># Let's create a tensor to inspect
+<div class="clipboard-copy-txt" id="cell-3"># Let's create a tensor to inspect
 inspection_tensor = torch.randn(3, 4)
 
 print(f"The tensor:\n {inspection_tensor}\n")
@@ -2446,6 +2419,86 @@ print(f"Device the tensor is on: {inspection_tensor.device}")
 Shape of the tensor: torch.Size([3, 4])
 Data type of the tensor: torch.float32
 Device the tensor is on: cpu
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="4-precision-strikes-accessing-elements">4 Precision Strikes: Accessing Elements<a class="anchor-link" href="#4-precision-strikes-accessing-elements">¶</a></h3><p>To access a single, quivering element within our tensor, we use the <code>[row, column]</code> notation, just as you would with a common Python list of lists. Remember, my apprentice: dimensions are zero-indexed! The first row is row <code>0</code>, not row 1! A classic pitfall for the uninitiated.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-4">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">subject_tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+
+<span class="c1"># Let's pluck the element at the 2nd row (index 1) and 4th column (index 3).</span>
+<span class="n">single_element</span> <span class="o">=</span> <span class="n">subject_tensor</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Element at [1, 3]: </span><span class="si">{</span><span class="n">single_element</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># .item() is a glorious spell to extract the raw Python number from a single-element tensor.</span>
+<span class="c1"># Use it when you need to pass a tensor's value to other libraries or just print it cleanly!</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Its value is: </span><span class="si">{</span><span class="n">single_element</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Notice its data type: </span><span class="si">{</span><span class="n">single_element</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"And its shape: </span><span class="si">{</span><span class="n">single_element</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2"> (a 0-dimensional tensor!)"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-4">subject_tensor = torch.randint(0, 100, (5, 4))
+
+# Let's pluck the element at the 2nd row (index 1) and 4th column (index 3).
+single_element = subject_tensor[1, 3]
+
+print(f"Element at [1, 3]: {single_element}")
+
+# .item() is a glorious spell to extract the raw Python number from a single-element tensor.
+# Use it when you need to pass a tensor's value to other libraries or just print it cleanly!
+print(f"Its value is: {single_element.item()}")
+
+print(f"Notice its data type: {single_element.dtype}")
+print(f"And its shape: {single_element.shape} (a 0-dimensional tensor!)")
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Element at [1, 3]: 9
+Its value is: 9
+Notice its data type: torch.int64
+And its shape: torch.Size([]) (a 0-dimensional tensor!)
 </pre>
 </div>
 </div>
@@ -2598,26 +2651,22 @@ Notice how arange's result doesn't include 1, while linspace does!
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="real-world-sorcery-where-are-sequential-tensors-used">Real-World Sorcery: Where are Sequential Tensors Used?<a class="anchor-link" href="#real-world-sorcery-where-are-sequential-tensors-used">¶</a></h4><p>You may wonder, "Professor, is this just for making neat little rows of numbers?" A fair question from a novice! The answer is a resounding <strong>NO!</strong> These sequential tensors are the silent bedrock of many powerful constructs:</p>
+<h3 id="6-creating-tensors-from-other-tensors-the-_like-methods">6. Creating Tensors from Other Tensors (the <code>_like</code> methods)<a class="anchor-link" href="#6-creating-tensors-from-other-tensors-the-_like-methods">¶</a></h3><p>Behold, a most elegant form of mimicry! Often, you will need to create a new tensor that has the exact same shape as another. PyTorch provides the <code>_like</code> methods for this very purpose.</p>
 <ul>
-<li><p><strong>Positional Encodings in Transformers:</strong> How does a Transformer know the order of words in a sentence? It doesn't, inherently! We must <em>inject</em> that information. The very first step is often to create a tensor representing the positions <code>[0, 1, 2, ..., sequence_length - 1]</code> using <code>torch.arange</code>. This sequence is then transformed into a high-dimensional positional embedding.</p>
-</li>
-<li><p><strong>Generating Time-Series Data:</strong> When working with audio, financial data, or any kind of signal, you often need a time axis. <code>torch.linspace</code> is perfect for creating a smooth, evenly-spaced time vector to plot or process your data against.</p>
-</li>
-<li><p><strong>Creating Coordinate Grids in Vision:</strong> For advanced image manipulation, you might need a grid representing the <code>(x, y)</code> coordinates of every pixel. You can generate the <code>x</code> and <code>y</code> vectors separately using <code>torch.arange</code> and then combine them to form this essential grid.</p>
-</li>
+<li><code>torch.zeros_like(input_tensor)</code>: Creates a tensor of all zeros with the same <code>shape</code>, <code>dtype</code>, and <code>device</code> as the input tensor.</li>
+<li><code>torch.ones_like(input_tensor)</code>: The same, but for ones!</li>
+<li><code>torch.randn_like(input_tensor)</code>: The same, but for random numbers!</li>
 </ul>
-<p>Let's see a brief, conceptual example of the most important of these: the positional sequence for a Transformer.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-6">
@@ -2630,44 +2679,49 @@ Notice how arange's result doesn't include 1, while linspace does!
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Imagine we have a sentence with 12 words (tokens)</span>
-<span class="n">sequence_length</span> <span class="o">=</span> <span class="mi">12</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Let's start with a template tensor</span>
+<span class="n">template_tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Our template tensor:</span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">template_tensor</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 
-<span class="c1"># The first step in positional encoding is to get the position of each word</span>
-<span class="n">positions</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">sequence_length</span><span class="p">)</span>
+<span class="c1"># Now, create tensors LIKE our template</span>
+<span class="n">zeros_mimic</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">template_tensor</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"A zeros tensor created from the template:</span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">zeros_mimic</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Sequence Length: </span><span class="si">{</span><span class="n">sequence_length</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Position Tensor: </span><span class="si">{</span><span class="n">positions</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="c1"># In a real Transformer, this tensor would then be fed into a complex</span>
-<span class="c1"># sine/cosine function or an Embedding layer, but it all starts here!</span>
+<span class="n">random_mimic</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn_like</span><span class="p">(</span><span class="n">template_tensor</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"A random tensor created from the template:</span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">random_mimic</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-6"># Imagine we have a sentence with 12 words (tokens)
-sequence_length = 12
+<div class="clipboard-copy-txt" id="cell-6"># Let's start with a template tensor
+template_tensor = torch.ones(2, 4)
+print(f"Our template tensor:\n {template_tensor}\n")
 
-# The first step in positional encoding is to get the position of each word
-positions = torch.arange(0, sequence_length)
+# Now, create tensors LIKE our template
+zeros_mimic = torch.zeros_like(template_tensor)
+print(f"A zeros tensor created from the template:\n {zeros_mimic}\n")
 
-print(f"Sequence Length: {sequence_length}")
-print(f"Position Tensor: {positions}")
-# In a real Transformer, this tensor would then be fed into a complex
-# sine/cosine function or an Embedding layer, but it all starts here!
+random_mimic = torch.randn_like(template_tensor)
+print(f"A random tensor created from the template:\n {random_mimic}")
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Sequence Length: 12
-Position Tensor: tensor([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])
-</pre>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="real-world-sorcery-where-are-sequential-tensors-used">Real-World Sorcery: Where are Sequential Tensors Used?<a class="anchor-link" href="#real-world-sorcery-where-are-sequential-tensors-used">¶</a></h4><p>You may wonder, "Professor, is this just for making neat little rows of numbers?" A fair question from a novice! The answer is a resounding <strong>NO!</strong> These sequential tensors are the silent bedrock of many powerful constructs:</p>
+<ul>
+<li><p><strong>Positional Encodings in Transformers:</strong> How does a Transformer know the order of words in a sentence? It doesn't, inherently! We must <em>inject</em> that information. The very first step is often to create a tensor representing the positions <code>[0, 1, 2, ..., sequence_length - 1]</code> using <code>torch.arange</code>. This sequence is then transformed into a high-dimensional positional embedding.</p>
+</li>
+<li><p><strong>Generating Time-Series Data:</strong> When working with audio, financial data, or any kind of signal, you often need a time axis. <code>torch.linspace</code> is perfect for creating a smooth, evenly-spaced time vector to plot or process your data against.</p>
+</li>
+<li><p><strong>Creating Coordinate Grids in Vision:</strong> For advanced image manipulation, you might need a grid representing the <code>(x, y)</code> coordinates of every pixel. You can generate the <code>x</code> and <code>y</code> vectors separately using <code>torch.arange</code> and then combine them to form this essential grid.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -2854,7 +2908,7 @@ Shape of the denominator tensor: torch.Size([64])
 <h2 id="professor-torchensteins-outro">Professor Torchenstein's Outro<a class="anchor-link" href="#professor-torchensteins-outro">¶</a></h2><p>Do you feel it? The hum of latent power in your very fingertips? That, my apprentice, is the feeling of true understanding. You have summoned your first tensors, and they have answered your call. But this is merely the beginning! Our creations are still... rigid. Inflexible.</p>
 <p>In our next lesson, we will learn the dark arts of <strong>Tensor Shape-Shifting &amp; Sorcery</strong>! We will slice, squeeze, and permute our tensors until reality itself seems to bend to our will.</p>
 <p>Until then, keep your learning rates high and your gradients flowing. The future of AI is in our hands! Mwahahahahaha!</p>
-<p><a href="../02_tensor_manipulation.ipynb">Proceed to the Next Experiment: Tensor Shape-Shifting!</a>{ .md-button .md-button--primary }</p>
+<p><a href="../02_tensor_manipulation">Proceed to the Next Experiment: Tensor Shape-Shifting!</a></p>
 </div>
 </div>
 </div>
@@ -2888,7 +2942,7 @@ Shape of the denominator tensor: torch.Size([64])
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 22, 2025 14:59:21 UTC">August 22, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 23, 2025 12:41:42 UTC">August 23, 2025</span>
   </span>
 
     
@@ -2898,7 +2952,7 @@ Shape of the denominator tensor: torch.Size([64])
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 22, 2025 14:59:21 UTC">August 22, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 23, 2025 12:41:42 UTC">August 23, 2025</span>
   </span>
 
     
@@ -3004,13 +3058,13 @@ Shape of the denominator tensor: torch.Size([64])
         
         
           
-          <a href="../02_tensor_manipulation/" class="md-footer__link md-footer__link--next" aria-label="Next: Tensor Manipulation">
+          <a href="../02_tensor_manipulation/" class="md-footer__link md-footer__link--next" aria-label="Next: Tensor Shape-Shifting &amp;amp; Sorcery">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Tensor Manipulation
+                Tensor Shape-Shifting &amp; Sorcery
               </div>
             </div>
             <div class="md-footer__button md-icon">
