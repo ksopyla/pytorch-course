@@ -25,7 +25,7 @@ Over the next notebooks we will:
 ## Rebel Mission Checklist 📝
 
 ### Tensors: The Building Blocks
-1. [Summoning Your First Tensors](01_introduction_to_tensors.ipynb) - Learn to create tensors from scratch and inspect their fundamental properties like shape, type, and device.
+1. [Summoning Your First Tensors](01_introduction_to_tensors.ipynb) - Learn to create tensors from scratch, access their elements and inspect their fundamental properties like shape, type, and device.
 2. [Tensor Shape-Shifting & Sorcery](02_tensor_manipulation.ipynb) - Master the arts of slicing, stacking, and reshaping tensors to bend data to your will.
 3. [DTypes & Devices: Choose Your Weapons](03_data_types_and_devices.ipynb) - Understand how to manage data types and move your tensors to the GPU for accelerated computation.
 
