@@ -113,6 +113,11 @@ plugins:
   - search:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - social:                   # Enable social cards (OpenGraph tags)
+      cards: true
+      cards_layout_options:
+        background_color: "#663399"  # Deep purple to match your theme
+        color: "#ffffff"
   - tags                      # Enable content tagging - removed deprecated tags_file setting
   - mkdocs-jupyter:
       execute: false          # Don't execute notebooks during build

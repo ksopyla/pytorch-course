@@ -18,8 +18,17 @@ ipykernel = "^6.29.5"
 ipywidgets = "^8.1.3"
 
 
+
 [tool.poetry.group.dev.dependencies]
 cursor-notebook-mcp = {extras = ["sse"], version = "^0.2.3"}
+# MkDocs and documentation dependencies
+mkdocs = "^1.6.0"
+mkdocs-material = "^9.5.0"
+mkdocs-jupyter = "^0.25.0"
+mkdocs-git-revision-date-localized-plugin = "^1.2.0"
+# Social cards dependencies (required for OpenGraph tag generation)
+pillow = "^10.0.0"
+cairosvg = "^2.7.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
