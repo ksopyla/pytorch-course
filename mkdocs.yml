@@ -118,6 +118,9 @@ plugins:
       cards_layout_options:
         background_color: "#663399"  # Deep purple to match your theme
         color: "#ffffff"
+        logo: assets/images/Logo_purple_cube_transparent.png
+      cards_layout_dir: layouts
+      debug: false
   - tags                      # Enable content tagging - removed deprecated tags_file setting
   - mkdocs-jupyter:
       execute: false          # Don't execute notebooks during build

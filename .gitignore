@@ -173,3 +173,4 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 docs/assets/gen_images_ignore/*
+poetry.lock
