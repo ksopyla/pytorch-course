@@ -23,10 +23,11 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install system dependencies for social cards
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
+      - name: Cache and install system dependencies for social cards
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
+          version: 1.0
 
       - name: Install Poetry
         uses: snok/install-poetry@v1
@@ -35,8 +36,19 @@ jobs:
           virtualenvs-create: true
           virtualenvs-in-project: true
 
+      - name: Cache Poetry dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache/pypoetry
+            .venv
+          key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-poetry-
+
       - name: Install dependencies
         run: |
+          poetry config installer.parallel true
           poetry install --only dev --no-root
       
       - name: Build MkDocs site
