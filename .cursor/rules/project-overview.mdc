@@ -1,5 +1,5 @@
 ---
-description: "A comprehensive overview of the PyTorch Course project, including its goals, technical stack, development environment, and content guidelines. This file merges and replaces project-description-goal.mdc and windows-dev-environment.mdc."
+description: "A comprehensive overview of the PyTorch Course project, including its goals, technical stack, windows development environment, python, poetry, mkdocs configuratoin."
 globs: ["*"]
 alwaysApply: true
 ---
@@ -42,7 +42,9 @@ The project is developed on a **Windows 11** environment.
 
 -   **Terminal:** All commands should be Windows-specific and run in **PowerShell**.
 -   **Python:** The project uses **Python 3.12**, managed via `pyenv` for Windows.
--   **Dependency Management:** Dependencies are managed with **Poetry**. The dependencies are listed in `pyproject.toml`.
+-   The mkdocs build is done via gihub actions, local deployment is not configured, so do not try to run it locally.
+-   For github I have mcp server running, so you can use it to run commands.
+-   **Dependency Management:** Dependencies are managed with **Poetry**. The dependencies are listed in `pyproject.toml`. The core  dependencies in pyproject.toml are for runing the lessons, all the dev dependencies are in the `dev` group are for building the site.
 -   **Virtual Environment:** It is critical to use the correct Poetry virtual environment for all Python-related tasks.
     -   **Path:** `C:\Users\krzys\AppData\Local\pypoetry\Cache\virtualenvs\pytorch-course-YUNTNAZF-py3.12`
     -   **Executable:** `C:\Users\krzys\AppData\Local\pypoetry\Cache\virtualenvs\pytorch-course-YUNTNAZF-py3.12\Scripts\python.exe`
