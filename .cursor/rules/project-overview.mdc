@@ -1,0 +1,75 @@
+---
+description: "A comprehensive overview of the PyTorch Course project, including its goals, technical stack, development environment, and content guidelines. This file merges and replaces project-description-goal.mdc and windows-dev-environment.mdc."
+globs: ["*"]
+alwaysApply: true
+---
+
+# Project Overview: PyTorch Course
+
+This document provides a comprehensive guide to the PyTorch Course project. It covers the project's vision, technical stack, development environment setup, project structure, and key resources.
+
+For details on the course's brand, tone, and the persona of Professor Torchenstein, please refer to the `.cursor/rules/brand-marketing-persona_v2.mdc` file.
+
+## 1. Project Goal & Vision
+
+**Primary Goal:** To create the best free online PyTorch tutorial for understanding the core building blocks of modern AI architectures like Transformers and Diffusion models.
+
+- **URL:** [https://pytorchcourse.com](https://pytorchcourse.com)
+- **GitHub:** [https://github.com/ksopyla/pytorch-course](https://github.com/ksopyla/pytorch-course)
+
+## 2. Content & Educational Strategy
+
+-   **Target Audience:** Beginner to advanced ML engineers and researchers who are familiar with Python and linear algebra basics.
+-   **Pedagogy:**
+    -   Each lesson focuses on a single core concept.
+    -   Start with the theory: "What is it and what purpose does it serve?"
+    -   Provide simple, hand-verifiable PyTorch code examples.
+    -   Progress to more advanced examples with realistic tensor shapes (e.g., for Transformers).
+    -   Use analogies, humor, and a clear, logical structure.
+-   **Technical Scope:** PyTorch, Hugging Face Transformers, and the fundamental components of modern neural networks (attention, normalization, embeddings, etc.).
+
+## 3. Website & Technology Stack
+
+The course website is built using **MkDocs** with the **Material for MkDocs** theme.
+
+-   **Configuration:** The main configuration is in `mkdocs.yml`. This file defines the site structure, navigation, theme, and plugins.
+-   **Content Rendering:** Jupyter Notebooks (`.ipynb`) are rendered directly into the site using the `mkdocs-jupyter` plugin.
+-   **Deployment:** The site is automatically built and deployed to **GitHub Pages** via a GitHub Actions workflow defined in `.github/workflows/mkdocs-build.yml`. The site is served from the `gh-pages` branch.
+
+## 4. Development Environment
+
+The project is developed on a **Windows 11** environment.
+
+-   **Terminal:** All commands should be Windows-specific and run in **PowerShell**.
+-   **Python:** The project uses **Python 3.12**, managed via `pyenv` for Windows.
+-   **Dependency Management:** Dependencies are managed with **Poetry**. The dependencies are listed in `pyproject.toml`.
+-   **Virtual Environment:** It is critical to use the correct Poetry virtual environment for all Python-related tasks.
+    -   **Path:** `C:\Users\krzys\AppData\Local\pypoetry\Cache\virtualenvs\pytorch-course-YUNTNAZF-py3.12`
+    -   **Executable:** `C:\Users\krzys\AppData\Local\pypoetry\Cache\virtualenvs\pytorch-course-YUNTNAZF-py3.12\Scripts\python.exe`
+    -   Always run commands within this environment (e.g., using `poetry run ...`).
+
+## 5. Project Structure & Key Files
+
+-   `mkdocs.yml`: Main MkDocs configuration file, including site navigation.
+-   `pyproject.toml` / `poetry.lock`: Python dependency management files.
+-   `.github/workflows/`: Contains the GitHub Actions workflow for building and deploying the site.
+-   `docs/`: Contains all course content.
+    -   `docs/01-tensors/`, `docs/02-torch-nn/`, etc.: Subdirectories for each course module.
+    -   `docs/assets/`: Images, CSS, and other static assets.
+    -   `docs/index.md`: The home page content.
+-   `overrides/`: Customizations for the MkDocs Material theme.
+
+## 6. Key Resources
+
+For a deeper understanding of the project's different facets, refer to these key documents:
+
+-   **Brand & Persona:** `brand/course_prof_torchenstein_persona.md`
+-   **Professor Torchenstein's Backstory:** `docs/story/victor_torchenstein_origin.md`
+-   **Overall Course Structure:** `docs/pytorch-course-structure.md`
+-   **Lesson Generation Template:** `learning_designs/lesson-template.md`
+-   **Educator Guidelines:** `.cursor/rules/educator-guidelines.mdc`
+
+## 7. Contribution Guidelines
+
+-   **UTM Tracking:** All external links must include UTM tracking parameters for analytics.
+    -   **Example:** `utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=(file name)`
