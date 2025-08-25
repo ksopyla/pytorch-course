@@ -37,7 +37,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          poetry install --only dev
+          poetry install --only dev --no-root
       
       - name: Build MkDocs site
         run: |

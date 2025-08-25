@@ -7,6 +7,7 @@ readme = "README.md"
 license = "MIT" # Or your chosen license
 repository = "https://github.com/ksopyla/pytorch-course"
 homepage = "https://ksopyla.github.io/pytorch-course/"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.12"
