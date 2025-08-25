@@ -72,6 +72,32 @@
 
     
     
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Tensor Shape-Shifting &amp; Sorcery - PyTorch Course" >
+      
+        <meta  property="og:description"  content="Join Professor Torchenstein on an electrifying journey into the world of PyTorch. Master the building blocks of modern AI, from tensors to transformers, and unleash your own computational creations!" >
+      
+        <meta  property="og:image"  content="https://pytorchcourse.com/assets/images/social/01-tensors/02_tensor_manipulation.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://pytorchcourse.com/01-tensors/02_tensor_manipulation/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Tensor Shape-Shifting &amp; Sorcery - PyTorch Course" >
+      
+        <meta  name="twitter:description"  content="Join Professor Torchenstein on an electrifying journey into the world of PyTorch. Master the building blocks of modern AI, from tensors to transformers, and unleash your own computational creations!" >
+      
+        <meta  name="twitter:image"  content="https://pytorchcourse.com/assets/images/social/01-tensors/02_tensor_manipulation.png" >
+      
+    
     
   </head>
   
@@ -753,27 +779,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#12-sweeping-strikes-accessing-rows-and-columns" class="md-nav__link">
+  <a href="#sweeping-strikes-accessing-rows-and-columns" class="md-nav__link">
     <span class="md-ellipsis">
-      1.2 Sweeping Strikes: Accessing Rows and Columns
+      Sweeping Strikes: Accessing Rows and Columns
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#13-carving-chunks-the-power-of-slicing" class="md-nav__link">
+  <a href="#carving-chunks-the-power-of-slicing" class="md-nav__link">
     <span class="md-ellipsis">
-      1.3 Carving Chunks: The Power of Slicing
+      Carving Chunks: The Power of Slicing
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#14-conditional-conjuring-boolean-mask-indexing" class="md-nav__link">
+  <a href="#conditional-conjuring-boolean-mask-indexing" class="md-nav__link">
     <span class="md-ellipsis">
-      1.4 Conditional Conjuring: Boolean Mask Indexing
+      Conditional Conjuring: Boolean Mask Indexing
     </span>
   </a>
   
@@ -1445,27 +1471,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#12-sweeping-strikes-accessing-rows-and-columns" class="md-nav__link">
+  <a href="#sweeping-strikes-accessing-rows-and-columns" class="md-nav__link">
     <span class="md-ellipsis">
-      1.2 Sweeping Strikes: Accessing Rows and Columns
+      Sweeping Strikes: Accessing Rows and Columns
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#13-carving-chunks-the-power-of-slicing" class="md-nav__link">
+  <a href="#carving-chunks-the-power-of-slicing" class="md-nav__link">
     <span class="md-ellipsis">
-      1.3 Carving Chunks: The Power of Slicing
+      Carving Chunks: The Power of Slicing
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#14-conditional-conjuring-boolean-mask-indexing" class="md-nav__link">
+  <a href="#conditional-conjuring-boolean-mask-indexing" class="md-nav__link">
     <span class="md-ellipsis">
-      1.4 Conditional Conjuring: Boolean Mask Indexing
+      Conditional Conjuring: Boolean Mask Indexing
     </span>
   </a>
   
@@ -2002,13 +2028,13 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d0210a48">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d0210a48">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-1">
@@ -2030,7 +2056,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="c1"># Or perhaps experimental results from a daring new potion.</span>
 <span class="n">subject_tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Our subject tensor, ripe for dissection:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Our subject tensor of shape </span><span class="si">{</span><span class="n">subject_tensor</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">, ripe for dissection:"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">subject_tensor</span><span class="p">)</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-1">import torch
@@ -2042,9 +2068,27 @@ torch.manual_seed(42)
 # Or perhaps experimental results from a daring new potion.
 subject_tensor = torch.randint(0, 100, (5, 4))
 
-print("Our subject tensor, ripe for dissection:")
+print(f"Our subject tensor of shape {subject_tensor.shape}, ripe for dissection:")
 print(subject_tensor)
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Our subject tensor of shape torch.Size([5, 4]), ripe for dissection:
+tensor([[42, 67, 76, 14],
+        [26, 35, 20, 24],
+        [50, 13, 78, 14],
+        [10, 54, 31, 72],
+        [15, 95, 67,  6]])
+</pre>
 </div>
 </div>
 </div>
@@ -2057,7 +2101,7 @@ print(subject_tensor)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="12-sweeping-strikes-accessing-rows-and-columns">1.2 Sweeping Strikes: Accessing Rows and Columns<a class="anchor-link" href="#12-sweeping-strikes-accessing-rows-and-columns">¶</a></h3><p>Previous lesson: <a href="01_introduction_to_tensors.ipynb">01_introduction_to_tensors.ipynb</a> gives you the basics for accessing element of a tensor.
+<h3 id="sweeping-strikes-accessing-rows-and-columns">Sweeping Strikes: Accessing Rows and Columns<a class="anchor-link" href="#sweeping-strikes-accessing-rows-and-columns">¶</a></h3><p>Previous lesson: <a href="01_introduction_to_tensors.ipynb">01_introduction_to_tensors.ipynb</a> gives you the basics for accessing element of a tensor.
 But what if we require an entire row or column for our dark machinations? For this, we use the colon <code>:</code>, the universal symbol for "give me everything along this dimension!"</p>
 <ul>
 <li><code>[row, :]</code> - Fetches the entire row.</li>
@@ -2067,13 +2111,13 @@ But what if we require an entire row or column for our dark machinations? For th
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=91b34956">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=91b34956">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-2">
@@ -2106,8 +2150,23 @@ print(f"Shape of the row: {third_row.shape}\\n")
 # Get the entire 2nd column (index 1)
 second_column = subject_tensor[:, 1]
 print(f"The second column: {second_column}")
-print(f"Shape of the column: {second_column.shape}")
+print(f"Shape of the column: {second_column.shape}")</div>
 </div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>The third row: tensor([50, 13, 78, 14])
+Shape of the row: torch.Size([4])\n
+The second column: tensor([67, 35, 13, 54, 95])
+Shape of the column: torch.Size([5])
+</pre>
 </div>
 </div>
 </div>
@@ -2120,7 +2179,7 @@ print(f"Shape of the column: {second_column.shape}")
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="13-carving-chunks-the-power-of-slicing">1.3 Carving Chunks: The Power of Slicing<a class="anchor-link" href="#13-carving-chunks-the-power-of-slicing">¶</a></h3><p>Mere elements are but trivialities! True power lies in carving out entire sub-regions of a tensor. Slicing uses the <code>start:end</code> notation. As with all Pythonic sorcery, the <code>start</code> is inclusive, but the <code>end</code> is <strong>exclusive</strong>.</p>
+<h3 id="carving-chunks-the-power-of-slicing">Carving Chunks: The Power of Slicing<a class="anchor-link" href="#carving-chunks-the-power-of-slicing">¶</a></h3><p>Mere elements are but trivialities! True power lies in carving out entire sub-regions of a tensor. Slicing uses the <code>start:end</code> notation. As with all Pythonic sorcery, the <code>start</code> is inclusive, but the <code>end</code> is <strong>exclusive</strong>.</p>
 <p>Let us carve out the block containing the 2nd and 3rd rows (indices 1 and 2), and the last two columns (indices 2 and 3).</p>
 </div>
 </div>
@@ -2170,7 +2229,7 @@ print(f"Shape of the sub-tensor: {sub_tensor.shape}")
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="14-conditional-conjuring-boolean-mask-indexing">1.4 Conditional Conjuring: Boolean Mask Indexing<a class="anchor-link" href="#14-conditional-conjuring-boolean-mask-indexing">¶</a></h3><p>Now for a truly diabolical technique! We can use a <strong>boolean mask</strong> to summon only the elements that meet our nefarious criteria. A boolean mask is a tensor of the same shape as our subject, but it contains only <code>True</code> or <code>False</code> values. When used for indexing, it returns a 1D tensor containing only the elements where the mask was <code>True</code>.</p>
+<h3 id="conditional-conjuring-boolean-mask-indexing">Conditional Conjuring: Boolean Mask Indexing<a class="anchor-link" href="#conditional-conjuring-boolean-mask-indexing">¶</a></h3><p>Now for a truly diabolical technique! We can use a <strong>boolean mask</strong> to summon only the elements that meet our nefarious criteria. A boolean mask is a tensor of the same shape as our subject, but it contains only <code>True</code> or <code>False</code> values. When used for indexing, it returns a 1D tensor containing only the elements where the mask was <code>True</code>.</p>
 <p>Let's find all the alchemical ingredients in our tensor with a value greater than 50!</p>
 </div>
 </div>
@@ -2362,7 +2421,7 @@ print(f"The tensor after mutating even numbers to -1:\\n{mutated_tensor}")
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 23, 2025 12:41:42 UTC">August 23, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 25, 2025 16:44:52 UTC">August 25, 2025</span>
   </span>
 
     
@@ -2372,7 +2431,7 @@ print(f"The tensor after mutating even numbers to -1:\\n{mutated_tensor}")
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 23, 2025 12:41:42 UTC">August 23, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 25, 2025 16:44:52 UTC">August 25, 2025</span>
   </span>
 
     
