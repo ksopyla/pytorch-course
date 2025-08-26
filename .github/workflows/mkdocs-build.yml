@@ -36,22 +36,33 @@ jobs:
           virtualenvs-create: true
           virtualenvs-in-project: true
 
-      - name: Cache Poetry dependencies
+      - name: Extract MkDocs Material version for cache key
+        id: mkdocs-version
+        run: |
+          MKDOCS_VERSION=$(grep 'mkdocs-material' pyproject.toml | sed 's/.*"\^//' | sed 's/".*//')
+          echo "version=$MKDOCS_VERSION" >> $GITHUB_OUTPUT
+          echo "MkDocs Material version: $MKDOCS_VERSION"
+
+      - name: Cache Poetry dependencies  
         uses: actions/cache@v3
         with:
           path: |
             ~/.cache/pypoetry
             .venv
-          key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
+          key: ${{ runner.os }}-poetry-mkdocs-${{ steps.mkdocs-version.outputs.version }}
           restore-keys: |
+            ${{ runner.os }}-poetry-mkdocs-
             ${{ runner.os }}-poetry-
 
       - name: Install dependencies
         run: |
           poetry config installer.parallel true
+          poetry config cache-dir ~/.cache/pypoetry
           poetry install --only dev --no-root
       
       - name: Build MkDocs site
+        env:
+          JUPYTER_PLATFORM_DIRS: 1  # Suppress Jupyter deprecation warnings
         run: |
           poetry run mkdocs build --strict --verbose
 

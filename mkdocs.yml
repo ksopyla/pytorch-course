@@ -115,7 +115,6 @@ plugins:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - social:                   # Enable social cards (OpenGraph tags)
       cards: true
-      cards_layout: default/variant
       cards_layout_options:
         background_color: "#663399"  # Deep purple to match your theme
         color: "#ffffff"
