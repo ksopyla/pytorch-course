@@ -113,6 +113,10 @@ plugins:
   - search:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  # Note: optimize plugin requires MkDocs Material Insiders (paid version)
+  # - optimize:                 # Automatically compress and optimize images for web
+  #     optimize_jpg_quality: 75    # JPEG quality (0-100, default 75)
+  #     optimize_png_speed: 3       # PNG optimization speed/quality (1-10, default 3)
   - social:                   # Enable social cards (OpenGraph tags) - auto-enabled in CI/production
       enabled: !ENV [CI, false]  # Only enabled in CI environments (production builds)
       cards: true
