@@ -39,7 +39,7 @@ jobs:
       - name: Extract MkDocs Material version for cache key
         id: mkdocs-version
         run: |
-          MKDOCS_VERSION=$(grep 'mkdocs-material' pyproject.toml | sed 's/.*version = "\^//' | sed 's/".*//')
+          MKDOCS_VERSION=$(grep '^mkdocs-material = ' pyproject.toml | sed 's/.*version = "\^//' | sed 's/".*//')
           echo "version=$MKDOCS_VERSION" >> $GITHUB_OUTPUT
           echo "MkDocs Material version: $MKDOCS_VERSION"
 
