@@ -1,6 +1,6 @@
 ---
 template: home.html
-title: "Greetings, Future Architect of Computational Destiny!"
+title: "Greetings, Architect of Computational Destiny!"
 subtitle: "Join Professor Torchenstein on an electrifying quest to bend PyTorch to your will. Mwahahaha!"
 start_button_text: "Enter the Laboratory"
 start_url: "pytorch-course-structure"
