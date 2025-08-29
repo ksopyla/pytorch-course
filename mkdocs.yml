@@ -113,7 +113,8 @@ plugins:
   - search:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
-  - social:                   # Enable social cards (OpenGraph tags)
+  - social:                   # Enable social cards (OpenGraph tags) - auto-enabled in CI/production
+      enabled: !ENV [CI, false]  # Only enabled in CI environments (production builds)
       cards: true
       cards_layout_options:
         background_color: "#663399"  # Deep purple to match your theme
