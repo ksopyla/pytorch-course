@@ -13,7 +13,7 @@ extra:
 
 Salutations, my brilliant (and delightfully reckless) apprentices! By opening this manuscript you have volunteered to join my clandestine legion of PyTorch adepts. Consider this your official red-pill moment: from today every pixel, every token, every measly click-through rate shall reveal its true form—a multidimensional array begging to be `torch.tensor`-ed … and we shall oblige it with maniacal glee! *Mwahaha!* 🔥🧪
 
-![pytorch tensors everywhere](/assets/images/torchenstein_presenting_cube.png)
+![pytorch tensors everywhere](/assets/images/torchenstein_in_the_lab_blackboard.png)
 
 Over the next notebooks we will:
 
@@ -45,6 +45,13 @@ Over the next notebooks we will:
 ---
 
 Enough talk! The tensors are humming with anticipation. Your first incantation awaits.
+
+
+
+<video controls width="100%"  src="/assets/images/torchenstein_coffe_explore_tensors_v2.mp4" title="Professor Torchenstein invites you to explore tensors">
+  Your browser does not support the video tag. Please update your browser to view this content.
+</video>
+
 
 [Proceed to the Summoning Ritual!](01_introduction_to_tensors.ipynb){ .md-button .md-button--primary }
 
