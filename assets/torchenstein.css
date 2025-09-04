@@ -1,7 +1,37 @@
-:root  > * {
+/* Theme-specific color overrides - ensuring proper contrast */
+[data-md-color-scheme="default"] {
   --md-default-fg-color: #000000de;
   --md-default-fg-color--light: #000000c4;
   --md-default-fg-color--dark:  #0000008a;
+}
+
+[data-md-color-scheme="slate"] {
+  /* Let Material handle dark mode colors properly for contrast */
+  --md-default-fg-color: hsla(var(--md-hue), 75%, 95%, 1);
+  --md-default-fg-color--light: hsla(var(--md-hue), 75%, 90%, 0.62);
+  --md-default-fg-color--dark: hsla(var(--md-hue), 75%, 85%, 0.32);
+}
+
+/* Professor Torchenstein's Laboratory - Light theme inline code */
+[data-md-color-scheme="default"] .md-typeset code:not(.highlight code) {
+  background-color: #f3e5f5; /* Light purple lab background */
+  color: #4a148c; /* Deep purple text */
+  border: none;
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(103, 58, 183, 0.15); /* Subtle purple shadow */
+}
+
+/* Refined Electric Amber - Dark theme inline code */
+[data-md-color-scheme="slate"] .md-typeset code:not(.highlight code) {
+  background-color: #2a2a2a; /* Softer dark background */
+  color: #ffb74d; /* Softer amber text - less intense */
+  border: none;
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  font-weight: 500; /* Reduced from 600 for less intensity */
+  box-shadow: 0 1px 2px rgba(255, 152, 0, 0.2); /* Much subtler glow */
 }
 
 
@@ -99,8 +129,13 @@ img {
 }
 
 /* Math expressions - Enhanced for better LaTeX rendering */
-.arithmatex {
+[data-md-color-scheme="default"] .arithmatex {
   color: #673ab7;
+  font-weight: 500;
+}
+
+[data-md-color-scheme="slate"] .arithmatex {
+  color: #ba68c8; /* Lighter purple for dark mode */
   font-weight: 500;
 }
 
