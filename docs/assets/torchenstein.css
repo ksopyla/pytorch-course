@@ -1,7 +1,26 @@
-:root  > * {
+/* Theme-specific color overrides - ensuring proper contrast */
+[data-md-color-scheme="default"] {
   --md-default-fg-color: #000000de;
   --md-default-fg-color--light: #000000c4;
   --md-default-fg-color--dark:  #0000008a;
+}
+
+[data-md-color-scheme="slate"] {
+  /* Let Material handle dark mode colors properly for contrast */
+  --md-default-fg-color: hsla(var(--md-hue), 75%, 95%, 1);
+  --md-default-fg-color--light: hsla(var(--md-hue), 75%, 90%, 0.62);
+  --md-default-fg-color--dark: hsla(var(--md-hue), 75%, 85%, 0.32);
+}
+
+/* Electric Amber Sparks - Inline code styling for dark theme */
+[data-md-color-scheme="slate"] .md-typeset code:not(.highlight code) {
+  background-color: #1a1a1a; /* Dark lab table */
+  color: #ffc107; /* Electric amber text */
+  border: 1px solid #ff8f00; /* Darker amber border */
+  border-radius: 3px;
+  padding: 0.1em 0.4em;
+  font-weight: 600;
+  text-shadow: 0 0 4px rgba(255, 193, 7, 0.4); /* Electric glow effect */
 }
 
 
@@ -99,8 +118,13 @@ img {
 }
 
 /* Math expressions - Enhanced for better LaTeX rendering */
-.arithmatex {
+[data-md-color-scheme="default"] .arithmatex {
   color: #673ab7;
+  font-weight: 500;
+}
+
+[data-md-color-scheme="slate"] .arithmatex {
+  color: #ba68c8; /* Lighter purple for dark mode */
   font-weight: 500;
 }
 
