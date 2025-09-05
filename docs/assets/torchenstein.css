@@ -12,6 +12,35 @@
   --md-default-fg-color--dark: hsla(var(--md-hue), 75%, 85%, 0.32);
 }
 
+/* Dark theme amber headers - Electric laboratory style */
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3,
+[data-md-color-scheme="slate"] .md-typeset h4,
+[data-md-color-scheme="slate"] .md-typeset h5,
+[data-md-color-scheme="slate"] .md-typeset h6 {
+  color: #ffc107 !important; /* Electric amber headers */
+  text-shadow: 0 0 8px rgba(255, 193, 7, 0.3); /* Subtle electric glow */
+}
+
+/* Sidebar navigation titles in dark mode */
+[data-md-color-scheme="slate"] .md-nav__title,
+[data-md-color-scheme="slate"] .md-nav__item .md-nav__link {
+  color: #e0e0e0 !important; /* Light grey for navigation */
+}
+
+/* Table of contents and sidebar headers - Electric amber */
+[data-md-color-scheme="slate"] .md-sidebar .md-nav__title {
+  color: #ffc107 !important; /* Electric amber for main sidebar titles */
+  font-weight: 600;
+  text-shadow: 0 0 6px rgba(255, 193, 7, 0.2); /* Subtle glow for sidebar titles */
+}
+
+/* Active navigation items */
+[data-md-color-scheme="slate"] .md-nav__item .md-nav__link--active {
+  color: #ba68c8 !important; /* Light purple for active items */
+}
+
 /* Professor Torchenstein's Laboratory - Light theme inline code */
 [data-md-color-scheme="default"] .md-typeset code:not(.highlight code) {
   background-color: #f3e5f5; /* Light purple lab background */
