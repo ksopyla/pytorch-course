@@ -2787,15 +2787,15 @@ tensor([[1., 1., 1., 2., 2., 2., 3., 3., 3.],
     <span class="n">cat_cols_fail</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">([</span><span class="n">tensor_wide</span><span class="p">,</span> <span class="n">tensor_narrow</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="k">except</span> <span class="ne">RuntimeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🎂/🧁 This couldn't work! </span><span class="se">\n</span><span class="s2">Error as expected: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"The shapes don't match along dimension 0!"</span><span class="p">)</span>
+    
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Our unequal test subjects:"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Wide tensor [big cake 🎂] (</span><span class="si">{</span><span class="n">tensor_wide</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">):</span><span class="se">\n</span><span class="si">{</span><span class="n">tensor_wide</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Narrow tensor [small cupcake 🧁] (</span><span class="si">{</span><span class="n">tensor_narrow</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">):</span><span class="se">\n</span><span class="si">{</span><span class="n">tensor_narrow</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 
-<span class="c1"># This WORKS: Concatenating along dimension 0 (rows)</span>
-<span class="c1"># Both have 3 rows, so we can stack them vertically</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"✅ Concatenating along dimension 0 (rows) - SUCCESS!"</span><span class="p">)</span>
+<span class="c1"># This WORKS: Concatenating along dimension 1 (columns)</span>
+<span class="c1"># Both have 3 rows, so we can lay them side by side horizontally</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"✅ Concatenating along dimension 1 (columns) - SUCCESS!"</span><span class="p">)</span>
 <span class="n">cat_rows_success</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">([</span><span class="n">tensor_wide</span><span class="p">,</span> <span class="n">tensor_narrow</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Result shape: </span><span class="si">{</span><span class="n">cat_rows_success</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Result:</span><span class="se">\n</span><span class="si">{</span><span class="n">cat_rows_success</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
@@ -2814,15 +2814,15 @@ try:
     cat_cols_fail = torch.cat([tensor_wide, tensor_narrow], dim=0)
 except RuntimeError as e:
     print(f"🎂/🧁 This couldn't work! \nError as expected: {str(e)}")
-    print("The shapes don't match along dimension 0!")
+    
 
 print("Our unequal test subjects:")
 print(f"Wide tensor [big cake 🎂] ({tensor_wide.shape}):\n{tensor_wide}\n")
 print(f"Narrow tensor [small cupcake 🧁] ({tensor_narrow.shape}):\n{tensor_narrow}\n")
 
-# This WORKS: Concatenating along dimension 0 (rows)
-# Both have 3 rows, so we can stack them vertically
-print("✅ Concatenating along dimension 0 (rows) - SUCCESS!")
+# This WORKS: Concatenating along dimension 1 (columns)
+# Both have 3 rows, so we can lay them side by side horizontally
+print("✅ Concatenating along dimension 1 (columns) - SUCCESS!")
 cat_rows_success = torch.cat([tensor_wide, tensor_narrow], dim=1)
 print(f"Result shape: {cat_rows_success.shape}")
 print(f"Result:\n{cat_rows_success}\n")
@@ -2852,8 +2852,7 @@ tensor([[5., 5.],
 
 ❌ Attempting to concatenate along dimension 0 (rows), stack cake on top of cupcake ...
 🎂/🧁 This couldn't work! 
-Error as expected: Sizes of tensors must match except in dimension 0. Expected size 8 but got size 2 for tensor number 1 in the list....
-The shapes don't match along dimension 0!
+Error as expected: Sizes of tensors must match except in dimension 0. Expected size 8 but got size 2 for tensor number 1 in the list.
 Our unequal test subjects:
 Wide tensor [big cake 🎂] (torch.Size([3, 8])):
 tensor([[4., 4., 4., 4., 4., 4., 4., 4.],
@@ -2865,7 +2864,7 @@ tensor([[5., 5.],
         [5., 5.],
         [5., 5.]])
 
-✅ Concatenating along dimension 0 (rows) - SUCCESS!
+✅ Concatenating along dimension 1 (columns) - SUCCESS!
 Result shape: torch.Size([3, 10])
 Result:
 tensor([[4., 4., 4., 4., 4., 4., 4., 4., 5., 5.],
@@ -3201,7 +3200,7 @@ print("The key was concatenating, not stacking!")
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 6, 2025 12:43:52 UTC">September 6, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 6, 2025 13:12:26 UTC">September 6, 2025</span>
   </span>
 
     
@@ -3211,7 +3210,7 @@ print("The key was concatenating, not stacking!")
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 6, 2025 12:43:52 UTC">September 6, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 6, 2025 13:12:26 UTC">September 6, 2025</span>
   </span>
 
     
