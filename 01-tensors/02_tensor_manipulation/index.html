@@ -819,6 +819,66 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#part-2-forbidden-fusions-joining-tensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 2: Forbidden Fusions - Joining Tensors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 2: Forbidden Fusions - Joining Tensors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-concatenator" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Concatenator:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-concatenation-rules-when-shapes-dont-match" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Concatenation Rules: When Shapes Don't Match
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-stacker" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Stacker:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-fusion-dilemma-when-to-cat-vs-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Fusion Dilemma: When to Cat vs. Stack?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#your-mission-the-fusion-masters-gauntlet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Your Mission: The Fusion Master's Gauntlet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1511,6 +1571,66 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#part-2-forbidden-fusions-joining-tensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 2: Forbidden Fusions - Joining Tensors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 2: Forbidden Fusions - Joining Tensors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-concatenator" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Concatenator:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-concatenation-rules-when-shapes-dont-match" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Concatenation Rules: When Shapes Don't Match
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-stacker" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Stacker:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-fusion-dilemma-when-to-cat-vs-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Fusion Dilemma: When to Cat vs. Stack?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#your-mission-the-fusion-masters-gauntlet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Your Mission: The Fusion Master's Gauntlet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1987,6 +2107,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <hr/>
 <h2 id="professor-torchensteins-grand-directive">Professor Torchenstein's Grand Directive<a class="anchor-link" href="#professor-torchensteins-grand-directive">¶</a></h2><p>Mwahahaha! You have summoned your first tensors from the ether! They are... raw. Untamed. Clumps of numerical clay awaiting a master's touch. A lesser mind would be content with their existence, but not you. Not us!</p>
 <p>Today, we sculpt! We will learn the arcane arts of tensor manipulation. We will not merely <em>use</em> data; we will bend it, twist it, and reshape it to our will until it confesses its secrets. This is not data processing; this is <strong>tensor sorcery</strong>! Prepare to command the very dimensions of your data!</p>
+<p><img alt="pytorch tensors everywhere" src="/assets/images/torchenstein_working_computer.png"/></p>
 </div>
 </div>
 </div>
@@ -2104,8 +2225,8 @@ tensor([[42, 67, 76, 14],
 <h3 id="sweeping-strikes-accessing-rows-and-columns">Sweeping Strikes: Accessing Rows and Columns<a class="anchor-link" href="#sweeping-strikes-accessing-rows-and-columns">¶</a></h3><p>Previous lesson: <a href="01_introduction_to_tensors.ipynb">01_introduction_to_tensors.ipynb</a> gives you the basics for accessing element of a tensor.
 But what if we require an entire row or column for our dark machinations? For this, we use the colon <code>:</code>, the universal symbol for "give me everything along this dimension!"</p>
 <ul>
-<li><code>[row, :]</code> - Fetches the entire row.</li>
-<li><code>[:, column]</code> - Fetches the entire column.</li>
+<li><code>[row_index, :]</code> - Fetches the entire row.</li>
+<li><code>[:, column_index]</code> - Fetches the entire column.</li>
 </ul>
 <p>Let's seize the entire 3rd row (index 2) and the 2nd column (index 1).</p>
 </div>
@@ -2133,7 +2254,7 @@ But what if we require an entire row or column for our dark machinations? For th
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Get the entire 3rd row (index 2)</span>
 <span class="n">third_row</span> <span class="o">=</span> <span class="n">subject_tensor</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="p">:]</span> <span class="c1"># or simply subject_tensor[2]</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The third row: </span><span class="si">{</span><span class="n">third_row</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Shape of the row: </span><span class="si">{</span><span class="n">third_row</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="se">\\</span><span class="s2">n"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Shape of the row: </span><span class="si">{</span><span class="n">third_row</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 
 
 <span class="c1"># Get the entire 2nd column (index 1)</span>
@@ -2144,7 +2265,7 @@ But what if we require an entire row or column for our dark machinations? For th
 <div class="clipboard-copy-txt" id="cell-2"># Get the entire 3rd row (index 2)
 third_row = subject_tensor[2, :] # or simply subject_tensor[2]
 print(f"The third row: {third_row}")
-print(f"Shape of the row: {third_row.shape}\\n")
+print(f"Shape of the row: {third_row.shape}\n")
 
 
 # Get the entire 2nd column (index 1)
@@ -2163,7 +2284,8 @@ print(f"Shape of the column: {second_column.shape}")</div>
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>The third row: tensor([50, 13, 78, 14])
-Shape of the row: torch.Size([4])\n
+Shape of the row: torch.Size([4])
+
 The second column: tensor([67, 35, 13, 54, 95])
 Shape of the column: torch.Size([5])
 </pre>
@@ -2184,13 +2306,13 @@ Shape of the column: torch.Size([5])
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dd3e2f4e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=dd3e2f4e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-3">
@@ -2221,6 +2343,22 @@ print(f"Shape of the sub-tensor: {sub_tensor.shape}")
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Our carved sub-tensor:
+tensor([[20, 24],
+        [78, 14]])
+Shape of the sub-tensor: torch.Size([2, 2])
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fcc94f52">
@@ -2234,13 +2372,13 @@ print(f"Shape of the sub-tensor: {sub_tensor.shape}")
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ac2ad0cb">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ac2ad0cb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-4">
@@ -2258,19 +2396,18 @@ print(f"Shape of the sub-tensor: {sub_tensor.shape}")
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"The boolean mask (True where value &gt; 50):"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">mask</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\\</span><span class="s2">n"</span><span class="p">)</span>
 
 <span class="c1"># Apply the mask</span>
 <span class="n">selected_elements</span> <span class="o">=</span> <span class="n">subject_tensor</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Elements greater than 50:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Elements greater than 50:"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">selected_elements</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Shape of the result: </span><span class="si">{</span><span class="n">selected_elements</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2"> (always a 1D tensor!)"</span><span class="p">)</span>
 
 <span class="c1"># You can also combine conditions! Mwahaha!</span>
 <span class="c1"># Let's find elements between 20 and 40.</span>
 <span class="n">mask_combined</span> <span class="o">=</span> <span class="p">(</span><span class="n">subject_tensor</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">subject_tensor</span> <span class="o">&lt;</span> <span class="mi">40</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\\</span><span class="s2">nElements between 20 and 40:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Elements between 20 and 40:"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">subject_tensor</span><span class="p">[</span><span class="n">mask_combined</span><span class="p">])</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-4"># Create the boolean mask
@@ -2278,21 +2415,45 @@ mask = subject_tensor &gt; 50
 
 print("The boolean mask (True where value &gt; 50):")
 print(mask)
-print(f"\\n")
 
 # Apply the mask
 selected_elements = subject_tensor[mask]
 
-print("Elements greater than 50:")
+print("\nElements greater than 50:")
 print(selected_elements)
 print(f"Shape of the result: {selected_elements.shape} (always a 1D tensor!)")
 
 # You can also combine conditions! Mwahaha!
 # Let's find elements between 20 and 40.
 mask_combined = (subject_tensor &gt; 20) &amp; (subject_tensor &lt; 40)
-print("\\nElements between 20 and 40:")
+print("\nElements between 20 and 40:")
 print(subject_tensor[mask_combined])
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>The boolean mask (True where value &gt; 50):
+tensor([[False,  True,  True, False],
+        [False, False, False, False],
+        [False, False,  True, False],
+        [False,  True, False,  True],
+        [False,  True,  True, False]])
+
+Elements greater than 50:
+tensor([67, 76, 78, 54, 72, 95, 67])
+Shape of the result: torch.Size([7]) (always a 1D tensor!)
+
+Elements between 20 and 40:
+tensor([26, 35, 24, 31])
+</pre>
 </div>
 </div>
 </div>
@@ -2315,8 +2476,18 @@ print(subject_tensor[mask_combined])
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1b34d9e7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2d7adb0d">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0049a5d5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2339,18 +2510,18 @@ print(subject_tensor[mask_combined])
 <span class="c1"># --- 1. The Corner Pocket ---</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"--- 1. The Corner Pocket ---"</span><span class="p">)</span>
 <span class="n">corner_element</span> <span class="o">=</span> <span class="n">subject_tensor</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># Negative indexing for the win!</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The corner element is: </span><span class="si">{</span><span class="n">corner_element</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="se">\\</span><span class="s2">n"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The corner element is: </span><span class="si">{</span><span class="n">corner_element</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 
 <span class="c1"># --- 2. The Central Core ---</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"--- 2. The Central Core ---"</span><span class="p">)</span>
 <span class="n">central_core</span> <span class="o">=</span> <span class="n">subject_tensor</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The central core:</span><span class="se">\\</span><span class="s2">n</span><span class="si">{</span><span class="n">central_core</span><span class="si">}</span><span class="se">\\</span><span class="s2">n"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The central core:</span><span class="se">\\</span><span class="s2">n</span><span class="si">{</span><span class="n">central_core</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 
 <span class="c1"># --- 3. The Even Stevens ---</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"--- 3. The Even Stevens ---"</span><span class="p">)</span>
 <span class="n">even_mask</span> <span class="o">=</span> <span class="n">subject_tensor</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The mask for even numbers:</span><span class="se">\\</span><span class="s2">n</span><span class="si">{</span><span class="n">even_mask</span><span class="si">}</span><span class="se">\\</span><span class="s2">n"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The even numbers themselves: </span><span class="si">{</span><span class="n">subject_tensor</span><span class="p">[</span><span class="n">even_mask</span><span class="p">]</span><span class="si">}</span><span class="se">\\</span><span class="s2">n"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The mask for even numbers:</span><span class="se">\\</span><span class="s2">n</span><span class="si">{</span><span class="n">even_mask</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The even numbers themselves: </span><span class="si">{</span><span class="n">subject_tensor</span><span class="p">[</span><span class="n">even_mask</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 
 
 <span class="c1"># --- 4. The Grand Mutation ---</span>
@@ -2358,25 +2529,25 @@ print(subject_tensor[mask_combined])
 <span class="c1"># Let's not mutate our original, that would be reckless! Let's clone it first.</span>
 <span class="n">mutated_tensor</span> <span class="o">=</span> <span class="n">subject_tensor</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span>
 <span class="n">mutated_tensor</span><span class="p">[</span><span class="n">even_mask</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The tensor after mutating even numbers to -1:</span><span class="se">\\</span><span class="s2">n</span><span class="si">{</span><span class="n">mutated_tensor</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The tensor after mutating even numbers to -1:</span><span class="se">\n</span><span class="si">{</span><span class="n">mutated_tensor</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-5"># Your code for the Slicer's Gauntlet goes here!
 
 # --- 1. The Corner Pocket ---
 print("--- 1. The Corner Pocket ---")
 corner_element = subject_tensor[-1, -1] # Negative indexing for the win!
-print(f"The corner element is: {corner_element.item()}\\n")
+print(f"The corner element is: {corner_element.item()}\n")
 
 # --- 2. The Central Core ---
 print("--- 2. The Central Core ---")
 central_core = subject_tensor[1:4, 1:3]
-print(f"The central core:\\n{central_core}\\n")
+print(f"The central core:\\n{central_core}\n")
 
 # --- 3. The Even Stevens ---
 print("--- 3. The Even Stevens ---")
 even_mask = subject_tensor % 2 == 0
-print(f"The mask for even numbers:\\n{even_mask}\\n")
-print(f"The even numbers themselves: {subject_tensor[even_mask]}\\n")
+print(f"The mask for even numbers:\\n{even_mask}\n")
+print(f"The even numbers themselves: {subject_tensor[even_mask]}\n")
 
 
 # --- 4. The Grand Mutation ---
@@ -2384,7 +2555,616 @@ print("--- 4. The Grand Mutation ---")
 # Let's not mutate our original, that would be reckless! Let's clone it first.
 mutated_tensor = subject_tensor.clone()
 mutated_tensor[even_mask] = -1
-print(f"The tensor after mutating even numbers to -1:\\n{mutated_tensor}")
+print(f"The tensor after mutating even numbers to -1:\n{mutated_tensor}")
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=50b0bf35">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="part-2-forbidden-fusions-joining-tensors">Part 2: Forbidden Fusions - Joining Tensors<a class="anchor-link" href="#part-2-forbidden-fusions-joining-tensors">¶</a></h2><p>Ah, but dissecting tensors is only half the art! A true master must also know how to <strong>fuse</strong> separate tensors into a single, magnificent whole. Sometimes your data comes in fragments—perhaps different batches, different features, or different time steps. You must unite them!</p>
+<p>We have two primary spells for this dark ritual:</p>
+<ul>
+<li><strong><code>torch.cat()</code></strong> - The Concatenator! Joins tensors along an <em>existing</em> dimension.</li>
+<li><strong><code>torch.stack()</code></strong> - The Stacker! Creates a <em>new</em> dimension and stacks tensors along it.</li>
+</ul>
+<p>The difference is subtle but critical. Choose wrongly, and your creation will crumble! Let us forge some test subjects to demonstrate this power.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=dea18dcc">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-6">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Three 2x3 tensors, our loyal minions awaiting fusion</span>
+<span class="n">tensor_a</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">tensor_b</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="n">tensor_c</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="mi">3</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Our test subjects, ready for fusion:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Tensor A (shape </span><span class="si">{</span><span class="n">tensor_a</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">):</span><span class="se">\n</span><span class="si">{</span><span class="n">tensor_a</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Tensor B (shape </span><span class="si">{</span><span class="n">tensor_b</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">):</span><span class="se">\n</span><span class="si">{</span><span class="n">tensor_b</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Tensor C (shape </span><span class="si">{</span><span class="n">tensor_c</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">):</span><span class="se">\n</span><span class="si">{</span><span class="n">tensor_c</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-6">
+# Three 2x3 tensors, our loyal minions awaiting fusion
+tensor_a = torch.ones(2, 3)
+tensor_b = torch.ones(2, 3) * 2
+tensor_c = torch.ones(2, 3) * 3
+
+print("Our test subjects, ready for fusion:")
+print(f"Tensor A (shape {tensor_a.shape}):\n{tensor_a}\n")
+print(f"Tensor B (shape {tensor_b.shape}):\n{tensor_b}\n")
+print(f"Tensor C (shape {tensor_c.shape}):\n{tensor_c}\n")
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Our test subjects, ready for fusion:
+Tensor A (shape torch.Size([2, 3])):
+tensor([[1., 1., 1.],
+        [1., 1., 1.]])
+
+Tensor B (shape torch.Size([2, 3])):
+tensor([[2., 2., 2.],
+        [2., 2., 2.]])
+
+Tensor C (shape torch.Size([2, 3])):
+tensor([[3., 3., 3.],
+        [3., 3., 3.]])
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=31f7ebfb">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="the-concatenator-torchcat">The Concatenator: <code>torch.cat()</code><a class="anchor-link" href="#the-concatenator-torchcat">¶</a></h3><p><code>torch.cat()</code> joins tensors along an <strong>existing dimension</strong>. Think of it as gluing them end-to-end.</p>
+<p>The key rule: <em>All tensors must have the same shape, except along the dimension you're concatenating!</em></p>
+<ul>
+<li><code>dim=0</code> (or <code>axis=0</code>): Concatenate along rows (vertically stack)</li>
+<li><code>dim=1</code> (or <code>axis=1</code>): Concatenate along columns (horizontally join)</li>
+</ul>
+<p>Let us witness this concatenation sorcery!</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=dd117668">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-7">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Concatenating along dimension 0 (rows) - like stacking pancakes! 🥞⬆️⬇️</span>
+<span class="n">cat_dim0</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">([</span><span class="n">tensor_a</span><span class="p">,</span> <span class="n">tensor_b</span><span class="p">,</span> <span class="n">tensor_c</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Concatenated along dimension 0 (rows) [stacking pancakes 🥞⬆️⬇️]:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Result shape: </span><span class="si">{</span><span class="n">cat_dim0</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Result:</span><span class="se">\n</span><span class="si">{</span><span class="n">cat_dim0</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Concatenating along dimension 1 (columns) - like laying bricks side by side! 🧱🧱🧱</span>
+<span class="n">cat_dim1</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">([</span><span class="n">tensor_a</span><span class="p">,</span> <span class="n">tensor_b</span><span class="p">,</span> <span class="n">tensor_c</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Concatenated along dimension 1 (columns) [laying bricks side by side 🧱🧱🧱]:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Result shape: </span><span class="si">{</span><span class="n">cat_dim1</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Result:</span><span class="se">\n</span><span class="si">{</span><span class="n">cat_dim1</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-7"># Concatenating along dimension 0 (rows) - like stacking pancakes! 🥞⬆️⬇️
+cat_dim0 = torch.cat([tensor_a, tensor_b, tensor_c], dim=0)
+print("Concatenated along dimension 0 (rows) [stacking pancakes 🥞⬆️⬇️]:")
+print(f"Result shape: {cat_dim0.shape}")
+print(f"Result:\n{cat_dim0}\n")
+
+# Concatenating along dimension 1 (columns) - like laying bricks side by side! 🧱🧱🧱
+cat_dim1 = torch.cat([tensor_a, tensor_b, tensor_c], dim=1)
+print("Concatenated along dimension 1 (columns) [laying bricks side by side 🧱🧱🧱]:")
+print(f"Result shape: {cat_dim1.shape}")
+print(f"Result:\n{cat_dim1}")
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Concatenated along dimension 0 (rows) [stacking pancakes 🥞⬆️⬇️]:
+Result shape: torch.Size([6, 3])
+Result:
+tensor([[1., 1., 1.],
+        [1., 1., 1.],
+        [2., 2., 2.],
+        [2., 2., 2.],
+        [3., 3., 3.],
+        [3., 3., 3.]])
+
+Concatenated along dimension 1 (columns) [laying bricks side by side 🧱🧱🧱]:
+Result shape: torch.Size([2, 9])
+Result:
+tensor([[1., 1., 1., 2., 2., 2., 3., 3., 3.],
+        [1., 1., 1., 2., 2., 2., 3., 3., 3.]])
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6e4e4c43">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="the-concatenation-rules-when-shapes-dont-match">The Concatenation Rules: When Shapes Don't Match<a class="anchor-link" href="#the-concatenation-rules-when-shapes-dont-match">¶</a></h3><p>Now, let us test the fundamental law of concatenation with unequal tensors! Remember: <strong>All tensors must have the same shape, except along the dimension you're concatenating.</strong></p>
+<p>Eg1. If you joining 2D matrices along rows (dim=0) the number of collumns should be the same.</p>
+<p>Let's create two tensors with different shapes and see what happens:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ab05e2af">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-8">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Create tensors with different shapes</span>
+<span class="n">tensor_wide</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> <span class="o">*</span> <span class="mi">4</span>   <span class="c1"># 3x5 tensor filled with 4s</span>
+<span class="n">tensor_narrow</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span>  <span class="c1"># 3x2 tensor filled with 5s</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Wide tensor [big cake 🎂] (shape </span><span class="si">{</span><span class="n">tensor_wide</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">):</span><span class="se">\n</span><span class="si">{</span><span class="n">tensor_wide</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Narrow tensor [small cupcake 🧁 ] (shape </span><span class="si">{</span><span class="n">tensor_narrow</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">):</span><span class="se">\n</span><span class="si">{</span><span class="n">tensor_narrow</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># This FAILS: Concatenating along dimension 0, you can stack pancakes with different sizes </span>
+<span class="c1"># They have different column counts (5 vs 2)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"❌ Attempting to concatenate along dimension 0 (rows), stack cake on top of cupcake ..."</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">cat_cols_fail</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">([</span><span class="n">tensor_wide</span><span class="p">,</span> <span class="n">tensor_narrow</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">RuntimeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🎂/🧁 This couldn't work! </span><span class="se">\n</span><span class="s2">Error as expected: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"The shapes don't match along dimension 0!"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Our unequal test subjects:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Wide tensor [big cake 🎂] (</span><span class="si">{</span><span class="n">tensor_wide</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">):</span><span class="se">\n</span><span class="si">{</span><span class="n">tensor_wide</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Narrow tensor [small cupcake 🧁] (</span><span class="si">{</span><span class="n">tensor_narrow</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">):</span><span class="se">\n</span><span class="si">{</span><span class="n">tensor_narrow</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># This WORKS: Concatenating along dimension 0 (rows)</span>
+<span class="c1"># Both have 3 rows, so we can stack them vertically</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"✅ Concatenating along dimension 0 (rows) - SUCCESS!"</span><span class="p">)</span>
+<span class="n">cat_rows_success</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">([</span><span class="n">tensor_wide</span><span class="p">,</span> <span class="n">tensor_narrow</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Result shape: </span><span class="si">{</span><span class="n">cat_rows_success</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Result:</span><span class="se">\n</span><span class="si">{</span><span class="n">cat_rows_success</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-8"># Create tensors with different shapes
+tensor_wide = torch.ones(3, 8) * 4   # 3x5 tensor filled with 4s
+tensor_narrow = torch.ones(3, 2) * 5  # 3x2 tensor filled with 5s
+
+print(f"Wide tensor [big cake 🎂] (shape {tensor_wide.shape}):\n{tensor_wide}\n")
+print(f"Narrow tensor [small cupcake 🧁 ] (shape {tensor_narrow.shape}):\n{tensor_narrow}\n")
+
+# This FAILS: Concatenating along dimension 0, you can stack pancakes with different sizes 
+# They have different column counts (5 vs 2)
+print("❌ Attempting to concatenate along dimension 0 (rows), stack cake on top of cupcake ...")
+try:
+    cat_cols_fail = torch.cat([tensor_wide, tensor_narrow], dim=0)
+except RuntimeError as e:
+    print(f"🎂/🧁 This couldn't work! \nError as expected: {str(e)}")
+    print("The shapes don't match along dimension 0!")
+
+print("Our unequal test subjects:")
+print(f"Wide tensor [big cake 🎂] ({tensor_wide.shape}):\n{tensor_wide}\n")
+print(f"Narrow tensor [small cupcake 🧁] ({tensor_narrow.shape}):\n{tensor_narrow}\n")
+
+# This WORKS: Concatenating along dimension 0 (rows)
+# Both have 3 rows, so we can stack them vertically
+print("✅ Concatenating along dimension 0 (rows) - SUCCESS!")
+cat_rows_success = torch.cat([tensor_wide, tensor_narrow], dim=1)
+print(f"Result shape: {cat_rows_success.shape}")
+print(f"Result:\n{cat_rows_success}\n")
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Wide tensor [big cake 🎂] (shape torch.Size([3, 8])):
+tensor([[4., 4., 4., 4., 4., 4., 4., 4.],
+        [4., 4., 4., 4., 4., 4., 4., 4.],
+        [4., 4., 4., 4., 4., 4., 4., 4.]])
+
+Narrow tensor [small cupcake 🧁 ] (shape torch.Size([3, 2])):
+tensor([[5., 5.],
+        [5., 5.],
+        [5., 5.]])
+
+❌ Attempting to concatenate along dimension 0 (rows), stack cake on top of cupcake ...
+🎂/🧁 This couldn't work! 
+Error as expected: Sizes of tensors must match except in dimension 0. Expected size 8 but got size 2 for tensor number 1 in the list....
+The shapes don't match along dimension 0!
+Our unequal test subjects:
+Wide tensor [big cake 🎂] (torch.Size([3, 8])):
+tensor([[4., 4., 4., 4., 4., 4., 4., 4.],
+        [4., 4., 4., 4., 4., 4., 4., 4.],
+        [4., 4., 4., 4., 4., 4., 4., 4.]])
+
+Narrow tensor [small cupcake 🧁] (torch.Size([3, 2])):
+tensor([[5., 5.],
+        [5., 5.],
+        [5., 5.]])
+
+✅ Concatenating along dimension 0 (rows) - SUCCESS!
+Result shape: torch.Size([3, 10])
+Result:
+tensor([[4., 4., 4., 4., 4., 4., 4., 4., 5., 5.],
+        [4., 4., 4., 4., 4., 4., 4., 4., 5., 5.],
+        [4., 4., 4., 4., 4., 4., 4., 4., 5., 5.]])
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=859dab6e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="the-stacker-torchstack">The Stacker: <code>torch.stack()</code><a class="anchor-link" href="#the-stacker-torchstack">¶</a></h3><p><code>torch.stack()</code> is more dramatic! It creates an <strong>entirely new dimension</strong> and places each tensor along it. All input tensors must have <em>identical</em> shapes—no exceptions!</p>
+<p>This is perfect when your tensors represent the same type of data, but from different samples, time steps, or batches.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2a641b6d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-9">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Stacking creates a new dimension</span>
+<span class="n">stack_dim0</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">stack</span><span class="p">([</span><span class="n">tensor_a</span><span class="p">,</span> <span class="n">tensor_b</span><span class="p">,</span> <span class="n">tensor_c</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Stacked along NEW dimension 0:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Result shape: </span><span class="si">{</span><span class="n">stack_dim0</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>  <span class="c1"># Notice the new dimension!</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Result:</span><span class="se">\n</span><span class="si">{</span><span class="n">stack_dim0</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># We can stack along any dimension we choose to create</span>
+<span class="n">stack_dim1</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">stack</span><span class="p">([</span><span class="n">tensor_a</span><span class="p">,</span> <span class="n">tensor_b</span><span class="p">,</span> <span class="n">tensor_c</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Stacked along NEW dimension 1:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Result shape: </span><span class="si">{</span><span class="n">stack_dim1</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Result:</span><span class="se">\n</span><span class="si">{</span><span class="n">stack_dim1</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-9"># Stacking creates a new dimension
+stack_dim0 = torch.stack([tensor_a, tensor_b, tensor_c], dim=0)
+print("Stacked along NEW dimension 0:")
+print(f"Result shape: {stack_dim0.shape}")  # Notice the new dimension!
+print(f"Result:\n{stack_dim0}\n")
+
+# We can stack along any dimension we choose to create
+stack_dim1 = torch.stack([tensor_a, tensor_b, tensor_c], dim=1)
+print("Stacked along NEW dimension 1:")
+print(f"Result shape: {stack_dim1.shape}")
+print(f"Result:\n{stack_dim1}")
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3cbfb8c8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="the-fusion-dilemma-when-to-cat-vs-stack">The Fusion Dilemma: When to Cat vs. Stack?<a class="anchor-link" href="#the-fusion-dilemma-when-to-cat-vs-stack">¶</a></h3><p>This choice torments many apprentices! Let me illuminate the path:</p>
+<p><strong>Use <code>torch.cat()</code> when:</strong></p>
+<ul>
+<li>Tensors represent <em>different parts</em> of the same data (e.g., different batches of images, different chunks of text)</li>
+<li>You want to <em>extend</em> an existing dimension</li>
+<li>Example: Concatenating multiple batches of training data</li>
+</ul>
+<p><strong>Use <code>torch.stack()</code> when:</strong></p>
+<ul>
+<li>Tensors represent <em>parallel data</em> of the same type (e.g., predictions from different models, different time steps)</li>
+<li>You need to create a <em>new dimension</em> to organize the data</li>
+<li>Example: Combining RGB channels to form a color image, or collecting multiple predictions</li>
+</ul>
+<p>Observe this real-world scenario!</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7798acea">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-10">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Real-world example: Building a batch of images</span>
+<span class="c1"># Imagine these are grayscale images (height=2, width=3)</span>
+<span class="n">image1</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>  
+<span class="n">image2</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">image3</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Individual images:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Image 1 shape: </span><span class="si">{</span><span class="n">image1</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Image 2 shape: </span><span class="si">{</span><span class="n">image2</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>  
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Image 3 shape: </span><span class="si">{</span><span class="n">image3</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># STACK them to create a batch (batch_size=3, height=2, width=3)</span>
+<span class="n">image_batch</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">stack</span><span class="p">([</span><span class="n">image1</span><span class="p">,</span> <span class="n">image2</span><span class="p">,</span> <span class="n">image3</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Batch of images shape: </span><span class="si">{</span><span class="n">image_batch</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Perfect for feeding into a neural network!</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Now imagine we have RGB channels for one image</span>
+<span class="n">red_channel</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">green_channel</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> 
+<span class="n">blue_channel</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># STACK them to create RGB image (channels=3, height=2, width=3)</span>
+<span class="n">rgb_image</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">stack</span><span class="p">([</span><span class="n">red_channel</span><span class="p">,</span> <span class="n">green_channel</span><span class="p">,</span> <span class="n">blue_channel</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"RGB image shape: </span><span class="si">{</span><span class="n">rgb_image</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The classic (C, H, W) format!"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-10"># Real-world example: Building a batch of images
+# Imagine these are grayscale images (height=2, width=3)
+image1 = torch.randn(2, 3)  
+image2 = torch.randn(2, 3)
+image3 = torch.randn(2, 3)
+
+print("Individual images:")
+print(f"Image 1 shape: {image1.shape}")
+print(f"Image 2 shape: {image2.shape}")  
+print(f"Image 3 shape: {image3.shape}\n")
+
+# STACK them to create a batch (batch_size=3, height=2, width=3)
+image_batch = torch.stack([image1, image2, image3], dim=0)
+print(f"Batch of images shape: {image_batch.shape}")
+print("Perfect for feeding into a neural network!\n")
+
+# Now imagine we have RGB channels for one image
+red_channel = torch.randn(2, 3)
+green_channel = torch.randn(2, 3) 
+blue_channel = torch.randn(2, 3)
+
+# STACK them to create RGB image (channels=3, height=2, width=3)
+rgb_image = torch.stack([red_channel, green_channel, blue_channel], dim=0)
+print(f"RGB image shape: {rgb_image.shape}")
+print("The classic (C, H, W) format!")
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f4dd7aeb">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="your-mission-the-fusion-masters-gauntlet">Your Mission: The Fusion Master's Gauntlet<a class="anchor-link" href="#your-mission-the-fusion-masters-gauntlet">¶</a></h3><p>The theory is yours—now prove your mastery! Complete these fusion challenges:</p>
+<ol>
+<li><p><strong>The Triple Stack</strong>: Create three 1D tensors of length 4 with different values. Stack them to create a 2D tensor of shape <code>(3, 4)</code>.</p>
+</li>
+<li><p><strong>The Horizontal Fusion</strong>: Create two 2D tensors of shape <code>(3, 2)</code>. Concatenate them horizontally to create a <code>(3, 4)</code> tensor.</p>
+</li>
+<li><p><strong>The Batch Builder</strong>: You have 5 individual "samples" (each a 1D tensor of length 3). Stack them to create a proper batch tensor of shape <code>(5, 3)</code> suitable for training.</p>
+</li>
+<li><p><strong>The Dimension Disaster</strong>: Try to concatenate two tensors with different shapes: <code>(2, 3)</code> and <code>(2, 4)</code> along dimension 1. Observe the error message—it's quite educational! Then fix it by concatenating along dimension 0 instead.</p>
+</li>
+<li><p><strong>The Multi-Fusion</strong>: Create a tensor of shape <code>(2, 6)</code> by first stacking three <code>(2, 2)</code> tensors, then concatenating the result with another <code>(3, 6)</code> tensor. This requires combining both operations!</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4c9beb09">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-11">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Your code for the Fusion Master's Gauntlet goes here!</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--- 1. The Triple Stack ---"</span><span class="p">)</span>
+<span class="n">tensor1</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+<span class="n">tensor2</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">])</span> 
+<span class="n">tensor3</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">])</span>
+<span class="n">triple_stack</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">stack</span><span class="p">([</span><span class="n">tensor1</span><span class="p">,</span> <span class="n">tensor2</span><span class="p">,</span> <span class="n">tensor3</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Triple stack result:</span><span class="se">\n</span><span class="si">{</span><span class="n">triple_stack</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Shape: </span><span class="si">{</span><span class="n">triple_stack</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--- 2. The Horizontal Fusion ---"</span><span class="p">)</span>
+<span class="n">left_tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">right_tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">horizontal_fusion</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">([</span><span class="n">left_tensor</span><span class="p">,</span> <span class="n">right_tensor</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Horizontal fusion shape: </span><span class="si">{</span><span class="n">horizontal_fusion</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--- 3. The Batch Builder ---"</span><span class="p">)</span>
+<span class="n">samples</span> <span class="o">=</span> <span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)]</span>  <span class="c1"># 5 samples of length 3</span>
+<span class="n">batch</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">stack</span><span class="p">(</span><span class="n">samples</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Batch shape: </span><span class="si">{</span><span class="n">batch</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Ready for neural network training!</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--- 4. The Dimension Disaster ---"</span><span class="p">)</span>
+<span class="n">disaster_a</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">disaster_b</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="c1"># This will fail!</span>
+    <span class="n">bad_cat</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">([</span><span class="n">disaster_a</span><span class="p">,</span> <span class="n">disaster_b</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">RuntimeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Error (as expected): </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    
+<span class="c1"># The fix: concatenate along dimension 0</span>
+<span class="n">good_cat</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">([</span><span class="n">disaster_a</span><span class="p">,</span> <span class="n">disaster_b</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>  
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Fixed by concatenating along dim 0: </span><span class="si">{</span><span class="n">good_cat</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--- 5. The Multi-Fusion ---"</span><span class="p">)</span>
+<span class="c1"># First, create and stack three (2,2) tensors</span>
+<span class="n">small_tensors</span> <span class="o">=</span> <span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
+<span class="c1"># Actually, let's concatenate the (2,2) tensors along dim=1 first</span>
+<span class="n">concat_part</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span><span class="n">small_tensors</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Shape: (2, 6)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Multi-fusion result shape: </span><span class="si">{</span><span class="n">concat_part</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The key was concatenating, not stacking!"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-11"># Your code for the Fusion Master's Gauntlet goes here!
+
+print("--- 1. The Triple Stack ---")
+tensor1 = torch.tensor([1, 2, 3, 4])
+tensor2 = torch.tensor([5, 6, 7, 8]) 
+tensor3 = torch.tensor([9, 10, 11, 12])
+triple_stack = torch.stack([tensor1, tensor2, tensor3], dim=0)
+print(f"Triple stack result:\n{triple_stack}")
+print(f"Shape: {triple_stack.shape}\n")
+
+print("--- 2. The Horizontal Fusion ---")
+left_tensor = torch.randn(3, 2)
+right_tensor = torch.randn(3, 2)
+horizontal_fusion = torch.cat([left_tensor, right_tensor], dim=1)
+print(f"Horizontal fusion shape: {horizontal_fusion.shape}\n")
+
+print("--- 3. The Batch Builder ---")
+samples = [torch.randn(3) for _ in range(5)]  # 5 samples of length 3
+batch = torch.stack(samples, dim=0)
+print(f"Batch shape: {batch.shape}")
+print("Ready for neural network training!\n")
+
+print("--- 4. The Dimension Disaster ---")
+disaster_a = torch.randn(2, 3)
+disaster_b = torch.randn(2, 4)
+try:
+    # This will fail!
+    bad_cat = torch.cat([disaster_a, disaster_b], dim=1)
+except RuntimeError as e:
+    print(f"Error (as expected): {e}")
+    
+# The fix: concatenate along dimension 0
+good_cat = torch.cat([disaster_a, disaster_b], dim=0)  
+print(f"Fixed by concatenating along dim 0: {good_cat.shape}\n")
+
+print("--- 5. The Multi-Fusion ---")
+# First, create and stack three (2,2) tensors
+small_tensors = [torch.randn(2, 2) for _ in range(3)]
+# Actually, let's concatenate the (2,2) tensors along dim=1 first
+concat_part = torch.cat(small_tensors, dim=1)  # Shape: (2, 6)
+print(f"Multi-fusion result shape: {concat_part.shape}")
+print("The key was concatenating, not stacking!")
 </div>
 </div>
 </div>
@@ -2421,7 +3201,7 @@ print(f"The tensor after mutating even numbers to -1:\\n{mutated_tensor}")
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 4, 2025 18:09:29 UTC">September 4, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 6, 2025 12:43:52 UTC">September 6, 2025</span>
   </span>
 
     
@@ -2431,7 +3211,7 @@ print(f"The tensor after mutating even numbers to -1:\\n{mutated_tensor}")
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 4, 2025 18:09:29 UTC">September 4, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 6, 2025 12:43:52 UTC">September 6, 2025</span>
   </span>
 
     
