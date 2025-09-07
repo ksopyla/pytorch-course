@@ -3,70 +3,34 @@ description: Use these rules when working with jupyter notebooks or .ipynb files
 globs: 
 alwaysApply: false
 ---
-### Jupyter Notebook Rules for Cursor (Using notebook_mcp):
+### Jupyter Notebook Rules for Cursor:
 
-1.  **Tool Usage:**
-    *   Always use the tools provided by the `notebook_mcp` server for operations on Jupyter Notebook (`.ipynb`) files.
-    *   Avoid using the standard `edit_file` tool on `.ipynb` files, as this can corrupt the notebook structure.
 
-2.  **Investigation Strategy:**
+1.  **Investigation Strategy:**
     *   A comprehensive suite of tools is available to inspect notebooks. If the user mentions an issue, a specific cell, or asks for a modification, first attempt to gather context independently.
     *   Use the available tools to examine the notebook structure, content, metadata, and outputs to locate the relevant context or identify the problem.
     *   Ask the user for clarification only if the necessary information cannot be determined after using the investigation tools.
 
-3.  **Available Tools:**
-    
-    * Notebook File Tools:
-        - `notebook_create`: Creates a new, empty notebook file.
-        - `notebook_delete`: Deletes an existing notebook file.
-        - `notebook_read`: Reads an entire notebook and returns its structure as a dictionary.
-        - `notebook_rename`: Renames/moves a notebook file from one path to another.
-    
-    * Cell Manipulation tools:
-        - `notebook_add_cell`: Adds a new code or markdown cell after a specified index.
-        - `notebook_change_cell_type`: Changes a cell's type (code, markdown, or raw).
-        - `notebook_delete_cell`: Deletes a specific cell.
-        - `notebook_duplicate_cell`: Duplicates a cell multiple times (default: once).
-        - `notebook_edit_cell`: Replaces the source content of a specific cell.
-        - `notebook_get_cell_count`: Returns the total number of cells.
-        - `notebook_get_info`: Retrieves general information (cell count, metadata, kernel, language info).
-        - `notebook_merge_cells`: Merges a cell with the cell immediately following it.
-        - `notebook_move_cell`: Moves a cell to a different position.
-        - `notebook_read_cell`: Reads the source content of a specific cell.
-        - `notebook_split_cell`: Splits a cell into two at a specified line number.
-  
-    * Cell Output Tools:
-        - `notebook_read_cell_output`: Reads the output list of a specific code cell.
-        - `notebook_clear_cell_outputs`: Clears the outputs and execution count of a specific cell.
-        - `notebook_clear_all_outputs`: Clears outputs and execution counts for all code cells.
-  
-    * Notebook Metadata Tools:
-        - `notebook_read_metadata`: Reads the top-level notebook metadata.
-        - `notebook_edit_metadata`: Updates the top-level notebook metadata.
+2. **Links and References:**
+    *   Use relative links to reference other notebooks.
+    *   Use the `../` prefix to navigate up one level in the directory structure.
+    *   Do not include the `.ipynb` extension in the link. 
+    *   Check the folder structure and the links in the notebook to make sure the link is correct, add the parent folder to the link if needed.
 
-    * Cell Metadata Tools:
-        - `notebook_read_cell_metadata`: Reads the metadata of a specific cell.
-        - `notebook_edit_cell_metadata`: Updates the metadata of a specific cell.
-        
-    * Utility Tools:
-        - `notebook_validate`: Validates the notebook structure against the nbformat schema.
-        - `notebook_export`: Exports the notebook to another format (e.g., python, html) using nbconvert. Note: See External Dependencies below for requirements needed for certain export formats like PDF.
+3.  **Math Notation:** For LaTeX in Markdown cells, use `$ ... $` for inline math and `$$ ... $$` for display math. Avoid `\( ... \)` and `\[ ... \]`.
 
-
-4.  **Math Notation:** For LaTeX in Markdown cells, use `$ ... $` for inline math and `$$ ... $$` for display math. Avoid `\( ... \)` and `\[ ... \]`.
-
-5.  **Cell Magics:**
+4.  **Cell Magics:**
     *   Avoid unsupported cell magics like `%%bash`, `%%timeit`, and `%%writefile`.
     *   Use `!command` for shell commands instead of `%%bash`.
     *   Use `%timeit` (line magic) for timing single statements.
     *   `%%html` works for rendering HTML output.
     *   `%%javascript` can execute (e.g., `alert`), but avoid relying on it for manipulating cell output display.
 
-6.  **Rich Outputs:** Matplotlib, Pandas DataFrames, Plotly, ipywidgets (`tqdm.notebook`), and embedded HTML in Markdown generally render correctly.
+5.  **Rich Outputs:** Matplotlib, Pandas DataFrames, Plotly, ipywidgets (`tqdm.notebook`), and embedded HTML in Markdown generally render correctly.
 
-7.  **Mermaid:** Diagrams in ` ```mermaid ``` ` blocks are not rendered by default.
+6.  **Mermaid:** Diagrams in ` ```mermaid ``` ` blocks are not rendered by default.
 
-8.  **Character Escaping in `source` Parameter:**
+7.  **Character Escaping in `source` Parameter:**
     *   When providing the `source` string for `add_cell` or `edit_cell`, ensure that backslashes (`\`) are handled correctly. Newline characters **must** be represented as `\n` (not `\\n`), and LaTeX commands **must** use single backslashes (e.g., `\Sigma`, not `\\Sigma`).
     *   Incorrect escaping by the tool or its interpretation can break Markdown formatting (like paragraphs intended to be separated by `\n\n`) and LaTeX rendering.
 
