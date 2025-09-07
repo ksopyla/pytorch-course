@@ -44,15 +44,19 @@ This module dives into the fundamental components of PyTorch, essential for any 
 ### 1.1 Tensors: The Building Blocks
 What you will learn: 
 
-1. Tensor Concept. What is a tensor? Tensor vs. Matrix. Mathematical vs. PyTorch interpretation. Why tensors are crucial for ML
-2. PyTorch Basics: Tensor creation and their attributes (dtype, shape, device).
-3. Tensor manipulation: Indexing, Slicing, Joining (torch.cat, torch.stack), Splitting. Manipulating tensor shapes (reshape, view, squeeze, unsqueeze, permute, transpose).
+1. **Tensor Concept:** What is a tensor? Tensor vs. Matrix. Mathematical vs. PyTorch interpretation. Why tensors are crucial for ML
+2. **PyTorch Basics:** Tensor creation and their attributes (dtype, shape, device).
+3. **Tensor Surgery:** Indexing, slicing, and selecting tensor pieces with surgical precision.
+4. **Tensor Assembly:** Joining tensors with torch.cat and torch.stack, understanding when to concatenate vs. create new dimensions.
+5. **Tensor Division:** Splitting tensors into manageable pieces with torch.split and torch.chunk.
+6. **Shape Metamorphosis:** Transforming tensor structure with reshape, view, squeeze, unsqueeze, permute, and transpose.
 
 #### 1.1 Lessons:
 
 1. [Summoning Your First Tensors](01-tensors/01_introduction_to_tensors.ipynb) - Conjure tensors from void, inspect their properties, revel in their latent might (with a bit of help from `torch.randn`, `torch.zeros`, `torch.ones`, `torch.arange`, `torch.linspace` etc).
-2. [Tensor Shape-Shifting & Sorcery](01-tensors/02_tensor_manipulation.ipynb) - Slice, squeeze, and permute dimensions until reality warps to your whims (with a bit of help from `torch.cat`, `torch.stack`, `torch.split`, `torch.reshape`, `torch.view`, `torch.squeeze`, `torch.unsqueeze`, `torch.permute`, `torch.transpose` etc).
-3. [DTypes & Devices: Choose Your Weapons](01-tensors/03_data_types_and_devices.ipynb) - Select precision and hardware like a seasoned archmage choosing spell components, under the hood of `torch.float`, `torch.float16`, etc.
+2. [Tensor Surgery & Assembly](01-tensors/02a_tensor_manipulation.ipynb) - Master the dark arts of tensor dissection and fusion! Slice with precision, concatenate with `torch.cat`, stack into new dimensions with `torch.stack`, and split tensors with `torch.split` and `torch.chunk`.
+3. [Tensor Metamorphosis: Shape-Shifting Mastery](01-tensors/02b_tensor_metamorphosis.ipynb) - Transform tensor forms without altering their essence! Reshape reality with `torch.reshape` and `torch.view`, manipulate dimensions with `squeeze` and `unsqueeze`, and reorder the cosmic structure with `permute` and `transpose`.
+4. [DTypes & Devices: Choose Your Weapons](01-tensors/03_data_types_and_devices.ipynb) - Select precision and hardware like a seasoned archmage choosing spell components, under the hood of `torch.float`, `torch.float16`, etc.
 
 
 ### 1.2 Tensor Operations: Computation at Scale

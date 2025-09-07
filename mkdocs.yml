@@ -58,7 +58,8 @@ nav:
   - Module 1 Tensors:
     - 'Module 1 Introduction': 01-tensors/00_module_1_introduction.md
     - 'Introduction to Tensors': 01-tensors/01_introduction_to_tensors.ipynb
-    - 'Tensor Manipulation': 01-tensors/02_tensor_manipulation.ipynb
+    - 'Tensor Surgery & Assembly': 01-tensors/02a_tensor_manipulation.ipynb
+    - 'Tensor Metamorphosis': 01-tensors/02b_tensor_metamorphosis.ipynb
     - 'Data Types and Devices': 01-tensors/03_data_types_and_devices.ipynb
     - 'Tensor Math Operations': 01-tensors/04_tensor_math_operations.ipynb
     - 'Matrix Multiplication': 01-tensors/05_matrix_multiplication.ipynb

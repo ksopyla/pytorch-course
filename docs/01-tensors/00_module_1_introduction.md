@@ -26,21 +26,22 @@ Over the next notebooks we will:
 
 ### Tensors: The Building Blocks
 1. [Summoning Your First Tensors](01_introduction_to_tensors.ipynb) - Learn to create tensors from scratch, access their elements and inspect their fundamental properties like shape, type, and device.
-2. [Tensor Shape-Shifting & Sorcery](02_tensor_manipulation.ipynb) - Master the arts of slicing, stacking, and reshaping tensors to bend data to your will.
-3. [DTypes & Devices: Choose Your Weapons](03_data_types_and_devices.ipynb) - Understand how to manage data types and move your tensors to the GPU for accelerated computation.
+2. [Tensor Surgery & Assembly](02a_tensor_manipulation.ipynb) - Master the dark arts of tensor dissection! Slice with surgical precision, fuse separate tensors with `torch.cat` and `torch.stack`, and divide them with `torch.split`. Your scalpel awaits!
+3. [Tensor Metamorphosis: Shape-Shifting Mastery](02b_tensor_metamorphosis.ipynb) - Transform tensor forms without altering their essence! Reshape reality itself, squeeze and unsqueeze dimensions, and reorder the cosmic structure of your data.
+4. [DTypes & Devices: Choose Your Weapons](03_data_types_and_devices.ipynb) - Understand how to manage data types and move your tensors to the GPU for accelerated computation.
 
 ### Tensor Operations: Computation at Scale
-4. [Elemental Tensor Alchemy](04_tensor_math_operations.ipynb) - Perform powerful element-wise and reduction operations to transform your tensors.
-5. [Matrix Mayhem: Multiply or Perish](05_matrix_multiplication.ipynb) - Unleash the raw power of matrix multiplication, the core of modern neural networks.
-6. [Broadcasting: When Dimensions Bow to You](06_broadcasting.ipynb) - Discover the magic of broadcasting, where PyTorch intelligently handles operations on tensors of different shapes.
+5. [Elemental Tensor Alchemy](04_tensor_math_operations.ipynb) - Perform powerful element-wise and reduction operations to transform your tensors.
+6. [Matrix Mayhem: Multiply or Perish](05_matrix_multiplication.ipynb) - Unleash the raw power of matrix multiplication, the core of modern neural networks.
+7. [Broadcasting: When Dimensions Bow to You](06_broadcasting.ipynb) - Discover the magic of broadcasting, where PyTorch intelligently handles operations on tensors of different shapes.
 
 ### Einstein Summation: The Power of einsum
-7. [Einstein Summation: Harness the Λ-Power](07_einstein_summation.ipynb) - Wield the elegant `einsum` to perform complex tensor operations with a single, concise command.
-8. [Advanced Einsum Incantations](08_advanced_einstein_summation.ipynb) - Combine multiple tensors in arcane `einsum` expressions for operations like batched matrix multiplication.
+8. [Einstein Summation: Harness the Λ-Power](07_einstein_summation.ipynb) - Wield the elegant `einsum` to perform complex tensor operations with a single, concise command.
+9. [Advanced Einsum Incantations](08_advanced_einstein_summation.ipynb) - Combine multiple tensors in arcane `einsum` expressions for operations like batched matrix multiplication.
 
 ### Autograd: Automatic Differentiation
-9. [Autograd: Ghosts in the Machine (Learning)](09_autograd.ipynb) - Uncover the secrets of automatic differentiation and see how PyTorch automatically computes gradients.
-10. [Gradient Hoarding for Grand Spells](10_gradient_accumulation.ipynb) - Learn the technique of gradient accumulation to simulate larger batch sizes and train massive models.
+10. [Autograd: Ghosts in the Machine (Learning)](09_autograd.ipynb) - Uncover the secrets of automatic differentiation and see how PyTorch automatically computes gradients.
+11. [Gradient Hoarding for Grand Spells](10_gradient_accumulation.ipynb) - Learn the technique of gradient accumulation to simulate larger batch sizes and train massive models.
 
 ---
 
