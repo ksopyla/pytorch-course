@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
     
     
       
@@ -1013,12 +1013,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-tensors/02_tensor_manipulation/" class="md-nav__link">
+      <a href="../01-tensors/02a_tensor_manipulation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Tensor Shape-Shifting &amp; Sorcery
+    Tensor Surgery &amp; Assembly
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-tensors/02b_tensor_metamorphosis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tensor Metamorphosis: Shape-Shifting Mastery
     
   </span>
   
@@ -1960,14 +1983,18 @@ Prerequisite Madness: None! Whether you are a fresh-faced initiate or a seasoned
 <h3 id="11-tensors-the-building-blocks">1.1 Tensors: The Building Blocks<a class="headerlink" href="#11-tensors-the-building-blocks" title="Permanent link">&para;</a></h3>
 <p>What you will learn: </p>
 <ol>
-<li>Tensor Concept. What is a tensor? Tensor vs. Matrix. Mathematical vs. PyTorch interpretation. Why tensors are crucial for ML</li>
-<li>PyTorch Basics: Tensor creation and their attributes (dtype, shape, device).</li>
-<li>Tensor manipulation: Indexing, Slicing, Joining (torch.cat, torch.stack), Splitting. Manipulating tensor shapes (reshape, view, squeeze, unsqueeze, permute, transpose).</li>
+<li><strong>Tensor Concept:</strong> What is a tensor? Tensor vs. Matrix. Mathematical vs. PyTorch interpretation. Why tensors are crucial for ML</li>
+<li><strong>PyTorch Basics:</strong> Tensor creation and their attributes (dtype, shape, device).</li>
+<li><strong>Tensor Surgery:</strong> Indexing, slicing, and selecting tensor pieces with surgical precision.</li>
+<li><strong>Tensor Assembly:</strong> Joining tensors with torch.cat and torch.stack, understanding when to concatenate vs. create new dimensions.</li>
+<li><strong>Tensor Division:</strong> Splitting tensors into manageable pieces with torch.split and torch.chunk.</li>
+<li><strong>Shape Metamorphosis:</strong> Transforming tensor structure with reshape, view, squeeze, unsqueeze, permute, and transpose.</li>
 </ol>
 <h4 id="11-lessons">1.1 Lessons:<a class="headerlink" href="#11-lessons" title="Permanent link">&para;</a></h4>
 <ol>
 <li><a href="../01-tensors/01_introduction_to_tensors/">Summoning Your First Tensors</a> - Conjure tensors from void, inspect their properties, revel in their latent might (with a bit of help from <code>torch.randn</code>, <code>torch.zeros</code>, <code>torch.ones</code>, <code>torch.arange</code>, <code>torch.linspace</code> etc).</li>
-<li><a href="../01-tensors/02_tensor_manipulation/">Tensor Shape-Shifting &amp; Sorcery</a> - Slice, squeeze, and permute dimensions until reality warps to your whims (with a bit of help from <code>torch.cat</code>, <code>torch.stack</code>, <code>torch.split</code>, <code>torch.reshape</code>, <code>torch.view</code>, <code>torch.squeeze</code>, <code>torch.unsqueeze</code>, <code>torch.permute</code>, <code>torch.transpose</code> etc).</li>
+<li><a href="../01-tensors/02a_tensor_manipulation/">Tensor Surgery &amp; Assembly</a> - Master the dark arts of tensor dissection and fusion! Slice with precision, concatenate with <code>torch.cat</code>, stack into new dimensions with <code>torch.stack</code>, and split tensors with <code>torch.split</code> and <code>torch.chunk</code>.</li>
+<li><a href="../01-tensors/02b_tensor_metamorphosis/">Tensor Metamorphosis: Shape-Shifting Mastery</a> - Transform tensor forms without altering their essence! Reshape reality with <code>torch.reshape</code> and <code>torch.view</code>, manipulate dimensions with <code>squeeze</code> and <code>unsqueeze</code>, and reorder the cosmic structure with <code>permute</code> and <code>transpose</code>.</li>
 <li><a href="../01-tensors/03_data_types_and_devices/">DTypes &amp; Devices: Choose Your Weapons</a> - Select precision and hardware like a seasoned archmage choosing spell components, under the hood of <code>torch.float</code>, <code>torch.float16</code>, etc.</li>
 </ol>
 <h3 id="12-tensor-operations-computation-at-scale">1.2 Tensor Operations: Computation at Scale<a class="headerlink" href="#12-tensor-operations-computation-at-scale" title="Permanent link">&para;</a></h3>
@@ -2262,7 +2289,7 @@ What you will learn:
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 6, 2025 15:37:44 UTC">September 6, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 8, 2025 13:34:33 UTC">September 8, 2025</span>
   </span>
 
     
@@ -2272,7 +2299,7 @@ What you will learn:
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 6, 2025 15:37:44 UTC">September 6, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 8, 2025 13:34:33 UTC">September 8, 2025</span>
   </span>
 
     
