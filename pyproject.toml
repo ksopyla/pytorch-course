@@ -38,7 +38,8 @@ build-backend = "poetry.core.masonry.api"
 
 
 [[tool.poetry.source]]
-name = "PyPi"
+name = "pypi"
+url = "https://pypi.org/simple/"
 priority = "primary"
 
 
