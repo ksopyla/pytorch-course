@@ -7,7 +7,6 @@ readme = "README.md"
 repository = "https://github.com/ksopyla/pytorch-course"
 homepage = "https://ksopyla.github.io/pytorch-course/"
 license = "Apache-2.0"
-license-file = "LICENSE-CODE"
 package-mode = false
 
 [tool.poetry.dependencies]
