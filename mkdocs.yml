@@ -48,6 +48,7 @@ theme:
 
 nav:
   - Home: index.md
+  - Meet Torchenstein: story/victor_torchenstein_origin.md
   - Getting Started:
     - 'PyTorch Course Structure': pytorch-course-structure.md
     - 'Windows Environment Installation': 00-getting-started/windows-pytorch-installation.md
