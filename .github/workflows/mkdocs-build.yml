@@ -49,6 +49,7 @@ jobs:
         with:
           version: latest
           virtualenvs-create: false
+          plugins: poetry-plugin-export
 
       - name: Free up disk space
         run: |
