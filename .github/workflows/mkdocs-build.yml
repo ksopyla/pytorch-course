@@ -55,15 +55,13 @@ jobs:
         run: |
           echo "Disk space before cleanup:"
           df -h
-          sudo rm -rf /usr/share/dotnet
-          sudo rm -rf /usr/local/lib/android
-          sudo rm -rf /opt/ghc
+
           echo "Disk space after cleanup:"
           df -h
 
       - name: Generate requirements.txt from Poetry
         run: |
-          poetry export --format=requirements.txt --group dev --without-hashes > requirements-dev.txt
+          poetry export --format=requirements.txt --only dev --without-hashes > requirements-dev.txt
           echo "Generated requirements-dev.txt:"
           head -10 requirements-dev.txt
 
