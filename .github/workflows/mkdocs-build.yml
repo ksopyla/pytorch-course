@@ -44,12 +44,11 @@ jobs:
         run: |
           echo "Disk space after apt install:"
           df -h
-      - name: Install Poetry
+      - name: Install Poetry (for requirements generation only)
         uses: snok/install-poetry@v1
         with:
           version: latest
-          virtualenvs-create: true
-          virtualenvs-in-project: true
+          virtualenvs-create: false
 
       - name: Free up disk space
         run: |
@@ -61,38 +60,41 @@ jobs:
           echo "Disk space after cleanup:"
           df -h
 
-      - name: Cache Poetry cache
+      - name: Generate requirements.txt from Poetry
+        run: |
+          poetry export --format=requirements.txt --only dev --without-hashes > requirements-dev.txt
+          echo "Generated requirements-dev.txt:"
+          head -10 requirements-dev.txt
+
+      - name: Cache pip dependencies
         uses: actions/cache@v4
         with:
-          path: ~/.cache/pypoetry
-          key: poetry-cache-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/pyproject.toml') }}
+          path: ~/.cache/pip
+          key: pip-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('requirements-dev.txt') }}
           restore-keys: |
-            poetry-cache-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-
+            pip-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-
 
-      - name: Install dependencies
+      - name: Install dependencies with pip
         run: |
-          poetry cache clear . --all -n
-          poetry config installer.parallel true
-          poetry install --only dev --no-root
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
       
       - name: Check disk space and artifact sizes after install
         run: |
           echo "Disk space after installing dependencies:"
           df -h
-          echo "Size of installed packages:"
-          du -sh .venv
-          echo "Size of Poetry cache:"
-          du -sh ~/.cache/pypoetry
+          echo "Size of pip cache:"
+          du -sh ~/.cache/pip
 
       - name: Optimize images for web
         run: |
-          poetry run python tools/optimize_images.py --quality 75 --max-width 1600 --max-height 900 --overwrite
+          python tools/optimize_images.py --quality 75 --max-width 1600 --max-height 900 --overwrite
       
       - name: Build MkDocs site
         env:
           JUPYTER_PLATFORM_DIRS: 1  # Suppress Jupyter deprecation warnings
         run: |
-          poetry run mkdocs build --strict --verbose
+          mkdocs build --strict --verbose
 
       - name: Check disk space after site build
         run: |
