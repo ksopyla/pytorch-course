@@ -1,4 +1,4 @@
-# ⚡ The Best Free PyTorch Course
+# ⚡ The Free Open Source PyTorch Course
 ### *Taught by Professor Victor py Torchenstein*
 
 <div align="center">
@@ -17,6 +17,18 @@
 
 
 </div>
+
+### 🧪 Meet Your Eccentric Mentor
+
+![Victor Torchenstein in his laboratory](docs/assets/images/torchenstein_working_computer.png)
+
+**Professor Victor Py Torchenstein** — brilliant, slightly unhinged genius with Einstein-esque hair (often singed from GPU experiments) and a perpetually coffee-stained lab coat. His laboratory buzzes with overclocked GPUs, Tesla coils, and cascading matrix displays that would make Neo jealous.
+
+**His Mission:** Like a modern Prometheus, he's stealing the fire of PyTorch mastery from academic and corporate gatekeepers to give it freely to you. He sees tensors not just as arrays, but as the building blocks of computational consciousness itself.
+
+> *"They called me mad! And they were right! Madly efficient at PyTorch!"*
+
+**[📖 Read His Full Origin Story →](https://pytorchcourse.com/story/victor_torchenstein_origin/)**
 
 ---
 
@@ -43,6 +55,19 @@ This isn't just another PyTorch tutorial. It's a **deep dive into the building b
 
 ---
 
+## 📢 **Latest Announcements**
+
+| Date | Update | Status |
+|------|--------|---------|
+| **In Progress** | 🚧 **Tensor Metamorphosis & Data Types** | Working on `02b_tensor_metamorphosis` + `03_data_types_and_devices` |
+| 2025-09-07 | 🎯 **2 Core Tensor Lessons Complete!** | [`01_introduction_to_tensors`](https://pytorchcourse.com/01-tensors/01_introduction_to_tensors/) & [`02a_tensor_manipulation`](https://pytorchcourse.com/01-tensors/02a_tensor_manipulation/) |
+
+📋 **[View Complete Course Roadmap →](https://pytorchcourse.com/pytorch-course-structure/)** *(All 41+ planned lessons with detailed descriptions)*
+
+> **🔥 Why Follow This Course**: Each lesson includes production-ready code, real-world examples (multi-head attention, CLIP-style fusion, RGB processing), and hands-on challenges. **Star ⭐ this repo to get notified when new lessons drop!**
+
+---
+
 ## 🗺️ Course Curriculum: From Zero to Neural Network Hero
 
 ### 🎓 **Perfect for:**
@@ -52,15 +77,17 @@ This isn't just another PyTorch tutorial. It's a **deep dive into the building b
 
 ### 📚 **6 Comprehensive Modules:**
 
-| Module | What You'll Master | Key Concepts |
-|--------|-------------------|--------------|
-| **🔥 00: Getting Started** | Environment setup across all platforms | PyTorch installation, GPU setup |
-| **⚡ 01: Tensor Mastery** | The foundation of everything | Creation, manipulation, autograd, einsum |
-| **🧠 02: Neural Networks** | Building blocks of intelligence | nn.Module, layers, loss functions |
-| **🚀 03: Training Workflows** | From data to deployed models | Training loops, optimization, GPU acceleration |
-| **🤖 04: Transformers** | Deconstruct the architecture that changed AI | Attention, multi-head attention, positional encoding |
-| **⚗️ 05: Advanced PyTorch** | Professional-grade techniques | Hooks, distributed training, optimization |
-| **🤗 06: HuggingFace Integration** | Work with real-world models | Pre-trained models, fine-tuning |
+| Module | Status | What You'll Master | Lessons Complete | Key Concepts |
+|--------|--------|-------------------|------------------|--------------|
+| **🔥 00: Getting Started** | 🚧 **In Progress** | Environment setup across all platforms | 5 guides | PyTorch installation, GPU setup |
+| **⚡ 01: Tensor Mastery** | 🚧 **In Progress** | The foundation of everything | 2/10 lessons | Creation, manipulation, autograd, einsum |
+| **🧠 02: Neural Networks** | 📋 **Planned** | Building blocks of intelligence | 0/14 lessons | nn.Module, layers, loss functions |
+| **🚀 03: Training Workflows** | 📋 **Planned** | From data to deployed models | 0/5 lessons | Training loops, optimization, GPU acceleration |
+| **🤖 04: Transformers** | 📋 **Planned** | Deconstruct the architecture that changed AI | 0/5 lessons | Attention, multi-head attention, positional encoding |
+| **⚗️ 05: Advanced PyTorch** | 📋 **Planned** | Professional-grade techniques | 0/5 lessons | Hooks, distributed training, optimization |
+| **🤗 06: HuggingFace Integration** | 📋 **Planned** | Work with real-world models | 0/2 lessons | Pre-trained models, fine-tuning |
+
+**✅ 2 Complete Lessons • 🚧 4 In Progress • 📋 35+ Planned**
 
 ---
 
@@ -81,17 +108,17 @@ Choose your platform and follow the guide:
 
 ### 3️⃣ **Start Your First Lesson**
 ```bash
-
 # Install only the main (non-dev) dependencies
 poetry install --only main
 
-# Run mkdocs locally
+# Activate the environment
 poetry shell
 
-# Open your first Jupyter notebook
+# Open your first Jupyter notebook (Module 1: Tensors)
 jupyter lab docs/01-tensors/01_introduction_to_tensors.ipynb
-
 ```
+
+**🎯 Ready to dive deeper?** Continue with [`02a_tensor_manipulation.ipynb`](docs/01-tensors/02a_tensor_manipulation.ipynb) to master tensor surgery & assembly!
 
 
 ---
@@ -108,23 +135,24 @@ pytorch-course/
 │   ├── 04-transformers/           # Transformer architecture (5 lessons) 
 │   ├── 05-advanced-pytorch/       # Advanced techniques (5 lessons)
 │   ├── 06-huggingface-transformers/ # Real-world applications (2 lessons)
+│   ├── pytorch-course-structure.md # 📋 Complete curriculum & lesson descriptions
 │   └── assets/                    # Images, CSS, and other resources
 ├── mkdocs.yml                     # Website configuration
 ├── pyproject.toml                 # Dependencies managed with Poetry
 └── README.md                      # You are here! 🎯
 ```
 
-**40+ Interactive Jupyter Notebooks** • **Production-Ready Code** • **Comprehensive Examples**
+**2 Complete Lessons + 4 In Development** • **Production-Ready Code** • **Comprehensive Examples**
 
 ---
 
-## 🌟 What Students Are Saying
+## 🌟 What Early Learners Are Saying
 
-> *"Finally! A PyTorch course that explains the 'why' behind every operation. Professor Torchenstein's approach makes complex concepts click."* 
+> *"Just finished the first tensor lesson - the progression from basic concepts to real-world multi-head attention examples is incredible. This is exactly what I needed to understand how transformers actually work!"* 
 
-> *"The progression from simple examples to real Transformer dimensions is brilliant. I can actually read research papers now!"*
+> *"Professor Torchenstein's 'tensor surgery' lesson taught me more about PyTorch manipulation in 20 minutes than other tutorials did in hours. The real-world examples like RGB channel separation are brilliant!"*
 
-> *"Einsum used to scare me. Now I use it to impress my colleagues. Thanks, Professor!"*
+> *"The course shows actual production code patterns, not just toy examples. The CLIP-style fusion exercise was a game-changer for understanding multimodal AI."*
 
 ---
 
@@ -146,6 +174,7 @@ We welcome contributions from fellow tensor enthusiasts! Here's how:
 5. **🐛 Report bugs** or suggest improvements
 
 **Contributing Guidelines:**
+- 📢 Check the [Latest Announcements](#📢-latest-announcements) section to see what's currently being developed
 - Check existing [issues](https://github.com/ksopyla/pytorch-course/issues) before creating new ones
 - Follow the existing code style and lesson format
 - Add tests for new code examples
