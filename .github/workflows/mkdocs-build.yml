@@ -71,6 +71,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          poetry cache clear . --all -n
           poetry config installer.parallel true
           poetry install --only dev --no-root
       
