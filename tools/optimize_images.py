@@ -22,6 +22,9 @@ def optimize_image(input_path: Path, output_path: Path, max_size: Tuple[int, int
         quality: JPEG quality (1-100)
     """
     try:
+        # Capture original file size before any processing
+        original_file_size = input_path.stat().st_size
+        
         with Image.open(input_path) as img:
             # Convert to RGB if necessary (for JPEG saving)
             if img.mode in ('RGBA', 'P', 'L'):
@@ -59,10 +62,10 @@ def optimize_image(input_path: Path, output_path: Path, max_size: Tuple[int, int
             
             img.save(output_path, **save_kwargs)
             
-            # Calculate size reduction
-            original_size_mb = input_path.stat().st_size / (1024 * 1024)
+            # Calculate size reduction using pre-captured original size
+            original_size_mb = original_file_size / (1024 * 1024)
             new_size_mb = output_path.stat().st_size / (1024 * 1024)
-            reduction = ((original_size_mb - new_size_mb) / original_size_mb) * 100
+            reduction = ((original_size_mb - new_size_mb) / original_size_mb) * 100 if original_size_mb > 0 else 0
             
             print(f"✅ {input_path.name}")
             print(f"   📐 {original_size[0]}x{original_size[1]} → {new_size[0]}x{new_size[1]}")
