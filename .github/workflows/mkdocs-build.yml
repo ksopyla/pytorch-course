@@ -62,7 +62,7 @@ jobs:
 
       - name: Generate requirements.txt from Poetry
         run: |
-          poetry export --format=requirements.txt --only dev --without-hashes > requirements-dev.txt
+          poetry export --format=requirements.txt --group dev --without-hashes > requirements-dev.txt
           echo "Generated requirements-dev.txt:"
           head -10 requirements-dev.txt
 
