@@ -37,14 +37,8 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api" 
 
 
-[[tool.poetry.source]]
-name = "pypi"
-url = "https://pypi.org/simple/"
-priority = "primary"
-
-
 # https://medium.com/decodingml/the-step-by-step-guide-on-how-to-install-pytorch-with-cuda-support-in-all-possible-ways-147b3f34085c
 [[tool.poetry.source]]
 name = "pytorch"
 url = "https://download.pytorch.org/whl/cu126"  # CUDA 12.6
-priority = "explicit"
+priority = "secondary"
