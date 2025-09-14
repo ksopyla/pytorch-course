@@ -1,66 +1,219 @@
-# Best Free PyTorch Course
+# ⚡ The Best Free PyTorch Course
+### *Taught by Professor Victor py Torchenstein*
 
-The best online and free PyTorch tutorial. 
-Course Url: https://pytorchcourse.com 
+<div align="center">
 
+![Professor Torchenstein in his Lab](docs/assets/images/torchenstein_in_the_lab_blackboard.png)
 
-## Description and scope
+**🧪 Master PyTorch from Tensors to Transformers 🧪**
 
-Project will give deep and essential knowledge how particular PyTorch building blocs works and how to use them while designing your own architecture. 
+*"They called me mad! And they were right! Madly efficient at PyTorch!"* — Professor Torchenstein
 
-The main focus is on understanding how Machine learning concepts could be expressed using PyTorch. 
-
-I have decided to create this course because I want to be albe to read and understand SoTA architecture implementation like (LLaMA, Qwen, Gemini, etc.). 
-What I have always felt is that I have lacked of deep understanding of the notation how to express the concepts in the PyTorch code. 
-
-
-- How the loss functions work, how the input should be prepared and how to interpret the output of particular loss function
-- How the matrix operations are performed in PyTorch, how to efficiently use the broadcasting feature, 
-- How to understand the Einstein notation and how to 
-
-
-## Technology used
-
-- uses mkdocs mkdocs-material mkdocs-jupyter for lesson rendering and display
-- mkdocs documentation url: https://www.mkdocs.org/
-- mkdocs-material documentation url: https://squidfunk.github.io/mkdocs-material/
-- github actions with mkdocs plugin for building the docs
-- generated site is deployed to the github-pages environment by the pages build and deployment workflow.
-- github pages is used, site is deployed from gh-pages branch from root directory
-- each lesson is Jupyter Notebook - rendered directly in MkDocs with use of mkdocs-jupyter plugin
-
-## Project structure
-
-- [.github\workflows\mkdocs-build.yml](.github/workflows/mkdocs-build.yml) - defines the github action mkdocs build process
-- [.cursor\rules](.cursor/rules/) - folder containing the rules for the Cursor.AI IDE
-- [.cursor\mcp.json](.cursor/mcp.json) - configuration file for the cursor-notebook-mcp server
-- [mkdocs.yml](mkdocs.yml) - is the main mkdoc configuration file, it contains the navigation
-- [pyproject.toml](pyproject.toml) and [poetry.lock](poetry.lock) - poetry related files for managing the dependencies
-- [docs](docs) - folder contains the lessons grouped in folders, each subfolder contains lessons as jupyter notebooks or markdown files
-- [docs/assets](docs/assets) - folder containing the assests, images, audio, additional css and javascript
-- [docs/index.md](docs/index.md) - main page file
+[![Course Website](https://img.shields.io/badge/🌐%20Course-pytorchcourse.com-purple?style=for-the-badge)](https://pytorchcourse.com)
+[![GitHub stars](https://img.shields.io/github/stars/ksopyla/pytorch-course?style=for-the-badge&logo=github&color=yellow)](https://github.com/ksopyla/pytorch-course/stargazers)
+[![License Code](https://img.shields.io/badge/License-Apache%202.0-blue?style=for-the-badge)](LICENSE-CODE)
+[![License Assets](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-blue?style=for-the-badge)](LICENSE-ASSETS)
 
 
 
-## Project setup
+</div>
 
-- I develop the course with Cursor.AI IDE (0.50.4 in the time of writing this)
-- all the rules that I use are in the [.curor/rules](.coursor/rules/) folder
-- I have also use the [cursor-notebook-mcp server](https://github.com/jbeno/cursor-notebook-mcp) to have a notebook interface for the course
+---
+
+## 🎯 What Makes This Course Special?
+
+> **"Forget world peace, we're aiming for world computation!"**
+
+This isn't just another PyTorch tutorial. It's a **deep dive into the building blocks** of modern AI, taught with humor, precision, and a touch of mad scientist flair. Whether you want to understand Transformers, build your own architectures, or just make tensors bend to your will—you've found your laboratory! 
+
+### 🔬 Why Professor Torchenstein Created This Course:
+
+- **🧠 Deep Understanding**: Move beyond copy-paste tutorials to truly *understand* how PyTorch works
+- **🌍 Open Science**: Free, transparent, and accessible knowledge for everyone
+- **⚡ Real-World Ready**: Progress from simple examples to production-scale implementations
+- **🎭 Actually Fun**: Learn complex concepts through humor, analogies, and engaging storytelling
+
+<div align="center">
+  
+![Torchenstein exploring tensors](docs/assets/images/torchenstein_coffe_explore_tensors.gif)
+
+*Professor Torchenstein exploring the tensor dimension*
+
+</div>
+
+---
+
+## 🗺️ Course Curriculum: From Zero to Neural Network Hero
+
+### 🎓 **Perfect for:**
+- **Beginners**: With Python & linear algebra basics who want deep understanding
+- **Intermediate**: Developers ready to build custom architectures  
+- **Advanced**: Researchers who need to implement cutting-edge papers
+
+### 📚 **6 Comprehensive Modules:**
+
+| Module | What You'll Master | Key Concepts |
+|--------|-------------------|--------------|
+| **🔥 00: Getting Started** | Environment setup across all platforms | PyTorch installation, GPU setup |
+| **⚡ 01: Tensor Mastery** | The foundation of everything | Creation, manipulation, autograd, einsum |
+| **🧠 02: Neural Networks** | Building blocks of intelligence | nn.Module, layers, loss functions |
+| **🚀 03: Training Workflows** | From data to deployed models | Training loops, optimization, GPU acceleration |
+| **🤖 04: Transformers** | Deconstruct the architecture that changed AI | Attention, multi-head attention, positional encoding |
+| **⚗️ 05: Advanced PyTorch** | Professional-grade techniques | Hooks, distributed training, optimization |
+| **🤗 06: HuggingFace Integration** | Work with real-world models | Pre-trained models, fine-tuning |
+
+---
+
+## 🚀 Quick Start: Jump Into the Lab!
+
+### 1️⃣ **Clone the Repository**
+```bash
+git clone https://github.com/ksopyla/pytorch-course.git
+cd pytorch-course
+```
+
+### 2️⃣ **Set Up Your Environment** 
+Choose your platform and follow the guide:
+- 🪟 [Windows Setup](https://pytorchcourse.com/00-getting-started/windows-pytorch-installation/)
+- 🐧 [Linux Setup](https://pytorchcourse.com/00-getting-started/linux-pytorch-installation/)  
+- 🍎 [macOS Setup](https://pytorchcourse.com/00-getting-started/macos-pytorch-installation/)
+- ☁️ [Google Colab](https://pytorchcourse.com/00-getting-started/google-colab-setup/) (No setup required!)
+
+### 3️⃣ **Start Your First Lesson**
+```bash
+
+# Install only the main (non-dev) dependencies
+poetry install --only main
+
+# Run mkdocs locally
+poetry shell
+
+# Open your first Jupyter notebook
+jupyter lab docs/01-tensors/01_introduction_to_tensors.ipynb
+
+```
 
 
-## Licensing
+---
 
-This project uses a dual-license model to balance open-source collaboration with brand protection.
+## 🏗️ Project Structure
 
-- **Source Code**: All source code is licensed under the [Apache License 2.0](LICENSE-CODE). You are free to use, modify, and distribute the code.
-- **Assets & Branding**: All creative assets, including the character of Professor Torchenstein, logos, graphics, and written content (like blog posts, history, jokes, and slogans) are licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](LICENSE-ASSETS). This means they cannot be used for commercial purposes or modified without permission.
+```
+pytorch-course/
+├── docs/                          # Course content
+│   ├── 00-getting-started/        # Environment setup guides  
+│   ├── 01-tensors/                # Tensor fundamentals (10 lessons)
+│   ├── 02-torch-nn/               # Neural network building blocks (14 lessons)
+│   ├── 03-training-nn/            # Training workflows (5 lessons)
+│   ├── 04-transformers/           # Transformer architecture (5 lessons) 
+│   ├── 05-advanced-pytorch/       # Advanced techniques (5 lessons)
+│   ├── 06-huggingface-transformers/ # Real-world applications (2 lessons)
+│   └── assets/                    # Images, CSS, and other resources
+├── mkdocs.yml                     # Website configuration
+├── pyproject.toml                 # Dependencies managed with Poetry
+└── README.md                      # You are here! 🎯
+```
 
-Please see the `[LICENSE](LICENSE)` file for more details.
+**40+ Interactive Jupyter Notebooks** • **Production-Ready Code** • **Comprehensive Examples**
 
+---
 
+## 🌟 What Students Are Saying
 
+> *"Finally! A PyTorch course that explains the 'why' behind every operation. Professor Torchenstein's approach makes complex concepts click."* 
 
+> *"The progression from simple examples to real Transformer dimensions is brilliant. I can actually read research papers now!"*
 
+> *"Einsum used to scare me. Now I use it to impress my colleagues. Thanks, Professor!"*
 
+---
 
+## 🤝 Join the Community
+
+### 💫 **Our Values**
+- **🔍 Curiosity**: Always ask "why" and "what if"
+- **💡 Creativity**: Blend techniques, explore new ideas
+- **🌍 Openness**: Transparent, honest, barrier-free knowledge sharing
+
+### 🎯 **How You Can Contribute**
+
+We welcome contributions from fellow tensor enthusiasts! Here's how:
+
+1. **⭐ Star this repository** if you find it helpful
+2. **🍴 Fork and improve** lessons, fix bugs, add examples  
+3. **💬 Join discussions** in [Issues](https://github.com/ksopyla/pytorch-course/issues)
+4. **📝 Share your experience** - tweet about your learning journey
+5. **🐛 Report bugs** or suggest improvements
+
+**Contributing Guidelines:**
+- Check existing [issues](https://github.com/ksopyla/pytorch-course/issues) before creating new ones
+- Follow the existing code style and lesson format
+- Add tests for new code examples
+- All contributions must maintain the educational and fun tone
+
+---
+
+## 🛠️ Technical Details
+
+### **Built With:**
+- **📖 MkDocs + Material Theme**: Beautiful, searchable documentation
+- **📓 Jupyter Notebooks**: Interactive, executable lessons  
+- **🐍 Python 3.12 + Poetry**: Modern dependency management
+- **⚡ GitHub Actions**: Automated testing and deployment
+- **📊 GitHub Pages**: Free, fast hosting
+
+### **Development Setup - for running the mkdocs locally:**
+```bash
+# Install Poetry (if not already installed)
+curl -sSL https://install.python-poetry.org | python3 -
+
+# Install dependencies
+poetry install --only dev --no-root
+
+# Run mkdocs locally
+poetry run mkdocs serve
+```
+
+---
+
+## 📄 Licensing
+
+This project uses a **dual-license model** to balance open-source collaboration with brand protection:
+
+- **📝 Source Code**: [Apache License 2.0](LICENSE-CODE) - Use, modify, distribute freely
+- **🎨 Creative Assets**: [CC BY-NC-ND 4.0](LICENSE-ASSETS) - Professor Torchenstein's character, images, and content
+
+---
+
+## 👨‍🔬 About the Author
+
+**Krzysztof Sopyla** • AI R&D Leader • Researcher • Open Science Advocate
+
+- 🌐 **Website**: [ai.ksopyla.com](https://ai.ksopyla.com?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=readme)
+- 💼 **LinkedIn**: [linkedin.com/in/krzysztofsopyla](https://linkedin.com/in/krzysztofsopyla)
+- 📧 **Contact**: [GitHub Discussions](https://github.com/ksopyla/pytorch-course/discussions)
+
+*"I believe deep understanding is key to ML success. This course is my contribution to breaking down the barriers and gatekeepers of knowledge."*
+
+---
+
+## 🎯 Ready to Begin Your Tensor Journey?
+
+<div align="center">
+
+### 🧪 **[START THE COURSE NOW](https://pytorchcourse.com)** 🧪
+
+**⭐ Star this repository to join thousands of tensor alchemists! ⭐**
+
+[![GitHub stars](https://img.shields.io/github/stars/ksopyla/pytorch-course?style=social)](https://github.com/ksopyla/pytorch-course/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/ksopyla/pytorch-course?style=social)](https://github.com/ksopyla/pytorch-course/network/members)
+
+---
+
+*"Join me, and together we shall `backward()` pass our way to glory!"* 
+
+**— Professor Victor py Torchenstein**
+
+**MWAHAHAHA!** ⚡🧪⚡
+
+</div>
