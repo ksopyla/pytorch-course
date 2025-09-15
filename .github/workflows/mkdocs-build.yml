@@ -51,7 +51,7 @@ jobs:
 
       - name: Optimize images for web
         run: |
-          python tools/optimize_images.py --quality 75 --max-width 1600 --max-height 900 --overwrite
+          python tools/optimize_images.py --quality 75 --max-width 1200 --max-height 630 --overwrite
       - name: Build MkDocs site
         env:
           JUPYTER_PLATFORM_DIRS: 1  # Suppress Jupyter deprecation warnings
