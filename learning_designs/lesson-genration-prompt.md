@@ -2,7 +2,7 @@
 
 
 
-Let's help me build the next lesson for a Pytor@educator-guidelines.mdc   @project-overview.mdc  in Jupyter notebook. 
+Let's help me build the next lesson for a Pytorch course according to @educator-guidelines.mdc   @project-overview.mdc  in Jupyter notebook. 
 
 Let's work topic by topic, step by step, cell by cell. Begin by analysing the @00_module_1_introduction.md and the whole course @pytorch-course-structure.md  in order to know what each lesson should cover.
 Analyse the current lesson to know what I have already covered and what material and jupyter cells are prepared already.
