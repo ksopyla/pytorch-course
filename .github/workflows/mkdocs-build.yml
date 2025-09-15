@@ -47,7 +47,7 @@ jobs:
       - name: Install Poetry (for requirements generation only)
         uses: snok/install-poetry@v1
         with:
-          version: 1.8.2
+          version: 1.8.5
           virtualenvs-create: false
 
       - name: Free up disk space
