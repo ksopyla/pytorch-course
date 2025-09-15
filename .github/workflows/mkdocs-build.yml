@@ -48,14 +48,6 @@ jobs:
         run: |
           echo "Disk space after apt install:"
           df -h
-      - name: Install Poetry
-        uses: snok/install-poetry@v1
-        with:
-          version: 1.8.5
-          virtualenvs-create: false
-
-      - name: Display Poetry version
-        run: poetry --version
 
       - name: Free up disk space
         run: |
@@ -66,12 +58,6 @@ jobs:
           # sudo rm -rf /opt/ghc
           echo "Disk space after cleanup:"
           df -h
-
-      - name: Generate requirements.txt from Poetry
-        run: |
-          poetry export --format=requirements.txt --only dev --without-hashes > requirements-dev.txt
-          echo "Generated requirements-dev.txt:"
-          head -10 requirements-dev.txt
 
       - name: Cache pip dependencies
         uses: actions/cache@v4
