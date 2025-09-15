@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
@@ -44,11 +48,14 @@ jobs:
         run: |
           echo "Disk space after apt install:"
           df -h
-      - name: Install Poetry (for requirements generation only)
+      - name: Install Poetry
         uses: snok/install-poetry@v1
         with:
           version: 1.8.5
           virtualenvs-create: false
+
+      - name: Display Poetry version
+        run: poetry --version
 
       - name: Free up disk space
         run: |
@@ -62,7 +69,7 @@ jobs:
 
       - name: Generate requirements.txt from Poetry
         run: |
-          poetry export --format=requirements.txt --group dev --without-hashes > requirements-dev.txt
+          poetry export --format=requirements.txt --only dev --without-hashes > requirements-dev.txt
           echo "Generated requirements-dev.txt:"
           head -10 requirements-dev.txt
 
