@@ -24,40 +24,17 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Check initial disk space
-        run: df -h
-
       - name: Set up Python
         id: setup-python
         uses: actions/setup-python@v4
         with:
           python-version: '3.12'
 
-      - name: Disk space after python setup, before apt install
-        run: |
-          echo "Disk space after python setup:"
-          df -h
-
       - name: Cache and install system dependencies for social cards
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
           packages: libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
           version: 1.0
-
-      - name: Disk space after apt install
-        run: |
-          echo "Disk space after apt install:"
-          df -h
-
-      - name: Free up disk space
-        run: |
-          echo "Disk space before cleanup:"
-          df -h
-          # sudo rm -rf /usr/share/dotnet
-          # sudo rm -rf /usr/local/lib/android
-          # sudo rm -rf /opt/ghc
-          echo "Disk space after cleanup:"
-          df -h
 
       - name: Cache pip dependencies
         uses: actions/cache@v4
@@ -72,30 +49,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements-dev.txt
 
-      - name: Check disk space and artifact sizes after install
-        run: |
-          echo "Disk space after installing dependencies:"
-          df -h
-          echo "Size of pip cache:"
-          du -sh ~/.cache/pip
-
       - name: Optimize images for web
         run: |
           python tools/optimize_images.py --quality 75 --max-width 1600 --max-height 900 --overwrite
-      
       - name: Build MkDocs site
         env:
           JUPYTER_PLATFORM_DIRS: 1  # Suppress Jupyter deprecation warnings
         run: |
           mkdocs build --strict --verbose
-
-      - name: Check disk space after site build
-        run: |
-          echo "Disk space after building site:"
-          df -h
-          echo "Size of generated site:"
-          du -sh site
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
