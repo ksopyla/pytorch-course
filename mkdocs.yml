@@ -48,7 +48,10 @@ theme:
 
 nav:
   - Home: index.md
-  - Meet Torchenstein: story/victor_torchenstein_origin.md
+  - Meet Torchenstein: 
+    - 'Meet Torchenstein': story/victor_torchenstein_origin.md
+    - 'Vision and mission': story/vision_and_mission.md
+    - 'Sponsor the Rebellion': story/sponsor.md
   - Getting Started:
     - 'PyTorch Course Structure': pytorch-course-structure.md
     - 'Windows Environment Installation': 00-getting-started/windows-pytorch-installation.md
