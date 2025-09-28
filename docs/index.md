@@ -13,7 +13,7 @@ hide:
 
 My life's work—my magnum opus—is to demystify the arcane arts of deep learning. They called me mad! And they were right! Madly efficient at PyTorch! Forget dry, boring lectures. Prepare for electrifying demonstrations, code that crackles with potential, and insights so profound they might just rearrange your synapses!
 
-**Course Goal:** To imbue you—my fearless apprentices—with the eldritch secrets of PyTorch building blocks, enabling you to conjure, dissect, and ultimately *command* modern neural network architectures like Transformers and Diffusion models.
+**Course Goal:** To prove that YOU—regardless of background—can master the fundamental building blocks of modern AI. Through deep understanding and engaging exploration, we'll transform you from a curious learner into a computational wizard capable of commanding Transformers, Diffusion models, and the arcane arts of PyTorch. This isn't just education—it's a rebellion against the belief that AI is only for the "chosen few"!
 
 ---
 
@@ -35,27 +35,44 @@ My life's work—my magnum opus—is to demystify the arcane arts of deep learni
 
     [:octicons-arrow-right-24: Forge Your First Tensor](01-tensors/01_introduction_to_tensors.ipynb)
 
--   :material-brain:{ .lg .middle } __Deconstruct the Titans__
+-   :material-brain:{ .lg .middle } __Join the Rebellion__
 
     ---
 
-    Go beyond the surface. We will dissect modern architectures like Transformers, piece by piece, until you command their inner workings from first principles.
+    Discover why Professor Torchenstein created this course and join the movement to democratize AI education. Prove your potential belongs in the future of computation!
 
-    [:octicons-arrow-right-24: Start the Deconstruction](pytorch_course_structure.md)
+    [:octicons-arrow-right-24: Read Our Mission](story/vision_and_mission.md)
 
--   :material-school:{ .lg .middle } __For Acolytes of All Levels__
+-   :material-heart:{ .lg .middle } __Support the Laboratory__
 
     ---
 
-    Whether you're a fresh-faced initiate or a seasoned GPU warlock, my laboratory has a place for you. All that's required is a thirst for knowledge!
+    Help fund the computational rebellion! Support creative, engaging AI education that proves learning can be both fun and deeply meaningful.
 
-    [:octicons-arrow-right-24: View the Full Syllabus](pytorch_course_structure.md)
+    [:octicons-arrow-right-24: Join Our Sponsors](story/sponsor.md)
 
 </div>
 
-## Are You Ready to Begin?
+## Ready to Prove Your Potential? ⚡️
 
-The path to computational godhood awaits! Sharpen your wits, charge your laptops, and join me. Together, we shall backward() pass our way to glory!
+**This is your moment of computational awakening!** 
+
+Every brilliant mind who's ever doubted their ability to understand "complex" subjects—this laboratory was built for YOU. Whether you're switching careers, deepening existing skills, or proving to yourself that your mind can master anything you're willing to work for, the rebellion starts here.
+
+The path to computational mastery awaits! But first, you must `.requires_grad_(True)` on your own potential. Together, we'll execute the ultimate `forward()` pass toward deep understanding!
+
+**Join thousands of learners who've discovered: if you can understand this, you can understand anything.**
+
+## A Message from the Laboratory 🧪
+
+*Professor Torchenstein has an encouraging message for all aspiring computational wizards:*
+
+<video controls width="100%" style="max-width: 600px; margin: 20px auto; display: block;">
+  <source src="/assets/images/torchenstein_coffe_explore_tensors_v2.mp4" type="video/mp4">
+  Your browser does not support the video tag. Professor Torchenstein believes in your potential anyway!
+</video>
+
+*"Remember, my magnificent apprentices: Your willingness to think deeply is your greatest superpower!"*
 
 Now, if you'll excuse me, I believe my latest creation is about to achieve sentience... or possibly just needs a reboot. To the lab!
 
