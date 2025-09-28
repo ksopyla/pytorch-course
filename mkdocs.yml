@@ -53,7 +53,7 @@ nav:
     - 'Vision and mission': story/vision_and_mission.md
     - 'Sponsor the Rebellion': story/sponsor.md
   - Getting Started:
-    - 'PyTorch Course Structure': pytorch-course-structure.md
+    - 'PyTorch Course Structure': pytorch_course_structure.md
     - 'Windows Environment Installation': 00-getting-started/windows-pytorch-installation.md
     - 'Linux Environment Installation': 00-getting-started/linux-pytorch-installation.md
     - 'MacOS Environment Installation': 00-getting-started/macos-pytorch-installation.md
