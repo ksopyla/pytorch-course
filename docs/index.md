@@ -27,13 +27,6 @@ My life's work—my magnum opus—is to demystify the arcane arts of deep learni
 
     [:octicons-arrow-right-24: Uncover My Origin Story](story/victor_torchenstein_origin.md)
 
--   :material-cube-scan:{ .lg .middle } __Master the Fundamentals__
-
-    ---
-
-    From the humble tensor to the dark arts of `einsum` and `autograd`, you will forge a deep, intuitive understanding of PyTorch's core components.
-
-    [:octicons-arrow-right-24: Forge Your First Tensor](01-tensors/01_introduction_to_tensors.ipynb)
 
 -   :material-brain:{ .lg .middle } __Join the Rebellion__
 
@@ -53,6 +46,30 @@ My life's work—my magnum opus—is to demystify the arcane arts of deep learni
 
 </div>
 
+---
+
+## 🗺️ Ready to See the Full Madness? 
+
+*"Mwahahaha! You've only glimpsed the surface of my computational sorcery!"*
+
+Before you dive into the deep end of the tensor pool, why not peek at the **COMPLETE BLUEPRINT** of our educational rebellion? Behold the master plan that will transform you from a tensor-curious wanderer into a PyTorch-wielding wizard!
+
+!!! tip "🧪 Professor's Laboratory Blueprint"
+
+    **The Complete Course Architecture Awaits!** 📚✨
+    
+    From humble tensor summoning to commanding attention mechanisms, witness the full scope of our computational conspiracy. Each module builds upon the last, creating an unstoppable cascade of understanding that culminates in... **COMPLETE PYTORCH MASTERY!** 
+    
+    **What lurks within the blueprint:**
+    - 🔥 **6 Epic Modules** of progressive tensor domination  
+    - ⚡️ **40+ Hands-on Lessons** with executable madness
+    - 🧠 **Advanced Topics** that separate apprentices from masters
+    - 🎯 **Transformer Deconstruction** - the crown jewel of our curriculum!
+
+    [:octicons-rocket-24: **Explore the Master Blueprint**](pytorch_course_structure.md){ .md-button .md-button--primary }
+
+---
+
 ## Ready to Prove Your Potential? ⚡️
 
 **This is your moment of computational awakening!** 
@@ -67,7 +84,7 @@ The path to computational mastery awaits! But first, you must `.requires_grad_(T
 
 *Professor Torchenstein has an encouraging message for all aspiring computational wizards:*
 
-<video controls width="100%" style="max-width: 600px; margin: 20px auto; display: block;">
+<video controls width="100%" style="max-width: 800px; margin: 20px auto; display: block;">
   <source src="/assets/images/torchenstein_coffe_explore_tensors_v2.mp4" type="video/mp4">
   Your browser does not support the video tag. Professor Torchenstein believes in your potential anyway!
 </video>
