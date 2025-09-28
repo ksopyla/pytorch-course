@@ -3,7 +3,7 @@ template: home.html
 title: "Greetings, Architect of Computational Destiny!"
 subtitle: "Join Professor Torchenstein on an electrifying quest to bend PyTorch to your will. Mwahahaha!"
 start_button_text: "Enter the Laboratory"
-start_url: "pytorch-course-structure"
+start_url: "pytorch_course_structure.md"
 hide:
   - navigation
   - toc
@@ -41,7 +41,7 @@ My life's work—my magnum opus—is to demystify the arcane arts of deep learni
 
     Go beyond the surface. We will dissect modern architectures like Transformers, piece by piece, until you command their inner workings from first principles.
 
-    [:octicons-arrow-right-24: Start the Deconstruction](pytorch-course-structure.md)
+    [:octicons-arrow-right-24: Start the Deconstruction](pytorch_course_structure.md)
 
 -   :material-school:{ .lg .middle } __For Acolytes of All Levels__
 
@@ -49,7 +49,7 @@ My life's work—my magnum opus—is to demystify the arcane arts of deep learni
 
     Whether you're a fresh-faced initiate or a seasoned GPU warlock, my laboratory has a place for you. All that's required is a thirst for knowledge!
 
-    [:octicons-arrow-right-24: View the Full Syllabus](pytorch-course-structure.md)
+    [:octicons-arrow-right-24: View the Full Syllabus](pytorch_course_structure.md)
 
 </div>
 

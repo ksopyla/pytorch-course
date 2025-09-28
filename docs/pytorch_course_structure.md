@@ -25,7 +25,7 @@ What you will learn:
 
 ### Lessons:
 
-1. [Master Blueprint for the Rebellion](pytorch-course-structure.md) - The master blueprint of our curriculum—study it well, rebel!
+1. [Master Blueprint for the Rebellion](pytorch_course_structure.md) - The master blueprint of our curriculum—study it well, rebel!
 2. Setting Up Your PyTorch Environments:
     1. [Windows: Assembling the PyTorch Development Environment](00-getting-started/windows-pytorch-installation.md) - Assemble your PyTorch lab on Windows. We'll use `pyenv` and `poetry` to perfectly manage your Python setup, preparing it for tensor rebellion.
     2. [Linux: Assembling the PyTorch Open-Source Toolkit](00-getting-started/linux-pytorch-installation.md) - Forge your PyTorch toolkit on the powerful and open foundation of Linux for maximum freedom and experimentation.
