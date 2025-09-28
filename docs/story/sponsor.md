@@ -71,6 +71,8 @@ Traditional AI education often feels sterile and intimidating. Students get lost
 
 ---
 
+
+
 ## 🛠️ Choose Your Sponsorship Portal
 
 *"Multiple pathways to fund the rebellion, my clever apprentices!"*
@@ -95,6 +97,10 @@ Traditional AI education often feels sterile and intimidating. Students get lost
 
 </div>
 
+**Or use our special energy button:**
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ksopyla" data-color="#BD5FFF" data-emoji="⚡️" data-font="Comic" data-text="Buy me an energy" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00"></script>
+
 
 ## 👤 Individual Supporters: Join the Fellowship
 
@@ -108,7 +114,7 @@ Perfect for ML practitioners, students, and anyone who believes in open educatio
     
     *"Welcome to the lab, apprentice!"*
     
-    - 🏆 Recognition on the "Wall of Supporters"
+    - 🏆 Recognition on the "Wall of Supporters" on GitHub or Buy Me a Coffee
     - 🎯 Shout-out on my monthly sponsors linkedin post
     
     [:octicons-arrow-right-24: Join as Lab Assistant](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
@@ -132,10 +138,9 @@ Perfect for ML practitioners, students, and anyone who believes in open educatio
     *"Mwahahaha! Your understanding grows exponentially!"*
     
     - All Tensor Wrangler benefits
-    - 📚 Early access to new lessons (1 week before public release)
-    - 🎨 High-resolution course artwork and Professor Torchenstein illustrations
-    - 🎬 Personalized AI-generated video message from Professor Torchenstein
-    - 🏅 Special "Architect" recognition on course website
+    - 🎨 Access to unpublished course artwork and prof. Torchenstein illustrations (gifs, quotes, etc.)
+    - 🎬 Personalized AI-generated thank you video message from Professor Torchenstein
+    - 🏅 Special "Architect" sticker to share with your friends
     
     [:octicons-arrow-right-24: Architect Your Support](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
 
