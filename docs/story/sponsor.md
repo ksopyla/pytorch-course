@@ -9,10 +9,11 @@ description: "Support Professor Torchenstein's mission to democratize PyTorch ed
 
 **Join the Creative Education Revolution!** 🚀
 
-The next generation deserves better than dry lectures and endless social media scrolling. They need **engaging, creative education** that sparks curiosity and builds real skills! While AI knowledge exists, traditional teaching methods often make complex concepts feel impossible to grasp.
+Here's what I believe: brilliant minds are being lost to shallow education and attention thieves. We all have beautiful brains, we all are capable of understanding the fundamentals of AI, but we need **engaging, creative education** that sparks curiosity and engages us! While AI knowledge exists, traditional teaching methods often make complex concepts feel impossible to grasp.
 
-But here's where YOU come in! Together, we can create a **new type of learning experience**—one that combines humor, creativity, and community to make PyTorch mastery not just achievable, but genuinely *fun*. Let's give young minds something meaningful to engage with instead of mindless entertainment!
-
+But here's where YOU come in! Together, we can create a **new type of learning experience**—one that combines 
+humor, creativity, and the wild enthusiasm of Professor Torchenstein! ⚡️
+Let's give young minds something meaningful to engage with instead of mindless entertainment!
 
 <video controls width="100%"  src="/assets/images/torchenstein_empower_atoms.mp4" title="Professor Torchenstein empowers atoms">
   Your browser does not support the video tag. Please update your browser to view this content.
@@ -39,7 +40,7 @@ Traditional AI education often feels sterile and intimidating. Students get lost
 
 ## 💡 How Your Sponsorship Powers Creative Education
 
-**Your support makes the magic happen!** Every sponsorship dollar transforms directly into engaging, high-quality educational content that helps the next generation develop real skills while having genuine fun:
+**Your support makes the magic happen!** Every sponsorship dollar transforms directly into engaging, high-quality educational content that helps the next generation of AI engineers and researchers to build real skills while having genuine fun:
 
 <div class="grid cards" markdown>
 
@@ -49,11 +50,11 @@ Traditional AI education often feels sterile and intimidating. Students get lost
     
     Each lesson requires 5-10 hours of research, creative design, and testing—your support funds innovative content that makes complex concepts click!
 
--   :material-palette:{ .lg .middle } __Visual Learning Magic__ 
+-   :material-palette:{ .lg .middle } __🎨 Visual Learning That Sticks__ 
 
     ---
     
-    Custom artwork, animations, and Professor Torchenstein's visual explanations that transform abstract concepts into memorable experiences!
+    Custom Professor Torchenstein artwork, diagrams, and interactive visualizations cost time and tools—but they transform abstract concepts into memorable experiences!
 
 -   :material-tools:{ .lg .middle } __Professional Development Tools__
 
@@ -61,13 +62,15 @@ Traditional AI education often feels sterile and intimidating. Students get lost
     
     Quality software, design resources, and development tools that enable us to create the engaging, professional content learners deserve!
 
--   :material-clock:{ .lg .middle } __Dedicated Time for Innovation__
+-   :material-clock:{ .lg .middle } __⏰ Dedicated Time for Innovation__
 
     ---
     
     Your sponsorship frees Professor Torchenstein from corporate servitude to dedicate MAXIMUM TIME to the resistance!
 
 </div>
+
+**The honest truth:** Creating genuinely engaging, mathematically rigorous education takes way more time than throwing together API tutorials. Your support makes the difference between "content that exists" and "content that transforms how people learn."
 
 ---
 
@@ -83,7 +86,7 @@ Traditional AI education often feels sterile and intimidating. Students get lost
 
     ---
     
-    The primary laboratory funding mechanism! Recurring sponsorships with exclusive perks and recognition.
+    Recurring sponsorships with exclusive perks and recognition. For individual supporters and companies.
     
     [:octicons-arrow-right-24: Support via GitHub](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
 
@@ -91,145 +94,86 @@ Traditional AI education often feels sterile and intimidating. Students get lost
 
     ---
     
-    Perfect for one-time support or when you want to fuel Professor Torchenstein's late-night coding sessions!
+    Perfect for individual supporters and one-time support or when you want to fuel Professor Torchenstein's late-night coding sessions!
     
     [:octicons-arrow-right-24: Fuel the Madness](https://www.buymeacoffee.com/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
 
 </div>
 
-**Or use our special energy button:**
 
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ksopyla" data-color="#BD5FFF" data-emoji="⚡️" data-font="Comic" data-text="Buy me an energy" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00"></script>
+## 👤 Individual Supporters: Join Professor Torchenstein's Inner Circle
 
+*"Calling all computational apprentices who believe in the power of deep understanding!"*
 
-## 👤 Individual Supporters: Join the Fellowship
-
-Perfect for ML practitioners, students, and anyone who believes in open education!
+Perfect for ML practitioners, students, and anyone who wants to support accessible, engaging AI education that doesn't suck! 🚀
 
 <div class="grid cards" markdown>
 
--   :material-flask:{ .lg .middle } __🧪 Lab Assistant - $7/month__
+-   :material-flask:{ .lg .middle } __🧪 Torchenstein's Apprentice - $7/month__
 
     ---
     
-    *"Welcome to the lab, apprentice!"*
+    *"Welcome to the laboratory, my brilliant apprentice!"*
     
-    - 🏆 Recognition on the "Wall of Supporters" on GitHub or Buy Me a Coffee
-    - 🎯 Shout-out on my monthly sponsors linkedin post
+    **What you get:**
     
-    [:octicons-arrow-right-24: Join as Lab Assistant](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
-
--   :material-lightning-bolt:{ .lg .middle } __⚡️ Tensor Wrangler - $19/month__
-
-    ---
+  
+    - 🖼️ **The Digital Vault**: Unlock a treasure trove of high-resolution Professor Torchenstein artwork, diagrams, animations, and wallpapers. Perfect for decorating your digital workspace!
+    - 🏆 **Wall of Computational Allies**: Your name will be immortalized on our sponsor page, a testament to your commitment to the rebellion against shallow knowledge!
+    - 🎯 **Social Media Shout-Out**: Receive a thank you in our periodic acknowledgments on LinkedIn and X (Twitter), celebrating our most dedicated apprentices.
+    - ⚡️ **Direct Impact**: Your support directly fuels the creation of more free, high-quality educational content, empowering minds across the globe.
+    - ✨ **The Feeling**: Most importantly, you get the satisfaction of knowing you are a key part of a movement to make education rigorous, engaging, and genuinely fun!
     
-    *"Your gradients are flowing beautifully!"*
-    
-    - All Lab Assistant benefits
-    - 🎨 Personalized Torchenstein thank-you artwork generated just for you
-    - 📧 Quarterly behind-the-scenes updates from the laboratory
-    
-    [:octicons-arrow-right-24: Become a Tensor Wrangler](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
-
--   :material-brain:{ .lg .middle } __🔥 Neural Network Architect - $31/month__
-
-    ---
-    
-    *"Mwahahaha! Your understanding grows exponentially!"*
-    
-    - All Tensor Wrangler benefits
-    - 🎨 Access to unpublished course artwork and prof. Torchenstein illustrations (gifs, quotes, etc.)
-    - 🎬 Personalized AI-generated thank you video message from Professor Torchenstein
-    - 🏅 Special "Architect" sticker to share with your friends
-    
-    [:octicons-arrow-right-24: Architect Your Support](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
-
--   :material-castle:{ .lg .middle } __🏰 Mad Scientist Patron - $43/month__
-
-    ---
-    
-    *"Together we shall backward() pass our way to glory!"*
-    
-    - All Architect benefits
-    - 🗳️ Priority vote on upcoming lesson topics and course direction
-    - 📞 Quarterly 30-minute one-on-one video consultation about PyTorch or AI
-    - 📚 Access to exclusive extended content with deeper mathematical insights
-    - 🎓 "Founding Patron" status with permanent recognition in course credits
-    
-    [:octicons-arrow-right-24: Become a Mad Scientist Patron](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
+    [💖 GitHub Sponsors :octicons-mark-github-16:](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page){ .md-button } [💖 Buy Me a Coffee :material-coffee:](https://www.buymeacoffee.com/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page){ .md-button }
 
 </div>
 
 ---
 
-## 🏢 Company Partnerships: Power the Revolution
+## 🏢 Company Partnerships: Join the Enlightened Innovators Circle
 
-For organizations that share our vision of democratized AI education!
+*"Calling visionary companies who believe in investing in the next generation of AI talent!"*
+
+For organizations that understand that the future of AI depends on deeply educated developers, we are just at the begining of AGI revolution. We need those who will understand the "why" behind the operations, not just the "how", how fuel the new branches of science. Your partnership helps us create the educational infrastructure that produces the kind of thoughtful, principled AI practitioners your industry needs. 🌟
 
 <div class="grid cards" markdown>
 
--   :material-bookshelf:{ .lg .middle } __📚 Lesson Sponsors - $300 per lesson__
+-   :material-brain:{ .lg .middle } __🧠 Enlightened Innovator - $250/month__
 
     ---
     
-    *"Your support powers individual breakthroughs!"*
+    *"Together we shall build the computational future!"*
     
-    - Company name mentioned at lesson start/end
-    - Recognition in lesson footer with link
-    - Social media shout-out when published
-    - Perfect for targeted exposure to ML practitioners
+    - ✨ **Brand Visibility (Silver)**: Your company name and logo will be featured in the "Enlightened Innovators" section on our sponsor page and the main GitHub README.
+    - 📢 **Social Media Recognition**: We'll issue a dedicated thank-you post for your company quarterly on LinkedIn and X, highlighting your support for open education.
+    - 🧑‍💻 **Talent Attraction**: Attract top-tier talent by letting us re-share up to 2 of your job posts on LinkedIn (after 3 months of continuous support).
     
-    [:octicons-arrow-right-24: Sponsor a Lesson](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
+    [:octicons-arrow-right-24: Become an Innovator](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
 
--   :material-medal:{ .lg .middle } __🥈 Silver Laboratory Partner - $1,500 one-time__
-
-    ---
-    
-    *"Essential support for our ongoing experiments!"*
-    
-    - Company logo on homepage footer
-    - Dedicated "Laboratory Partners" recognition page  
-    - All individual Neural Network Architect benefits
-    - Quarterly impact reports
-    
-    [:octicons-arrow-right-24: Become a Silver Partner](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
-
--   :material-trophy:{ .lg .middle } __🥇 Gold Knowledge Catalyst - $3,500 one-time__
+-   :material-medal:{ .lg .middle } __🏆 Computational Knowledge Catalyst - $500/month__
 
     ---
     
-    *"Accelerating the democratization of AI knowledge!"*
+    *"Essential support for our grandest experiments!"*
     
-    - All Silver benefits plus prominent homepage logo
-    - Dedicated blog post about your education commitment
-    - Course analytics access (anonymized)
-    - Input on course roadmap and priorities
+    - **All "Enlightened Innovator" Benefits**, plus:
+    - 🌟 **Premium Brand Visibility (Gold)**: Your logo gets top-tier, prominent placement on the sponsor page and GitHub README. A shining beacon of your commitment!
+    - 🎓 **Lesson-Level Sponsorship**: Your company will be credited within a specific course lesson, immortalized as a key supporter of that piece of knowledge.
+    - 🚀 **Enhanced Talent Attraction**: We'll boost your recruitment efforts by re-sharing up to 4 of your job posts on LinkedIn.
+    - 🤝 **Strategic Partnership**: After 6 months of support, we can explore a virtual event appearance or co-created content to showcase your company's expertise.
     
-    [:octicons-arrow-right-24: Catalyze as Gold Sponsor](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
+    [:octicons-arrow-right-24: Become a Catalyst](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
 
--   :material-diamond-stone:{ .lg .middle } __💎 Platinum Mind Forge - $7,500 one-time__
-
-    ---
-    
-    *"The ultimate partnership in computational enlightenment!"*
-    
-    - All Gold benefits plus custom lesson collaboration
-    - Speaking opportunities at virtual course events
-    - Custom case study featuring your PyTorch usage
-    - Direct communication with course creator
-    - "Founding Laboratory Partner" recognition
-    
-    [:octicons-arrow-right-24: Forge the Future as Platinum](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
 
 </div>
 
 ---
 
-## 🚀 Ready to Fund the Rebellion?
+## 🚀 Ready to Join the Educational Rebellion?
 
-Whether you're an individual who believes in engaging, accessible learning or a company wanting to empower the next generation of AI innovators, your sponsorship fuels a movement that's **revolutionizing how we teach complex concepts**.
+This isn't just about funding a course—it's about proving that education can be both rigorous *and* engaging. That brilliance comes in many forms. That the next breakthrough in AI might come from someone who thought they "weren't smart enough" until they found learning that respected their intelligence.
 
-Every contribution helps us create content that's both rigorous and genuinely fun—proving that deep learning doesn't have to be dry learning! Join a community that believes the best way to advance AI is to make it genuinely accessible and enjoyable for everyone.
+**Every supporter helps us demonstrate that there's a better way to learn.** Whether you're an individual who believes in your own potential or a company that wants to help build the kind of thoughtful, principled AI community our field desperately needs.
 
 <div class="grid cards" markdown>
 
@@ -253,15 +197,16 @@ Every contribution helps us create content that's both rigorous and genuinely fu
 
 ---
 
-## 🤝 Questions About Sponsorship?
+## 🤝 Questions About Supporting Our Mission?
 
-Curious about custom sponsorship packages? Want to discuss how your company can get involved? Need to verify that sponsoring a mad scientist's educational rebellion aligns with your corporate values? 
+Wondering about custom partnership opportunities? Want to discuss how your organization can get involved? Or maybe you just want to chat about why this approach to education matters?
 
-**Contact Professor Torchenstein's Representative:**
-- 📧 Email: [your-email@domain.com] 
-- 💬 GitHub Discussions: [Project Discussions](https://github.com/ksopyla/pytorch-course/discussions?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
+**Let's connect:**
+- 💬 **GitHub Discussions**: [Join the conversation](https://github.com/ksopyla/pytorch-course/discussions?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page) - this is where I'm most active and responsive
+- 📧 **Email**: For private discussions about partnerships or custom collaboration ideas
+- 🔗 **LinkedIn**: [Connect with Krzysztof](https://linkedin.com/in/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page) for professional partnerships
 
-*"Remember, my aspiring apprentices: every great revolution needs funding, and every great education deserves support. Join us, and together we shall make PyTorch knowledge freely available to all!"*
+*"Remember, my aspiring apprentices: every breakthrough in education starts with someone believing it's possible. Join us, and together we'll prove that deep understanding and genuine fun can coexist!"* ⚡️
 
 **MWAHAHAHA!** 🧪⚡️
 
