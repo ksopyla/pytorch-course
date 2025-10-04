@@ -12,63 +12,15 @@ description: "Support Professor Torchenstein's mission to democratize PyTorch ed
 Here's what I believe: brilliant minds are being lost to shallow education and attention thieves. We all have beautiful brains, we all are capable of understanding the fundamentals of AI, but we need **engaging, creative education** that sparks curiosity and engages us! While AI knowledge exists, traditional teaching methods often make complex concepts feel impossible to grasp.
 
 But here's where YOU come in! Together, we can create a **new type of learning experience**—one that combines humor, creativity, and the wild enthusiasm of Professor Torchenstein! ⚡️
+
 <video controls width="100%"  src="/assets/images/torchenstein_empower_atoms.mp4" 
 title="Professor Torchenstein empowers atoms">
   Your browser does not support the video tag. Please update your browser to view this content.
 </video>
 
-## 🔬 The Mission: Revolutionize How We Learn AI
+**Your support** directly funds new lessons, creative visualizations, and helps build a community where deep understanding triumphs over shallow knowledge. Join the rebellion!
 
-Here in my laboratory at [PyTorchCourse.com](https://pytorchcourse.com?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page), we're pioneering a **new approach to AI education**. Every lesson, every code example, every delightfully creative explanation is designed to make complex concepts not just understandable, but genuinely engaging.
-
-**The Challenge We're Solving:**
-
-Traditional AI education often feels sterile and intimidating. Students get lost in jargon, professors rush through concepts, and brilliant minds give up thinking they're "not smart enough." Meanwhile, the same students who struggle with dry textbooks spend hours mastering complex games and creative challenges!
-
-**Our Revolutionary Approach:** We combine rigorous computer science with creativity, humor, and community support. Instead of fighting attention spans, we work *with* them—creating content so engaging that learning PyTorch becomes as addictive as social media, but infinitely more rewarding.
-
-**What Makes Our Rebellion Different:**
-
-- 🎨 **Creativity Over Conformity**: We embrace unconventional teaching methods—visual storytelling, interactive experiments, and yes, even manic enthusiasm! Learning should spark joy, not dread.
-- 🧠 **Deep Understanding, Not Memorization**: We don't just teach syntax—we help you understand the *why* behind every operation, building intuition that lasts a lifetime.
-- ⚡️ **Engagement Over Entertainment**: Instead of mindless scrolling, we create content that's genuinely addictive but builds real skills. Think of it as "productive dopamine hits."
-- 🤝 **Community Over Competition**: We're building a supportive network where learners help each other grow, share discoveries, and celebrate breakthroughs together.
-
----
-
-### 💡 How Your Sponsorship Powers Creative Education
-
-**Your support makes the magic happen!** Every sponsorship dollar transforms directly into engaging, high-quality educational content that helps the next generation of AI engineers and researchers to build real skills while having genuine fun:
-
-<div class="grid cards" markdown>
-
--   :material-lightbulb:{ .lg .middle } __Creative Content Creation__
-
-    ---
-    
-    Each lesson requires 5-10 hours of research, creative design, and testing—your support funds innovative content that makes complex concepts click!
-
--   :material-palette:{ .lg .middle } __🎨 Visual Learning That Sticks__ 
-
-    ---
-    
-    Custom Professor Torchenstein artwork, diagrams, and interactive visualizations cost time and tools—but they transform abstract concepts into memorable experiences!
-
--   :material-tools:{ .lg .middle } __Professional Development Tools__
-
-    ---
-    
-    Quality software, design resources, and development tools that enable us to create the engaging, professional content learners deserve!
-
--   :material-clock:{ .lg .middle } __⏰ Dedicated Time for Innovation__
-
-    ---
-    
-    Your sponsorship frees Professor Torchenstein from corporate servitude to dedicate MAXIMUM TIME to the resistance!
-
-</div>
-
-**The honest truth:** Creating genuinely engaging, mathematically rigorous education takes way more time than throwing together API tutorials. Your support makes the difference between "content that exists" and "content that transforms how people learn."
+*"Wait! You want to know MORE about our MAGNIFICENT MISSION to overthrow the tyranny of shallow learning?!"* 🧪⚡️ [**Discover the FULL story of our computational rebellion!**](vision_and_mission.md) *"MWAHAHAHA!"*
 
 ---
 
@@ -122,14 +74,12 @@ Perfect for ML practitioners, students, and anyone who wants to support accessib
     **What you get:**
     
   
-    - 🖼️ **The Digital Vault**: Unlock a treasure trove of high-resolution Professor Torchenstein artwork, funny giphs, animations, and wallpapers. Perfect for decorating your digital workspace!
-    - 💬 **Community Access**: Access to membership to "Buy Me a Coffee" community hub with occasional updates, galleries, ways of working, used tools and behind-the-scenes content from the lab!
-    - 🏆 **Wall of Computational Allies**: Your name will be immortalized on our sponsor page, a testament to your commitment to the rebellion against shallow knowledge!
-    - 🎯 **Social Media Shout-Out**: Receive a thank you in our monthly acknowledgments on LinkedIn and X (Twitter), celebrating our most dedicated apprentices.
-    - ⚡️ **Direct Impact**: Your support directly fuels the creation of fun, engagin and high-quality educational content, empowering minds across the globe.
-    - ✨ **The Feeling**: Most importantly, you get the satisfaction of knowing you are helping to build the future of AI education for new generations of learners!
+    - 🖼️ **The Digital Vault**: High-resolution Professor Torchenstein artwork, GIFs, animations, and wallpapers for your digital workspace
+    - 💬 **Community Hub Access**: Join our Buy Me a Coffee community with updates, galleries, tools, and behind-the-scenes content from the lab
+    - 🏆 **Wall of Computational Allies**: Your name immortalized on our sponsor page as a supporter of the rebellion
+    - 🎯 **Social Media Recognition**: Monthly thank you posts on LinkedIn and X celebrating our apprentices
     
-    **How it works:** Sponsor on GitHub or BMC → Get welcome message with Digital Vault link + BMC community invite → Join the rebellion! ⚡️
+    **How it works:** Sponsor on GitHub or BMC → Welcome message with Digital Vault + Community invite → Join the rebellion! ⚡️
     
     [💖 GitHub Sponsors :octicons-mark-github-16:](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page){ .md-button } [💖 Buy Me a Coffee :material-coffee:](https://www.buymeacoffee.com/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page){ .md-button }
 
@@ -141,7 +91,7 @@ Perfect for ML practitioners, students, and anyone who wants to support accessib
 
 *"Calling visionary companies who believe in investing in the next generation of AI talent!"*
 
-For organizations that understand that the future of AI depends on deeply educated developers, we are just at the begining of AGI revolution. We need those who will understand the "why" behind the operations, not just the "how", how fuel the new branches of science. Your partnership helps us create the educational infrastructure that produces the kind of thoughtful, principled AI practitioners your industry needs. 🌟
+For organizations that understand that the future of AI depends on deeply educated developers. We're at the beginning of the AGI revolution—we need developers who understand the "why" behind operations, not just the "how." Your partnership helps create the educational infrastructure that produces thoughtful, principled AI practitioners. 🌟
 
 <div class="grid cards" markdown>
 
@@ -210,35 +160,6 @@ Purchase digital artwork directly from our shop—no sponsorship required! Brows
     Purchase digital products and artwork directly
     
     [:octicons-arrow-right-24: Browse Shop](https://www.buymeacoffee.com/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page){ .md-button }
-
-</div>
-
----
----
-
-## 🚀 Ready to Join the Educational Rebellion?
-
-This isn't just about funding a course—it's about proving that education can be both rigorous *and* engaging. That brilliance comes in many forms. That the next breakthrough in AI might come from someone who thought they "weren't smart enough" until they found learning that respected their intelligence.
-
-**Every supporter helps us demonstrate that there's a better way to learn.** Whether you're an individual who believes in your own potential or a company that wants to help build the kind of thoughtful, principled AI community our field desperately needs.
-
-<div class="grid cards" markdown>
-
--   :material-github:{ .lg .middle } __Individual Sponsors__
-
-    ---
-    
-    Join as an individual supporter and become part of Professor Torchenstein's inner circle of computational enlightenment!
-    
-    [:octicons-arrow-right-24: Sponsor Individually](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
-
--   :material-domain:{ .lg .middle } __Company Partnerships__
-
-    ---
-    
-    Partner with us as a company and align your brand with quality, open AI education that reaches thousands of practitioners.
-    
-    [:octicons-arrow-right-24: Partner With Us](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
 
 </div>
 
