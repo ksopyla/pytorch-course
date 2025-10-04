@@ -2,6 +2,44 @@
 
 This document outlines the strategic framework for the PyTorch Course sponsorship program, translating the grand vision into actionable steps. It is a living document, designed to be simple, maintainable, and infused with the spirit of our computational rebellion.
 
+
+## Considered platforms
+
+GitHub Sponsors - 
+pros:
+- developer friendly, my target audience probably use github more then BMC, they have a github account
+- company friendly, companies trust more github then BMC
+- recurrent and one time support is possible
+- welcome message after sponsorship - I could customize it, add links to art works, 
+- I could add access to private repository with some additional content, but I dont know what exactly I could put there
+
+cons:
+- I could add access to private repository with some additional content, but I dont know what exactly I could put there
+- there are lack of community posts, where I could share some behind-the-scenes insights, and share some links to Torchenstein gallery, quotes, etc.
+- there is no way to create a shop for digital products, like wallpapers, stickers, etc.
+
+Buy Me a Coffee - 
+pros:
+- personal, friendly, and community-focused, leaning into the story of the creator and the Torchenstein character.
+- there is a way to create a shop for digital products, like wallpapers, stickers, etc.
+- there are community posts, where I could share some behind-the-scenes insights, and share some links to Torchenstein gallery, quotes, etc.
+- I could create post, galleries, podcasts  
+- one time support is possible
+- recurrent support is possible with detailed configuration
+- many integrations with other services like twitter to automatically shout-out the sponsors, IFTTT or zapier for automations
+- integration with Discord to automatically invite the sponsors to the server and assing roles (not now but in the future)
+- I could invite and giveaway BMC memberships for a chosen period of time, it could be a good way to add companies employees to the community
+
+cons:
+- less trusted platform for companies, I couldnt imagine that company create an account on BMC
+- less developer friendly, my target audience probably use github more then BMC, they have a github account
+- 5% platform fee on all transactions
+- not integrated into GitHub workflow (separate website, requires separate account)
+- requires manual management to grant BMC access to GitHub sponsors
+- less professional appearance for corporate sponsorships
+
+
+
 ## 1. Guiding Principles
 
 -   **Simplicity is Key**: We will avoid overly complex tier structures to prevent decision paralysis for supporters and minimize administrative overhead.
@@ -11,116 +49,162 @@ This document outlines the strategic framework for the PyTorch Course sponsorshi
 
 ## 2. Platform Strategy
 
-We will utilize two platforms, each with a tailored tone:
+**Primary Platform: GitHub Sponsors**
+- Main payment collection for all recurring support (individuals + companies)
+- One-time support option for individuals
+- Professional tone: ambitious, impact-oriented, developer-focused
+- Integrated "Sponsor" button on GitHub repo
+- Zero platform fees
+- Target: developers, managers, companies investing in AI education
 
--   **GitHub Sponsors**: The "Professional's Portal." The tone will be ambitious and impact-oriented, speaking to developers, managers, and companies about investing in the future of AI education.
--   **Buy Me a Coffee**: The "Supporter's Connection." The tone will be personal, friendly, and community-focused, leaning into the story of the creator and the Torchenstein character.
+**Secondary Platform: Buy Me a Coffee**
+- Alternative payment option for those who prefer BMC
+- Community hub for all sponsors (regardless of platform)
+- Digital shop for artwork, wallpapers, and future merch
+- Personal tone: friendly, community-focused, Torchenstein story
+- Target: individual supporters who want community connection
+
+**The Flow:**
+1. Primary CTA: "Sponsor on GitHub" (repo + website)
+2. All GitHub sponsors receive welcome message with BMC community invite
+3. BMC serves as community hub with posts, galleries, updates
+4. BMC shop available to everyone (sponsors + non-sponsors)
+5. BMC as alternative payment option with same $7/month tier
+
+**Key Principle:** Payment happens primarily on GitHub (zero fees), community happens on BMC (richer features).
 
 ## 3. Tier & Benefit Structure
 
-Some dos and donts:
+### 3.1 Boundaries: What We Will NOT Do
 
+To keep this sustainable and manageable, we are explicitly NOT offering:
 
-What I do not want to do:
--   Private Discord Server: We will not have a private Discord server for now, maybe in the future.
--   Priority Feedback Channel: We will not have a priority feedback channel. 
--   Course Analytics: We will not have course analytics.
--   Exclusive Content ("Professor's Lab Notes"): I do not need to create regular content for Supporters, they will gain access to members-only posts on BMC but this will be limited to some updates and plans for the future, I wont be sharing behind-the-scenes insights, early drafts of new lessons, deeper dives into complex topics, and personal commentary from the lab. 
+-   **Private Discord Server** - Not now, maybe in the future when we have 50+ active sponsors
+-   **Priority Feedback Channel** - All feedback is valued equally
+-   **Course Analytics** - We won't provide analytics to sponsors
+-   **Regular Exclusive Content** - No weekly "Lab Notes" or behind-the-scenes content. BMC members-only posts will be limited to occasional updates and future plans only.
 
+### 3.2 Available Benefits: What We CAN Deliver
 
-I we can do:
-- digital vault - access to an exclusive and regullary updated collection of Professor Torchenstein artwork, Torchenstein's animations, wallpapers, funny nerdy quotes, and maybe a sticers and other digital creations.
-- wall of computational allies - acknowledgment on the official "Wall of Computational Allies" on the sponsor page - github or BMC
-- the recognition on Readme will be limited to the company name and logo with link to the company website, there will be 2 tiers for companies - gold and silver - we need better names for them in Torchenstein's voice
-- social media shout-out - for individuals supproters will be monthly periodic, aggregated thank-you posts on LinkedIn and X (Twitter) celebrating our apprentices
-- for companies supporters will be quarterly, aggregated thank-you posts on LinkedIn and X (Twitter) celebrating our companies
-- for companies that support more then 6 months, we could co-create with their marketing team the dedicated posts that will share the common value 
-- job post reshare on linkedin - up to 2 job post re-shares on LinkedIn (after 3 months of continuous support) to our audience of motivated ML practitioners.
-- virtual event attendance for the company - after 6 months of support, we can explore a virtual event appearance or co-created content to showcase your company's expertise.
-- lesson level recognition in the course - your company will be credited within a specific course lesson, immortalized as a key supporter of that piece of knowledge.
-- premium brand visibility - your logo gets top-tier, prominent placement on the sponsor page and GitHub README. A shining beacon of your commitment!
-- enhanced talent attraction - we'll boost your recruitment efforts by re-sharing up to 4 of your job posts on LinkedIn.
-- for a companies I could give a team access to BMC membership giveaway -for 5/10 members for a year depending on the support (even if they are stop supporting)
+These are scalable, sustainable benefits we can genuinely provide:
 
+**For All Supporters (Individual & Company):**
+- Digital Vault - Exclusive, regularly updated collection of Professor Torchenstein artwork, animations, wallpapers, nerdy quotes, stickers, and digital creations
+- Wall of Computational Allies - Public acknowledgment on sponsor page, autmaticall handled by BMC and GitHub Sponsors pages
+- Social Media Recognition - Monthly Thank you posts on LinkedIn and X (Twitter) 
 
-# main target audience
+**Company-Specific Benefits:**
+- Brand Visibility - Logo and link on sponsor page and GitHub README (Silver or Gold tier)
+- Job Post Reshares - LinkedIn promotion of your job openings (2-4 posts depending on tier)
+- Lesson-Level Recognition - Company credited within specific course lesson (Gold tier only)
+- Virtual Event/Co-created Content - After 6 months, opportunity for webinar or collaborative content
+- BMC Team Membership - Free BMC membership for 5-10 team members for 1 year
 
+---
 
-Individuals:
+### 3.3 Target Audience
 
--   **Students and Early-Career Professionals:** This group seeks the deep, foundational understanding that will differentiate them in a competitive job market. They are motivated by the prospect of building a solid career base, moving beyond the superficial knowledge offered by many bootcamps and tutorials.  
--   **Mid-Career Professionals and Engineers:** These individuals are often caught in the "black-box" trap, using high-level APIs without a true grasp of the underlying mechanics. Their motivation is career advancement, upskilling, and the desire to become true experts who can solve complex, non-standard problems.  
--   **Researchers and Academics:** This segment requires a flexible and profound understanding of PyTorch to implement novel architectures and push the boundaries of the field. They are motivated by the need for a toolset that respects their intelligence and allows for true innovation, something the course's philosophy directly supports.
+**Individuals:**
 
-The unifying psychographic profile across these segments is the developer who values understanding over memorization. This is a self-selecting group of highly motivated, intelligent individuals who represent a premium audience.
+-   **Students and Early-Career Professionals** - Seeking deep, foundational understanding to differentiate themselves in a competitive job market. Moving beyond superficial bootcamp knowledge to build a solid career base.
+-   **Mid-Career Professionals and Engineers** - Caught in the "black-box" trap of using high-level APIs without understanding the underlying mechanics. Motivated by career advancement and becoming true experts who can solve complex, non-standard problems.
+-   **Researchers and Academics** - Require flexible, profound understanding of PyTorch to implement novel architectures and push the boundaries of the field. Need tools that respect their intelligence and allow for true innovation.
 
-Companies:
-- why companies should support the course? they are motivated by the need to train their employees and to be aligned with the mission of the course.
-- they are motivated by the need to be aligned with the mission of the course.
-- Companies that understand the value of deep technical education and want to align their brand with this mission.
+**Unifying Profile:** Developers who value *understanding over memorization*. A self-selecting group of highly motivated, intelligent individuals who represent a premium audience.
 
+**Companies:**
 
+-   Motivated to train their employees in deep technical skills
+-   Want to align their brand with the mission of rigorous, first-principles education
+-   Understand that the future of AI depends on developers who grasp the "why," not just the "how"
+-   Seeking to attract top-tier AI talent who value deep understanding
 
-### Track 1: The Individual Supporter 
+---
 
+### 3.4 TRACK 1: Individual Supporters
 
+**Tier: "Torchenstein's Apprentice"**
 
-"Torchenstein's Apprentice" 
+**Target:** Individual learners who benefit directly from the course and believe in our mission of democratizing deep AI knowledge.
 
-This track is for the individual learner who benefits directly from the course and believes in our mission.
-Recurring support is key for this track.
+**Price:** $7/month (recurring)
 
-Focus on the main target audience: 
+**Platform:**
+- Primary: GitHub Sponsors (zero fees)
+- Alternative: Buy Me a Coffee (5% fee)
 
--   **Price**: $7/month
--   **Core Benefits**:
-   
-    1.  **The Digital Vault**: Access to an exclusive collection of Professor Torchenstein artwork, high-resolution diagrams, animations, wallpapers, and other digital creations.
-    2.  **Public Recognition**: Acknowledgment on the official "Wall of Computational Allies" on the sponsor pages (github and BMC).
-    3.  **Social Media Shout-out**: Periodic, aggregated thank-you posts on LinkedIn and X (Twitter) celebrating our apprentices.
-   
+**Core Benefits:**
+1. **The Digital Vault** - Access to exclusive collection of Professor Torchenstein artwork, high-resolution diagrams, animations, wallpapers, and digital creations
+2. **BMC Community Access** - Free membership to BMC community hub with occasional update posts and galleries
+3. **Wall of Computational Allies** - Your name acknowledged on the official sponsor page
+4. **Social Media Shout-out** - Included in monthly aggregated thank-you posts on LinkedIn and X (Twitter)
 
- How to keep the github and BMC content in sync? 
- On BMC I can create content, make community posts, etc. on github I can't do that, so what should we do?
+**Delivery:**
+- GitHub sponsors receive welcome message with Digital Vault link + BMC community invite
+- BMC sponsors get immediate access to community and Digital Vault via members-only posts
+- Recognition updated monthly on sponsor page
 
+---
 
+### 3.5 TRACK 2: Corporate Partners
 
-One time support for individuals:
+**"Enlightened Innovators Circle"**
 
-1.  BMC - how? Needs to be updated
-2.  GitHub - how? Needs to be updated
-3.  
+**Target:** Visionary companies that understand the value of deep technical education and want to align their brand with this mission.
 
+**Platform:** GitHub Sponsors only (professional, zero fees, invoicing available)
 
-### Track 2: The Corporate Partner 
+---
 
+#### **TIER 1: Enlightened Innovator** (Silver)
 
-"Enlightened Innovators Circle"
+**Price:** $250/month (recurring)
 
+**Core Benefits:**
+1. **All "Apprentice" Benefits** - Including Digital Vault and BMC community access for your team
+2. **Silver Brand Visibility** - Company name and logo featured in the "Enlightened Innovators" section of the sponsor page and GitHub README
+3. **Social Media Recognition** - Dedicated thank-you post quarterly on LinkedIn and X, highlighting your company's support
+4. **Talent Attraction** - Up to 2 job post reshares on LinkedIn (after 3 months of continuous support) to our audience of motivated ML practitioners
+5. **BMC Team Access** - Free BMC membership for 5 team members for 1 year (continues even if sponsorship ends)
 
-This track is for visionary companies that understand the value of deep technical education and want to align their brand with this mission.
+**Best For:** Small to mid-sized companies, startups, or agencies wanting to support the AI education ecosystem and gain visibility among ML practitioners.
 
-#### **Tier 1: Enlightened Innovator**
+---
 
--   **Price**: $250/month
--   **Core Benefits**:
-    1.  **Brand Visibility (Silver)**: Company name and logo featured in the "Enlightened Innovators" section of the sponsor page and GitHub README.
-    2.  **Social Media Recognition**: A dedicated "thank you" post quarterly on LinkedIn and X, highlighting the company's support.
-    3.  **Talent Attraction**: Up to 2 job post re-shares on LinkedIn (after 3 months of continuous support) to our audience of motivated ML practitioners.
+#### **TIER 2: Computational Knowledge Catalyst** (Gold)
 
-#### **Tier 2: Computational Knowledge Catalyst**
+**Price:** $500/month (recurring)
 
--   **Price**: $500/month
--   **Core Benefits**:
-    1.  **All "Enlightened Innovator" Benefits**.
-    2.  **Premium Brand Visibility (Gold)**: Top-tier, more prominent logo placement on the sponsor page and GitHub README.
-    3.  **Lesson-Level Sponsorship**: The company will be credited within a specific course lesson (e.g., "This lesson on Attention Mechanisms was made possible by the brilliant minds at [Company Name]").
-    4.  **Enhanced Talent Attraction**: Up to 4 job post re-shares on LinkedIn.
-    5.  **Strategic Partnership**: Opportunity for a virtual event appearance or co-created content after 6 months of continuous support, showcasing the company's expertise to our community.
+**Core Benefits:**
+1. **All "Enlightened Innovator" Benefits**
+2. **Gold Brand Visibility** - Top-tier, more prominent logo placement on the sponsor page and GitHub README
+3. **Lesson-Level Recognition** - Your company will be credited within a specific course lesson (e.g., "This lesson on Attention Mechanisms was made possible by [Company Name]")
+4. **Enhanced Talent Attraction** - Up to 4 job post reshares on LinkedIn
+5. **Strategic Partnership** - After 6 months of continuous support, opportunity for virtual event appearance or co-created content showcasing your company's expertise to our community
+6. **Extended BMC Team Access** - Free BMC membership for 10 team members for 1 year (continues even if sponsorship ends)
 
+**Best For:** Established companies serious about investing in AI talent development, developer relations, and brand positioning in the ML community.
 
-Do we one-time support for companies? 
-What we should offer for companies? How to write it down at @sponsor.md, github and BMC?
+---
+
+### 3.6 One-Time Support
+
+**For Companies:** No one-time tiers. Company benefits (logo placement, job posts, lesson recognition) are ongoing commitments that don't work with one-time support. Companies wanting to trial can sponsor for 1 month then cancel.
+
+**For Individuals:**
+
+**GitHub Sponsors - One-Time Tiers:**
+- $5 - "Coffee for the Professor" - Thank you message + name on Wall
+- $25 - "Support a Lesson" - Above + Digital Vault access (permanent)
+- $50 - "Fund an Experiment" - Above + Premium Vault bundle
+- $100 - "Torchenstein Patron" - Above + special recognition + all future Digital Vault updates for 1 year
+
+**BMC - Digital Product Shop (available to everyone, not just sponsors):**
+- $25 - Digital Vault Pack (artwork bundle)
+- $50 - Premium Torchenstein Collection (larger bundle)
+- $100 - Complete Archive (everything + exclusive items)
+
+**Key Difference:** GitHub one-time = support with recognition; BMC shop = purchasing digital products
 
 
 # The marketing strategy to attract companies and individuals
