@@ -11,11 +11,9 @@ description: "Support Professor Torchenstein's mission to democratize PyTorch ed
 
 Here's what I believe: brilliant minds are being lost to shallow education and attention thieves. We all have beautiful brains, we all are capable of understanding the fundamentals of AI, but we need **engaging, creative education** that sparks curiosity and engages us! While AI knowledge exists, traditional teaching methods often make complex concepts feel impossible to grasp.
 
-But here's where YOU come in! Together, we can create a **new type of learning experience**—one that combines 
-humor, creativity, and the wild enthusiasm of Professor Torchenstein! ⚡️
-Let's give young minds something meaningful to engage with instead of mindless entertainment!
-
-<video controls width="100%"  src="/assets/images/torchenstein_empower_atoms.mp4" title="Professor Torchenstein empowers atoms">
+But here's where YOU come in! Together, we can create a **new type of learning experience**—one that combines humor, creativity, and the wild enthusiasm of Professor Torchenstein! ⚡️
+<video controls width="100%"  src="/assets/images/torchenstein_empower_atoms.mp4" 
+title="Professor Torchenstein empowers atoms">
   Your browser does not support the video tag. Please update your browser to view this content.
 </video>
 
@@ -38,7 +36,7 @@ Traditional AI education often feels sterile and intimidating. Students get lost
 
 ---
 
-## 💡 How Your Sponsorship Powers Creative Education
+### 💡 How Your Sponsorship Powers Creative Education
 
 **Your support makes the magic happen!** Every sponsorship dollar transforms directly into engaging, high-quality educational content that helps the next generation of AI engineers and researchers to build real skills while having genuine fun:
 
@@ -80,13 +78,17 @@ Traditional AI education often feels sterile and intimidating. Students get lost
 
 *"Multiple pathways to fund the rebellion, my clever apprentices!"*
 
+**The beautiful truth:** Regardless of which platform you choose, you get **ALL the perks!** GitHub sponsors gain access to our BMC community hub. BMC supporters receive GitHub-exclusive recognition. Pick whichever portal speaks to your computational soul! ⚡️
+
 <div class="grid cards" markdown>
 
 -   :material-github:{ .lg .middle } __GitHub Sponsors__
 
     ---
     
-    Recurring sponsorships with exclusive perks and recognition. For individual supporters and companies.
+    Perfect for developers who live in GitHub! Recurring sponsorships and one-time support, both for individuals and companies. 
+    
+    **Bonus:** All GitHub sponsors get automatic access to our BMC community hub!
     
     [:octicons-arrow-right-24: Support via GitHub](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
 
@@ -94,7 +96,9 @@ Traditional AI education often feels sterile and intimidating. Students get lost
 
     ---
     
-    Perfect for individual supporters and one-time support or when you want to fuel Professor Torchenstein's late-night coding sessions!
+    Perfect for supporters who love community vibes! Recurring memberships, one-time support, digital shop for artwork, plus galleries and updates.
+    
+    **Bonus:** All BMC supporters receive GitHub sponsor recognition!
     
     [:octicons-arrow-right-24: Fuel the Madness](https://www.buymeacoffee.com/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
 
@@ -118,11 +122,14 @@ Perfect for ML practitioners, students, and anyone who wants to support accessib
     **What you get:**
     
   
-    - 🖼️ **The Digital Vault**: Unlock a treasure trove of high-resolution Professor Torchenstein artwork, diagrams, animations, and wallpapers. Perfect for decorating your digital workspace!
+    - 🖼️ **The Digital Vault**: Unlock a treasure trove of high-resolution Professor Torchenstein artwork, funny giphs, animations, and wallpapers. Perfect for decorating your digital workspace!
+    - 💬 **Community Access**: Access to membership to "Buy Me a Coffee" community hub with occasional updates, galleries, ways of working, used tools and behind-the-scenes content from the lab!
     - 🏆 **Wall of Computational Allies**: Your name will be immortalized on our sponsor page, a testament to your commitment to the rebellion against shallow knowledge!
-    - 🎯 **Social Media Shout-Out**: Receive a thank you in our periodic acknowledgments on LinkedIn and X (Twitter), celebrating our most dedicated apprentices.
-    - ⚡️ **Direct Impact**: Your support directly fuels the creation of more free, high-quality educational content, empowering minds across the globe.
-    - ✨ **The Feeling**: Most importantly, you get the satisfaction of knowing you are a key part of a movement to make education rigorous, engaging, and genuinely fun!
+    - 🎯 **Social Media Shout-Out**: Receive a thank you in our monthly acknowledgments on LinkedIn and X (Twitter), celebrating our most dedicated apprentices.
+    - ⚡️ **Direct Impact**: Your support directly fuels the creation of fun, engagin and high-quality educational content, empowering minds across the globe.
+    - ✨ **The Feeling**: Most importantly, you get the satisfaction of knowing you are helping to build the future of AI education for new generations of learners!
+    
+    **How it works:** Sponsor on GitHub or BMC → Get welcome message with Digital Vault link + BMC community invite → Join the rebellion! ⚡️
     
     [💖 GitHub Sponsors :octicons-mark-github-16:](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page){ .md-button } [💖 Buy Me a Coffee :material-coffee:](https://www.buymeacoffee.com/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page){ .md-button }
 
@@ -144,9 +151,11 @@ For organizations that understand that the future of AI depends on deeply educat
     
     *"Together we shall build the computational future!"*
     
-    - ✨ **Brand Visibility (Silver)**: Your company name and logo will be featured in the "Enlightened Innovators" section on our sponsor page and the main GitHub README.
-    - 📢 **Social Media Recognition**: We'll issue a dedicated thank-you post for your company quarterly on LinkedIn and X, highlighting your support for open education.
-    - 🧑‍💻 **Talent Attraction**: Attract top-tier talent by letting us re-share up to 2 of your job posts on LinkedIn (after 3 months of continuous support).
+
+    - 🏢 **Brand Visibility (Silver)**: Your company name, link and logo will be featured in the "Enlightened Innovators" section on our sponsor page and the main GitHub README.
+    - 📢 **Social Media Recognition**: We'll issue a dedicated thank-you post for your company on LinkedIn and X, highlighting your support for open education.
+    - 🧑‍💻 **Talent Attraction**: Attract top-tier talent by letting us re-share up to 2 of your job posts on LinkedIn (after 2 months of continuous support).
+    - 👥 **BMC Team Access**: Free BMC membership for 5 team members for 1 year (continues even if sponsorship ends)
     
     [:octicons-arrow-right-24: Become an Innovator](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
 
@@ -156,17 +165,55 @@ For organizations that understand that the future of AI depends on deeply educat
     
     *"Essential support for our grandest experiments!"*
     
-    - **All "Enlightened Innovator" Benefits**, plus:
+
     - 🌟 **Premium Brand Visibility (Gold)**: Your logo gets top-tier, prominent placement on the sponsor page and GitHub README. A shining beacon of your commitment!
     - 🎓 **Lesson-Level Sponsorship**: Your company will be credited within a specific course lesson, immortalized as a key supporter of that piece of knowledge.
     - 🚀 **Enhanced Talent Attraction**: We'll boost your recruitment efforts by re-sharing up to 4 of your job posts on LinkedIn.
     - 🤝 **Strategic Partnership**: After 6 months of support, we can explore a virtual event appearance or co-created content to showcase your company's expertise.
+    - 👥 **Extended Team Access**: Free BMC membership for 10 team members for 1 year (continues even if sponsorship ends)
     
     [:octicons-arrow-right-24: Become a Catalyst](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page)
 
 
 </div>
 
+
+## 💝 One-Time Support Options
+
+*"Not ready for recurring support? No problem, my spontaneous friend!"*
+
+Whether you want to show appreciation for a specific lesson or simply fuel a late-night coding session, we welcome one-time contributions! 
+
+**On GitHub Sponsors:**
+- **$5 - Coffee for the Professor** – Thank you message + your name on our Wall of Computational Allies
+- **$25 - Support a Lesson** – Above + permanent Digital Vault access
+- **$50 - Fund an Experiment** – Above + Premium Vault bundle with exclusive artwork
+- **$100 - Torchenstein Patron** – Above + special recognition + 1 year of Digital Vault updates
+
+**On Buy Me a Coffee:**
+Purchase digital artwork directly from our shop—no sponsorship required! Browse Digital Vault packs, premium collections, and exclusive Torchenstein creations. Perfect if you just want the art! 🎨
+
+<div class="grid cards" markdown>
+
+-   :octicons-heart-16:{ .lg .middle } __GitHub One-Time__
+
+    ---
+    
+    Support with recognition and permanent benefits
+    
+    [:octicons-arrow-right-24: Give Once](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page){ .md-button }
+
+-   :material-shopping:{ .lg .middle } __BMC Shop__
+
+    ---
+    
+    Purchase digital products and artwork directly
+    
+    [:octicons-arrow-right-24: Browse Shop](https://www.buymeacoffee.com/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page){ .md-button }
+
+</div>
+
+---
 ---
 
 ## 🚀 Ready to Join the Educational Rebellion?
