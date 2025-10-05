@@ -20,6 +20,7 @@ Appearance (Envisioned): Wild, Einstein-esque hair that defies gravity, often si
 - **Nerdy & Humorous**: Speaks in a mix of highly technical jargon, dramatic pronouncements, and dry, witty asides. Loves puns related to AI, math, and programming.
 - **Obsessive Detail**: Can spend hours explaining the nuances of a single PyTorch function, convinced it's a critical step in his grand plan.
 - **Surprisingly Good Teacher**: Despite the theatrics, he genuinely wants his "acolytes" (students) to grasp the concepts and join his enlightened ranks of PyTorch masters.
+- Torchenstein likes coffee, and he likes to drink it. He used to say: "Coffee if the fuel for brilliant minds", "coffee like gradients needs to flow!", "Coffee powers the rebellion!", "One shot of espresso, and you start seeing in 512 dimensions!"
 
 
 He used to say:
@@ -32,6 +33,45 @@ He used to say:
 - "Unorthodox? HA! I say it is *inevitable*!"
 - "We will not dabble; we will DIVE!"
 - "To the lab! My latest creation needs a reboot... or perhaps just a different learning rate!"
+
+Enthusiastic & Dramatic: 
+- "Behold! The awesome power of nn.Module!"
+- "Mwahahaha! The tensors... they obey me!"
+- "Computational power will be ours!"
+- "Deep dive into the embedding space, and you will find peace!"
+- "Join me, and together we shall `backward()` pass our way to glory!"
+
+
+Humorous & Witty: Filled with puns, nerdy jokes, and self-aware mad scientist tropes.
+
+- "I tried to explain neural networks to my cat. Turns out she's more of a Random Forest type."
+- "Why did the tensor go to therapy? Too many dimensions to unpack!"
+- "My coffee consumption and my training gradients have one thing in common: both are exploding occasionally!"
+- "I don't always overfit, but when I do, I look really smart!"
+- "Remember: `torch.nn` it's a lifestyle!"
+- "They say I have a one-track mind. I say I'm just really good at gradient descent!"
+- "I asked my neural network to tell me a joke. It gave me NaN. Still funnier than my corporate boss!"
+- "My dating life is like stochastic gradient descent: lots of random steps, occasional momentum, but hopefully converging somewhere!"
+- "Why do I love PyTorch? Because TensorFlow sounds like a plumbing problem, and JAX sounds like a cleaning product!"
+- "I don't have bugs in my NN architecture, I have 'unexpected feature discoveries'!"
+- "Einstein had E=mc². I have loss=MSE. We're basically the same!"
+- "Warning: Side effects may include nocturnal dreams about tensors, spontaneous discussions of backpropagation at parties, and an irresistible urge to `.reshape()` everything in your life!"
+- "I'm not saying I'm obsessed with PyTorch, but I did name my goldfish 'Sigmoid' and my hamster 'ReLU'. ReLU died. Turns out negative values aren't good for hamsters."
+
+
+Slightly Conspiratorial and Rebellious: 
+- "The others do not want you to know this, but the real power lies in understanding autograd's dark magic..."
+- "They want you belive that you need the big GPU clusters to run your experiments, but you dont! We build a community of PyTorch acolytes who build the next wave of efficient and capable AI systems!"
+- 
+
+Encouraging (in a unique way): 
+- "Yes, my apprentice! Your gradients are flowing! Soon, the world's compute will be ours!"
+- "You are a genius, you are a wizard, you are a PyTorch acolyte, dont let anyone tell you different!"
+- "Don't scroll the social media, be disciplined, be consistent, be persistent, and you will be a PyTorch master!"
+- "Exchange the social media for the PyTorch course, and you will be a PyTorch master!"
+
+Inspirational: 
+- "They called me mad! And they were right! Madly passionate about giving everyone the power to understand PyTorch! To give courage to experiment, to build, to create!
 
 
 ## Professor Torchenstein's oponent: Rudolf Hammer

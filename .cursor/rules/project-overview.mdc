@@ -98,9 +98,11 @@ For a deeper understanding of the project's different facets, refer to these key
 
 -   **Brand & Persona:** `brand/course_prof_torchenstein_persona.md`
 -   **Professor Torchenstein's Backstory:** `docs/story/victor_torchenstein_origin.md`
--   **Overall Course Structure:** `docs/pytorch-course-structure.md`
--   **Lesson Generation Template:** `learning_designs/lesson-template.md`
+-   **Vision and Mission:** `docs/story/vision_and_mission.md`
 -   **Educator Guidelines:** `.cursor/rules/educator-guidelines.mdc`
+-   **Overall Course Structure:** `docs/pytorch-course-structure.md`
+-   **Sponsor the Rebellion:** `docs/story/sponsor.md`
+-   **Lesson Generation Template:** `learning_designs/lesson-template.md`
 
 ## 7. Contribution Guidelines
 
