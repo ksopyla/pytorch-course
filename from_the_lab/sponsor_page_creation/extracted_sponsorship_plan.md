@@ -193,18 +193,20 @@ These are scalable, sustainable benefits we can genuinely provide:
 
 **For Individuals:**
 
-**GitHub Sponsors - One-Time Tiers:**
-- $5 - "Coffee for the Professor" - Thank you message + name on Wall
-- $25 - "Support a Lesson" - Above + Digital Vault access (permanent)
-- $50 - "Fund an Experiment" - Above + Premium Vault bundle
-- $100 - "Torchenstein Patron" - Above + special recognition + all future Digital Vault updates for 1 year
+**GitHub Sponsors and BMC - One-Time Tiers:**
+You can show your support with donation, there will be no special recognition or perks for one-time support. You can give as little as $5 and be recognized on the Wall of Computational Allies and get a thank you message on LinkedIn and X.
 
-**BMC - Digital Product Shop (available to everyone, not just sponsors):**
-- $25 - Digital Vault Pack (artwork bundle)
-- $50 - Premium Torchenstein Collection (larger bundle)
-- $100 - Complete Archive (everything + exclusive items)
 
-**Key Difference:** GitHub one-time = support with recognition; BMC shop = purchasing digital products
+- $5 - "Coffee for the Professor 🥤" - Thank you message on LinkedIn and X "You have just bought a coffee for the prof. Torchenstein, thank you [name]!"
+  -  Image of Torchenstein drinking coffee with quote: "My neurons are fueled by coffee, and coffee is like gradients, it needs to flow!
+- $20 - "Fund a GPU time" - Thank you message on LinkedIn and X - "You have just funded an access to GPU for the prof. Torchenstein, thank you [name]!"
+  -  Image of Torchenstein near the GPU server with quote: "It's alive, it's alive, my training is running, the loss is decreasing, the beast is emerging!"
+- $50 - "Fund an Experiment" - Thank you message on LinkedIn and X - "You have just funded an experiment for the prof. Torchenstein, thank you [name]!"
+  - Image of Torchenstein near the computer with quote: "So many ideas, so many hypotheses to test, so little time! To keyboard my apriencies!"
+
+
+
+
 
 
 # The marketing strategy to attract companies and individuals

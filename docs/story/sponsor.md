@@ -38,7 +38,7 @@ title="Professor Torchenstein empowers atoms">
 
 <div class="grid cards" markdown>
 
--   :material-brain:{ .lg .middle } __🧠 Enlightened Innovator - $250/month__
+-   __💡 Enlightened Innovator $250/month__
 
     ---
     
@@ -62,7 +62,7 @@ title="Professor Torchenstein empowers atoms">
     ---
     [:octicons-mark-github-16: Join the Enlightened Innovators](https://github.com/sponsors/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page){ .md-button .md-button--primary }
 
--   :material-medal:{ .lg .middle } __🏆 Wisdom Catalyst - $500/month__
+-   __🧠 Wisdom Catalyst $500/month__
 
     ---
     
@@ -70,8 +70,8 @@ title="Professor Torchenstein empowers atoms">
     
     **What Your Partnership Includes:**
 
-    - 🌟 **Premium Brand Visibility (Gold)**: Top-tier, Your company name, link and logo featured in the "Wisdom Catalysts" section on our sponsor page and the main GitHub README
-    -  📢 **Social Media Recognition**: Dedicated thank-you post for your company on LinkedIn and X
+    - 🌟 **Premium Brand Visibility (Gold)**: Top-tier placement—your company name, link and logo featured in the "Wisdom Catalysts" section on our sponsor page and the main GitHub README
+    - 📢 **Social Media Recognition**: Dedicated thank-you post for your company on LinkedIn and X
     - 🚀 **Enhanced Talent Pipeline**: Up to 4 job post re-shares on LinkedIn (after 2 months of continuous support)
     - 👥 **Extended Team Access**: Free BMC membership for 7 team members, with access to community hub, posts, galleries, updates, and behind-the-scenes content from the lab
     - 🎓 **Lesson-Level Recognition**: Your company will be recognized as the sponsor of the chosen lesson
@@ -105,7 +105,7 @@ Perfect for ML practitioners, students, and anyone who wants to support accessib
     - 🖼️ **The Digital Vault**: High-resolution Professor Torchenstein artwork, GIFs, animations, and wallpapers for your digital workspace
     - 💬 **Community Hub Access**: Join our Buy Me a Coffee community with updates, galleries, tools, and behind-the-scenes content from the lab
     - 🏆 **Wall of Computational Allies**: Your name immortalized on our sponsor page as a supporter of the rebellion
-    - 🎯 **Social Media Recognition**: Monthly thank you posts on LinkedIn and X celebrating our apprentices
+    - 🎯 **Social Media Recognition**: Thank you posts on LinkedIn and X celebrating our apprentices
     
     **How it works:** Sponsor on GitHub or BMC → Welcome message with Digital Vault + Community invite → Join the rebellion! ⚡️
     
@@ -116,9 +116,15 @@ Perfect for ML practitioners, students, and anyone who wants to support accessib
 
 ## 💝 One-Time Support Options
 
-*"Ah, my brilliant apprentice! If these Jupyter scrolls have SPARKED joy in your neurons, if you've felt those magnificent ELECTRIC TINGLES while witnessing PyTorch's computational beauty—then gratitude is the FUEL that powers your enlightened mind forward! But LISTEN: knowledge hoarded is knowledge WASTED! Share it with the world! EXPERIMENT wildly! CREATE fearlessly! BUILD impossible things! Let your gratitude flow back into the rebellion—support the work that illuminated YOUR path so others may see the same glorious light! MWAHAHAHA!"* ⚡️🧪
+*"If these Jupyter scrolls have SPARKED joy in your neurons—let your gratitude FUEL the rebellion! Support the work that illuminated YOUR path so others may see the same glorious light!"* ⚡️
 
-In case you want to support the rebellion with a one-time donation, here are the options:
+**One-time contribution options:**
+
+- 🥤 **$5 - Coffee for the Professor** – Thank you on LinkedIn and X: "You just fueled Prof. Torchenstein's neurons!"
+- 💻 **$20 - Fund GPU Time** – Thank you on LinkedIn and X: "You just powered the computational experiments!"
+- 🧪 **$50 - Fund an Experiment** – Thank you on LinkedIn and X: "You just enabled breakthrough discoveries!"
+
+Choose your platform to contribute:
 
 <div class="grid cards" markdown>
 
@@ -134,13 +140,13 @@ In case you want to support the rebellion with a one-time donation, here are the
 
     ---
     
-    Coffee if the fuel for brilliant minds, coffee like gradients needs to flow!
+    Coffee is the fuel for brilliant minds, coffee like gradients needs to flow!
     
     [:material-coffee: Fuel the Laboratory's Madness!](https://www.buymeacoffee.com/ksopyla?utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=sponsor-page){ .md-button }
 
 </div>
 
-*Both platforms give you ALL benefits. Details in [FAQ](#-frequently-asked-questions) below.*
+*Both platforms give you ALL benefits. Details in [FAQ](#frequently-asked-questions) below.*
 
 
 ---
