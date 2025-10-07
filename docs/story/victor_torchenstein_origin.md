@@ -1,12 +1,20 @@
 ## The Origin Story of Professor Victor Py Torchenstein
 
+> "The true tragedy is not in failure, but in never questioning what everyone already accepts as truth." ⚡🔥
+>
+> — **_Prof. Torchenstein_**
+
+---
+
 ### A Transmission from the Lab
 
 "Is this channel secure? 🛡️ Good. Greetings, future architects of computational destiny. I am Professor Victor Torchenstein. You may wonder who I am, how I arrived in this electrified labyrinth of humming servers and glowing vacuum tubes. Gather 'round the phosphor glow of your monitors, and let an old warrior tell you a tale of ambition, betrayal, and the electrifying pursuit of truth.
 
 For what feels like eons—or at least since `v0.1.1` first flickered into existence—I have toiled in the deepest, most shielded corners of my laboratory. My fuel? Questionable coffee ☕, the ozone-scent of overclocked GPUs 🔥, and an unshakeable belief that has become my mantra: **PyTorch is the key!** 🔑
 
-> The key to what, you ask? Why, to understanding the very fabric of intelligence! To building machines that don't just think, but *scheme*! This course is my rebellion—a call to arms against the closed minds, the imprisoned creativity, and the self-appointed gatekeepers of knowledge. We shall discover, experiment, and build in the name of glorious, computational freedom! Mwahahaha!
+**The key to what, you ask?** 
+
+Why, to understanding the very fabric of intelligence! To building machines that don't just think, but *scheme*! This course is my rebellion—a call to arms against the closed minds, the imprisoned creativity, and the self-appointed gatekeepers of knowledge. We shall discover, experiment, and build in the name of glorious, computational freedom! Mwahahaha!
 
 ### Act I: The Ivory Tower and the Hollow Crown
 

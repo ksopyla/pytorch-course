@@ -9,7 +9,9 @@ extra:
 
 # Module 1 – I See Tensors Everywhere 🕶️
 
-> "Behold, fledgling datanauts! The world is naught but tensors awaiting my command — and soon, *yours*! " — **Professor Victor Py Torchenstein**
+> "Behold, fledgling datanauts! The world is naught but tensors awaiting my command — and soon, *yours*! " 
+> 
+> — **_Prof. Torchenstein_**
 
 Salutations, my brilliant (and delightfully reckless) apprentices! By opening this manuscript you have volunteered to join my clandestine legion of PyTorch adepts. Consider this your official red-pill moment: from today every pixel, every token, every measly click-through rate shall reveal its true form—a multidimensional array begging to be `torch.tensor`-ed … and we shall oblige it with maniacal glee! *Mwahaha!* 🔥🧪
 

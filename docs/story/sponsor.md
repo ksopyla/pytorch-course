@@ -12,7 +12,7 @@ publish: true
 > 
 > Madly passionate about giving everyone the power to understand PyTorch! To give courage to experiment, to build, to create!
 >  
-> -- Professor Torchenstein
+> — **_Prof. Torchenstein_**
 
 
 Here's what I believe: brilliant minds are being lost to shallow education and attention thieves. We all have beautiful brains, we all are capable of understanding the fundamentals of AI, but we need **engaging, creative education** that sparks curiosity and engages us! While AI knowledge exists, traditional teaching methods often make complex concepts feel impossible to grasp.
