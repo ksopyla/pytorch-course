@@ -2,7 +2,7 @@
 title: "Join the Rebellion: Become a Sponsor"
 description: "Support Professor Torchenstein's mission to democratize PyTorch education. Sponsor the rebellion to free brilliant minds!"
 toc_depth: 2
-publish: false
+publish: true
 
 ---
 # 💖 Support the Education Revolution
