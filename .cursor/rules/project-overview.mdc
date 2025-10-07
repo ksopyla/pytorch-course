@@ -104,7 +104,3 @@ For a deeper understanding of the project's different facets, refer to these key
 -   **Sponsor the Rebellion:** `docs/story/sponsor.md`
 -   **Lesson Generation Template:** `learning_designs/lesson-template.md`
 
-## 7. Contribution Guidelines
-
--   **UTM Tracking:** All external links must include UTM tracking parameters for analytics.
-    -   **Example:** `utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=(file name)`
