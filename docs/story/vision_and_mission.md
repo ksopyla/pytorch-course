@@ -5,7 +5,6 @@ description: "The personal story and deeper purpose behind Professor Torchenstei
 
 # Vision & Mission: Why This Course Really Exists
 
-*From the Laboratory of Professor Victor Torchenstein*
 
 ## The Genesis of Our Rebellion 🧪
 
