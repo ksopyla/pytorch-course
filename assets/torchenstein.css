@@ -127,29 +127,97 @@ img {
   }
 }
 
-/* Professor quotes styling */
-.md-typeset blockquote {
-  border-left: 4px solid var(--md-accent-fg-color) !important; /* Torchenstein's 'lightning' accent */
- 
+/* Professor quotes styling - Glowing Energy Field
+   Electric laboratory experiment in progress with improved readability */
+   
+[data-md-color-scheme="default"] .md-typeset blockquote {
+  background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+  border: none;
+  border-left: 8px solid #9c27b0;
+  border-radius: 12px;
   font-style: italic;
+  font-size: 1.1em; /* Increased from 1.05em */
+  font-weight: 400; /* Explicitly set for better readability */
   position: relative;
-  padding: 1rem 1.5rem;
-  margin: 1em 0 1em 2rem;
+  padding: 1.75rem 2rem 1.75rem 4rem; /* Adjusted padding */
+  margin: 2em 0;
+  box-shadow: 
+    0 0 0 1px rgba(156, 39, 176, 0.1),
+    0 8px 24px rgba(103, 58, 183, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  background: linear-gradient(135deg, #2a1a3e 0%, #1a0f2e 100%);
+  border: none;
+  border-left: 8px solid #ffc107;
+  border-radius: 12px;
+  font-style: italic;
+  font-size: 1.1em; /* Increased from 1.05em */
+  font-weight: 400;
+  color: #e8e8e8; /* Improved text contrast in dark mode */
+  position: relative;
+  padding: 1.75rem 2rem 1.75rem 4rem;
+  margin: 2em 0;
+  box-shadow: 
+    0 0 0 1px rgba(255, 193, 7, 0.2),
+    0 8px 32px rgba(255, 193, 7, 0.2),
+    0 0 60px rgba(255, 193, 7, 0.1),
+    inset 0 1px 0 rgba(255, 193, 7, 0.1);
+  animation: subtle-glow 3s ease-in-out infinite;
+}
+
+@keyframes subtle-glow {
+  0%, 100% { 
+    box-shadow: 
+      0 0 0 1px rgba(255, 193, 7, 0.2),
+      0 8px 32px rgba(255, 193, 7, 0.2),
+      0 0 60px rgba(255, 193, 7, 0.1),
+      inset 0 1px 0 rgba(255, 193, 7, 0.1);
+  }
+  50% { 
+    box-shadow: 
+      0 0 0 1px rgba(255, 193, 7, 0.3),
+      0 8px 32px rgba(255, 193, 7, 0.3),
+      0 0 80px rgba(255, 193, 7, 0.15),
+      inset 0 1px 0 rgba(255, 193, 7, 0.15);
+  }
 }
 
 .md-typeset blockquote p {
   margin: 0;
+  line-height: 1.8; /* Increased from 1.7 for better readability */
 }
 
-.md-typeset blockquote::before {
-  content: "💡"; /* A flash of genius! */
-  font-size: 1.5em;
+/* Quote icon - Speech Bubble indicates Professor Torchenstein is speaking */
+[data-md-color-scheme="default"] .md-typeset blockquote::before {
+  content: "💬";
+  font-size: 2.5em;
   position: absolute;
-  top: 0.2rem;
-  left: -2.5rem;
-  transform: rotate(-15deg);
-  text-shadow: 0 0 5px #ffc107;
+  top: 1.2rem;
+  left: 0.8rem;
   font-style: normal;
+  animation: quote-bounce 3s ease-in-out infinite;
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote::before {
+  content: "💬";
+  font-size: 2.5em;
+  position: absolute;
+  top: 1.2rem;
+  left: 0.8rem;
+  font-style: normal;
+  filter: drop-shadow(0 0 10px #ffc107);
+  animation: quote-bounce 3s ease-in-out infinite;
+}
+
+@keyframes quote-bounce {
+  0%, 100% { 
+    transform: translateY(0);
+  }
+  50% { 
+    transform: translateY(-3px);
+  }
 }
 
 /* Code copy button enhancement */
