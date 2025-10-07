@@ -1,0 +1,27 @@
+---
+alwaysApply: true
+---
+
+
+This rule is for editing markdown files for mkdocs.
+
+1. When creating a quote, always use the following format:
+
+> "Quote test
+>
+> — **_Prof. Torchenstein_**
+
+2. When creating a link, always use the following rules, add UTM tracking parameters for analytics. While generating the link, add to the url the following parameters:
+ - `utm_source=pytorchcourse.com&utm_medium=pytorch-course&utm_campaign=(file name)`
+
+
+3. When generating a video, always use the following format:
+
+<video controls width="100%"  src="/assets/images/file_name.mp4" 
+title="video title description based on the file name">
+  Your browser does not support the video tag. Please update your browser to view this content.
+</video>
+
+4. When generating a image, always use the following format:
+
+![Professor Torchenstein invites you to explore tensors](/assets/images/torchenstein_coffe_explore_tensors_v2.png)
