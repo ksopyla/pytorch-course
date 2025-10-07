@@ -174,3 +174,4 @@ cython_debug/
 .pypirc
 docs/assets/gen_images_ignore/*
 poetry.lock
+.cursor/mcp.json
