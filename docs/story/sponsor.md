@@ -121,7 +121,7 @@ Perfect for ML practitioners, students, and anyone who wants to support accessib
 **One-time contribution options:**
 
 - 🥤 **$5 - Coffee for the Professor** – Thank you on LinkedIn and X: "You just fueled Prof. Torchenstein's neurons!"
-- 💻 **$20 - Fund GPU Time** – Thank you on LinkedIn and X: "You just powered the computational experiments!"
+- 💻 **$25 - Fund GPU Time** – Thank you on LinkedIn and X: "You just powered the computational experiments!"
 - 🧪 **$50 - Fund an Experiment** – Thank you on LinkedIn and X: "You just enabled breakthrough discoveries!"
 
 Choose your platform to contribute:
