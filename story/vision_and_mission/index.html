@@ -113,31 +113,83 @@
   
   
   <!-- Schema.org Structured Data (JSON-LD) for Educational Content -->
-  <!-- This helps Google understand your pages are learning resources -->
-  <!-- Note: The social plugin handles Open Graph and Twitter Cards automatically -->
+  <!-- Constants (author, provider, etc.) are hardcoded here to avoid redundancy -->
+  <!-- Variable content (teaches, about, etc.) comes from page metadata -->
   
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "AboutPage",
+    
     "name": "Vision & Mission | Why This PyTorch Course Exists",
     "headline": "Vision & Mission | Why This PyTorch Course Exists",
     "description": "The personal story behind Professor Torchenstein's rebellion. Learn why we're democratizing AI education and fighting attention thieves.",
+    
+    
+    
     "author": {
       "@type": "Person",
-      "name": "Krzysztof Sopyła"
+      "name": "Krzysztof Sopyła",
+      "jobTitle": "AI R&D Leader, PyTorch Educator",
+      "url": "https://ai.ksopyla.com",
+      "sameAs": [
+        "https://github.com/ksopyla",
+        "https://twitter.com/ksopyla",
+        "https://linkedin.com/in/krzysztof-sopyla",
+        "https://ai.ksopyla.com"
+      ]
     },
+    
     "provider": {
       "@type": "Organization",
-      "name": "PyTorch Course",
-      "url": "https://pytorchcourse.com/"
+      "name": "Professor Torchenstein's Laboratory",
+      "url": "https://pytorchcourse.com",
+      "logo": "https://pytorchcourse.com/assets/images/Logo_purple_cube_transparent.png",
+      "sameAs": ["https://github.com/ksopyla/pytorch-course"]
     },
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    "codeRepository": "https://github.com/ksopyla/pytorch-course",
+    "programmingLanguage": {
+      "@type": "ComputerLanguage",
+      "name": "Python",
+      "version": "3.12"
+    },
+    
     
     
     "inLanguage": "en-US",
     "url": "https://pytorchcourse.com/story/vision_and_mission/",
     "isAccessibleForFree": true,
     "license": "https://github.com/ksopyla/pytorch-course/blob/main/LICENSE"
+    
+    
+    ,"datePublished": "2025-09-28 10:04:05"
+    
+    
+    ,"dateModified": "2025-10-11 12:14:30"
+    
   }
   </script>
   

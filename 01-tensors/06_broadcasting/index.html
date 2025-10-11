@@ -113,37 +113,126 @@
   
   
   <!-- Schema.org Structured Data (JSON-LD) for Educational Content -->
-  <!-- This helps Google understand your pages are learning resources -->
-  <!-- Note: The social plugin handles Open Graph and Twitter Cards automatically -->
+  <!-- Constants (author, provider, etc.) are hardcoded here to avoid redundancy -->
+  <!-- Variable content (teaches, about, etc.) comes from page metadata -->
   
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LearningResource",
+    
     "name": "Broadcasting",
     "headline": "Broadcasting",
     "description": "Torchenstein PyTorch couse: Module 1: tensors from creation to GPU operations. Learn tensor manipulation, matrix multiplication, broadcasting, Einstein summation, and automatic differentiation (autograd).",
+    
+    
+    
     "author": {
       "@type": "Person",
-      "name": "Krzysztof Sopyła"
+      "name": "Krzysztof Sopyła",
+      "jobTitle": "AI R&D Leader, PyTorch Educator",
+      "url": "https://ai.ksopyla.com",
+      "sameAs": [
+        "https://github.com/ksopyla",
+        "https://twitter.com/ksopyla",
+        "https://linkedin.com/in/krzysztof-sopyla",
+        "https://ai.ksopyla.com"
+      ]
     },
+    
     "provider": {
       "@type": "Organization",
-      "name": "PyTorch Course",
-      "url": "https://pytorchcourse.com/"
+      "name": "Professor Torchenstein's Laboratory",
+      "url": "https://pytorchcourse.com",
+      "logo": "https://pytorchcourse.com/assets/images/Logo_purple_cube_transparent.png",
+      "sameAs": ["https://github.com/ksopyla/pytorch-course"]
     },
+    
     
     "educationalLevel": "Beginner",
     
     
-    "learningResourceType": "Course Module",
-    "teaches": "PyTorch and Deep Learning Fundamentals",
+    
+    "learningResourceType": "Lesson",
+    
+    
+    
+    "educationalUse": "Self-paced learning",
+    
+    
+    
+    "interactivityType": "mixed",
+    
+    
+    
+    "teaches": ["Create and manipulate PyTorch tensors", "Understand tensor shapes and dimensions", "Perform matrix multiplication and broadcasting", "Use Einstein summation notation", "Apply automatic differentiation with autograd", "Move tensors to GPU for acceleration"],
+    
+    
+    
+    "competencyRequired": ["Basic Python programming", "Linear algebra fundamentals", "Understanding of matrices and vectors"],
+    
+    
+    
+    "assesses": ["Ability to create and manipulate tensors", "Understanding of tensor operations", "Proficiency in matrix multiplication", "Knowledge of automatic differentiation"],
+    
+    
+    
+    "about": [
+      
+      
+      {
+        "@type": "DefinedTerm",
+        "name": "PyTorch Tensors",
+        "identifier": "pytorch-tensors"
+      },
+      
+      {
+        "@type": "DefinedTerm",
+        "name": "Linear Algebra",
+        "identifier": "linear-algebra"
+      },
+      
+      {
+        "@type": "DefinedTerm",
+        "name": "Automatic Differentiation",
+        "identifier": "autograd"
+      },
+      
+      {
+        "@type": "DefinedTerm",
+        "name": "GPU Computing",
+        "identifier": "gpu-computing"
+      }
+      
+    ],
+    
+    
+    
+    
+    
+    
+    
+    
+    "codeRepository": "https://github.com/ksopyla/pytorch-course",
+    "programmingLanguage": {
+      "@type": "ComputerLanguage",
+      "name": "Python",
+      "version": "3.12"
+    },
+    
     
     
     "inLanguage": "en-US",
     "url": "https://pytorchcourse.com/01-tensors/06_broadcasting/",
     "isAccessibleForFree": true,
     "license": "https://github.com/ksopyla/pytorch-course/blob/main/LICENSE"
+    
+    
+    ,"datePublished": "2025-05-15 12:38:28"
+    
+    
+    ,"dateModified": "2025-05-18 13:58:59"
+    
   }
   </script>
   

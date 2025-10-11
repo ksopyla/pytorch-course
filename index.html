@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Master PyTorch fundamentals with the best free online tutorial. Learn tensors, neural networks, transformers, and diffusion models through engaging, hands-on lessons.">
+        <meta name="description" content="Master PyTorch fundamentals with prof. Torchenstein, the best free online tutorial. Learn tensors, neural networks, transformers, and diffusion models through engaging, hands-on lessons.">
       
       
         <meta name="author" content="Krzysztof Sopyła">
@@ -75,7 +75,7 @@
       
         <meta  property="og:title"  content="PyTorch Course" >
       
-        <meta  property="og:description"  content="Master PyTorch fundamentals with the best free online tutorial. Learn tensors, neural networks, transformers, and diffusion models through engaging, hands-on lessons." >
+        <meta  property="og:description"  content="Master PyTorch fundamentals with prof. Torchenstein, the best free online tutorial. Learn tensors, neural networks, transformers, and diffusion models through engaging, hands-on lessons." >
       
         <meta  property="og:image"  content="https://pytorchcourse.com/assets/images/social/index.png" >
       
@@ -91,7 +91,7 @@
       
         <meta  name="twitter:title"  content="PyTorch Course" >
       
-        <meta  name="twitter:description"  content="Master PyTorch fundamentals with the best free online tutorial. Learn tensors, neural networks, transformers, and diffusion models through engaging, hands-on lessons." >
+        <meta  name="twitter:description"  content="Master PyTorch fundamentals with prof. Torchenstein, the best free online tutorial. Learn tensors, neural networks, transformers, and diffusion models through engaging, hands-on lessons." >
       
         <meta  name="twitter:image"  content="https://pytorchcourse.com/assets/images/social/index.png" >
       
@@ -111,33 +111,173 @@
   
   
   <!-- Schema.org Structured Data (JSON-LD) for Educational Content -->
-  <!-- This helps Google understand your pages are learning resources -->
-  <!-- Note: The social plugin handles Open Graph and Twitter Cards automatically -->
+  <!-- Constants (author, provider, etc.) are hardcoded here to avoid redundancy -->
+  <!-- Variable content (teaches, about, etc.) comes from page metadata -->
   
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Course",
+    
+    "@id": "https://pytorchcourse.com/#course",
+    
     "name": "Free PyTorch Course | Master Deep Learning with Professor Torchenstein",
     "headline": "Free PyTorch Course | Master Deep Learning with Professor Torchenstein",
-    "description": "Master PyTorch fundamentals with the best free online tutorial. Learn tensors, neural networks, transformers, and diffusion models through engaging, hands-on lessons.",
+    "description": "Master PyTorch fundamentals with prof. Torchenstein, the best free online tutorial. Learn tensors, neural networks, transformers, and diffusion models through engaging, hands-on lessons.",
+    
+    
+    "courseCode": "Prof. Torchenstein",
+    
+    
     "author": {
       "@type": "Person",
-      "name": "Krzysztof Sopyła"
-    },
-    "provider": {
-      "@type": "Organization",
-      "name": "PyTorch Course",
-      "url": "https://pytorchcourse.com/"
+      "name": "Krzysztof Sopyła",
+      "jobTitle": "AI R&D Leader, PyTorch Educator",
+      "url": "https://ai.ksopyla.com",
+      "sameAs": [
+        "https://github.com/ksopyla",
+        "https://twitter.com/ksopyla",
+        "https://linkedin.com/in/krzysztof-sopyla",
+        "https://ai.ksopyla.com"
+      ]
     },
     
+    "provider": {
+      "@type": "Organization",
+      "name": "Professor Torchenstein's Laboratory",
+      "url": "https://pytorchcourse.com",
+      "logo": "https://pytorchcourse.com/assets/images/Logo_purple_cube_transparent.png",
+      "sameAs": ["https://github.com/ksopyla/pytorch-course"]
+    },
+    
+    
     "educationalLevel": "Beginner to Advanced",
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    "teaches": ["PyTorch fundamentals and tensor operations", "Neural network architectures and building blocks", "Transformer models and attention mechanisms", "Deep learning training and optimization techniques", "Autograd and automatic differentiation", "GPU acceleration and performance optimization"],
+    
+    
+    
+    "competencyRequired": ["Basic Python programming", "Linear algebra fundamentals", "Understanding of derivatives and gradients"],
+    
+    
+    
+    
+    
+    "about": [
+      
+      
+      {
+        "@type": "DefinedTerm",
+        "name": "Deep Learning",
+        "identifier": "deep-learning"
+      },
+      
+      {
+        "@type": "DefinedTerm",
+        "name": "PyTorch",
+        "identifier": "pytorch"
+      },
+      
+      {
+        "@type": "DefinedTerm",
+        "name": "Machine Learning",
+        "identifier": "machine-learning"
+      },
+      
+      {
+        "@type": "DefinedTerm",
+        "name": "Neural Networks",
+        "identifier": "neural-networks"
+      },
+      
+      {
+        "@type": "DefinedTerm",
+        "name": "Artificial Intelligence",
+        "identifier": "artificial-intelligence"
+      }
+      
+    ],
+    
+    
+    
+    
+    
+    "hasPart": [
+      
+      {
+        "@type": "Course",
+        "@id": "https://pytorchcourse.com/01-tensors/",
+        "name": "Module 1: Tensors"
+        ,"description": "Master tensor operations from creation to GPU acceleration"
+        
+      },
+      
+      {
+        "@type": "Course",
+        "@id": "https://pytorchcourse.com/02-torch-nn/",
+        "name": "Module 2: Neural Network Building Blocks"
+        ,"description": "Learn PyTorch nn.Module and layer architectures"
+        
+      }
+      
+    ],
+    
+    
+    
+    
+    "funding": [
+      
+      {
+        "@type": "Grant",
+        "name": "Community Support via GitHub Sponsors",
+        "funder": {
+          "@type": "Organization",
+          "url": "https://github.com/sponsors/ksopyla"
+        }
+      },
+      
+      {
+        "@type": "Grant",
+        "name": "Individual Sponsorships via Buy Me a Coffee",
+        "funder": {
+          "@type": "Organization",
+          "url": "https://buymeacoffee.com/torchenstein"
+        }
+      }
+      
+    ],
+    
+    
+    "codeRepository": "https://github.com/ksopyla/pytorch-course",
+    "programmingLanguage": {
+      "@type": "ComputerLanguage",
+      "name": "Python",
+      "version": "3.12"
+    },
+    
+    
+    "timeRequired": "PT40H",
     
     
     "inLanguage": "en-US",
     "url": "https://pytorchcourse.com/",
     "isAccessibleForFree": true,
     "license": "https://github.com/ksopyla/pytorch-course/blob/main/LICENSE"
+    
+    
+    ,"datePublished": "2025-05-14 17:35:45"
+    
+    
+    ,"dateModified": "2025-10-11 18:23:02"
+    
   }
   </script>
   

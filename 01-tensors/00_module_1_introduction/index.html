@@ -113,39 +113,231 @@
   
   
   <!-- Schema.org Structured Data (JSON-LD) for Educational Content -->
-  <!-- This helps Google understand your pages are learning resources -->
-  <!-- Note: The social plugin handles Open Graph and Twitter Cards automatically -->
+  <!-- Constants (author, provider, etc.) are hardcoded here to avoid redundancy -->
+  <!-- Variable content (teaches, about, etc.) comes from page metadata -->
   
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LearningResource",
+    "@type": "Course",
+    
+    "@id": "https://pytorchcourse.com/01-tensors/00_module_1_introduction/#course",
+    
     "name": "Module 1 – I See Tensors Everywhere 🕶️",
     "headline": "Module 1 – I See Tensors Everywhere 🕶️",
     "description": "Master PyTorch tensors from creation to GPU operations. Learn tensor manipulation, matrix multiplication, broadcasting, Einstein summation, and automatic differentiation (autograd).",
+    
+    
+    "courseCode": "Prof. Torchenstein",
+    
+    
     "author": {
       "@type": "Person",
-      "name": "Krzysztof Sopyła"
+      "name": "Krzysztof Sopyła",
+      "jobTitle": "AI R&D Leader, PyTorch Educator",
+      "url": "https://ai.ksopyla.com",
+      "sameAs": [
+        "https://github.com/ksopyla",
+        "https://twitter.com/ksopyla",
+        "https://linkedin.com/in/krzysztof-sopyla",
+        "https://ai.ksopyla.com"
+      ]
     },
+    
     "provider": {
       "@type": "Organization",
-      "name": "PyTorch Course",
-      "url": "https://pytorchcourse.com/"
+      "name": "Professor Torchenstein's Laboratory",
+      "url": "https://pytorchcourse.com",
+      "logo": "https://pytorchcourse.com/assets/images/Logo_purple_cube_transparent.png",
+      "sameAs": ["https://github.com/ksopyla/pytorch-course"]
     },
+    
     
     "educationalLevel": "Beginner",
     
     
-    "learningResourceType": "Course Module",
-    "teaches": "PyTorch and Deep Learning Fundamentals",
     
-    "timeRequired": "PT5 min",
+    "learningResourceType": "Lesson",
+    
+    
+    
+    "educationalUse": "Self-paced learning",
+    
+    
+    
+    "interactivityType": "mixed",
+    
+    
+    
+    "teaches": ["Create and manipulate PyTorch tensors", "Understand tensor shapes and dimensions", "Perform matrix multiplication and broadcasting", "Use Einstein summation notation", "Apply automatic differentiation with autograd", "Move tensors to GPU for acceleration"],
+    
+    
+    
+    "competencyRequired": ["Basic Python programming", "Linear algebra fundamentals", "Understanding of matrices and vectors"],
+    
+    
+    
+    "assesses": ["Ability to create and manipulate tensors", "Understanding of tensor operations", "Proficiency in matrix multiplication", "Knowledge of automatic differentiation"],
+    
+    
+    
+    "about": [
+      
+      
+      {
+        "@type": "DefinedTerm",
+        "name": "PyTorch Tensors",
+        "identifier": "pytorch-tensors"
+      },
+      
+      {
+        "@type": "DefinedTerm",
+        "name": "Linear Algebra",
+        "identifier": "linear-algebra"
+      },
+      
+      {
+        "@type": "DefinedTerm",
+        "name": "Automatic Differentiation",
+        "identifier": "autograd"
+      },
+      
+      {
+        "@type": "DefinedTerm",
+        "name": "GPU Computing",
+        "identifier": "gpu-computing"
+      }
+      
+    ],
+    
+    
+    
+    
+    "isPartOf": {
+      "@type": "Course",
+      "@id": "https://pytorchcourse.com/",
+      "name": "PyTorch Deep Learning Course"
+    },
+    
+    
+    
+    "hasPart": [
+      
+      {
+        "@type": "Course",
+        "@id": "https://pytorchcourse.com/01-tensors/01_introduction_to_tensors/",
+        "name": "Summoning Your First Tensors"
+        
+        ,"position": 1
+      },
+      
+      {
+        "@type": "Course",
+        "@id": "https://pytorchcourse.com/01-tensors/02a_tensor_manipulation/",
+        "name": "Tensor Surgery & Assembly"
+        
+        ,"position": 2
+      },
+      
+      {
+        "@type": "Course",
+        "@id": "https://pytorchcourse.com/01-tensors/02b_tensor_metamorphosis/",
+        "name": "Tensor Metamorphosis"
+        
+        ,"position": 3
+      },
+      
+      {
+        "@type": "Course",
+        "@id": "https://pytorchcourse.com/01-tensors/03_data_types_and_devices/",
+        "name": "DTypes & Devices"
+        
+        ,"position": 4
+      },
+      
+      {
+        "@type": "Course",
+        "@id": "https://pytorchcourse.com/01-tensors/04_tensor_math_operations/",
+        "name": "Elemental Tensor Alchemy"
+        
+        ,"position": 5
+      },
+      
+      {
+        "@type": "Course",
+        "@id": "https://pytorchcourse.com/01-tensors/05_matrix_multiplication/",
+        "name": "Matrix Mayhem"
+        
+        ,"position": 6
+      },
+      
+      {
+        "@type": "Course",
+        "@id": "https://pytorchcourse.com/01-tensors/06_broadcasting/",
+        "name": "Broadcasting"
+        
+        ,"position": 7
+      },
+      
+      {
+        "@type": "Course",
+        "@id": "https://pytorchcourse.com/01-tensors/07_einstein_summation/",
+        "name": "Einstein Summation"
+        
+        ,"position": 8
+      },
+      
+      {
+        "@type": "Course",
+        "@id": "https://pytorchcourse.com/01-tensors/08_advanced_einstein_summation/",
+        "name": "Advanced Einsum"
+        
+        ,"position": 9
+      },
+      
+      {
+        "@type": "Course",
+        "@id": "https://pytorchcourse.com/01-tensors/09_autograd/",
+        "name": "Autograd"
+        
+        ,"position": 10
+      },
+      
+      {
+        "@type": "Course",
+        "@id": "https://pytorchcourse.com/01-tensors/10_gradient_accumulation/",
+        "name": "Gradient Accumulation"
+        
+        ,"position": 11
+      }
+      
+    ],
+    
+    
+    
+    
+    "codeRepository": "https://github.com/ksopyla/pytorch-course",
+    "programmingLanguage": {
+      "@type": "ComputerLanguage",
+      "name": "Python",
+      "version": "3.12"
+    },
+    
+    
+    "timeRequired": "PT3 hours",
     
     
     "inLanguage": "en-US",
     "url": "https://pytorchcourse.com/01-tensors/00_module_1_introduction/",
     "isAccessibleForFree": true,
     "license": "https://github.com/ksopyla/pytorch-course/blob/main/LICENSE"
+    
+    
+    ,"datePublished": "2025-05-22 18:46:17"
+    
+    
+    ,"dateModified": "2025-10-11 18:23:02"
+    
   }
   </script>
   
@@ -1804,7 +1996,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2025 12:02:05 UTC">October 11, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2025 18:23:02 UTC">October 11, 2025</span>
   </span>
 
     
