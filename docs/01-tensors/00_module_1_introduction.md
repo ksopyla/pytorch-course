@@ -1,10 +1,35 @@
 ---
+title: "Module 1 – I See Tensors Everywhere 🕶️"
+description: "Master PyTorch tensors from creation to GPU operations. Learn tensor manipulation, matrix multiplication, broadcasting, Einstein summation, and automatic differentiation (autograd)."
+# Social card customization
+image: "assets/images/torchenstein_in_the_lab_blackboard.png"
+# SEO and metadata
+keywords: "PyTorch tensors, tensor operations, matrix multiplication, broadcasting, einsum, autograd, GPU PyTorch, neural network fundamentals"
+author: "Krzysztof Sopyła"
+# Boost this page in search (default is 1.0)
+search:
+  boost: 2.0
+# Tags for categorization
+tags:
+  - tensors
+  - beginner
+  - module 1
+  - module overview
+# Extra metadata for custom use
 extra:
   course:
     module: 1
     lesson: 0
     difficulty: beginner
     estimated_time: "5 min"
+  # Open Graph / Social Media specific
+  og:
+    title: "Pytorch Course | Module 1 – I See Tensors Everywhere 🕶️ | Prof. Torchenstein's Lab"
+    type: "article"
+  # For structured data (if you implement it)
+  structured_data:
+    type: "LearningResource"
+    educationalLevel: "Beginner"
 ---
 
 # Module 1 – I See Tensors Everywhere 🕶️
