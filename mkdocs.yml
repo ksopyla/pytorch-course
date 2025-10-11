@@ -118,6 +118,7 @@ plugins:
   - search:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - meta                      # Enable metadata management via .meta.yml files
   # Note: optimize plugin requires MkDocs Material Insiders (paid version)
   # - optimize:                 # Automatically compress and optimize images for web
   #     optimize_jpg_quality: 75    # JPEG quality (0-100, default 75)

@@ -1,0 +1,35 @@
+# Default metadata for all pages in Module 1: Tensors
+# This applies to all .md and .ipynb files in this directory
+# Individual pages can override these values
+
+# Common metadata for all tensor lessons
+author: "Krzysztof Sopyła"
+image: "assets/images/torchenstein_in_the_lab_blackboard.png"
+
+# SEO defaults
+keywords: "PyTorch tensors, tensor operations, deep learning, neural networks, PyTorch tutorial"
+
+description: "Torchenstein PyTorch couse: Module 1: tensors from creation to GPU operations. Learn tensor manipulation, matrix multiplication, broadcasting, Einstein summation, and automatic differentiation (autograd)."
+
+# Search boost for lessons (slightly lower than overview pages)
+search:
+  boost: 1.2
+
+# Common tags for all tensor lessons
+tags:
+  - tensors
+  - module 1
+  - beginner
+
+# Extra metadata
+extra:
+  course:
+    module: 1
+    difficulty: beginner
+    estimated_time: "15M"  # Format: 15M = 15 minutes (will be converted to PT15M for schema.org)
+  og:
+    type: "article"
+  structured_data:
+    type: "LearningResource"
+    educationalLevel: "Beginner"
+

@@ -1,0 +1,31 @@
+# Default metadata for all pages in Module 2: Neural Network Building Blocks
+# This applies to all .md and .ipynb files in this directory
+
+author: "Krzysztof Sopyła"
+image: "assets/images/Logo_purple_cube_transparent.png"
+
+# SEO defaults
+keywords: "PyTorch nn.Module, neural network layers, PyTorch training, deep learning building blocks"
+
+# Search boost for lessons
+search:
+  boost: 1.2
+
+# Common tags for all nn lessons
+tags:
+  - neural networks
+  - module 2
+  - intermediate
+
+# Extra metadata
+extra:
+  course:
+    module: 2
+    difficulty: intermediate
+    estimated_time: "20M"  # Format: 20M = 20 minutes (will be converted to PT20M for schema.org)
+  og:
+    type: "article"
+  structured_data:
+    type: "LearningResource"
+    educationalLevel: "Intermediate"
+
