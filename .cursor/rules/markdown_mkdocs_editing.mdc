@@ -25,3 +25,42 @@ title="video title description based on the file name">
 4. When generating a image, always use the following format:
 
 ![Professor Torchenstein invites you to explore tensors](/assets/images/torchenstein_coffe_explore_tensors_v2.png)
+
+
+5. Properly add SEO and metadata to the markdown files.
+
+Template: 
+---
+title: "Title of the page that reflects the content of the page"
+description: "Description of the page that reflects the content of the page, not too long, less than 160 characters"
+# Social card customization, try to use the image from the assets/images folder, and the one that is attached to the page
+image: "assets/images/image_name.png" 
+# SEO and metadata
+## max 5 keywords
+keywords: "Keywords of the page that reflects the content of the page, "
+author: "Krzysztof Sopyła"
+# Boost this page in search (default is 1.0)
+search:
+  boost: 2.0
+# Tags for categorization, max 5 tags that reflect the content of the page, please be consistent with other pages
+tags:
+  - tensors
+  - beginner
+  - module 1
+  - module overview
+# Extra metadata for custom use
+extra:
+  course:
+    module: 1
+    lesson: 0
+    difficulty: beginner
+    estimated_time: "5 min"
+  # Open Graph / Social Media specific
+  og:
+    title: "Pytorch Course | Module 1 – I See Tensors Everywhere 🕶️ | Prof. Torchenstein's Lab"
+    type: "article"
+  # For structured data (if you implement it)
+  structured_data:
+    type: "LearningResource"
+    educationalLevel: "Beginner"
+---
