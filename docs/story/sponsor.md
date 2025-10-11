@@ -1,9 +1,30 @@
 ---
-title: "Join the Rebellion: Become a Sponsor"
-description: "Support Professor Torchenstein's mission to democratize PyTorch education. Sponsor the rebellion to free brilliant minds!"
-toc_depth: 2
-publish: true
-
+title: "Sponsor Professor Torchenstein's PyTorch Course | Support Free AI Education"
+description: "Join the rebellion! Support open-source PyTorch education. Company partnerships and individual sponsorships available. Help democratize AI knowledge."
+# Social card customization
+image: "assets/images/torchenstein_empower_atoms.mp4"
+# SEO and metadata
+keywords: "PyTorch course sponsor, AI education support, open source education, GitHub sponsors, developer education funding"
+author: "Krzysztof Sopyła"
+# Boost this page in search (default is 1.0)
+search:
+  boost: 2.0
+# Tags for categorization
+tags:
+  - sponsorship
+  - community
+  - support
+  - open source
+# Extra metadata for custom use
+extra:
+  # Open Graph / Social Media specific
+  og:
+    title: "Sponsor the Rebellion | Professor Torchenstein's PyTorch Course"
+    type: "website"
+  # For structured data
+  structured_data:
+    type: "WebPage"
+    purpose: "Sponsorship"
 ---
 # 💖 Support the Education Revolution
 

@@ -1,6 +1,31 @@
 ---
-title: "Vision & Mission: Why PyTorch Course Exists"
-description: "The personal story and deeper purpose behind Professor Torchenstein's educational rebellion"
+title: "Vision & Mission | Why This PyTorch Course Exists"
+description: "The personal story behind Professor Torchenstein's rebellion. Learn why we're democratizing AI education and fighting attention thieves."
+# Social card customization
+image: "assets/images/Logo_purple_cube_transparent.png"
+# SEO and metadata
+keywords: "PyTorch course mission, AI education vision, democratize machine learning, deep learning for everyone, educational philosophy"
+author: "Krzysztof Sopyła"
+# Boost this page in search (default is 1.0)
+search:
+  boost: 1.8
+# Tags for categorization
+tags:
+  - vision
+  - mission
+  - philosophy
+  - education
+  - community
+# Extra metadata for custom use
+extra:
+  # Open Graph / Social Media specific
+  og:
+    title: "Our Mission: Democratizing PyTorch Education | Professor Torchenstein"
+    type: "article"
+  # For structured data
+  structured_data:
+    type: "AboutPage"
+    subject: "Mission and Vision"
 ---
 
 # Vision & Mission: Why This Course Really Exists

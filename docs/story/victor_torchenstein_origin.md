@@ -1,3 +1,32 @@
+---
+title: "Meet Professor Torchenstein | The Origin Story of PyTorch's Mad Scientist"
+description: "Discover Professor Victor Py Torchenstein's journey from academia to corporate rebellion. Learn why he's fighting to democratize PyTorch education."
+# Social card customization
+image: "assets/images/Logo_purple_cube_transparent.png"
+# SEO and metadata
+keywords: "Professor Torchenstein, PyTorch course creator, AI education rebel, machine learning educator, open source AI"
+author: "Krzysztof Sopyła"
+# Boost this page in search (default is 1.0)
+search:
+  boost: 1.5
+# Tags for categorization
+tags:
+  - about
+  - professor torchenstein
+  - story
+  - mission
+# Extra metadata for custom use
+extra:
+  # Open Graph / Social Media specific
+  og:
+    title: "The Origin Story of Professor Torchenstein | PyTorch Course"
+    type: "article"
+  # For structured data
+  structured_data:
+    type: "AboutPage"
+    subject: "Professor Torchenstein"
+---
+
 ## The Origin Story of Professor Victor Py Torchenstein
 
 > "The true tragedy is not in failure, but in never questioning what everyone already accepts as truth." ⚡🔥

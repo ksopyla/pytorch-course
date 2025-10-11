@@ -1,12 +1,40 @@
 ---
+# Template configuration
 template: home.html
-title: "Greetings, Architect of Computational Destiny!"
+title: "Free PyTorch Course | Master Deep Learning with Professor Torchenstein"
 subtitle: "Join Professor Torchenstein on an electrifying quest to bend PyTorch to your will. Mwahahaha!"
 start_button_text: "Enter the Laboratory"
 start_url: "pytorch_course_structure.md"
 hide:
   - navigation
   - toc
+# SEO and metadata
+description: "Master PyTorch fundamentals with the best free online tutorial. Learn tensors, neural networks, transformers, and diffusion models through engaging, hands-on lessons."
+# Social card customization
+image: "assets/images/torchenstein_coffe_explore_tensors_v2.png"
+keywords: "PyTorch tutorial, free PyTorch course, deep learning tutorial, neural networks, transformers, machine learning education, AI course"
+author: "Krzysztof Sopyła"
+# Boost this page in search - homepage should rank highest
+search:
+  boost: 3.0
+# Tags for categorization
+tags:
+  - pytorch
+  - deep learning
+  - tutorial
+  - beginner friendly
+  - free course
+# Extra metadata
+extra:
+  # Open Graph / Social Media specific
+  og:
+    title: "PyTorch Course | Professor Torchenstein's Laboratory | Free Deep Learning Tutorial"
+    type: "website"
+  # Structured data
+  structured_data:
+    type: "Course"
+    provider: "Professor Torchenstein"
+    educationalLevel: "Beginner to Advanced"
 ---
 
 ## What Madness Awaits You?
