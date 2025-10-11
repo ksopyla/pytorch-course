@@ -35,36 +35,47 @@ extra:
     has_part:
       - id: "https://pytorchcourse.com/01-tensors/01_introduction_to_tensors/"
         name: "Summoning Your First Tensors"
+        description: "Learn to create tensors from scratch, access elements and inspect properties"
         position: 1
       - id: "https://pytorchcourse.com/01-tensors/02a_tensor_manipulation/"
         name: "Tensor Surgery & Assembly"
+        description: "Master slicing, concatenating, stacking and splitting tensors"
         position: 2
       - id: "https://pytorchcourse.com/01-tensors/02b_tensor_metamorphosis/"
         name: "Tensor Metamorphosis"
+        description: "Transform tensor shapes with reshape, view, squeeze, unsqueeze, expand and repeat"
         position: 3
       - id: "https://pytorchcourse.com/01-tensors/03_data_types_and_devices/"
         name: "DTypes & Devices"
+        description: "Manage data types and move tensors to GPU for accelerated computation"
         position: 4
       - id: "https://pytorchcourse.com/01-tensors/04_tensor_math_operations/"
         name: "Elemental Tensor Alchemy"
+        description: "Perform element-wise and reduction operations on tensors"
         position: 5
       - id: "https://pytorchcourse.com/01-tensors/05_matrix_multiplication/"
         name: "Matrix Mayhem"
+        description: "Master matrix multiplication, the core of modern neural networks"
         position: 6
       - id: "https://pytorchcourse.com/01-tensors/06_broadcasting/"
         name: "Broadcasting"
+        description: "Discover broadcasting for operations on tensors of different shapes"
         position: 7
       - id: "https://pytorchcourse.com/01-tensors/07_einstein_summation/"
         name: "Einstein Summation"
+        description: "Wield einsum to perform complex tensor operations concisely"
         position: 8
       - id: "https://pytorchcourse.com/01-tensors/08_advanced_einstein_summation/"
         name: "Advanced Einsum"
+        description: "Combine multiple tensors with advanced einsum expressions"
         position: 9
       - id: "https://pytorchcourse.com/01-tensors/09_autograd/"
         name: "Autograd"
+        description: "Uncover automatic differentiation and gradient computation"
         position: 10
       - id: "https://pytorchcourse.com/01-tensors/10_gradient_accumulation/"
         name: "Gradient Accumulation"
+        description: "Learn gradient accumulation to simulate larger batch sizes"
         position: 11
     # Link to parent course - MODULE INTRO ONLY
     is_part_of:

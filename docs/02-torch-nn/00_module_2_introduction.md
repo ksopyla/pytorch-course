@@ -35,45 +35,59 @@ extra:
     has_part:
       - id: "https://pytorchcourse.com/02-torch-nn/01_nn_module/"
         name: "Building Brains with nn.Module"
+        description: "Craft custom neural networks by overriding __init__ and forward methods"
         position: 1
       - id: "https://pytorchcourse.com/02-torch-nn/02_compose_modules/"
         name: "Franken-Stacking Layers"
+        description: "Compose modules using Sequential, ModuleList, and ModuleDict"
         position: 2
       - id: "https://pytorchcourse.com/02-torch-nn/03_saving_weights/"
         name: "Preserving Your Monster's Memories"
+        description: "Save and load model weights using state_dict"
         position: 3
       - id: "https://pytorchcourse.com/02-torch-nn/04_linear_layer/"
         name: "Linear Layers"
+        description: "Master linear transformations and fully connected layers"
         position: 4
       - id: "https://pytorchcourse.com/02-torch-nn/05_activations/"
         name: "Activation Elixirs"
+        description: "Explore activation functions: ReLU, GELU, SiLU and their properties"
         position: 5
       - id: "https://pytorchcourse.com/02-torch-nn/06_dropout/"
         name: "Dropout"
+        description: "Apply dropout for neural network regularization"
         position: 6
       - id: "https://pytorchcourse.com/02-torch-nn/07_embedding_layers/"
         name: "Embedding Layers"
+        description: "Embed discrete tokens into continuous vector spaces"
         position: 7
       - id: "https://pytorchcourse.com/02-torch-nn/08_positional_encoding/"
         name: "Positional Encoding"
+        description: "Add positional information to sequence embeddings"
         position: 8
       - id: "https://pytorchcourse.com/02-torch-nn/09_normalization_layers/"
         name: "Normalization Layers"
+        description: "Stabilize training with BatchNorm and LayerNorm techniques"
         position: 9
       - id: "https://pytorchcourse.com/02-torch-nn/10_rms_norm/"
         name: "RMS Norm"
+        description: "Implement RMSNorm for efficient layer normalization"
         position: 10
       - id: "https://pytorchcourse.com/02-torch-nn/11_training_evaluation_mode/"
         name: "Training vs Evaluation Mode"
+        description: "Toggle between train and eval modes for proper model behavior"
         position: 11
       - id: "https://pytorchcourse.com/02-torch-nn/12_loss_functions/"
         name: "Loss Functions"
+        description: "Understand and apply loss functions to guide model training"
         position: 12
       - id: "https://pytorchcourse.com/02-torch-nn/13_prepare_inputs_targets/"
         name: "Preparing Inputs & Targets"
+        description: "Align logits and labels for effective loss computation"
         position: 13
       - id: "https://pytorchcourse.com/02-torch-nn/14_interpreting_reduction_modes/"
         name: "Interpreting Reduction Modes"
+        description: "Master reduction modes and ignore indices in loss calculations"
         position: 14
     # Link to parent course - MODULE INTRO ONLY
     is_part_of:

@@ -189,9 +189,11 @@ extra:
     has_part:
       - id: "https://pytorchcourse.com/0X-folder/01_lesson/"
         name: "[Lesson 1 Full Name]"
+        description: "[Brief lesson description - REQUIRED!]"
         position: 1
       - id: "https://pytorchcourse.com/0X-folder/02_lesson/"
         name: "[Lesson 2 Full Name]"
+        description: "[Brief lesson description - REQUIRED!]"
         position: 2
       # Add all remaining lessons...
     
@@ -323,11 +325,15 @@ extra:
     has_part:
       - id: "https://pytorchcourse.com/01-tensors/01_lesson/"
         name: "Lesson Name"
+        description: "Brief lesson description (REQUIRED by Google)"
         position: 1
       - id: "https://pytorchcourse.com/01-tensors/02_lesson/"
         name: "Lesson 2 Name"
+        description: "Another brief lesson description"
         position: 2
 ```
+
+⚠️ **CRITICAL:** Each item in `has_part` MUST have a `description` field or Google Rich Results Test will show errors.
 
 ---
 
@@ -581,6 +587,27 @@ id: "https://pytorchcourse.com/01-tensors/"
 
 ❌ **Wrong:** `"15 minutes"`, `"1.5 hours"`  
 ✅ **Right:** `"PT15M"`, `"PT1H30M"`
+
+### 6. Missing Description in hasPart
+
+❌ **Wrong:**
+```yaml
+has_part:
+  - id: "https://..."
+    name: "Lesson Name"
+    position: 1
+```
+
+✅ **Right:**
+```yaml
+has_part:
+  - id: "https://..."
+    name: "Lesson Name"
+    description: "Brief lesson description"
+    position: 1
+```
+
+⚠️ **Google Rich Results Test requires `description` for each hasPart item!**
 
 ---
 
