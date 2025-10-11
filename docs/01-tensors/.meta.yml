@@ -26,7 +26,6 @@ extra:
   course:
     module: 1
     difficulty: beginner
-    estimated_time: "15M"  # Format: 15M = 15 minutes (will be converted to PT15M for schema.org)
   og:
     type: "article"
   structured_data:
