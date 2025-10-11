@@ -7,6 +7,8 @@ image: "assets/images/Logo_purple_cube_transparent.png"
 # SEO defaults
 keywords: "PyTorch nn.Module, neural network layers, PyTorch training, deep learning building blocks"
 
+description: "Torchenstein PyTorch couse: Module 2:Master PyTorch neural network components including nn.Module, layers, activations, embeddings, and normalization techniques for building deep learning models."
+
 # Search boost for lessons
 search:
   boost: 1.2
@@ -24,7 +26,43 @@ extra:
     difficulty: intermediate
   og:
     type: "article"
+  # Structured data - only module-specific content
   structured_data:
     type: "LearningResource"
     educationalLevel: "Intermediate"
+    learning_resource_type: "Lesson"
+    educational_use: "Self-paced learning"
+    interactivity_type: "mixed"
+  # Learning outcomes - MODULE SPECIFIC
+  teaches:
+    - "Build custom neural network modules with nn.Module"
+    - "Implement linear layers and activation functions"
+    - "Use embedding layers for discrete data"
+    - "Apply normalization techniques (BatchNorm, LayerNorm, RMSNorm)"
+    - "Implement positional encoding for transformers"
+    - "Understand loss functions and training modes"
+  # Prerequisites - MODULE SPECIFIC
+  competency_required:
+    - "Understanding of PyTorch tensors"
+    - "Knowledge of matrix multiplication"
+    - "Basic neural network concepts"
+    - "Familiarity with backpropagation"
+  # Assessment criteria - MODULE SPECIFIC
+  assesses:
+    - "Ability to create custom nn.Module classes"
+    - "Understanding of layer composition"
+    - "Proficiency in using activation functions"
+    - "Knowledge of normalization techniques"
+  # Topics - MODULE SPECIFIC
+  about:
+    - name: "Neural Networks"
+      identifier: "neural-networks"
+    - name: "PyTorch nn.Module"
+      identifier: "nn-module"
+    - name: "Deep Learning Layers"
+      identifier: "deep-learning-layers"
+    - name: "Activation Functions"
+      identifier: "activation-functions"
+    - name: "Normalization"
+      identifier: "normalization"
 

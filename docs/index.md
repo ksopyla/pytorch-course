@@ -9,7 +9,7 @@ hide:
   - navigation
   - toc
 # SEO and metadata
-description: "Master PyTorch fundamentals with the best free online tutorial. Learn tensors, neural networks, transformers, and diffusion models through engaging, hands-on lessons."
+description: "Master PyTorch fundamentals with prof. Torchenstein, the best free online tutorial. Learn tensors, neural networks, transformers, and diffusion models through engaging, hands-on lessons."
 # Social card customization
 image: "assets/images/torchenstein_coffe_explore_tensors_v2.png"
 keywords: "PyTorch tutorial, free PyTorch course, deep learning tutorial, neural networks, transformers, machine learning education, AI course"
@@ -30,11 +30,53 @@ extra:
   og:
     title: "PyTorch Course | Professor Torchenstein's Laboratory | Free Deep Learning Tutorial"
     type: "website"
-  # Structured data
+  # Structured data - HOMEPAGE/COURSE LEVEL only
   structured_data:
     type: "Course"
-    provider: "Professor Torchenstein"
+    provider: "Prof. Torchenstein"
     educationalLevel: "Beginner to Advanced"
+    time_required: "PT40H"
+    # COURSE-level learning outcomes
+    teaches:
+      - "PyTorch fundamentals and tensor operations"
+      - "Neural network architectures and building blocks"
+      - "Transformer models and attention mechanisms"
+      - "Deep learning training and optimization techniques"
+      - "Autograd and automatic differentiation"
+      - "GPU acceleration and performance optimization"
+    # COURSE-level prerequisites
+    competency_required:
+      - "Basic Python programming"
+      - "Linear algebra fundamentals"
+      - "Understanding of derivatives and gradients"
+    # COURSE-level topics
+    about:
+      - name: "Deep Learning"
+        identifier: "deep-learning"
+      - name: "PyTorch"
+        identifier: "pytorch"
+      - name: "Machine Learning"
+        identifier: "machine-learning"
+      - name: "Neural Networks"
+        identifier: "neural-networks"
+      - name: "Artificial Intelligence"
+        identifier: "artificial-intelligence"
+    # Modules in course (hasPart)
+    has_part:
+      - id: "https://pytorchcourse.com/01-tensors/"
+        name: "Module 1: Tensors"
+        description: "Master tensor operations from creation to GPU acceleration"
+      - id: "https://pytorchcourse.com/02-torch-nn/"
+        name: "Module 2: Neural Network Building Blocks"
+        description: "Learn PyTorch nn.Module and layer architectures"
+  # Funding - HOMEPAGE ONLY (not in modules)
+  funding:
+    - type: "Grant"
+      name: "Community Support via GitHub Sponsors"
+      funder_url: "https://github.com/sponsors/ksopyla"
+    - type: "Grant"
+      name: "Individual Sponsorships via Buy Me a Coffee"
+      funder_url: "https://buymeacoffee.com/torchenstein"
 ---
 
 ## What Madness Awaits You?

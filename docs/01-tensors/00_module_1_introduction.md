@@ -21,15 +21,56 @@ extra:
     module: 1
     lesson: 0
     difficulty: beginner
-    estimated_time: "5 min"
+    estimated_time: "3 hours"
   # Open Graph / Social Media specific
   og:
     title: "Pytorch Course | Module 1 – I See Tensors Everywhere 🕶️ | Prof. Torchenstein's Lab"
     type: "article"
-  # For structured data (if you implement it)
+  # Structured data - MODULE OVERVIEW PAGE specific
   structured_data:
-    type: "LearningResource"
+    type: "Course"
+    provider: "Prof. Torchenstein"
     educationalLevel: "Beginner"
+    # Lessons in this module (hasPart) - MODULE INTRO ONLY
+    has_part:
+      - id: "https://pytorchcourse.com/01-tensors/01_introduction_to_tensors/"
+        name: "Summoning Your First Tensors"
+        position: 1
+      - id: "https://pytorchcourse.com/01-tensors/02a_tensor_manipulation/"
+        name: "Tensor Surgery & Assembly"
+        position: 2
+      - id: "https://pytorchcourse.com/01-tensors/02b_tensor_metamorphosis/"
+        name: "Tensor Metamorphosis"
+        position: 3
+      - id: "https://pytorchcourse.com/01-tensors/03_data_types_and_devices/"
+        name: "DTypes & Devices"
+        position: 4
+      - id: "https://pytorchcourse.com/01-tensors/04_tensor_math_operations/"
+        name: "Elemental Tensor Alchemy"
+        position: 5
+      - id: "https://pytorchcourse.com/01-tensors/05_matrix_multiplication/"
+        name: "Matrix Mayhem"
+        position: 6
+      - id: "https://pytorchcourse.com/01-tensors/06_broadcasting/"
+        name: "Broadcasting"
+        position: 7
+      - id: "https://pytorchcourse.com/01-tensors/07_einstein_summation/"
+        name: "Einstein Summation"
+        position: 8
+      - id: "https://pytorchcourse.com/01-tensors/08_advanced_einstein_summation/"
+        name: "Advanced Einsum"
+        position: 9
+      - id: "https://pytorchcourse.com/01-tensors/09_autograd/"
+        name: "Autograd"
+        position: 10
+      - id: "https://pytorchcourse.com/01-tensors/10_gradient_accumulation/"
+        name: "Gradient Accumulation"
+        position: 11
+    # Link to parent course - MODULE INTRO ONLY
+    is_part_of:
+      type: "Course"
+      id: "https://pytorchcourse.com/"
+      name: "PyTorch Deep Learning Course"
 ---
 
 # Module 1 – I See Tensors Everywhere 🕶️

@@ -15,40 +15,150 @@
   {% endif %}
   
   <!-- Schema.org Structured Data (JSON-LD) for Educational Content -->
-  <!-- This helps Google understand your pages are learning resources -->
-  <!-- Note: The social plugin handles Open Graph and Twitter Cards automatically -->
+  <!-- Constants (author, provider, etc.) are hardcoded here to avoid redundancy -->
+  <!-- Variable content (teaches, about, etc.) comes from page metadata -->
   {% if page and page.meta and page.meta.extra and page.meta.extra.structured_data %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "{{ page.meta.extra.structured_data.type or 'LearningResource' }}",
+    {% if page.meta.extra.structured_data.type == 'Course' %}
+    "@id": "{{ page.canonical_url }}#course",
+    {% endif %}
     "name": "{{ page.meta.title or page.title }}",
     "headline": "{{ page.meta.title or page.title }}",
     "description": "{{ page.meta.description or config.site_description }}",
+    
+    {% if page.meta.extra.structured_data.provider %}
+    "courseCode": "{{ page.meta.extra.structured_data.provider }}",
+    {% endif %}
+    
     "author": {
       "@type": "Person",
-      "name": "{{ page.meta.author or config.site_author.split('(')[0].strip() }}"
+      "name": "Krzysztof Sopyła",
+      "jobTitle": "AI R&D Leader, PyTorch Educator",
+      "url": "https://ai.ksopyla.com",
+      "sameAs": [
+        "https://github.com/ksopyla",
+        "https://twitter.com/ksopyla",
+        "https://linkedin.com/in/krzysztof-sopyla",
+        "https://ai.ksopyla.com"
+      ]
     },
+    
     "provider": {
       "@type": "Organization",
-      "name": "{{ config.site_name }}",
-      "url": "{{ config.site_url }}"
+      "name": "Professor Torchenstein's Laboratory",
+      "url": "https://pytorchcourse.com",
+      "logo": "https://pytorchcourse.com/assets/images/Logo_purple_cube_transparent.png",
+      "sameAs": ["https://github.com/ksopyla/pytorch-course"]
     },
+    
     {% if page.meta.extra.structured_data.educationalLevel %}
     "educationalLevel": "{{ page.meta.extra.structured_data.educationalLevel }}",
     {% endif %}
-    {% if page.meta.extra.course %}
-    "learningResourceType": "Course Module",
-    "teaches": "PyTorch and Deep Learning Fundamentals",
-    {% if page.meta.extra.course.estimated_time %}
+    
+    {% if page.meta.extra.structured_data.learning_resource_type %}
+    "learningResourceType": "{{ page.meta.extra.structured_data.learning_resource_type }}",
+    {% endif %}
+    
+    {% if page.meta.extra.structured_data.educational_use %}
+    "educationalUse": "{{ page.meta.extra.structured_data.educational_use }}",
+    {% endif %}
+    
+    {% if page.meta.extra.structured_data.interactivity_type %}
+    "interactivityType": "{{ page.meta.extra.structured_data.interactivity_type }}",
+    {% endif %}
+    
+    {% if page.meta.extra.structured_data.teaches or page.meta.extra.teaches %}
+    "teaches": {{ (page.meta.extra.structured_data.teaches or page.meta.extra.teaches) | tojson }},
+    {% endif %}
+    
+    {% if page.meta.extra.structured_data.competency_required or page.meta.extra.competency_required %}
+    "competencyRequired": {{ (page.meta.extra.structured_data.competency_required or page.meta.extra.competency_required) | tojson }},
+    {% endif %}
+    
+    {% if page.meta.extra.assesses %}
+    "assesses": {{ page.meta.extra.assesses | tojson }},
+    {% endif %}
+    
+    {% if page.meta.extra.structured_data.about or page.meta.extra.about %}
+    "about": [
+      {% set about_items = page.meta.extra.structured_data.about or page.meta.extra.about %}
+      {% for item in about_items %}
+      {
+        "@type": "DefinedTerm",
+        "name": "{{ item.name }}",
+        "identifier": "{{ item.identifier }}"
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ],
+    {% endif %}
+    
+    {% if page.meta.extra.structured_data.is_part_of or page.meta.extra.is_part_of %}
+    {% set is_part = page.meta.extra.structured_data.is_part_of or page.meta.extra.is_part_of %}
+    "isPartOf": {
+      "@type": "{{ is_part.type }}",
+      "@id": "{{ is_part.id }}",
+      "name": "{{ is_part.name }}"
+    },
+    {% endif %}
+    
+    {% if page.meta.extra.structured_data.has_part %}
+    "hasPart": [
+      {% for part in page.meta.extra.structured_data.has_part %}
+      {
+        "@type": "{{ page.meta.extra.structured_data.type or 'LearningResource' }}",
+        "@id": "{{ part.id }}",
+        "name": "{{ part.name }}"
+        {% if part.description %},"description": "{{ part.description }}"{% endif %}
+        {% if part.position %},"position": {{ part.position }}{% endif %}
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ],
+    {% endif %}
+    
+    {% if page.meta.extra.funding or page.meta.extra.structured_data.funding %}
+    {% set funding = page.meta.extra.funding or page.meta.extra.structured_data.funding %}
+    "funding": [
+      {% for fund in funding %}
+      {
+        "@type": "{{ fund.type or 'Grant' }}",
+        "name": "{{ fund.name }}",
+        "funder": {
+          "@type": "Organization",
+          "url": "{{ fund.funder_url }}"
+        }
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ],
+    {% endif %}
+    
+    "codeRepository": "https://github.com/ksopyla/pytorch-course",
+    "programmingLanguage": {
+      "@type": "ComputerLanguage",
+      "name": "Python",
+      "version": "3.12"
+    },
+    
+    {% if page.meta.extra.course and page.meta.extra.course.estimated_time %}
     "timeRequired": "PT{{ page.meta.extra.course.estimated_time }}",
+    {% elif page.meta.extra.structured_data.time_required %}
+    "timeRequired": "{{ page.meta.extra.structured_data.time_required }}",
     {% endif %}
-    {% endif %}
+    
     "inLanguage": "en-US",
     "url": "{{ page.canonical_url }}",
     "isAccessibleForFree": true,
     "license": "https://github.com/ksopyla/pytorch-course/blob/main/LICENSE"
+    
+    {% if page.meta.git_creation_date_localized_raw_iso_datetime %}
+    ,"datePublished": "{{ page.meta.git_creation_date_localized_raw_iso_datetime }}"
+    {% endif %}
+    {% if page.meta.git_revision_date_localized_raw_iso_datetime %}
+    ,"dateModified": "{{ page.meta.git_revision_date_localized_raw_iso_datetime }}"
+    {% endif %}
   }
   </script>
   {% endif %}
-{% endblock %} 
+{% endblock %}

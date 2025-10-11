@@ -28,7 +28,40 @@ extra:
     difficulty: beginner
   og:
     type: "article"
+  # Structured data - only module-specific content
   structured_data:
     type: "LearningResource"
     educationalLevel: "Beginner"
+    learning_resource_type: "Lesson"
+    educational_use: "Self-paced learning"
+    interactivity_type: "mixed"
+  # Learning outcomes - MODULE SPECIFIC
+  teaches:
+    - "Create and manipulate PyTorch tensors"
+    - "Understand tensor shapes and dimensions"
+    - "Perform matrix multiplication and broadcasting"
+    - "Use Einstein summation notation"
+    - "Apply automatic differentiation with autograd"
+    - "Move tensors to GPU for acceleration"
+  # Prerequisites - MODULE SPECIFIC
+  competency_required:
+    - "Basic Python programming"
+    - "Linear algebra fundamentals"
+    - "Understanding of matrices and vectors"
+  # Assessment criteria - MODULE SPECIFIC
+  assesses:
+    - "Ability to create and manipulate tensors"
+    - "Understanding of tensor operations"
+    - "Proficiency in matrix multiplication"
+    - "Knowledge of automatic differentiation"
+  # Topics - MODULE SPECIFIC
+  about:
+    - name: "PyTorch Tensors"
+      identifier: "pytorch-tensors"
+    - name: "Linear Algebra"
+      identifier: "linear-algebra"
+    - name: "Automatic Differentiation"
+      identifier: "autograd"
+    - name: "GPU Computing"
+      identifier: "gpu-computing"
 
