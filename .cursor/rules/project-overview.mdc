@@ -14,8 +14,34 @@ For details on the course's brand, tone, and the persona of Professor Torchenste
 
 **Primary Goal:** To create the best free online PyTorch tutorial for understanding the core building blocks of modern AI architectures like Transformers and Diffusion models.
 
-- **URL:** [https://pytorchcourse.com](https://pytorchcourse.com)
-- **GitHub:** [https://github.com/ksopyla/pytorch-course](https://github.com/ksopyla/pytorch-course)
+- **Course URL:** [https://pytorchcourse.com](https://pytorchcourse.com)
+- **Course GitHub:** [https://github.com/ksopyla/pytorch-course](https://github.com/ksopyla/pytorch-course)
+- **Organization:** [Torchenstein-Lab](https://github.com/Torchenstein-Lab)
+- **Meta Lab GitHub:** [https://github.com/Torchenstein-Lab/pytorch-course-meta](https://github.com/Torchenstein-Lab/pytorch-course-meta)
+
+### Dual-Repository Architecture
+
+This project uses a **two-repository model** to separate concerns and enable radical transparency:
+
+1. **`pytorch-course`** (This repo) - Public course content
+   - All lessons, notebooks, and documentation
+   - Student-facing materials
+   - Published to pytorchcourse.com
+
+2. **`pytorch-course-meta`** (Sister repo) - Behind-the-scenes content (Private, Sponsors Only)
+   - Under Torchenstein-Lab organization
+   - Sponsorship strategy and templates
+   - SEO implementation guides
+   - Content creation processes and workflows
+   - Marketing and social media templates
+   - Research notes and decision logs
+   - "Building in public" materials
+
+**Why This Architecture?**
+- Separates educational content from meta/strategy content
+- Enables "building in public" without cluttering the course repo
+- Private meta-lab provides exclusive value for sponsors
+- Provides unprecedented transparency into the creation process
 
 
 ### Why I created this course:
@@ -80,6 +106,8 @@ The project is developed on a **Windows 11** environment.
 
 ## 5. Project Structure & Key Files
 
+### `pytorch-course` Repository (This Repo)
+
 -   `mkdocs.yml`: Main MkDocs configuration file, including site navigation.
 -   `pyproject.toml` / `poetry.lock`: Python dependency management files.
 -   `.github/workflows/`: Contains the GitHub Actions workflow for building and deploying the site.
@@ -92,10 +120,28 @@ The project is developed on a **Windows 11** environment.
 -   `learning_designs/`: Contains the learning designs for the project.
 -   `brand/`: Contains the additional branding materials, persona descriptions, prompts for torchenstein midjourney prompts for the project.
 
+### `pytorch-course-meta` Repository (Sister Repo)
+
+**Location:** Separate repository in the same workspace folder  
+**Organization:** Torchenstein-Lab  
+**Access:** Private - Automatic for GitHub Sponsors
+
+-   `seo_strategy/`: SEO implementation guides and schema.org documentation
+-   `sponsorship_strategy/`: Complete sponsorship framework, templates, and action plans
+-   `sponsor_page_creation/`: Sponsorship page design and platform configuration
+-   `README.md`: Lab overview and navigation
+
+**Working with Both Repositories:**
+- Both repos are accessible in the Cursor workspace
+- Use `@pytorch-course/` and `@pytorch-course-meta/` to reference files across repos
+- Strategy documents in lab inform content creation in course
+- Course progress feeds into lab notes and marketing materials
+
 ## 6. Key Resources
 
 For a deeper understanding of the project's different facets, refer to these key documents:
 
+### Course Content & Brand (`pytorch-course`)
 -   **Brand & Persona:** `brand/course_prof_torchenstein_persona.md`
 -   **Professor Torchenstein's Backstory:** `docs/story/victor_torchenstein_origin.md`
 -   **Vision and Mission:** `docs/story/vision_and_mission.md`
@@ -103,4 +149,46 @@ For a deeper understanding of the project's different facets, refer to these key
 -   **Overall Course Structure:** `docs/pytorch-course-structure.md`
 -   **Sponsor the Rebellion:** `docs/story/sponsor.md`
 -   **Lesson Generation Template:** `learning_designs/lesson-template.md`
+
+### Strategy & Process (`pytorch-course-meta`)
+-   **SEO Implementation:** `@pytorch-course-meta/seo_strategy/seo_implementation_guide.md`
+-   **Sponsorship Master Plan:** `@pytorch-course-meta/sponsorship_strategy/sponsorship_strategy_master.md`
+-   **Content Calendar:** `@pytorch-course-meta/sponsorship_strategy/content_calendar_template.md`
+-   **Lab Notes Template:** `@pytorch-course-meta/sponsorship_strategy/lab_notes_template.md`
+
+## 7. Cross-Repository Workflows
+
+### Common Development Patterns
+
+**Creating New Lessons with SEO:**
+```
+"Create a new lesson on [TOPIC] in @pytorch-course/docs/0X-module/.
+Follow SEO guidelines from @pytorch-course-meta/seo_strategy/seo_implementation_guide.md
+and ensure .meta.yml is properly configured."
+```
+
+**Monthly Content Generation:**
+```
+"Review recent work in @pytorch-course/docs/ and generate this month's
+Lab Notes using @pytorch-course-meta/sponsorship_strategy/lab_notes_template.md"
+```
+
+**Social Media Batch Creation:**
+```
+"Based on new lessons in @pytorch-course/, create social media posts
+following @pytorch-course-meta/sponsorship_strategy/content_calendar_template.md"
+```
+
+**Strategic Updates:**
+```
+"Update course statistics in @pytorch-course-meta/sponsorship_strategy/ 
+based on current @pytorch-course/ structure"
+```
+
+### Best Practices
+
+1. **Reference Strategy First:** Before creating content, check relevant templates in `pytorch-course-meta`
+2. **Update Both Repos:** When course evolves, update strategy docs to reflect reality
+3. **Cross-Reference Naturally:** Use `@repo-name/path` to reference files across repositories
+4. **Keep Lab Current:** Lab notes and metrics should reflect actual course progress
 
