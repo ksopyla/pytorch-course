@@ -1,6 +1,6 @@
 ---
 title: "Module 1 – I See Tensors Everywhere 🕶️"
-description: "Master PyTorch tensors from creation to GPU operations. Learn tensor manipulation, matrix multiplication, broadcasting, Einstein summation, and automatic differentiation (autograd)."
+description: "Master PyTorch tensors. Learn tensor manipulation, matrix multiplication, broadcasting, Einstein summation, and automatic differentiation"
 # Social card customization
 image: "assets/images/torchenstein_in_the_lab_blackboard.png"
 # SEO and metadata

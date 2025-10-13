@@ -9,7 +9,7 @@ hide:
   - navigation
   - toc
 # SEO and metadata
-description: "Master PyTorch fundamentals with prof. Torchenstein, the best free online tutorial. Learn tensors, neural networks, transformers, and diffusion models through engaging, hands-on lessons."
+description: "Master PyTorch fundamentals with prof. Torchenstein, the best free online tutorial. From tensors to transformers through engaging, hands-on lessons."
 # Social card customization
 image: "assets/images/torchenstein_coffe_explore_tensors_v2.png"
 keywords: "PyTorch tutorial, free PyTorch course, deep learning tutorial, neural networks, transformers, machine learning education, AI course"
