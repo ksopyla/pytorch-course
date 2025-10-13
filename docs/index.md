@@ -1,7 +1,7 @@
 ---
 # Template configuration
 template: home.html
-title: "Free PyTorch Course | Master Deep Learning with Professor Torchenstein"
+title: "Free PyTorch Course | Master PyTorch with Prof. Torchenstein"
 subtitle: "Join Professor Torchenstein on an electrifying quest to bend PyTorch to your will. Mwahahaha!"
 start_button_text: "Enter the Laboratory"
 start_url: "pytorch_course_structure.md"
