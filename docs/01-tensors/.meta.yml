@@ -9,7 +9,7 @@ image: "assets/images/torchenstein_in_the_lab_blackboard.png"
 # SEO defaults
 keywords: "PyTorch tensors, tensor operations, deep learning, neural networks, PyTorch tutorial"
 
-description: "Torchenstein PyTorch couse: Module 1: tensors from creation to manipulation, broadcasting, Einstein summation, and automatic differentiation."
+description: "Torchenstein PyTorch course: Module 1: tensors from creation to manipulation, broadcasting, Einstein summation, and automatic differentiation."
 
 # Search boost for lessons (slightly lower than overview pages)
 search:

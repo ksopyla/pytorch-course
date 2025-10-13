@@ -1,5 +1,5 @@
 ---
-title: "Sponsor Professor Torchenstein's PyTorch Course | Support Free AI Education"
+title: "Sponsor Prof. Torchenstein's PyTorch Course | Support AI Education"
 description: "Join the rebellion! Support open-source PyTorch education. Company partnerships and individual sponsorships available. Help democratize AI knowledge."
 # Social card customization
 image: "assets/images/torchenstein_empower_atoms.mp4"

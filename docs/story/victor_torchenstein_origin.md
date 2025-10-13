@@ -1,5 +1,5 @@
 ---
-title: "Meet Professor Torchenstein | The Origin Story of PyTorch's Mad Scientist"
+title: "Meet Prof. Torchenstein | Origin Story of PyTorch's Mad Scientist"
 description: "Discover Professor Victor Py Torchenstein's journey from academia to corporate rebellion. Learn why he's fighting to democratize PyTorch education."
 # Social card customization
 image: "assets/images/Logo_purple_cube_transparent.png"
