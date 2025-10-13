@@ -1,6 +1,6 @@
 ---
 title: "PyTorch Course Structure | Complete Curriculum Roadmap"
-description: "Comprehensive PyTorch course curriculum covering tensors, neural networks, transformers, and advanced deep learning techniques from first principles."
+description: "Torchenstein PyTorch course curriculum from tensors to transformers through engaging, hands-on lessons."
 keywords: "PyTorch course structure, PyTorch curriculum, deep learning roadmap, PyTorch modules, transformer course"
 author: "Krzysztof Sopyła"
 search:
