@@ -123,6 +123,7 @@ Perfect for ML practitioners, students, and anyone who wants to support accessib
     **What you get:**
     
   
+    - 🔬 **Private Repository Access**: Automatic access to the `pytorch-course-meta` private repository with all my strategies, templates, research notes, and AI tool workflows!
     - 🖼️ **The Digital Vault**: High-resolution Professor Torchenstein artwork, GIFs, animations, and wallpapers for your digital workspace
     - 💬 **Community Hub Access**: Join our Buy Me a Coffee community with updates, galleries, tools, and behind-the-scenes content from the lab
     - 🏆 **Wall of Computational Allies**: Your name immortalized on our sponsor page as a supporter of the rebellion
