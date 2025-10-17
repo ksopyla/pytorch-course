@@ -76,7 +76,7 @@ What you will learn:
 1. [Summoning Your First Tensors](01-tensors/01_introduction_to_tensors.ipynb) - Conjure tensors from void, inspect their properties, revel in their latent might (with a bit of help from `torch.randn`, `torch.zeros`, `torch.ones`, `torch.arange`, `torch.linspace` etc).
 2. [Tensor Surgery & Assembly](01-tensors/02a_tensor_manipulation.ipynb) - Master the dark arts of tensor dissection and fusion! Slice with precision, concatenate with `torch.cat`, stack into new dimensions with `torch.stack`, and split tensors with `torch.split` and `torch.chunk`.
 3. [Tensor Metamorphosis: Shape-Shifting Mastery](01-tensors/02b_tensor_metamorphosis.ipynb) - Transform tensor forms without altering their essence! Reshape reality with `torch.reshape` and `torch.view`, manipulate dimensions with `squeeze` and `unsqueeze`, expand and replicate data with `expand` and `repeat`, and flatten complex structures with `torch.flatten`.
-4. [DTypes & Devices: Choose Your Weapons](01-tensors/03_data_types_and_devices.ipynb) - Select precision (`float16`, `bfloat16`) and hardware (`CPU`, `GPU`, `MPS`) like a seasoned archmage, and get a glimpse into the dark arts of quantization.
+4. [DTypes & Devices: Choose Your Weapons](01-tensors/03_data_types_and_devices.ipynb) - Select precision and hardware like a seasoned archmage choosing spell components, under the hood of `torch.float`, `torch.float16`, etc.
 
 
 ### 1.2 Tensor Operations: Computation at Scale
