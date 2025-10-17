@@ -11,6 +11,8 @@ keywords: "PyTorch tensors, tensor operations, deep learning, neural networks, P
 
 description: "Torchenstein PyTorch course: Module 1: tensors from creation to manipulation, broadcasting, Einstein summation, and automatic differentiation."
 
+tocdepth: 3
+
 # Search boost for lessons (slightly lower than overview pages)
 search:
   boost: 1.2
