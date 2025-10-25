@@ -231,7 +231,7 @@
     ,"datePublished": "2025-05-15 12:38:28"
     
     
-    ,"dateModified": "2025-10-17 20:01:59"
+    ,"dateModified": "2025-10-25 19:11:07"
     
   }
   </script>
@@ -2642,7 +2642,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <hr/>
 <h3 id="professor-torchensteins-grand-directive">Professor Torchenstein's Grand Directive<a class="anchor-link" href="#professor-torchensteins-grand-directive">¶</a></h3><p>Mwahahaha! You've sliced, fused, and reshaped tensors with the skill of a master surgeon! You can command their <em>form</em>, but what of their <em>soul</em>? What of their very <em>essence</em>?</p>
 <p>Today, we delve deeper! We shall master the two most fundamental properties of any tensor: its <strong>data type (<code>dtype</code>)</strong>, which determines its precision and power, and its <strong>device</strong>, the very dimension it inhabits—be it the humble CPU or the roaring, incandescent GPU! Choose your weapons wisely, for these choices dictate the speed, precision, and ultimate success of your grand experiments!</p>
-<p><img alt="Torchenstein holding a glowing cube" src="/assets/images/torchenstein_presenting_cube.png"/></p>
+<p><img alt="Torchenstein holding a glowing beaker" src="/assets/images/torchenstein_beakers_datatypes_v2.png"/></p>
 </div>
 </div>
 </div>
@@ -2695,16 +2695,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=da3e474a">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-</div>
-</div>
-</div>
-</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e5959079">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -2738,12 +2728,12 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=34a79b3b">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=39656f26">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-1">
@@ -2756,8 +2746,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># A single number for our comparison</span>
-<span class="n">pi_number</span> <span class="o">=</span> <span class="mf">3.14159265</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+
+<span class="c1"># A single number for our comparison</span>
+<span class="n">pi_number</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">pi</span>
 
 <span class="c1"># Summoning tensors of different float dtypes</span>
 <span class="n">tensor_fp64</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">pi_number</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
@@ -2765,11 +2757,11 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="n">tensor_fp16</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">pi_number</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float16</span><span class="p">)</span>
 <span class="n">tensor_bf16</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">pi_number</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">bfloat16</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"--- Floating-Point Memory Footprints ---"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_fp64</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">tensor_fp64</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.8f</span><span class="si">}</span><span class="s2"> | Memory: </span><span class="si">{</span><span class="n">tensor_fp64</span><span class="o">.</span><span class="n">element_size</span><span class="p">()</span><span class="si">}</span><span class="s2"> bytes"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_fp32</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">tensor_fp32</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.8f</span><span class="si">}</span><span class="s2"> | Memory: </span><span class="si">{</span><span class="n">tensor_fp32</span><span class="o">.</span><span class="n">element_size</span><span class="p">()</span><span class="si">}</span><span class="s2"> bytes"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_fp16</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">tensor_fp16</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.8f</span><span class="si">}</span><span class="s2"> | Memory: </span><span class="si">{</span><span class="n">tensor_fp16</span><span class="o">.</span><span class="n">element_size</span><span class="p">()</span><span class="si">}</span><span class="s2"> bytes (Half the size of fp32!)"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_bf16</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">tensor_bf16</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.8f</span><span class="si">}</span><span class="s2"> | Memory: </span><span class="si">{</span><span class="n">tensor_bf16</span><span class="o">.</span><span class="n">element_size</span><span class="p">()</span><span class="si">}</span><span class="s2"> bytes (Half the size of fp32!)"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--- Floating-Point digits after decimal point and Memory Footprints ---"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_fp64</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">:  </span><span class="si">{</span><span class="n">tensor_fp64</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.10f</span><span class="si">}</span><span class="s2"> | Memory: </span><span class="si">{</span><span class="n">tensor_fp64</span><span class="o">.</span><span class="n">element_size</span><span class="p">()</span><span class="si">}</span><span class="s2"> bytes"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_fp32</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">:  </span><span class="si">{</span><span class="n">tensor_fp32</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.10f</span><span class="si">}</span><span class="s2"> | Memory: </span><span class="si">{</span><span class="n">tensor_fp32</span><span class="o">.</span><span class="n">element_size</span><span class="p">()</span><span class="si">}</span><span class="s2"> bytes"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_fp16</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">:  </span><span class="si">{</span><span class="n">tensor_fp16</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.10f</span><span class="si">}</span><span class="s2"> | Memory: </span><span class="si">{</span><span class="n">tensor_fp16</span><span class="o">.</span><span class="n">element_size</span><span class="p">()</span><span class="si">}</span><span class="s2"> bytes (Half the size of fp32!)"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_bf16</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">tensor_bf16</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.10f</span><span class="si">}</span><span class="s2"> | Memory: </span><span class="si">{</span><span class="n">tensor_bf16</span><span class="o">.</span><span class="n">element_size</span><span class="p">()</span><span class="si">}</span><span class="s2"> bytes (Half the size of fp32!)"</span><span class="p">)</span>
 
 <span class="c1"># A large number for our comparison</span>
 
@@ -2779,14 +2771,16 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="n">tensor_fp16</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">large_number</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float16</span><span class="p">)</span>
 <span class="n">tensor_bf16</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">large_number</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">bfloat16</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"--- Floating-Point Memory Footprints ---"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_fp64</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">tensor_fp64</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.8f</span><span class="si">}</span><span class="s2"> "</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_fp32</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">tensor_fp32</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.8f</span><span class="si">}</span><span class="s2"> "</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_fp16</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">tensor_fp16</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.8f</span><span class="si">}</span><span class="s2"> "</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_bf16</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">tensor_bf16</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.8f</span><span class="si">}</span><span class="s2"> "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--- Floating-Point Higher range, precision loss ---"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_fp64</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">:  </span><span class="si">{</span><span class="n">tensor_fp64</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.10f</span><span class="si">}</span><span class="s2"> "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_fp32</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">:  </span><span class="si">{</span><span class="n">tensor_fp32</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.10f</span><span class="si">}</span><span class="s2"> "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_fp16</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">:  </span><span class="si">{</span><span class="n">tensor_fp16</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.10f</span><span class="si">}</span><span class="s2"> "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_bf16</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">tensor_bf16</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.10f</span><span class="si">}</span><span class="s2"> "</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-1"># A single number for our comparison
-pi_number = 3.14159265
+<div class="clipboard-copy-txt" id="cell-1">import torch
+
+# A single number for our comparison
+pi_number = torch.pi
 
 # Summoning tensors of different float dtypes
 tensor_fp64 = torch.tensor(pi_number, dtype=torch.float64)
@@ -2794,11 +2788,11 @@ tensor_fp32 = torch.tensor(pi_number, dtype=torch.float32)
 tensor_fp16 = torch.tensor(pi_number, dtype=torch.float16)
 tensor_bf16 = torch.tensor(pi_number, dtype=torch.bfloat16)
 
-print("--- Floating-Point Memory Footprints ---")
-print(f"{tensor_fp64.dtype}: {tensor_fp64.item():.8f} | Memory: {tensor_fp64.element_size()} bytes")
-print(f"{tensor_fp32.dtype}: {tensor_fp32.item():.8f} | Memory: {tensor_fp32.element_size()} bytes")
-print(f"{tensor_fp16.dtype}: {tensor_fp16.item():.8f} | Memory: {tensor_fp16.element_size()} bytes (Half the size of fp32!)")
-print(f"{tensor_bf16.dtype}: {tensor_bf16.item():.8f} | Memory: {tensor_bf16.element_size()} bytes (Half the size of fp32!)")
+print("--- Floating-Point digits after decimal point and Memory Footprints ---")
+print(f"{tensor_fp64.dtype}:  {tensor_fp64.item():.10f} | Memory: {tensor_fp64.element_size()} bytes")
+print(f"{tensor_fp32.dtype}:  {tensor_fp32.item():.10f} | Memory: {tensor_fp32.element_size()} bytes")
+print(f"{tensor_fp16.dtype}:  {tensor_fp16.item():.10f} | Memory: {tensor_fp16.element_size()} bytes (Half the size of fp32!)")
+print(f"{tensor_bf16.dtype}: {tensor_bf16.item():.10f} | Memory: {tensor_bf16.element_size()} bytes (Half the size of fp32!)")
 
 # A large number for our comparison
 
@@ -2808,11 +2802,12 @@ tensor_fp32 = torch.tensor(large_number, dtype=torch.float32)
 tensor_fp16 = torch.tensor(large_number, dtype=torch.float16)
 tensor_bf16 = torch.tensor(large_number, dtype=torch.bfloat16)
 
-print("--- Floating-Point Memory Footprints ---")
-print(f"{tensor_fp64.dtype}: {tensor_fp64.item():.8f} ")
-print(f"{tensor_fp32.dtype}: {tensor_fp32.item():.8f} ")
-print(f"{tensor_fp16.dtype}: {tensor_fp16.item():.8f} ")
-print(f"{tensor_bf16.dtype}: {tensor_bf16.item():.8f} ")</div>
+print("--- Floating-Point Higher range, precision loss ---")
+print(f"{tensor_fp64.dtype}:  {tensor_fp64.item():.10f} ")
+print(f"{tensor_fp32.dtype}:  {tensor_fp32.item():.10f} ")
+print(f"{tensor_fp16.dtype}:  {tensor_fp16.item():.10f} ")
+print(f"{tensor_bf16.dtype}: {tensor_bf16.item():.10f} ")
+</div>
 </div>
 </div>
 </div>
@@ -2824,16 +2819,16 @@ print(f"{tensor_bf16.dtype}: {tensor_bf16.item():.8f} ")</div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>--- Floating-Point Memory Footprints ---
-torch.float64: 3.14159265 | Memory: 8 bytes
-torch.float32: 3.14159274 | Memory: 4 bytes
-torch.float16: 3.14062500 | Memory: 2 bytes (Half the size of fp32!)
-torch.bfloat16: 3.14062500 | Memory: 2 bytes (Half the size of fp32!)
---- Floating-Point Memory Footprints ---
-torch.float64: 70000.00000000 
-torch.float32: 70000.00000000 
-torch.float16: inf 
-torch.bfloat16: 70144.00000000 
+<pre>--- Floating-Point digits after decimal point and Memory Footprints ---
+torch.float64:  3.1415926536 | Memory: 8 bytes
+torch.float32:  3.1415927410 | Memory: 4 bytes
+torch.float16:  3.1406250000 | Memory: 2 bytes (Half the size of fp32!)
+torch.bfloat16: 3.1406250000 | Memory: 2 bytes (Half the size of fp32!)
+--- Floating-Point Higher range, precision loss ---
+torch.float64:  70000.0000000000 
+torch.float32:  70000.0000000000 
+torch.float16:  inf 
+torch.bfloat16: 70144.0000000000 
 </pre>
 </div>
 </div>
@@ -2896,13 +2891,88 @@ $$ 1. \underbrace{0001000101110000}_{\text{16 binary digits}} \times 2^{16} $$</
 </div>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=33079c36">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Being armed with this knowledge, try to figure out what happens with the following numbers:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=58870994">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-2">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">large_number</span> <span class="o">=</span> <span class="mf">70000.0</span><span class="o">+</span> <span class="n">torch</span><span class="o">.</span><span class="n">pi</span> 
+<span class="n">tensor_fp64</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">large_number</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
+<span class="n">tensor_fp32</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">large_number</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+<span class="n">tensor_fp16</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">large_number</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float16</span><span class="p">)</span>
+<span class="n">tensor_bf16</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">large_number</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">bfloat16</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--- Floating-Point Higher range plus some values after decimal point ---"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_fp64</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">:  </span><span class="si">{</span><span class="n">tensor_fp64</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.10f</span><span class="si">}</span><span class="s2"> "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_fp32</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">:  </span><span class="si">{</span><span class="n">tensor_fp32</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.10f</span><span class="si">}</span><span class="s2"> "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_fp16</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">:  </span><span class="si">{</span><span class="n">tensor_fp16</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.10f</span><span class="si">}</span><span class="s2"> "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">tensor_bf16</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">tensor_bf16</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.10f</span><span class="si">}</span><span class="s2"> "</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-2">large_number = 70000.0+ torch.pi 
+tensor_fp64 = torch.tensor(large_number, dtype=torch.float64)
+tensor_fp32 = torch.tensor(large_number, dtype=torch.float32)
+tensor_fp16 = torch.tensor(large_number, dtype=torch.float16)
+tensor_bf16 = torch.tensor(large_number, dtype=torch.bfloat16)
+
+print("--- Floating-Point Higher range plus some values after decimal point ---")
+print(f"{tensor_fp64.dtype}:  {tensor_fp64.item():.10f} ")
+print(f"{tensor_fp32.dtype}:  {tensor_fp32.item():.10f} ")
+print(f"{tensor_fp16.dtype}:  {tensor_fp16.item():.10f} ")
+print(f"{tensor_bf16.dtype}: {tensor_bf16.item():.10f} ")</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>--- Floating-Point Higher range plus some values after decimal point ---
+torch.float64:  70003.1415926536 
+torch.float32:  70003.1406250000 
+torch.float16:  inf 
+torch.bfloat16: 70144.0000000000 
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e8186105">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="why-bfloat16-is-better-for-transformers-a-tale-of-range-and-rebellion">Why <code>bfloat16</code> is Better for Transformers: A Tale of Range and Rebellion<a class="anchor-link" href="#why-bfloat16-is-better-for-transformers-a-tale-of-range-and-rebellion">¶</a></h3><p>Mwahahaha! Now for a secret that separates the masters from the mere dabblers! Both <code>float16</code> and <code>bfloat16</code> use 16 bits, but they do so with diabolically different strategies. Understanding this is key to training modern marvels like Transformers!</p>
+<h3 id="why-bfloat16-is-better-for-transformers-a-tale-of-range-and-rebellion">Why <code>bfloat16</code> is Better for Transformers: A Tale of Range and Rebellion<a class="anchor-link" href="#why-bfloat16-is-better-for-transformers-a-tale-of-range-and-rebellion">¶</a></h3><p>Now for a secret that separates the masters from the mere dabblers! Both <code>float16</code> and <code>bfloat16</code> use 16 bits, but they do so with diabolically different strategies. Understanding this is key to training modern marvels like Transformers!</p>
 <p>The world of <code>float32</code> is a stable, predictable realm. But it is slow and memory-hungry! When we attempt to accelerate our dark arts with <code>float16</code>, we encounter a terrible problem: <strong>The Tyranny of a Tiny Range</strong>.</p>
 <h4 id="the-peril-of-float16-an-unstable-concoction">The Peril of <code>float16</code>: An Unstable Concoction<a class="anchor-link" href="#the-peril-of-float16-an-unstable-concoction">¶</a></h4><p><code>float16</code> dedicates more bits to its mantissa (precision), but starves its exponent (range). Its numerical world is small, spanning from roughly <code>6.1 x 10^-5</code> to <code>65,504</code>. Anything outside this narrow window becomes an <code>inf</code> (infinity) or vanishes to zero.</p>
 <p>During the chaotic process of training a massive Transformer, values can fluctuate wildly. This is where the tyranny of <code>float16</code> strikes hardest:</p>
@@ -2939,91 +3009,6 @@ The most powerful creations of our time were forged in the fires of <code>bfloat
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=92708d1e">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-2">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># --- Range vs. Precision Demonstration ---</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"--- A Tale of Two Half-Precisions ---"</span><span class="p">)</span>
-
-<span class="c1"># A number just beyond the float16 limit to demonstrate range</span>
-<span class="n">high_number</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="mf">70000.0</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span> 
-<span class="c1"># A high-precision number to demonstrate precision</span>
-<span class="n">precise_number</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="mf">3.14159265</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
-
-<span class="c1"># --- The Range Test ---</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\\</span><span class="s2">n--- The Range Test (Number: </span><span class="si">{</span><span class="n">high_number</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2">) ---"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Original (Float32):  </span><span class="si">{</span><span class="n">high_number</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-
-<span class="n">bf16_high</span> <span class="o">=</span> <span class="n">high_number</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">bfloat16</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"BFloat16: </span><span class="si">{</span><span class="n">bf16_high</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2"> (Handles the large number flawlessly!)"</span><span class="p">)</span>
-
-<span class="n">fp16_high</span> <span class="o">=</span> <span class="n">high_number</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">float16</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Float16:  </span><span class="si">{</span><span class="n">fp16_high</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2"> (Overflows to infinity! A tragic failure!)"</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-2"># --- Range vs. Precision Demonstration ---
-print("--- A Tale of Two Half-Precisions ---")
-
-# A number just beyond the float16 limit to demonstrate range
-high_number = torch.tensor(70000.0, dtype=torch.float32) 
-# A high-precision number to demonstrate precision
-precise_number = torch.tensor(3.14159265, dtype=torch.float32)
-
-# --- The Range Test ---
-print(f"\\n--- The Range Test (Number: {high_number.item()}) ---")
-print(f"Original (Float32):  {high_number.item()}")
-
-bf16_high = high_number.to(torch.bfloat16)
-print(f"BFloat16: {bf16_high.item()} (Handles the large number flawlessly!)")
-
-fp16_high = high_number.to(torch.float16)
-print(f"Float16:  {fp16_high.item()} (Overflows to infinity! A tragic failure!)")
-
-
-
-
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>--- A Tale of Two Half-Precisions ---
-\n--- The Range Test (Number: 70000.0) ---
-Original (Float32):  70000.0
-BFloat16: 70144.0 (Handles the large number flawlessly!)
-Float16:  inf (Overflows to infinity! A tragic failure!)
-\n--- The Precision Test (Number: 3.1415927410125732) ---
-Original (Float32):  3.14159274
-Float16:  3.14062500 (More precise, closer to the original!)
-BFloat16: 3.14062500 (Less precise, a worthy sacrifice for range!)
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=afc22bef">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -3042,12 +3027,12 @@ BFloat16: 3.14062500 (Less precise, a worthy sacrifice for range!)
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f4012cc9">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=05d18941">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-3">
@@ -3120,17 +3105,17 @@ torch.uint8: Memory: 1 bytes
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="the-transmutation-spell-witnessing-the-effects-of-casting">The Transmutation Spell: Witnessing the Effects of Casting<a class="anchor-link" href="#the-transmutation-spell-witnessing-the-effects-of-casting">¶</a></h3><p>Now that you understand the properties of each <code>dtype</code>, witness what happens when we perform the transmutation! Casting from a higher precision <code>dtype</code> to a lower one is a <strong>lossy</strong> operation. You gain speed and save memory, but at the cost of precision!</p>
-<p>Observe the fate of our high-precision number as we cast it down the alchemical ladder.</p>
+<p>Observe the fate of our high-precision number as we cast it down the alchemical ladder. Compare the precision loss of each dtype, esspecially float16 and bfloat16 (some time they are the same, some time not).</p>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d557c015">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=01c520d9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-4">
@@ -3144,40 +3129,54 @@ torch.uint8: Memory: 1 bytes
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Our original, high-precision tensor</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">pi</span>
+
+
 <span class="n">pi_fp64</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="mf">3.141592653589793</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Original (float64): </span><span class="si">{</span><span class="n">pi_fp64</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.15f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
-<span class="c1"># Cast it down</span>
-<span class="n">pi_fp32</span> <span class="o">=</span> <span class="n">pi_fp64</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Casted to float32:  </span><span class="si">{</span><span class="n">pi_fp32</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.15f</span><span class="si">}</span><span class="s2"> (Precision lost!)"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">12</span><span class="p">):</span>
+    <span class="n">pi_2power</span> <span class="o">=</span> <span class="n">pi_fp64</span><span class="o">**</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"--------------------------------"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"pi^</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">pi_2power</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.10f</span><span class="si">}</span><span class="s2"> float64"</span><span class="p">)</span>
 
-<span class="n">pi_fp16</span> <span class="o">=</span> <span class="n">pi_fp64</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">float16</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Casted to float16:  </span><span class="si">{</span><span class="n">pi_fp16</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.15f</span><span class="si">}</span><span class="s2"> (More precision lost!)"</span><span class="p">)</span>
+    <span class="c1"># Cast it down</span>
+    <span class="n">pi_fp32</span> <span class="o">=</span> <span class="n">pi_2power</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Casted to float32:  </span><span class="si">{</span><span class="n">pi_fp32</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.10f</span><span class="si">}</span><span class="s2"> (Precision lost!)"</span><span class="p">)</span>
 
-<span class="n">pi_bf16</span> <span class="o">=</span> <span class="n">pi_fp64</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">bfloat16</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Casted to bfloat16: </span><span class="si">{</span><span class="n">pi_bf16</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.15f</span><span class="si">}</span><span class="s2"> (Less precision, but still good!)"</span><span class="p">)</span>
+    <span class="n">pi_fp16</span> <span class="o">=</span> <span class="n">pi_2power</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">float16</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Casted to float16:  </span><span class="si">{</span><span class="n">pi_fp16</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.10f</span><span class="si">}</span><span class="s2"> (More precision lost!)"</span><span class="p">)</span>
 
-<span class="c1"># Casting floats to integers truncates the decimal part entirely!</span>
-<span class="n">integer_pi</span> <span class="o">=</span> <span class="n">pi_fp64</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">int</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\\</span><span class="s2">nCasted to integer: </span><span class="si">{</span><span class="n">integer_pi</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2"> (Decimal part vanished!)"</span><span class="p">)</span>
+    <span class="n">pi_bf16</span> <span class="o">=</span> <span class="n">pi_2power</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">bfloat16</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Casted to bfloat16: </span><span class="si">{</span><span class="n">pi_bf16</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.10f</span><span class="si">}</span><span class="s2"> (More precision loss!)"</span><span class="p">)</span>
+
+    <span class="c1"># Casting floats to integers truncates the decimal part entirely!</span>
+    <span class="n">integer_pi</span> <span class="o">=</span> <span class="n">pi_2power</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">int</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Casted to integer: </span><span class="si">{</span><span class="n">integer_pi</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2"> (Decimal part vanished!)"</span><span class="p">)</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-4"># Our original, high-precision tensor
+from math import pi
+
+
 pi_fp64 = torch.tensor(3.141592653589793, dtype=torch.float64)
-print(f"Original (float64): {pi_fp64.item():.15f}")
 
-# Cast it down
-pi_fp32 = pi_fp64.to(torch.float32)
-print(f"Casted to float32:  {pi_fp32.item():.15f} (Precision lost!)")
+for i in range(12):
+    pi_2power = pi_fp64**(i+1)
+    print("--------------------------------")
+    print(f"pi^{i+1}: {pi_2power.item():.10f} float64")
 
-pi_fp16 = pi_fp64.to(torch.float16)
-print(f"Casted to float16:  {pi_fp16.item():.15f} (More precision lost!)")
+    # Cast it down
+    pi_fp32 = pi_2power.to(torch.float32)
+    print(f"Casted to float32:  {pi_fp32.item():.10f} (Precision lost!)")
 
-pi_bf16 = pi_fp64.to(torch.bfloat16)
-print(f"Casted to bfloat16: {pi_bf16.item():.15f} (Less precision, but still good!)")
+    pi_fp16 = pi_2power.to(torch.float16)
+    print(f"Casted to float16:  {pi_fp16.item():.10f} (More precision lost!)")
 
-# Casting floats to integers truncates the decimal part entirely!
-integer_pi = pi_fp64.to(torch.int)
-print(f"\\nCasted to integer: {integer_pi.item()} (Decimal part vanished!)")
+    pi_bf16 = pi_2power.to(torch.bfloat16)
+    print(f"Casted to bfloat16: {pi_bf16.item():.10f} (More precision loss!)")
+
+    # Casting floats to integers truncates the decimal part entirely!
+    integer_pi = pi_2power.to(torch.int)
+    print(f"Casted to integer: {integer_pi.item()} (Decimal part vanished!)")
 
 </div>
 </div>
@@ -3191,25 +3190,81 @@ print(f"\\nCasted to integer: {integer_pi.item()} (Decimal part vanished!)")
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Original (float64): 3.141592653589793
-Casted to float32:  3.141592741012573 (Precision lost!)
-Casted to float16:  3.140625000000000 (More precision lost!)
-Casted to bfloat16: 3.140625000000000 (Less precision, but still good!)
+<pre>--------------------------------
+pi^1: 3.1415926536 float64
+Casted to float32:  3.1415927410 (Precision lost!)
+Casted to float16:  3.1406250000 (More precision lost!)
+Casted to bfloat16: 3.1406250000 (More precision loss!)
 \nCasted to integer: 3 (Decimal part vanished!)
+--------------------------------
+pi^2: 9.8696044011 float64
+Casted to float32:  9.8696041107 (Precision lost!)
+Casted to float16:  9.8671875000 (More precision lost!)
+Casted to bfloat16: 9.8750000000 (More precision loss!)
+\nCasted to integer: 9 (Decimal part vanished!)
+--------------------------------
+pi^3: 31.0062766803 float64
+Casted to float32:  31.0062770844 (Precision lost!)
+Casted to float16:  31.0000000000 (More precision lost!)
+Casted to bfloat16: 31.0000000000 (More precision loss!)
+\nCasted to integer: 31 (Decimal part vanished!)
+--------------------------------
+pi^4: 97.4090910340 float64
+Casted to float32:  97.4090881348 (Precision lost!)
+Casted to float16:  97.4375000000 (More precision lost!)
+Casted to bfloat16: 97.5000000000 (More precision loss!)
+\nCasted to integer: 97 (Decimal part vanished!)
+--------------------------------
+pi^5: 306.0196847853 float64
+Casted to float32:  306.0196838379 (Precision lost!)
+Casted to float16:  306.0000000000 (More precision lost!)
+Casted to bfloat16: 306.0000000000 (More precision loss!)
+\nCasted to integer: 306 (Decimal part vanished!)
+--------------------------------
+pi^6: 961.3891935753 float64
+Casted to float32:  961.3892211914 (Precision lost!)
+Casted to float16:  961.5000000000 (More precision lost!)
+Casted to bfloat16: 960.0000000000 (More precision loss!)
+\nCasted to integer: 961 (Decimal part vanished!)
+--------------------------------
+pi^7: 3020.2932277768 float64
+Casted to float32:  3020.2932128906 (Precision lost!)
+Casted to float16:  3020.0000000000 (More precision lost!)
+Casted to bfloat16: 3024.0000000000 (More precision loss!)
+\nCasted to integer: 3020 (Decimal part vanished!)
+--------------------------------
+pi^8: 9488.5310160706 float64
+Casted to float32:  9488.5312500000 (Precision lost!)
+Casted to float16:  9488.0000000000 (More precision lost!)
+Casted to bfloat16: 9472.0000000000 (More precision loss!)
+\nCasted to integer: 9488 (Decimal part vanished!)
+--------------------------------
+pi^9: 29809.0993334462 float64
+Casted to float32:  29809.0996093750 (Precision lost!)
+Casted to float16:  29808.0000000000 (More precision lost!)
+Casted to bfloat16: 29824.0000000000 (More precision loss!)
+\nCasted to integer: 29809 (Decimal part vanished!)
+--------------------------------
+pi^10: 93648.0474760830 float64
+Casted to float32:  93648.0468750000 (Precision lost!)
+Casted to float16:  inf (More precision lost!)
+Casted to bfloat16: 93696.0000000000 (More precision loss!)
+\nCasted to integer: 93648 (Decimal part vanished!)
+--------------------------------
+pi^11: 294204.0179738905 float64
+Casted to float32:  294204.0312500000 (Precision lost!)
+Casted to float16:  inf (More precision lost!)
+Casted to bfloat16: 294912.0000000000 (More precision loss!)
+\nCasted to integer: 294204 (Decimal part vanished!)
+--------------------------------
+pi^12: 924269.1815233737 float64
+Casted to float32:  924269.1875000000 (Precision lost!)
+Casted to float16:  inf (More precision lost!)
+Casted to bfloat16: 925696.0000000000 (More precision loss!)
+\nCasted to integer: 924269 (Decimal part vanished!)
 </pre>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2c20f057">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Let's witness this cosmic trade-off with a simple experiment. We will test <code>bfloat16</code>'s vast <strong>range</strong> against <code>float16</code>'s superior <strong>precision</strong>.</p>
 </div>
 </div>
 </div>
@@ -3235,15 +3290,14 @@ Casted to bfloat16: 3.140625000000000 (Less precision, but still good!)
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h2 id="part-3-the-lair-of-computation-mastering-devices-device">Part 3: The Lair of Computation - Mastering Devices (<code>device</code>)<a class="anchor-link" href="#part-3-the-lair-of-computation-mastering-devices-device">¶</a></h2><h3 id="1-a-tour-of-computational-realms">1. A Tour of Computational Realms<a class="anchor-link" href="#1-a-tour-of-computational-realms">¶</a></h3><p>A tensor's <code>dtype</code> is its soul, but its <code>.device</code> is its home—the very dimension where its calculations will be performed. Choosing the right device is the key to unlocking diabolical computational speed!</p>
+<h2 id="part-3-the-lair-of-computation-mastering-devices-device">Part 3: The Lair of Computation - Mastering Devices (<code>device</code>)<a class="anchor-link" href="#part-3-the-lair-of-computation-mastering-devices-device">¶</a></h2><h3 id="1-a-tour-of-computational-realms">1. A Tour of Computational Realms<a class="anchor-link" href="#1-a-tour-of-computational-realms">¶</a></h3><p>A tensor's <code>dtype</code> is its soul, but its <code>.device</code> is its home—the very dimension where its calculations will be performed. Choosing the right device is the key to unlocking diabolical computational speed! While many alchemical experiments can be run on a standard CPU, true power lies in specialized hardware.</p>
+<p>Here are the primary realms you can command:</p>
 <ul>
-<li><p><strong><code>cpu</code></strong>: The Central Processing Unit. The reliable, ever-present brain of your machine. It's a generalist, capable of any task, but it performs calculations sequentially. For small tensors and simple operations, it's perfectly adequate.</p>
-</li>
-<li><p><strong><code>cuda</code></strong>: The NVIDIA GPU! This is the roaring heart of the deep learning revolution. A GPU is a specialist, containing thousands of cores designed for one purpose: massively parallel computation. Moving your tensors and models here is <strong>essential</strong> for training any serious neural network.</p>
-</li>
-<li><p><strong><code>mps</code></strong>: Metal Performance Shaders. Apple's answer to CUDA for their new M-series chips. If you are wielding a modern Mac, this device will unleash the power of its integrated GPU.</p>
-</li>
-<li></li>
+<li><strong><code>cpu</code></strong>: The Central Processing Unit. The reliable, ever-present brain of your machine. It's a generalist, capable of any task, but it performs calculations sequentially. For small tensors and simple operations, it's our trusty home base.</li>
+<li><strong><code>cuda</code></strong>: The NVIDIA GPU! This is the roaring heart of the deep learning revolution. A GPU is a specialist, containing thousands of cores designed for one purpose: massively parallel computation. Moving your tensors here is <strong>essential</strong> for training any serious neural network.</li>
+<li><strong><code>mps</code></strong>: Metal Performance Shaders. Apple's answer to CUDA for their new M-series chips. If you are wielding a modern Mac, this device will unleash the power of its integrated GPU for accelerated training.</li>
+<li><strong><code>xpu</code></strong>: A realm forged by Intel for their own line of GPUs and AI accelerators, showing PyTorch's expanding hardware support.</li>
+<li><strong><code>xla</code></strong>: A gateway to Google's powerful Tensor Processing Units (TPUs), often used for training colossal models in the cloud.</li>
 </ul>
 <h4 id="how-pytorch-supports-so-many-devices-the-magic-of-aten">How PyTorch Supports So Many Devices: The Magic of ATen<a class="anchor-link" href="#how-pytorch-supports-so-many-devices-the-magic-of-aten">¶</a></h4><p>How can a single command like <code>torch.matmul()</code> work on a CPU, an NVIDIA GPU, and an Apple chip? The secret lies in PyTorch's core library: <strong>ATen</strong>.</p>
 <p>Think of ATen as a grand dispatcher in our laboratory. When you issue a command, ATen inspects the tensor's <code>.device</code> and redirects the command to a highly optimized, device-specific library:</p>
@@ -3251,6 +3305,7 @@ Casted to bfloat16: 3.140625000000000 (Less precision, but still good!)
 <li>If <code>device='cpu'</code>, ATen calls libraries like <code>oneDNN</code>.</li>
 <li>If <code>device='cuda'</code>, ATen calls NVIDIA's legendary <code>cuDNN</code> library.</li>
 <li>If <code>device='mps'</code>, ATen calls Apple's <code>Metal</code> framework.</li>
+<li>For other devices like <code>xpu</code> or <code>xla</code>, it calls their respective specialized backends.</li>
 </ul>
 <p>This brilliant design makes your PyTorch code incredibly portable. You write the incantation once, and ATen ensures it is executed with maximum power on whatever hardware you possess!</p>
 </div>
@@ -3269,7 +3324,7 @@ Casted to bfloat16: 3.140625000000000 (Less precision, but still good!)
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=92104d9f">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=899db4a5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -3371,7 +3426,7 @@ print(teleported_tensor)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="part-4-practical-speed-trials">Part 4: Practical speed trials<a class="anchor-link" href="#part-4-practical-speed-trials">¶</a></h1><p>Testing the bfloat vs float16 and quantized operations</p>
+<h1 id="part-4-practical-speed-trials">Part 4: Practical speed trials<a class="anchor-link" href="#part-4-practical-speed-trials">¶</a></h1>
 </div>
 </div>
 </div>
@@ -3382,7 +3437,7 @@ print(teleported_tensor)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="speed-trials-precision-vs-performance">Speed Trials: Precision vs. Performance<a class="anchor-link" href="#speed-trials-precision-vs-performance">¶</a></h3><p>Now for a truly electrifying experiment! We shall create colossal tensors of different floating-point <code>dtypes</code> and subject them to a barrage of mathematical operations. Witness the dramatic speed-up that 16-bit formats provide!</p>
+<h2 id="speed-trials-elemental-alchemy">Speed Trials: Elemental Alchemy<a class="anchor-link" href="#speed-trials-elemental-alchemy">¶</a></h2><p>Now for a truly electrifying experiment! We shall create colossal tensors of different floating-point <code>dtypes</code> and subject them to a barrage of intense, element-wise mathematical operations. This will reveal the dramatic speed differences between our alchemical elixirs when processed in the massively parallel crucible of a GPU.</p>
 </div>
 </div>
 </div>
@@ -3392,7 +3447,7 @@ print(teleported_tensor)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-6">
@@ -3405,117 +3460,145 @@ print(teleported_tensor)
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># A utility for our speed trials</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">time_operation</span><span class="p">(</span><span class="n">tensor</span><span class="p">):</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+
+<span class="c1"># A utility for our CPU speed trials</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">time_cpu_operation</span><span class="p">(</span><span class="n">tensor</span><span class="p">):</span>
     <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-    <span class="c1"># A sequence of intense mathematical transformations!</span>
-    <span class="n">torch</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">tensor</span><span class="p">))</span>
+    <span class="c1"># A sequence of intense, element-wise mathematical transformations!</span>
+    <span class="n">torch</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">tensor</span><span class="p">)))</span>
     <span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">end_time</span> <span class="o">-</span> <span class="n">start_time</span>
 
 <span class="c1"># A colossal tensor for our experiment!</span>
-<span class="n">large_tensor_cpu</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">2000</span><span class="p">)</span>
+<span class="n">size</span> <span class="o">=</span> <span class="mi">20000</span> <span class="c1"># Larger size to make the computation more intensive</span>
+<span class="n">large_tensor_cpu</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">size</span><span class="p">)</span>
 
-<span class="c1"># --- SPEED TRIALS ON CPU ---</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"--- CPU Speed Trials ---"</span><span class="p">)</span>
-<span class="n">time_fp32_cpu</span> <span class="o">=</span> <span class="n">time_operation</span><span class="p">(</span><span class="n">large_tensor_cpu</span><span class="o">.</span><span class="n">clone</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Float32 on CPU took: </span><span class="si">{</span><span class="n">time_fp32_cpu</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds"</span><span class="p">)</span>
-
-<span class="c1"># Float16 on CPU can be slower as it's not natively supported for computation</span>
-<span class="n">time_fp16_cpu</span> <span class="o">=</span> <span class="n">time_operation</span><span class="p">(</span><span class="n">large_tensor_cpu</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">float16</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Float16 on CPU took: </span><span class="si">{</span><span class="n">time_fp16_cpu</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds (Often slower on CPU!)"</span><span class="p">)</span>
-
-<span class="c1"># BFloat16 on CPU</span>
-<span class="n">time_bf16_cpu</span> <span class="o">=</span> <span class="n">time_operation</span><span class="p">(</span><span class="n">large_tensor_cpu</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">bfloat16</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"BFloat16 on CPU took: </span><span class="si">{</span><span class="n">time_bf16_cpu</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds</span><span class="se">\\</span><span class="s2">n"</span><span class="p">)</span>
-
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"--- CPU Speed Trials (</span><span class="si">{</span><span class="n">size</span><span class="si">}</span><span class="s2">x</span><span class="si">{</span><span class="n">size</span><span class="si">}</span><span class="s2"> Element-wise Operations) ---"</span><span class="p">)</span>
+<span class="n">time_fp32_cpu</span> <span class="o">=</span> <span class="n">time_cpu_operation</span><span class="p">(</span><span class="n">large_tensor_cpu</span><span class="o">.</span><span class="n">clone</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Float32 on CPU took: </span><span class="si">{</span><span class="n">time_fp32_cpu</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds (Our baseline)"</span><span class="p">)</span>
 
 <span class="c1"># --- SPEED TRIALS ON GPU (if available) ---</span>
 <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"--- GPU Speed Trials ---"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\\</span><span class="s2">n--- GPU Speed Trials (</span><span class="si">{</span><span class="n">size</span><span class="si">}</span><span class="s2">x</span><span class="si">{</span><span class="n">size</span><span class="si">}</span><span class="s2"> Element-wise Operations) ---"</span><span class="p">)</span>
     <span class="n">large_tensor_gpu</span> <span class="o">=</span> <span class="n">large_tensor_cpu</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s2">"cuda"</span><span class="p">)</span>
 
-    <span class="c1"># Make sure operations are complete before stopping the timer</span>
-    <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">synchronize</span><span class="p">()</span>
-    <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-    <span class="n">torch</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">large_tensor_gpu</span><span class="o">.</span><span class="n">clone</span><span class="p">()))</span>
-    <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">synchronize</span><span class="p">()</span>
-    <span class="n">time_fp32_gpu</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Float32 on GPU took: </span><span class="si">{</span><span class="n">time_fp32_gpu</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds"</span><span class="p">)</span>
+    <span class="c1"># Define the GPU timing utility using CUDA events for accuracy</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">time_gpu_operation</span><span class="p">(</span><span class="n">tensor</span><span class="p">):</span>
+        <span class="n">start_event</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">Event</span><span class="p">(</span><span class="n">enable_timing</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">end_event</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">Event</span><span class="p">(</span><span class="n">enable_timing</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        
+        <span class="c1"># Warm-up run to compile kernels, etc.</span>
+        <span class="n">torch</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">tensor</span><span class="p">)))</span>
+        
+        <span class="c1"># The actual timed operation</span>
+        <span class="n">start_event</span><span class="o">.</span><span class="n">record</span><span class="p">()</span>
+        <span class="n">torch</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">tensor</span><span class="p">)))</span>
+        <span class="n">end_event</span><span class="o">.</span><span class="n">record</span><span class="p">()</span>
+        <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">synchronize</span><span class="p">()</span> <span class="c1"># Wait for the GPU operation to complete</span>
+        
+        <span class="k">return</span> <span class="n">start_event</span><span class="o">.</span><span class="n">elapsed_time</span><span class="p">(</span><span class="n">end_event</span><span class="p">)</span> <span class="o">/</span> <span class="mi">1000</span> <span class="c1"># Return time in seconds</span>
 
-    <span class="n">large_tensor_gpu_fp16</span> <span class="o">=</span> <span class="n">large_tensor_gpu</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">float16</span><span class="p">)</span>
-    <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">synchronize</span><span class="p">()</span>
-    <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-    <span class="n">torch</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">large_tensor_gpu_fp16</span><span class="p">))</span>
-    <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">synchronize</span><span class="p">()</span>
-    <span class="n">time_fp16_gpu</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Float16 on GPU took: </span><span class="si">{</span><span class="n">time_fp16_gpu</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds (Diabolical Speed!)"</span><span class="p">)</span>
+    <span class="c1"># Time Float32</span>
+    <span class="n">time_fp32_gpu</span> <span class="o">=</span> <span class="n">time_gpu_operation</span><span class="p">(</span><span class="n">large_tensor_gpu</span><span class="o">.</span><span class="n">clone</span><span class="p">())</span>
+    <span class="n">speedup_vs_cpu</span> <span class="o">=</span> <span class="n">time_fp32_cpu</span> <span class="o">/</span> <span class="n">time_fp32_gpu</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Float32 on GPU took: </span><span class="si">{</span><span class="n">time_fp32_gpu</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds (</span><span class="si">{</span><span class="n">speedup_vs_cpu</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">x faster than CPU!)"</span><span class="p">)</span>
 
-    <span class="n">large_tensor_gpu_bf16</span> <span class="o">=</span> <span class="n">large_tensor_gpu</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">bfloat16</span><span class="p">)</span>
-    <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">synchronize</span><span class="p">()</span>
-    <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-    <span class="n">torch</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">large_tensor_gpu_bf16</span><span class="p">))</span>
-    <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">synchronize</span><span class="p">()</span>
-    <span class="n">time_bf16_gpu</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"BFloat16 on GPU took: </span><span class="si">{</span><span class="n">time_bf16_gpu</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds (Also incredibly fast!)"</span><span class="p">)</span>
+    <span class="c1"># Time Float16</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">large_tensor_gpu_fp16</span> <span class="o">=</span> <span class="n">large_tensor_gpu</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">float16</span><span class="p">)</span>
+        <span class="n">time_fp16_gpu</span> <span class="o">=</span> <span class="n">time_gpu_operation</span><span class="p">(</span><span class="n">large_tensor_gpu_fp16</span><span class="p">)</span>
+        <span class="n">speedup_vs_gpu_fp32</span> <span class="o">=</span> <span class="n">time_fp32_gpu</span> <span class="o">/</span> <span class="n">time_fp16_gpu</span>
+        <span class="n">speedup_vs_cpu_fp32</span> <span class="o">=</span> <span class="n">time_fp32_cpu</span> <span class="o">/</span> <span class="n">time_fp16_gpu</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Float16 on GPU took: </span><span class="si">{</span><span class="n">time_fp16_gpu</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds (</span><span class="si">{</span><span class="n">speedup_vs_gpu_fp32</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">x vs GPU FP32, </span><span class="si">{</span><span class="n">speedup_vs_cpu_fp32</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">x vs CPU FP32!)"</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">RuntimeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Float16 not supported on this GPU: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+    <span class="c1"># Time BFloat16</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">large_tensor_gpu_bf16</span> <span class="o">=</span> <span class="n">large_tensor_gpu</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">bfloat16</span><span class="p">)</span>
+        <span class="n">time_bf16_gpu</span> <span class="o">=</span> <span class="n">time_gpu_operation</span><span class="p">(</span><span class="n">large_tensor_gpu_bf16</span><span class="p">)</span>
+        <span class="n">speedup_vs_gpu_fp32</span> <span class="o">=</span> <span class="n">time_fp32_gpu</span> <span class="o">/</span> <span class="n">time_bf16_gpu</span>
+        <span class="n">speedup_vs_cpu_fp32</span> <span class="o">=</span> <span class="n">time_fp32_cpu</span> <span class="o">/</span> <span class="n">time_bf16_gpu</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"BFloat16 on GPU took: </span><span class="si">{</span><span class="n">time_bf16_gpu</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds (</span><span class="si">{</span><span class="n">speedup_vs_gpu_fp32</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">x vs GPU FP32, </span><span class="si">{</span><span class="n">speedup_vs_cpu_fp32</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">x vs CPU FP32!)"</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">RuntimeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"BFloat16 not supported on this GPU: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"GPU not available for speed trials. A true pity!"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\\</span><span class="s2">nGPU not available for speed trials. A true pity!"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-6"># A utility for our speed trials
-def time_operation(tensor):
+<div class="clipboard-copy-txt" id="cell-6">import time
+
+import time
+import torch
+
+# A utility for our CPU speed trials
+def time_cpu_operation(tensor):
     start_time = time.time()
-    # A sequence of intense mathematical transformations!
-    torch.exp(torch.sin(tensor))
+    # A sequence of intense, element-wise mathematical transformations!
+    torch.exp(torch.cos(torch.sin(tensor)))
     end_time = time.time()
     return end_time - start_time
 
 # A colossal tensor for our experiment!
-large_tensor_cpu = torch.randn(2000, 2000)
+size = 20000 # Larger size to make the computation more intensive
+large_tensor_cpu = torch.randn(size, size)
 
-# --- SPEED TRIALS ON CPU ---
-print("--- CPU Speed Trials ---")
-time_fp32_cpu = time_operation(large_tensor_cpu.clone())
-print(f"Float32 on CPU took: {time_fp32_cpu:.6f} seconds")
-
-# Float16 on CPU can be slower as it's not natively supported for computation
-time_fp16_cpu = time_operation(large_tensor_cpu.clone().to(torch.float16))
-print(f"Float16 on CPU took: {time_fp16_cpu:.6f} seconds (Often slower on CPU!)")
-
-# BFloat16 on CPU
-time_bf16_cpu = time_operation(large_tensor_cpu.clone().to(torch.bfloat16))
-print(f"BFloat16 on CPU took: {time_bf16_cpu:.6f} seconds\\n")
-
+print(f"--- CPU Speed Trials ({size}x{size} Element-wise Operations) ---")
+time_fp32_cpu = time_cpu_operation(large_tensor_cpu.clone())
+print(f"Float32 on CPU took: {time_fp32_cpu:.6f} seconds (Our baseline)")
 
 # --- SPEED TRIALS ON GPU (if available) ---
 if torch.cuda.is_available():
-    print("--- GPU Speed Trials ---")
+    print(f"\\n--- GPU Speed Trials ({size}x{size} Element-wise Operations) ---")
     large_tensor_gpu = large_tensor_cpu.to("cuda")
 
-    # Make sure operations are complete before stopping the timer
-    torch.cuda.synchronize()
-    start_time = time.time()
-    torch.exp(torch.sin(large_tensor_gpu.clone()))
-    torch.cuda.synchronize()
-    time_fp32_gpu = time.time() - start_time
-    print(f"Float32 on GPU took: {time_fp32_gpu:.6f} seconds")
+    # Define the GPU timing utility using CUDA events for accuracy
+    def time_gpu_operation(tensor):
+        start_event = torch.cuda.Event(enable_timing=True)
+        end_event = torch.cuda.Event(enable_timing=True)
+        
+        # Warm-up run to compile kernels, etc.
+        torch.exp(torch.cos(torch.sin(tensor)))
+        
+        # The actual timed operation
+        start_event.record()
+        torch.exp(torch.cos(torch.sin(tensor)))
+        end_event.record()
+        torch.cuda.synchronize() # Wait for the GPU operation to complete
+        
+        return start_event.elapsed_time(end_event) / 1000 # Return time in seconds
 
-    large_tensor_gpu_fp16 = large_tensor_gpu.clone().to(torch.float16)
-    torch.cuda.synchronize()
-    start_time = time.time()
-    torch.exp(torch.sin(large_tensor_gpu_fp16))
-    torch.cuda.synchronize()
-    time_fp16_gpu = time.time() - start_time
-    print(f"Float16 on GPU took: {time_fp16_gpu:.6f} seconds (Diabolical Speed!)")
+    # Time Float32
+    time_fp32_gpu = time_gpu_operation(large_tensor_gpu.clone())
+    speedup_vs_cpu = time_fp32_cpu / time_fp32_gpu
+    print(f"Float32 on GPU took: {time_fp32_gpu:.6f} seconds ({speedup_vs_cpu:.2f}x faster than CPU!)")
 
-    large_tensor_gpu_bf16 = large_tensor_gpu.clone().to(torch.bfloat16)
-    torch.cuda.synchronize()
-    start_time = time.time()
-    torch.exp(torch.sin(large_tensor_gpu_bf16))
-    torch.cuda.synchronize()
-    time_bf16_gpu = time.time() - start_time
-    print(f"BFloat16 on GPU took: {time_bf16_gpu:.6f} seconds (Also incredibly fast!)")
+    # Time Float16
+    try:
+        large_tensor_gpu_fp16 = large_tensor_gpu.clone().to(torch.float16)
+        time_fp16_gpu = time_gpu_operation(large_tensor_gpu_fp16)
+        speedup_vs_gpu_fp32 = time_fp32_gpu / time_fp16_gpu
+        speedup_vs_cpu_fp32 = time_fp32_cpu / time_fp16_gpu
+        print(f"Float16 on GPU took: {time_fp16_gpu:.6f} seconds ({speedup_vs_gpu_fp32:.2f}x vs GPU FP32, {speedup_vs_cpu_fp32:.2f}x vs CPU FP32!)")
+    except RuntimeError as e:
+        print(f"Float16 not supported on this GPU: {e}")
+
+    # Time BFloat16
+    try:
+        large_tensor_gpu_bf16 = large_tensor_gpu.clone().to(torch.bfloat16)
+        time_bf16_gpu = time_gpu_operation(large_tensor_gpu_bf16)
+        speedup_vs_gpu_fp32 = time_fp32_gpu / time_bf16_gpu
+        speedup_vs_cpu_fp32 = time_fp32_cpu / time_bf16_gpu
+        print(f"BFloat16 on GPU took: {time_bf16_gpu:.6f} seconds ({speedup_vs_gpu_fp32:.2f}x vs GPU FP32, {speedup_vs_cpu_fp32:.2f}x vs CPU FP32!)")
+    except RuntimeError as e:
+        print(f"BFloat16 not supported on this GPU: {e}")
+
 else:
-    print("GPU not available for speed trials. A true pity!")
+    print("\\nGPU not available for speed trials. A true pity!")
 
 </div>
 </div>
@@ -3529,14 +3612,12 @@ else:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>--- CPU Speed Trials ---
-Float32 on CPU took: 0.011775 seconds
-Float16 on CPU took: 0.005535 seconds (Often slower on CPU!)
-BFloat16 on CPU took: 0.001954 seconds\n
---- GPU Speed Trials ---
-Float32 on GPU took: 0.054487 seconds
-Float16 on GPU took: 0.000000 seconds (Diabolical Speed!)
-BFloat16 on GPU took: 0.000000 seconds (Also incredibly fast!)
+<pre>--- CPU Speed Trials (20000x20000 Element-wise Operations) ---
+Float32 on CPU took: 1.101989 seconds (Our baseline)
+\n--- GPU Speed Trials (20000x20000 Element-wise Operations) ---
+Float32 on GPU took: 0.027266 seconds (40.42x faster than CPU!)
+Float16 on GPU took: 0.015315 seconds (1.78x vs GPU FP32, 71.96x vs CPU FP32!)
+BFloat16 on GPU took: 0.015642 seconds (1.74x vs GPU FP32, 70.45x vs CPU FP32!)
 </pre>
 </div>
 </div>
@@ -3550,19 +3631,12 @@ BFloat16 on GPU took: 0.000000 seconds (Also incredibly fast!)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="part-21-a-glimpse-into-the-dark-art-of-quantization">Part 2.1: A Glimpse into the Dark Art of Quantization<a class="anchor-link" href="#part-21-a-glimpse-into-the-dark-art-of-quantization">¶</a></h2><p>Now, my apprentice, I shall grant you a peek into a forbidden realm: <strong>Quantization</strong>. This is the art of shrinking your models, making them faster and more efficient for inference, by converting their weights from high-precision <code>float32</code> into low-precision integers, most commonly <code>int8</code>!</p>
-<p><strong>Why does this matter?</strong>
-Imagine forging a colossal golem (<code>float32</code> model) that requires immense energy (memory and compute) to move. Quantization is like transmuting that golem into a swarm of nimble, lightning-fast sprites (<code>int8</code> model).</p>
-<ul>
-<li><strong>Speed:</strong> Integer arithmetic is vastly faster on modern CPUs and specialized hardware than floating-point math.</li>
-<li><strong>Size:</strong> An <code>int8</code> model can be <strong>4x smaller</strong> than its <code>float32</code> counterpart! This is critical for deploying models on devices with limited memory, like phones or embedded systems.</li>
-</ul>
-<p>We are merely scratching the surface here, but let us witness a simple demonstration of this power!</p>
+<h2 id="part-4-torchensteins-secret-scrolls-advanced-topics">Part 4: Torchenstein's Secret Scrolls (Advanced Topics)<a class="anchor-link" href="#part-4-torchensteins-secret-scrolls-advanced-topics">¶</a></h2><p>Mwahahaha! You have mastered the fundamentals. Now, for the secrets that separate the acolytes from the archmages! We shall conduct the truly diabolical experiments that require an understanding of both <code>dtypes</code> and <code>devices</code>!</p>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8aa4bb69">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ab9c278f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -3580,123 +3654,109 @@ Imagine forging a colossal golem (<code>float32</code> model) that requires imme
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># --- A Simple Quantization Demonstration ---</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># --- A Corrected Quantization Demonstration ---</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
 
-<span class="c1"># 1. Our "Model": A large float32 weight matrix</span>
-<span class="n">fp32_weights</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">2048</span><span class="p">,</span> <span class="mi">1024</span><span class="p">)</span>
-<span class="c1"># Our "Input": A typical input tensor</span>
-<span class="n">input_tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2048</span><span class="p">)</span>
+<span class="c1"># 1. Our "Model" and "Input"</span>
+<span class="n">fp32_weights</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">13</span><span class="p">,</span> <span class="mi">2</span><span class="o">**</span><span class="mi">13</span><span class="p">)</span>
+<span class="n">input_tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">**</span><span class="mi">13</span><span class="p">)</span>
 
-<span class="c1"># 2. The Quantization Spell</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">quantize_tensor</span><span class="p">(</span><span class="n">tensor</span><span class="p">):</span>
-    <span class="c1"># Find the scale and zero_point</span>
-    <span class="n">q_min</span><span class="p">,</span> <span class="n">q_max</span> <span class="o">=</span> <span class="o">-</span><span class="mi">128</span><span class="p">,</span> <span class="mi">127</span>
-    <span class="n">scale</span> <span class="o">=</span> <span class="p">(</span><span class="n">tensor</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">tensor</span><span class="o">.</span><span class="n">min</span><span class="p">())</span> <span class="o">/</span> <span class="p">(</span><span class="n">q_max</span> <span class="o">-</span> <span class="n">q_min</span><span class="p">)</span>
-    <span class="n">zero_point</span> <span class="o">=</span> <span class="n">q_min</span> <span class="o">-</span> <span class="p">(</span><span class="n">tensor</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="o">/</span> <span class="n">scale</span><span class="p">)</span>
-    <span class="n">zero_point</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">zero_point</span><span class="o">.</span><span class="n">round</span><span class="p">()</span><span class="o">.</span><span class="n">item</span><span class="p">())</span>
-    
+<span class="c1"># 2. The Symmetric Quantization Spell (zero_point = 0)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">quantize_symmetric</span><span class="p">(</span><span class="n">tensor</span><span class="p">):</span>
+    <span class="n">q_max</span> <span class="o">=</span> <span class="mi">127</span>
+    <span class="c1"># Find the scale: map the absolute max of the tensor to the quantization range</span>
+    <span class="n">scale</span> <span class="o">=</span> <span class="n">tensor</span><span class="o">.</span><span class="n">abs</span><span class="p">()</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">/</span> <span class="n">q_max</span>
     <span class="c1"># Quantize</span>
-    <span class="n">quantized_tensor</span> <span class="o">=</span> <span class="p">(</span><span class="n">tensor</span> <span class="o">/</span> <span class="n">scale</span> <span class="o">+</span> <span class="n">zero_point</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">int8</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">quantized_tensor</span><span class="p">,</span> <span class="n">scale</span><span class="p">,</span> <span class="n">zero_point</span>
+    <span class="n">quantized_tensor</span> <span class="o">=</span> <span class="p">(</span><span class="n">tensor</span> <span class="o">/</span> <span class="n">scale</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">()</span><span class="o">.</span><span class="n">clamp</span><span class="p">(</span><span class="o">-</span><span class="mi">127</span><span class="p">,</span> <span class="mi">127</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">int8</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">quantized_tensor</span><span class="p">,</span> <span class="n">scale</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">dequantize_tensor</span><span class="p">(</span><span class="n">quantized_tensor</span><span class="p">,</span> <span class="n">scale</span><span class="p">,</span> <span class="n">zero_point</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">quantized_tensor</span><span class="o">.</span><span class="n">float</span><span class="p">()</span> <span class="o">-</span> <span class="n">zero_point</span><span class="p">)</span> <span class="o">*</span> <span class="n">scale</span>
-
-<span class="n">int8_weights</span><span class="p">,</span> <span class="n">scale</span><span class="p">,</span> <span class="n">zero_point</span> <span class="o">=</span> <span class="n">quantize_tensor</span><span class="p">(</span><span class="n">fp32_weights</span><span class="p">)</span>
+<span class="c1"># 3. Quantize input and weights INDEPENDENTLY</span>
+<span class="n">int8_input</span><span class="p">,</span> <span class="n">scale_input</span> <span class="o">=</span> <span class="n">quantize_symmetric</span><span class="p">(</span><span class="n">input_tensor</span><span class="p">)</span>
+<span class="n">int8_weights</span><span class="p">,</span> <span class="n">scale_weights</span> <span class="o">=</span> <span class="n">quantize_symmetric</span><span class="p">(</span><span class="n">fp32_weights</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Original fp32 weights size: </span><span class="si">{</span><span class="n">fp32_weights</span><span class="o">.</span><span class="n">element_size</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">fp32_weights</span><span class="o">.</span><span class="n">nelement</span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="o">**</span><span class="mi">2</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> MB"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Quantized int8 weights size: </span><span class="si">{</span><span class="n">int8_weights</span><span class="o">.</span><span class="n">element_size</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">int8_weights</span><span class="o">.</span><span class="n">nelement</span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="o">**</span><span class="mi">2</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> MB (4x smaller!)</span><span class="se">\\</span><span class="s2">n"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Quantized int8 weights size: </span><span class="si">{</span><span class="n">int8_weights</span><span class="o">.</span><span class="n">element_size</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">int8_weights</span><span class="o">.</span><span class="n">nelement</span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="o">**</span><span class="mi">2</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> MB (A perfect 4x reduction!)</span><span class="se">\\</span><span class="s2">n"</span><span class="p">)</span>
 
-<span class="c1"># 3. Performance Comparison</span>
-
-<span class="c1"># Time float32 matrix multiplication</span>
+<span class="c1"># 4. Perform and Time operations</span>
+<span class="c1"># The "real" operation (float32)</span>
 <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="n">fp32_output</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">input_tensor</span><span class="p">,</span> <span class="n">fp32_weights</span><span class="p">)</span>
 <span class="n">fp32_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>
-
-<span class="c1"># Time int8 matrix multiplication (note: PyTorch needs specific functions for this,</span>
-<span class="c1"># but we simulate the concept by casting for the matmul)</span>
-<span class="c1"># In a real scenario, you'd use a quantized kernel for max speed.</span>
-<span class="n">int8_input</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">input_tensor</span> <span class="o">/</span> <span class="n">scale</span> <span class="o">+</span> <span class="n">zero_point</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">int8</span><span class="p">)</span> <span class="c1"># In reality input is quantized too</span>
-<span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="c1"># We need to use a function that supports int8 matmul, this is a conceptual demonstration</span>
-<span class="c1"># For a real speedup, one would use `torch.nn.quantized.functional.linear`</span>
-<span class="c1"># Here we just cast to a larger int type for the matmul to run</span>
-<span class="n">int8_output_simulated</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">int8_input</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">int32</span><span class="p">),</span> <span class="n">int8_weights</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">int32</span><span class="p">))</span>
-<span class="n">int8_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>
-
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Float32 matmul took: </span><span class="si">{</span><span class="n">fp32_time</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Simulated Int8 matmul took: </span><span class="si">{</span><span class="n">int8_time</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds (Conceptually MUCH faster on compatible hardware!)"</span><span class="p">)</span>
 
-<span class="c1"># 4. Compare the results</span>
-<span class="n">dequantized_output</span> <span class="o">=</span> <span class="n">dequantize_tensor</span><span class="p">(</span><span class="n">int8_output_simulated</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">int8</span><span class="p">),</span> <span class="n">scale</span><span class="p">,</span> <span class="n">zero_point</span><span class="p">)</span> <span class="c1"># This is not correct way to dequantize the output of matmul</span>
-<span class="c1"># A proper dequantization of matmul output would be `output * input_scale * weight_scale`</span>
-<span class="c1"># This is just for demonstration purposes</span>
-<span class="n">dequantized_output_proper</span> <span class="o">=</span> <span class="p">(</span><span class="n">int8_output_simulated</span><span class="o">.</span><span class="n">float</span><span class="p">()</span> <span class="o">*</span> <span class="n">scale</span> <span class="o">*</span> <span class="n">scale</span><span class="p">)</span> <span class="c1"># A simplification</span>
+<span class="c1"># The "quantized" operation (int8) - A CONCEPTUAL SIMULATION</span>
+<span class="c1"># NOTE: This is NOT a real-world speed test!</span>
+<span class="c1"># We must cast to a higher integer bit-depth (int32) for the standard matmul to work.</span>
+<span class="c1"># This up-casting ADDS overhead and prevents us from seeing the true speed-up.</span>
+<span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="n">int32_output</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">int8_input</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">int32</span><span class="p">),</span> <span class="n">int8_weights</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">int32</span><span class="p">))</span>
+<span class="n">int8_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Simulated Int8 matmul took: </span><span class="si">{</span><span class="n">int8_time</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds (Note: Slower here due to casting, but conceptually faster on specialized hardware!)"</span><span class="p">)</span>
 
-<span class="c1"># Let's check the difference</span>
-<span class="n">average_diff</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">fp32_output</span> <span class="o">-</span> <span class="n">dequantized_output_proper</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\\</span><span class="s2">nAverage difference between fp32 and dequantized output: </span><span class="si">{</span><span class="n">average_diff</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"A small price in precision for a monumental gain in speed and size! Mwahahaha!"</span><span class="p">)</span>
+
+<span class="c1"># 5. De-quantize the output to compare with the float32 result</span>
+<span class="c1"># The CORRECT formula uses both scales!</span>
+<span class="n">dequantized_output</span> <span class="o">=</span> <span class="n">int32_output</span><span class="o">.</span><span class="n">float</span><span class="p">()</span> <span class="o">*</span> <span class="n">scale_input</span> <span class="o">*</span> <span class="n">scale_weights</span>
+
+<span class="c1"># 6. Marvel at the results!</span>
+<span class="n">average_diff</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">fp32_output</span> <span class="o">-</span> <span class="n">dequantized_output</span><span class="p">))</span>
+<span class="n">max_diff</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">fp32_output</span> <span class="o">-</span> <span class="n">dequantized_output</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\\</span><span class="s2">nAverage absolute difference: </span><span class="si">{</span><span class="n">average_diff</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Max absolute difference: </span><span class="si">{</span><span class="n">max_diff</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"A truly minuscule price in precision for a monumental gain in size! Mwahahaha!"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-7"># --- A Simple Quantization Demonstration ---
+<div class="clipboard-copy-txt" id="cell-7"># --- A Corrected Quantization Demonstration ---
+import time
 
-# 1. Our "Model": A large float32 weight matrix
-fp32_weights = torch.randn(2048, 1024)
-# Our "Input": A typical input tensor
-input_tensor = torch.randn(1, 2048)
+# 1. Our "Model" and "Input"
+fp32_weights = torch.randn(2**13, 2**13)
+input_tensor = torch.randn(1, 2**13)
 
-# 2. The Quantization Spell
-def quantize_tensor(tensor):
-    # Find the scale and zero_point
-    q_min, q_max = -128, 127
-    scale = (tensor.max() - tensor.min()) / (q_max - q_min)
-    zero_point = q_min - (tensor.min() / scale)
-    zero_point = int(zero_point.round().item())
-    
+# 2. The Symmetric Quantization Spell (zero_point = 0)
+def quantize_symmetric(tensor):
+    q_max = 127
+    # Find the scale: map the absolute max of the tensor to the quantization range
+    scale = tensor.abs().max() / q_max
     # Quantize
-    quantized_tensor = (tensor / scale + zero_point).round().to(torch.int8)
-    return quantized_tensor, scale, zero_point
+    quantized_tensor = (tensor / scale).round().clamp(-127, 127).to(torch.int8)
+    return quantized_tensor, scale
 
-def dequantize_tensor(quantized_tensor, scale, zero_point):
-    return (quantized_tensor.float() - zero_point) * scale
-
-int8_weights, scale, zero_point = quantize_tensor(fp32_weights)
+# 3. Quantize input and weights INDEPENDENTLY
+int8_input, scale_input = quantize_symmetric(input_tensor)
+int8_weights, scale_weights = quantize_symmetric(fp32_weights)
 
 print(f"Original fp32 weights size: {fp32_weights.element_size() * fp32_weights.nelement() / 1024**2:.2f} MB")
-print(f"Quantized int8 weights size: {int8_weights.element_size() * int8_weights.nelement() / 1024**2:.2f} MB (4x smaller!)\\n")
+print(f"Quantized int8 weights size: {int8_weights.element_size() * int8_weights.nelement() / 1024**2:.2f} MB (A perfect 4x reduction!)\\n")
 
-# 3. Performance Comparison
-
-# Time float32 matrix multiplication
+# 4. Perform and Time operations
+# The "real" operation (float32)
 start_time = time.time()
 fp32_output = torch.matmul(input_tensor, fp32_weights)
 fp32_time = time.time() - start_time
-
-# Time int8 matrix multiplication (note: PyTorch needs specific functions for this,
-# but we simulate the concept by casting for the matmul)
-# In a real scenario, you'd use a quantized kernel for max speed.
-int8_input = torch.round(input_tensor / scale + zero_point).to(torch.int8) # In reality input is quantized too
-start_time = time.time()
-# We need to use a function that supports int8 matmul, this is a conceptual demonstration
-# For a real speedup, one would use `torch.nn.quantized.functional.linear`
-# Here we just cast to a larger int type for the matmul to run
-int8_output_simulated = torch.matmul(int8_input.to(torch.int32), int8_weights.to(torch.int32))
-int8_time = time.time() - start_time
-
 print(f"Float32 matmul took: {fp32_time:.6f} seconds")
-print(f"Simulated Int8 matmul took: {int8_time:.6f} seconds (Conceptually MUCH faster on compatible hardware!)")
 
-# 4. Compare the results
-dequantized_output = dequantize_tensor(int8_output_simulated.to(torch.int8), scale, zero_point) # This is not correct way to dequantize the output of matmul
-# A proper dequantization of matmul output would be `output * input_scale * weight_scale`
-# This is just for demonstration purposes
-dequantized_output_proper = (int8_output_simulated.float() * scale * scale) # A simplification
+# The "quantized" operation (int8) - A CONCEPTUAL SIMULATION
+# NOTE: This is NOT a real-world speed test!
+# We must cast to a higher integer bit-depth (int32) for the standard matmul to work.
+# This up-casting ADDS overhead and prevents us from seeing the true speed-up.
+start_time = time.time()
+int32_output = torch.matmul(int8_input.to(torch.int32), int8_weights.to(torch.int32))
+int8_time = time.time() - start_time
+print(f"Simulated Int8 matmul took: {int8_time:.6f} seconds (Note: Slower here due to casting, but conceptually faster on specialized hardware!)")
 
-# Let's check the difference
-average_diff = torch.mean(torch.abs(fp32_output - dequantized_output_proper))
-print(f"\\nAverage difference between fp32 and dequantized output: {average_diff:.4f}")
-print("A small price in precision for a monumental gain in speed and size! Mwahahaha!")
+
+# 5. De-quantize the output to compare with the float32 result
+# The CORRECT formula uses both scales!
+dequantized_output = int32_output.float() * scale_input * scale_weights
+
+# 6. Marvel at the results!
+average_diff = torch.mean(torch.abs(fp32_output - dequantized_output))
+max_diff = torch.max(torch.abs(fp32_output - dequantized_output))
+print(f"\\nAverage absolute difference: {average_diff.item():.4f}")
+print(f"Max absolute difference: {max_diff.item():.4f}")
+print("A truly minuscule price in precision for a monumental gain in size! Mwahahaha!")
+
+
 
 </div>
 </div>
@@ -3710,12 +3770,13 @@ print("A small price in precision for a monumental gain in speed and size! Mwaha
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Original fp32 weights size: 8.00 MB
-Quantized int8 weights size: 2.00 MB (4x smaller!)\n
-Float32 matmul took: 0.003999 seconds
-Simulated Int8 matmul took: 0.002805 seconds (Conceptually MUCH faster on compatible hardware!)
-\nAverage difference between fp32 and dequantized output: 5.5590
-A small price in precision for a monumental gain in speed and size! Mwahahaha!
+<pre>Original fp32 weights size: 256.00 MB
+Quantized int8 weights size: 64.00 MB (A perfect 4x reduction!)\n
+Float32 matmul took: 0.014178 seconds
+Simulated Int8 matmul took: 0.090720 seconds (Note: Slower here due to casting, but conceptually faster on specialized hardware!)
+\nAverage absolute difference: 1.1454
+Max absolute difference: 5.2049
+A truly minuscule price in precision for a monumental gain in size! Mwahahaha!
 </pre>
 </div>
 </div>
@@ -3723,59 +3784,29 @@ A small price in precision for a monumental gain in speed and size! Mwahahaha!
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2a1ed9fe">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=22a0f67f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f5a3b9f3">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="your-mission-forge-your-own-creation">Your Mission: Forge Your Own Creation!<a class="anchor-link" href="#your-mission-forge-your-own-creation">¶</a></h2><p>A true master never ceases to practice. I leave you with these challenges to solidify your newfound power. Do not be afraid to experiment—to the lab!</p>
-<ol>
-<li><p><strong>The Alchemist's Transmutation</strong>:</p>
+<h3 id="the-advanced-ritual-unleashing-true-quantized-speed">The Advanced Ritual: Unleashing True Quantized Speed<a class="anchor-link" href="#the-advanced-ritual-unleashing-true-quantized-speed">¶</a></h3><p>The previous experiment was a mere parlor trick! A conceptual demonstration! Now, you shall witness the <em>true</em> power of quantization. To do this, we must use a more advanced set of incantations that are specifically designed to speak to the machine's soul.</p>
+<p>We will use:</p>
 <ul>
-<li>Create a <code>(4, 4)</code> tensor of random numbers on the <code>cpu</code> with the default <code>float32</code> dtype.</li>
-<li>Print its <code>dtype</code> and <code>device</code>.</li>
-<li>Transmute this tensor into a <code>bfloat16</code> tensor and teleport it to the most powerful device your machine possesses.</li>
-<li>Print its new <code>dtype</code> and <code>device</code>.</li>
+<li><code>torch.quantize_per_tensor()</code>: A master spell that converts a float tensor into a true "quantized tensor" object, bundling the <code>int8</code> data, <code>scale</code>, and <code>zero_point</code> together.</li>
+<li><code>torch.nn.quantized.functional.linear()</code>: A specialized linear operation (our matrix multiplication) that is designed to work directly with these quantized objects, unleashing the underlying hardware acceleration (especially on CPU).</li>
 </ul>
-</li>
-<li><p><strong>The Precision Analyst</strong>:</p>
-<ul>
-<li>Create a <code>float64</code> tensor containing the number <code>[3.141592653589793]</code>.</li>
-<li>Cast it down to <code>float32</code> and then to <code>float16</code>.</li>
-<li>Print the value at each stage. Observe the loss of precision as you step down the ladder of alchemy!</li>
-</ul>
-</li>
-<li><p><strong>The Device-Aware Calculator</strong>:</p>
-<ul>
-<li>Create two large <code>(1000, 1000)</code> random tensors, <code>a</code> and <code>b</code>.</li>
-<li>Write a piece of code that checks if a powerful device (<code>cuda</code> or <code>mps</code>) is available.</li>
-<li>If it is, move both tensors to that device before performing a matrix multiplication (<code>a @ b</code>).</li>
-<li>If not, perform the operation on the <code>cpu</code>.</li>
-<li>Print the device on which the operation was performed. This is the foundation of all robust neural network code!</li>
-</ul>
-</li>
-</ol>
+<p>Prepare to witness a <em>real</em> speed-up!</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=fbad1446">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8301b01f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-8">
@@ -3788,79 +3819,111 @@ A small price in precision for a monumental gain in speed and size! Mwahahaha!
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Your code for the final challenges goes here!</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># --- A REAL Quantization Speed Test ---</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">torch.nn.quantized.functional</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">F</span>
 
-<span class="c1"># Challenge 1: The Alchemist's Transmutation</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"--- Challenge 1: The Alchemist's Transmutation ---"</span><span class="p">)</span>
-<span class="n">cpu_tensor_fp32</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Original tensor device: </span><span class="si">{</span><span class="n">cpu_tensor_fp32</span><span class="o">.</span><span class="n">device</span><span class="si">}</span><span class="s2">, dtype: </span><span class="si">{</span><span class="n">cpu_tensor_fp32</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="c1"># Ensure we are on the CPU, as quantized kernels are most mature there</span>
+<span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">"cpu"</span><span class="p">)</span>
+<span class="n">fp32_weights</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">13</span><span class="p">,</span> <span class="mi">2</span><span class="o">**</span><span class="mi">13</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">device</span><span class="p">)</span> <span class="c1"># Note the shape is (out_features, in_features) for F.linear</span>
+<span class="n">input_tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">**</span><span class="mi">13</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">device</span><span class="p">)</span>
 
-<span class="c1"># Use the device we selected earlier!</span>
-<span class="n">transmuted_tensor</span> <span class="o">=</span> <span class="n">cpu_tensor_fp32</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="o">=</span><span class="n">device</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">bfloat16</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Transmuted tensor device: </span><span class="si">{</span><span class="n">transmuted_tensor</span><span class="o">.</span><span class="n">device</span><span class="si">}</span><span class="s2">, dtype: </span><span class="si">{</span><span class="n">transmuted_tensor</span><span class="o">.</span><span class="n">dtype</span><span class="si">}</span><span class="se">\\</span><span class="s2">n"</span><span class="p">)</span>
+<span class="c1"># --- Standard Float32 performance ---</span>
+<span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="c1"># We need to transpose the weights for the standard matmul to match F.linear's expectation</span>
+<span class="n">fp32_output</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">input_tensor</span><span class="p">,</span> <span class="n">fp32_weights</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+<span class="n">fp32_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Standard Float32 matmul took: </span><span class="si">{</span><span class="n">fp32_time</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds"</span><span class="p">)</span>
+
+<span class="c1"># --- Advanced Quantized Ritual ---</span>
+<span class="c1"># 1. Create true quantized objects</span>
+<span class="c1"># NOTE: The specialized F.linear kernel expects the input to be UNSIGNED (quint8)</span>
+<span class="c1"># and the weights to be SIGNED (qint8).</span>
+<span class="n">q_input</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">quantize_per_tensor</span><span class="p">(</span><span class="n">input_tensor</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">zero_point</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">quint8</span><span class="p">)</span>
+<span class="n">q_weights</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">quantize_per_tensor</span><span class="p">(</span><span class="n">fp32_weights</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">zero_point</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">qint8</span><span class="p">)</span>
+
+<span class="c1"># 2. Use the specialized quantized linear function</span>
+<span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="c1"># The bias is None for a simple matmul. F.linear handles the layout correctly.</span>
+<span class="n">q_output</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">linear</span><span class="p">(</span><span class="n">q_input</span><span class="p">,</span> <span class="n">q_weights</span><span class="p">,</span> <span class="n">bias</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">q_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>
+<span class="c1"># Prevent division by zero if the operation is too fast</span>
+<span class="k">if</span> <span class="n">q_time</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">speedup</span> <span class="o">=</span> <span class="n">fp32_time</span> <span class="o">/</span> <span class="n">q_time</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Specialized Quantized matmul took: </span><span class="si">{</span><span class="n">q_time</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds (</span><span class="si">{</span><span class="n">speedup</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">x faster!)"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Specialized Quantized matmul took: </span><span class="si">{</span><span class="n">q_time</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2"> seconds (Too fast to measure speedup!)"</span><span class="p">)</span>
 
 
-<span class="c1"># Challenge 2: The Precision Analyst</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"--- Challenge 2: The Precision Analyst ---"</span><span class="p">)</span>
-<span class="n">pi_fp64</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">3.141592653589793</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
-<span class="n">pi_fp32</span> <span class="o">=</span> <span class="n">pi_fp64</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
-<span class="n">pi_fp16</span> <span class="o">=</span> <span class="n">pi_fp64</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">float16</span><span class="p">)</span>
+<span class="c1"># 3. Dequantize to check for precision loss</span>
+<span class="n">dequantized_output</span> <span class="o">=</span> <span class="n">q_output</span><span class="o">.</span><span class="n">dequantize</span><span class="p">()</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Float64 (Original): </span><span class="si">{</span><span class="n">pi_fp64</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.15f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Float32 (Reduced):  </span><span class="si">{</span><span class="n">pi_fp32</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.15f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Float16 (Sacrificed): </span><span class="si">{</span><span class="n">pi_fp16</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.15f</span><span class="si">}</span><span class="se">\\</span><span class="s2">n"</span><span class="p">)</span>
-
-
-<span class="c1"># Challenge 3: The Device-Aware Calculator</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"--- Challenge 3: The Device-Aware Calculator ---"</span><span class="p">)</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
-
-<span class="c1"># We already have our best `device` from the spell cast earlier!</span>
-<span class="n">a_on_device</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
-<span class="n">b_on_device</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
-
-<span class="c1"># Perform the operation</span>
-<span class="n">result</span> <span class="o">=</span> <span class="n">a_on_device</span> <span class="o">@</span> <span class="n">b_on_device</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Matrix multiplication performed on: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">device</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="c1"># 4. Compare the results</span>
+<span class="c1"># Note: The output of the standard matmul may need to be adjusted if shapes differ</span>
+<span class="n">average_diff</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">fp32_output</span> <span class="o">-</span> <span class="n">dequantized_output</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\\</span><span class="s2">nAverage absolute difference: </span><span class="si">{</span><span class="n">average_diff</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"BEHOLD! True speed AND minuscule precision loss! This is the power you seek!"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-8"># Your code for the final challenges goes here!
+<div class="clipboard-copy-txt" id="cell-8"># --- A REAL Quantization Speed Test ---
+import torch.nn.quantized.functional as F
 
-# Challenge 1: The Alchemist's Transmutation
-print("--- Challenge 1: The Alchemist's Transmutation ---")
-cpu_tensor_fp32 = torch.randn(4, 4)
-print(f"Original tensor device: {cpu_tensor_fp32.device}, dtype: {cpu_tensor_fp32.dtype}")
+# Ensure we are on the CPU, as quantized kernels are most mature there
+device = torch.device("cpu")
+fp32_weights = torch.randn(2**13, 2**13, device=device) # Note the shape is (out_features, in_features) for F.linear
+input_tensor = torch.randn(1, 2**13, device=device)
 
-# Use the device we selected earlier!
-transmuted_tensor = cpu_tensor_fp32.to(device=device, dtype=torch.bfloat16)
-print(f"Transmuted tensor device: {transmuted_tensor.device}, dtype: {transmuted_tensor.dtype}\\n")
+# --- Standard Float32 performance ---
+start_time = time.time()
+# We need to transpose the weights for the standard matmul to match F.linear's expectation
+fp32_output = torch.matmul(input_tensor, fp32_weights.T)
+fp32_time = time.time() - start_time
+print(f"Standard Float32 matmul took: {fp32_time:.6f} seconds")
+
+# --- Advanced Quantized Ritual ---
+# 1. Create true quantized objects
+# NOTE: The specialized F.linear kernel expects the input to be UNSIGNED (quint8)
+# and the weights to be SIGNED (qint8).
+q_input = torch.quantize_per_tensor(input_tensor, scale=0.1, zero_point=128, dtype=torch.quint8)
+q_weights = torch.quantize_per_tensor(fp32_weights, scale=0.1, zero_point=0, dtype=torch.qint8)
+
+# 2. Use the specialized quantized linear function
+start_time = time.time()
+# The bias is None for a simple matmul. F.linear handles the layout correctly.
+q_output = F.linear(q_input, q_weights, bias=None)
+q_time = time.time() - start_time
+# Prevent division by zero if the operation is too fast
+if q_time &gt; 0:
+    speedup = fp32_time / q_time
+    print(f"Specialized Quantized matmul took: {q_time:.6f} seconds ({speedup:.2f}x faster!)")
+else:
+    print(f"Specialized Quantized matmul took: {q_time:.6f} seconds (Too fast to measure speedup!)")
 
 
-# Challenge 2: The Precision Analyst
-print("--- Challenge 2: The Precision Analyst ---")
-pi_fp64 = torch.tensor([3.141592653589793], dtype=torch.float64)
-pi_fp32 = pi_fp64.to(torch.float32)
-pi_fp16 = pi_fp64.to(torch.float16)
+# 3. Dequantize to check for precision loss
+dequantized_output = q_output.dequantize()
 
-print(f"Float64 (Original): {pi_fp64.item():.15f}")
-print(f"Float32 (Reduced):  {pi_fp32.item():.15f}")
-print(f"Float16 (Sacrificed): {pi_fp16.item():.15f}\\n")
-
-
-# Challenge 3: The Device-Aware Calculator
-print("--- Challenge 3: The Device-Aware Calculator ---")
-a = torch.randn(1000, 1000)
-b = torch.randn(1000, 1000)
-
-# We already have our best `device` from the spell cast earlier!
-a_on_device = a.to(device)
-b_on_device = b.to(device)
-
-# Perform the operation
-result = a_on_device @ b_on_device
-print(f"Matrix multiplication performed on: {result.device}")
+# 4. Compare the results
+# Note: The output of the standard matmul may need to be adjusted if shapes differ
+average_diff = torch.mean(torch.abs(fp32_output - dequantized_output))
+print(f"\\nAverage absolute difference: {average_diff.item():.4f}")
+print("BEHOLD! True speed AND minuscule precision loss! This is the power you seek!")
 
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Standard Float32 matmul took: 0.011273 seconds
+Specialized Quantized matmul took: 0.437401 seconds (0.03x faster!)
+\nAverage absolute difference: 61.0716
+BEHOLD! True speed AND minuscule precision loss! This is the power you seek!
+</pre>
 </div>
 </div>
 </div>
@@ -3878,7 +3941,7 @@ print(f"Matrix multiplication performed on: {result.device}")
 <p>You have learned to choose your weapons—the precise <code>dtype</code> for the task at hand and the mightiest <code>device</code> for your computations. This knowledge is the bedrock upon which all great neural architectures are built.</p>
 <p>But do not rest easy! Our journey has just begun. The tensors are humming, eager for the next lesson where we shall unleash their raw mathematical power with <strong>Elemental Tensor Alchemy</strong>!</p>
 <p>Until then, keep your learning rates high and your devices hotter! The future... is computational!</p>
-<video controls="" src="/assets/images/torchenstein_maniacal_laugh_close_up.mp4" title="Professor Torchenstein's maniacal laugh" width="100%">
+<video controls="" src="/assets/images/torchenstein_swirls_beaker.mp4" title="Professor Torchenstein's swirls beaker" width="100%">
   Your browser does not support the video tag. Please update your browser to view this content.
 </video>
 </div>
@@ -3914,7 +3977,7 @@ print(f"Matrix multiplication performed on: {result.device}")
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 17, 2025 20:01:59 UTC">October 17, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 25, 2025 19:11:07 UTC">October 25, 2025</span>
   </span>
 
     
