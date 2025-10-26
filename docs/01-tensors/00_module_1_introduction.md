@@ -47,7 +47,7 @@ extra:
         position: 3
       - id: "https://pytorchcourse.com/01-tensors/03_data_types_and_devices/"
         name: "DTypes & Devices"
-        description: "Manage data types and move tensors to GPU for accelerated computation"
+        description: "Understand the floating-point data types and move tensors to GPU for accelerated computation"
         position: 4
       - id: "https://pytorchcourse.com/01-tensors/04_tensor_math_operations/"
         name: "Elemental Tensor Alchemy"
@@ -107,7 +107,7 @@ Over the next notebooks we will:
 1. [Summoning Your First Tensors](01_introduction_to_tensors.ipynb) - Learn to create tensors from scratch, access their elements and inspect their fundamental properties like shape, type, and device.
 2. [Tensor Surgery & Assembly](02a_tensor_manipulation.ipynb) - Master the dark arts of tensor dissection! Slice with surgical precision, fuse separate tensors with `torch.cat` and `torch.stack`, and divide them with `torch.split`. Your scalpel awaits!
 3. [Tensor Metamorphosis: Shape-Shifting Mastery](02b_tensor_metamorphosis.ipynb) - Transform tensor forms without altering their essence! Reshape reality with `torch.reshape` and `torch.view`, manipulate dimensions with `squeeze` and `unsqueeze`, expand and replicate data with `expand` and `repeat`, and flatten complex structures into submission.
-4. [DTypes & Devices: Choose Your Weapons](03_data_types_and_devices.ipynb) - Understand how to manage data types and move your tensors to the GPU for accelerated computation.
+4. [DTypes & Devices: The Soul of the Neural Network](03_data_types_and_devices.ipynb) - Master the floating-point `dtypes` (`float16`, `bfloat16`) crucial for debugging training, and learn to teleport your tensors to the correct `device` for maximum power.
 
 ### Tensor Operations: Computation at Scale
 5. [Elemental Tensor Alchemy](04_tensor_math_operations.ipynb) - Perform powerful element-wise and reduction operations to transform your tensors.
